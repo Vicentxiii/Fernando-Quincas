@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --color-ivory: #FAF8F5;
+  --color-ivory-light: #FDFCFB;
+  --color-ivory-dark: #F0ECE1;
+  --color-cream: #EAE5D8;
+  --color-gold: #C8A86B;
+  --color-gold-light: #E0C995;
+  --color-gold-dark: #9C7D3E;
+  --color-charcoal: #1E1D1A;
+  --color-charcoal-light: #2D2B27;
+  --color-botanical: #16251E;
+  --color-botanical-dark: #0D1713;
+  --color-burgundy: #6B1D2F;
+  --color-terracotta: #A95337;
+  --color-cobalt: #1E3A68;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #1E1D1A;
+    background-color: #FAF8F5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D2C4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A86B;
+}
+
+/* Glassmorphism token */
+.glass-header-top {
+  background: rgba(250, 248, 245, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 168, 107, 0.15);
+}
+
+.glass-header-scrolled {
+  background: rgba(250, 248, 245, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 168, 107, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(30, 29, 26, 0.07);
+}
+
+.glass-card {
+  background: rgba(253, 252, 251, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 168, 107, 0.18);
+}
+
+.gold-shimmer {
+  background: linear-gradient(135deg, #C8A86B 0%, #F5E5C4 50%, #B8934E 100%);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(200, 168, 107, 0.6);
+  box-shadow: 0 0 20px rgba(200, 168, 107, 0.15);
+}

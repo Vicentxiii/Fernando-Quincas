@@ -1,0 +1,6 @@
+{
+  "name": "Fernando Quincas — Escultor & Mestre Artesão",
+  "description": "Fernando Quincas, escultor e mestre artesão, cria esculturas monumentais, peças decorativas e obras em fibra de vidro, madeira e outros materiais. Onde a arte encontra a natureza.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

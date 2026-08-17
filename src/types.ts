@@ -1,0 +1,131 @@
+export type Category = 
+  | 'ALL'
+  | 'SCULPTURE' 
+  | 'GARDEN' 
+  | 'FOUNTAINS' 
+  | 'ANIMALS' 
+  | 'DECORATIVE ART' 
+  | 'INSTRUMENTS' 
+  | 'MONUMENTAL';
+
+export interface Artwork {
+  id: string;
+  title: string;
+  frenchTitle?: string;
+  subtitle: string;
+  category: Category;
+  year: number;
+  dimensions: string;
+  weight?: string;
+  materials: string[];
+  techniques: string[];
+  finishes: string[];
+  colorPalette: { name: string; hex: string }[];
+  location?: string;
+  description: string;
+  curatorNotes: string;
+  inspiration: string;
+  image: string;
+  secondaryImages: string[];
+  availability: 'AVAILABLE' | 'PRIVATE_COLLECTION' | 'LIMITED_EDITION' | 'ARCHIVE' | 'COMMISSION_ONLY';
+  edition?: string;
+  priceEstimate?: string;
+  featured?: boolean;
+  isMonumental?: boolean;
+}
+
+export interface MonumentalProject {
+  id: string;
+  title: string;
+  frenchTitle: string;
+  clientOrLocation: string;
+  year: number;
+  dimensions: string;
+  materials: string[];
+  heroImage: string;
+  galleryImages: string[];
+  concept: string;
+  architecturalContext: string;
+  engineeringNotes: string;
+  status: string;
+}
+
+export interface Technique {
+  id: string;
+  name: string;
+  frenchName: string;
+  category: string;
+  tagline: string;
+  description: string;
+  process: string[];
+  textureImage: string;
+  processImage: string;
+  artisanQuote: string;
+  keyMaterials: string[];
+}
+
+export interface TimelineMilestone {
+  id: string;
+  year: string;
+  period: string;
+  title: string;
+  subtitle: string;
+  narrative: string;
+  location: string;
+  image: string;
+  quote?: string;
+}
+
+export interface GardenZone {
+  id: string;
+  name: string;
+  frenchName: string;
+  description: string;
+  flora: string[];
+  focalPieceId: string;
+  focalPieceTitle: string;
+  atmosphere: string;
+  xPercent: number; // For interactive garden map
+  yPercent: number;
+  image: string;
+  audioSoundscape?: string;
+}
+
+export interface CommissionStep {
+  number: string;
+  title: string;
+  frenchTitle: string;
+  duration: string;
+  description: string;
+  deliverables: string[];
+  image: string;
+}
+
+export interface MediaArticle {
+  id: string;
+  title: string;
+  outlet: string;
+  section: string;
+  date: string;
+  url: string;
+  excerpt: string;
+  extendedBody?: string;
+  quote?: string;
+  stats?: { label: string; value: string }[];
+  tags: string[];
+  image: string;
+  isMainHeadline?: boolean;
+}
+
+export interface InquiryFormData {
+  name: string;
+  email: string;
+  phone: string;
+  clientType: 'PRIVATE_COLLECTOR' | 'INTERIOR_DESIGNER' | 'LANDSCAPE_ARCHITECT' | 'INSTITUTION' | 'HOSPITALITY';
+  projectType: 'ACQUISITION' | 'MONUMENTAL_COMMISSION' | 'GARDEN_INSTALLATION' | 'CUSTOM_FOUNTAIN' | 'PRIVATE_VIEWING';
+  preferredMaterials: string[];
+  estimatedBudget: string;
+  intendedLocation: string;
+  message: string;
+  selectedArtworks: string[];
+}
