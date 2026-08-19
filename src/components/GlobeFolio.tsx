@@ -81,6 +81,21 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
   const resetRef = useRef<() => void>(() => {});
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [webglUnavailable, setWebglUnavailable] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      document.body.style.overflow = 'hidden';
+      const id = requestAnimationFrame(() => setShowOverlay(true));
+      return () => {
+        cancelAnimationFrame(id);
+        setShowOverlay(false);
+        document.body.style.overflow = '';
+      };
+    }
+    document.body.style.overflow = '';
+    setShowOverlay(false);
+  }, [selectedIndex]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -243,7 +258,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       controls.enabled = false;
       const worldPos = mesh.getWorldPosition(new THREE.Vector3());
       const dir = worldPos.clone().normalize();
-      const toPos = worldPos.clone().addScaledVector(dir, sphereRadius * 1.2);
+      const toPos = worldPos.clone().addScaledVector(dir, sphereRadius * 0.95);
       tween = {
         fromPos: camera.position.clone(),
         toPos,
@@ -413,17 +428,35 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
         </span>
       </div>
 
-      {/* Reset button */}
-      <button
-        onClick={() => resetRef.current()}
-        aria-label="Afastar e voltar à visão completa da esfera"
-        className={`absolute top-4 right-4 z-10 flex items-center gap-2 px-4 py-2 rounded-full border border-[#C8A86B]/40 bg-[#FAF8F5]/5 backdrop-blur-md text-[#FAF8F5] hover:bg-[#FAF8F5]/15 hover:border-[#C8A86B] transition-all duration-300 text-[10px] tracking-[0.25em] uppercase font-mono ${
-          selectedIndex === null ? 'opacity-0 pointer-events-none' : 'opacity-100'
-        }`}
-      >
-        <RotateCcw className="w-3 h-3 text-[#C8A86B]" />
-        AFASTAR
-      </button>
+      {/* Selection Lightbox */}
+      {selectedIndex !== null && (
+        <div className="fixed inset-0 z-50">
+          <div
+            className={`absolute inset-0 bg-black/85 backdrop-blur-xl transition-opacity duration-500 ${
+              showOverlay ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+          <div className="relative h-full w-full flex flex-col items-center justify-center px-6">
+            <img
+              src={images[selectedIndex % images.length]}
+              alt={`Obra de Fernando Quincas ${(selectedIndex % images.length) + 1}`}
+              className={`w-auto h-[46vh] sm:h-[56vh] max-w-[92vw] object-contain rounded-2xl border border-[#C8A86B]/50 shadow-2xl transition-all duration-500 ${
+                showOverlay ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+              }`}
+            />
+            <button
+              onClick={() => resetRef.current()}
+              aria-label="Afastar e voltar à visão completa da esfera"
+              className={`mt-8 flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#C8A86B]/50 bg-[#FAF8F5]/5 backdrop-blur-md text-[#FAF8F5] hover:bg-[#FAF8F5]/15 hover:border-[#C8A86B] text-[10px] tracking-[0.25em] uppercase font-mono transition-opacity duration-500 ${
+                showOverlay ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <RotateCcw className="w-3 h-3 text-[#C8A86B]" />
+              AFASTAR
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Visually hidden accessible description */}
       <p className="sr-only">
