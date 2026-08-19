@@ -388,7 +388,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
   }
 
   return (
-    <div className="relative">
+    <div className="relative pb-10 md:pb-12">
       <div
         ref={containerRef}
         className="w-full h-[60vh] min-h-[360px] max-h-[520px] md:h-[90vh] md:max-h-[1000px] lg:max-h-[1050px] cursor-grab select-none touch-none"
@@ -406,7 +406,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       </div>
 
       {/* Idle instruction */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 text-[#FAF8F5]/45">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-2 text-[#FAF8F5]/45">
         <Move className="w-3.5 h-3.5 text-[#C8A86B]" />
         <span className="text-[9px] tracking-[0.25em] uppercase font-mono">
           ARRASTE PARA GIRAR • CLIQUE PARA EXPLORAR
