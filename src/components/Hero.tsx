@@ -20,8 +20,8 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Monumental Sculpture & Botanical Imagery */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=2200&q=90"
-          alt="Escultura monumental e fonte ornamental em santuário botânico por Fernando Quincas"
+          src={encodeURI('/Atelier Fernando Quincas.png')}
+          alt="Atelier do escultor Fernando Quincas com obras monumentais e ornamentação artística"
           className="w-full h-full object-cover object-right scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"
         />
