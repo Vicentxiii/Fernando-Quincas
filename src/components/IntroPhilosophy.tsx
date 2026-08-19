@@ -45,7 +45,7 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
           <div className="lg:col-span-7 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border border-[#C8A86B]/30 shadow-2xl bg-[#EAE5D8]">
               <img
-                src="/Fernando%20Quincas.png"
+                src="/fernando-quincas.webp"
                 alt="Fernando Quincas — Escultor & Mestre Artesão em seu ateliê"
                 className="w-full h-[450px] sm:h-[580px] object-cover object-top hover:scale-105 transition-transform duration-1000"
               />
