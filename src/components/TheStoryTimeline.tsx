@@ -21,7 +21,7 @@ export const TheStoryTimeline: React.FC = () => {
             </h2>
           </div>
           <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
-            Do domínio paciente do entalhe tradicional à criação do santuário botânico de esculturas em Petrópolis — uma busca contínua pela elegância monumental.
+            Do domínio paciente do entalhe tradicional à criação do santuário botânico de esculturas em Minas Gerais — uma busca contínua pela elegância monumental.
           </p>
         </div>
 

@@ -32,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({
 
       {/* Floating Gold Micro-Detail Accents */}
       <div className="absolute top-1/4 left-8 md:left-16 hidden md:flex flex-col gap-2 items-center text-[#C8A86B]/60 text-[10px] tracking-[0.3em] font-mono [writing-mode:vertical-lr] rotate-180">
-        <span>PETRÓPOLIS • BRASIL</span>
+        <span>MINAS GERAIS • BRASIL</span>
         <div className="w-[1px] h-12 bg-[#C8A86B]/30" />
         <span>ARTE MONUMENTAL</span>
       </div>

@@ -33,7 +33,7 @@ export const COMMISSION_STEPS: CommissionStep[] = [
     title: 'Escultura Direta & Modelagem no Ateliê',
     frenchTitle: 'O Entalhe Direto & Criação no Ateliê',
     duration: 'Semanas 9 — 16',
-    description: 'A escultura ganha vida no ateliê em Petrópolis. Centenas de horas de entalhe manual, laminação e detalhamento anatômico conduzidos por Fernando Quincas e seus mestres artesãos. O cliente recebe registros fotográficos exclusivos da evolução.',
+    description: 'A escultura ganha vida no ateliê em Minas Gerais. Centenas de horas de entalhe manual, laminação e detalhamento anatômico conduzidos por Fernando Quincas e seus mestres artesãos. O cliente recebe registros fotográficos exclusivos da evolução.',
     deliverables: ['Diário fotográfico e audiovisual periódico do ateliê', 'Convite para visita privativa ao ateliê durante a execução', 'Documentação curatorial de autenticidade'],
     image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80'
   },

@@ -207,7 +207,7 @@ export const BlogPostPage: React.FC = () => {
               {post.authorRole || 'Ateliê Fernando Quincas'}
             </p>
             <p className="text-xs text-[#2C2A26]/70 font-light leading-relaxed pt-1">
-              Escultor e mestre artesão dedicado à arte monumental, à douração clássica e aos jardins esculturais na Serra dos Órgãos, Petrópolis — RJ.
+              Escultor e mestre artesão dedicado à arte monumental, à douração clássica e aos jardins esculturais na Serra dos Órgãos, Minas Gerais.
             </p>
           </div>
         </aside>

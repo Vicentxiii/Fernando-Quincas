@@ -23,7 +23,7 @@ export const TheAtelier: React.FC = () => {
             </p>
           </div>
           <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
-            Argila viva, compósitos estruturais, entalhe em madeiras nobres e folhas de ouro 24k. Um olhar autêntico no coração do ateliê em Petrópolis.
+            Argila viva, compósitos estruturais, entalhe em madeiras nobres e folhas de ouro 24k. Um olhar autêntico no coração do ateliê em Minas Gerais.
           </p>
         </div>
 

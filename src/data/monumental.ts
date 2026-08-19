@@ -5,7 +5,7 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     id: 'le-pavillon-des-cygnes-et-des-eaux',
     title: 'Pavilhão dos Cisnes & das Águas',
     frenchTitle: 'Instalação Monumental & Espelho d’Água',
-    clientOrLocation: 'Santuário Botânico Privado, Petrópolis — RJ',
+    clientOrLocation: 'Santuário Botânico Privado, Minas Gerais',
     year: 2024,
     dimensions: '12 × 8.5 × 6.2 metros',
     materials: ['Fibra de vidro estrutural de alto desempenho', 'Douração em folha de ouro 24k', 'Mármore travertino e scagliola esculpidos à mão', 'Sistemas de fluxo em bronze'],

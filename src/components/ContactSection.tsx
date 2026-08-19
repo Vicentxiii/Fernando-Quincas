@@ -72,7 +72,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </h2>
           </div>
           <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
-            Visitas privativas ao Ateliê e Parque de Esculturas em Petrópolis são agendadas mediante contato prévio.
+            Visitas privativas ao Ateliê e Parque de Esculturas em Minas Gerais são agendadas mediante contato prévio.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     type="text"
                     value={formData.intendedLocation}
                     onChange={(e) => setFormData({ ...formData, intendedLocation: e.target.value })}
-                    placeholder="Ex.: Residência em Petrópolis / Fazenda no interior de SP / Projeto no exterior"
+                    placeholder="Ex.: Residência em Minas Gerais / Fazenda no interior de SP / Projeto no exterior"
                     className="w-full px-4 py-3 rounded-xl bg-[#FAF6EE] border border-[#C8A86B]/30 text-xs font-mono text-[#1E1D1A] focus:border-[#1E1D1A] outline-none"
                   />
                 </div>
@@ -214,7 +214,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Right Column: Atelier Coordinates */}
           <div className="lg:col-span-5 space-y-8 flex flex-col justify-between">
             <div className="space-y-6">
-              {/* Petrópolis Sanctuary */}
+              {/* Minas Gerais Sanctuary */}
               <div className="p-6 rounded-2xl bg-[#FAF6EE] border border-[#C8A86B]/30 space-y-2">
                 <span className="text-[10px] font-mono tracking-widest text-[#C8A86B] uppercase block">
                   ATELIÊ PRINCIPAL & PARQUE DE ESCULTURAS
@@ -223,7 +223,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   Ateliê Fernando Quincas
                 </h4>
                 <p className="text-xs text-[#2C2A26]/80 font-mono leading-relaxed">
-                  Região Serrana • Petrópolis<br />
+                  Região Serrana • Minas Gerais<br />
                   Rio de Janeiro — Brasil
                 </p>
                 <div className="text-xs font-mono text-[#8A82A5] pt-2">

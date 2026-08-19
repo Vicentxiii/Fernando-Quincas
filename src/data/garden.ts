@@ -33,7 +33,7 @@ export const GARDEN_ZONES: GardenZone[] = [
     id: 'zone-monumental-arch',
     name: 'O Pórtico Botânico Triunfal',
     frenchName: 'Arco Celeste & Alameda das Esculturas',
-    description: 'O portal cerimonial que conecta os jardins baixos à trilha de esculturas da serra. Volutas douradas erguem-se a seis metros de altura, emoldurando o horizonte das montanhas de Petrópolis.',
+    description: 'O portal cerimonial que conecta os jardins baixos à trilha de esculturas da serra. Volutas douradas erguem-se a seis metros de altura, emoldurando o horizonte das montanhas de Minas Gerais.',
     flora: ['Buganvílias roxas', 'Maracujás silvestres (Passiflora)', 'Orquídeas imperiais', 'Palmeiras nobres'],
     focalPieceId: 'l-arche-des-fleurs-celestes',
     focalPieceTitle: 'O Arco das Flores Celestes',

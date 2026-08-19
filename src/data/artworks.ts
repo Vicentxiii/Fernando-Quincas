@@ -19,7 +19,7 @@ export const ARTWORKS: Artwork[] = [
       { name: 'Azul Cobalto', hex: '#1E3A68' },
       { name: 'Terracota Cinábrio', hex: '#A95337' }
     ],
-    location: 'Ateliê Parque Botânico Fernando Quincas, Petrópolis',
+    location: 'Ateliê Parque Botânico Fernando Quincas, Minas Gerais',
     description: 'Uma síntese soberana entre a nobreza clássica e o volume orgânico monumental. O cisne emerge de ondas estilizadas em folhas de acanto douradas, com pescoço serpentino em postura majestosa. A superfície alterna texturas sedosas de penas polidas à mão e o brilho do ouro 24k que captura a luz natural do jardim.',
     curatorNotes: 'Fernando Quincas une a mitologia clássica à exuberância da flora tropical. O cisne, motivo marcante de sua trajetória, transcende a simples representação animal para se tornar um símbolo de serenidade, pureza e opulência.',
     inspiration: 'A elegância régia dos grandes lagos combinada à tranquilidade da Serra dos Órgãos.',
@@ -85,7 +85,7 @@ export const ARTWORKS: Artwork[] = [
       { name: 'Verde Botânico', hex: '#16251E' },
       { name: 'Off-White Nobre', hex: '#FAF6EE' }
     ],
-    location: 'Jardim de Esculturas, Petrópolis — RJ',
+    location: 'Jardim de Esculturas, Minas Gerais',
     description: 'Um portal triunfal onde a natureza e a maestria humana se fundem. Com mais de cinco metros de altura, seus ramos arqueados retorcem-se como lianas ancestrais adornadas com orquídeas douradas, maracujás e pássaros esculpidos em pleno voo.',
     curatorNotes: 'Atua tanto como portal de acesso quanto como moldura viva através da qual a paisagem ao redor se transforma em uma pintura atemporal.',
     inspiration: 'A exuberância das trepadeiras nativas da Mata Atlântica associada aos grandes pórticos clássicos.',
@@ -181,7 +181,7 @@ export const ARTWORKS: Artwork[] = [
       { name: 'Negro Obsidiana', hex: '#1E1D1A' },
       { name: 'Musgo Sálvia', hex: '#6A7D69' }
     ],
-    location: 'Jardins Privados em Petrópolis',
+    location: 'Jardins Privados em Minas Gerais',
     description: 'Projetados como guardiões para lagos ornamentais, piscinas naturais ou degraus de jardins. As asas abrem-se suavemente em um arco acolhedor, revelando partes inferiores douradas que cintilam na superfície da água.',
     curatorNotes: 'Possuem câmaras internas de lastro que permitem ancoragem firme e estável em bacias d’água ou sobre bordas de pedra.',
     inspiration: 'A beleza solene dos cisnes régios e sua presença como símbolo de serenidade.',

@@ -52,7 +52,7 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
               {/* Photo Caption Pill */}
               <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:left-6 sm:bottom-6 glass-card px-4 py-3 rounded-xl border border-[#C8A86B]/30 max-w-sm">
                 <span className="text-[9px] tracking-[0.25em] text-[#C8A86B] uppercase font-mono block">
-                  FERNANDO QUINCAS • ATELIÊ PETRÓPOLIS
+                  FERNANDO QUINCAS • ATELIÊ MINAS GERAIS
                 </span>
                 <p className="text-xs text-[#1E1D1A] font-serif italic mt-0.5">
                   Escultor & Mestre Artesão dedicando sua vida à criação de obras monumentais e ornamentação artística.

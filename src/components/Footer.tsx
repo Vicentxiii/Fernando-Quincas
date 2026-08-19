@@ -86,7 +86,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               LOCALIZAÇÃO & CONTATO
             </span>
             <div className="text-[#FAF8F5]/75 space-y-2 leading-relaxed font-light">
-              <p><strong>Ateliê:</strong> Petrópolis — RJ, Brasil</p>
+              <p><strong>Ateliê:</strong> Minas Gerais, Brasil</p>
               <p><strong>Parque:</strong> Serra dos Órgãos</p>
               <p className="text-[#E0C995]">contato@fernandoquincas.art</p>
             </div>

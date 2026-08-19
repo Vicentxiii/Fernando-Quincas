@@ -33,7 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Cada curva dourada de uma escultura carrega horas de preparação: camadas de gesso cré, bolo arménio e folha de ouro polida com pedra de ágata. Conheça o processo que confere brilho eterno às obras do ateliê.',
     coverImage:
       'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Douração Clássica', 'Folha de Ouro', 'Saber-Fazer', 'Petrópolis'],
+    tags: ['Douração Clássica', 'Folha de Ouro', 'Saber-Fazer', 'Minas Gerais'],
     featured: true,
     blocks: [
       {
@@ -174,7 +174,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 'jardim-santuario-botanico',
     slug: 'jardim-santuario-botanico-visita-guiada',
     title: 'O Jardim como Galeria: Uma Visita Guiada ao Santuário Botânico',
-    subtitle: 'Fontes, cisnes e esculturas integrados à flora serrana de Petrópolis.',
+    subtitle: 'Fontes, cisnes e esculturas integrados à flora serrana de Minas Gerais.',
     category: 'JARDIM',
     date: '2026-06-08',
     author: 'Ateliê Fernando Quincas',
@@ -184,7 +184,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Em meio à Serra dos Órgãos, um parque de esculturas onde a arte e a botânica se encontram em equilíbrio. Um passeio pelas zonas do santuário e as obras que as habitam.',
     coverImage:
       'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Jardim', 'Paisagismo', 'Petrópolis', 'Fontes Ornamentais'],
+    tags: ['Jardim', 'Paisagismo', 'Minas Gerais', 'Fontes Ornamentais'],
     featured: false,
     blocks: [
       {

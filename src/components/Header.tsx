@@ -234,7 +234,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="border-t border-[#C8A86B]/20 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#2C2A26]/70">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#6A7D69] animate-ping" />
-              <span>Ateliê & Parque de Esculturas • Petrópolis — RJ</span>
+              <span>Ateliê & Parque de Esculturas • Minas Gerais</span>
             </div>
             <div className="flex items-center gap-4 text-[#C8A86B]">
               <button onClick={() => { setIsMobileMenuOpen(false); onOpenDossier(); }} className="flex items-center gap-1 hover:underline">

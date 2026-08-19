@@ -34,7 +34,7 @@ export const GardenExperience: React.FC<GardenExperienceProps> = ({ onSelectArtw
           </div>
           <div className="max-w-md">
             <p className="text-sm text-[#FAF8F5]/80 font-light leading-relaxed">
-              Em Petrópolis, o santuário botânico não é apenas um cenário para as esculturas — o próprio jardim é parte indissociável da obra de arte.
+              Em Minas Gerais, o santuário botânico não é apenas um cenário para as esculturas — o próprio jardim é parte indissociável da obra de arte.
             </p>
             <div className="flex items-center gap-2 text-xs font-mono text-[#C8A86B] mt-2">
               <Compass className="w-3.5 h-3.5" />

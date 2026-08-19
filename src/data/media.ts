@@ -41,9 +41,9 @@ export const MEDIA_ARTICLES: MediaArticle[] = [
     section: 'Artes Plásticas & Saberes Raros',
     date: 'Caderno de Cultura & Tradição',
     url: '#contact',
-    excerpt: 'No coração de Petrópolis, o escultor Fernando Quincas preserva a alquimia ancestral da douração em folha de ouro sobre compósitos esculturais e marcenaria artística fina.',
+    excerpt: 'No coração de Minas Gerais, o escultor Fernando Quincas preserva a alquimia ancestral da douração em folha de ouro sobre compósitos esculturais e marcenaria artística fina.',
     extendedBody: 'Cada detalhe curvo é preparado segundo a tradição clássica, recebendo camadas de gesso cré e folha de ouro polida com pedra de ágata, resultando em peças que capturam a luz solar com esplendor incomparável.',
-    tags: ['Douração Clássica', 'Folha de Ouro 24k', 'Petrópolis', 'Artesanato de Luxo'],
+    tags: ['Douração Clássica', 'Folha de Ouro 24k', 'Minas Gerais', 'Artesanato de Luxo'],
     image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1000&q=80',
     isMainHeadline: false
   },
