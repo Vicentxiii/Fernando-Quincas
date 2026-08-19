@@ -21,7 +21,20 @@ const localWorks: string[] = [
   'Fontes Fernando Quincas.png',
   'Bonecas de cozinheira By Fernando Quincas.jpeg',
   'Bebê  no interior da EVA do playcenter by Fernando Quincas.jpg',
-  'Altar para igreja Universal By Fernando Quincas.jpeg'
+  'Altar para igreja Universal By Fernando Quincas.jpeg',
+  'Vaso Grego by Fernando Quincas.jpeg',
+  'Mesa Luis VXIII by Fernando Quincas.jpeg',
+  'Leao, Chafariz antigo by Fernando Quincas.jpeg',
+  'Fernando Quincas e a Galinha do monte verde.jpeg',
+  'Coluna grega com vaso interior  By fernando Quincas.jpeg',
+  'Coluna grega com vaso By fernando Quincas.jpeg',
+  'Coluna com anjo e plantas by Fernando Quincas.jpeg',
+  'Coluna amarela com vaso e plantas by Fernando Quincas.jpeg',
+  'Coluna amarela com plantas by Fernando Quincas.jpeg',
+  'Cisne com plantas by Fernando Quincas.jpeg',
+  'Cantoneira by Fernando Quincas.jpeg',
+  'Bambi Veado By FERNANDO QUINCAS.jpeg',
+  'Bambi Veado Angulo lateral By FERNANDO QUINCAS.jpeg'
 ];
 
 export const globeImages: string[] = localWorks.map((name) => encodeURI(`/${name}`));

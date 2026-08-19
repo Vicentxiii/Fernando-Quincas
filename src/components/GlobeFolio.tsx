@@ -26,6 +26,15 @@ function easeInOutCubic(t: number): number {
   return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
 
+function getCaption(src: string): string {
+  try {
+    const name = decodeURIComponent(src).replace(/^\//, '');
+    return name.replace(/\.[^.]+$/, '');
+  } catch {
+    return '';
+  }
+}
+
 function createCardTexture(source: HTMLImageElement): THREE.CanvasTexture {
   const w = 160;
   const h = 200;
@@ -123,7 +132,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
 
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
     const count = Math.min(cardCount, isMobile ? Math.round(cardCount / 2) : cardCount);
-    const sphereRadius = isMobile ? radius * 0.9 : radius * 1.7;
+    const sphereRadius = isMobile ? radius * 0.81 : radius * 1.53;
     const cardWidth = sphereRadius * 0.18;
     const cardHeight = sphereRadius * 0.225;
 
@@ -444,10 +453,13 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
                 showOverlay ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
               }`}
             />
+            <p className="mt-4 font-serif italic text-sm text-[#E0C995] text-center max-w-[90vw]">
+              {getCaption(images[selectedIndex % images.length])}
+            </p>
             <button
               onClick={() => resetRef.current()}
               aria-label="Afastar e voltar à visão completa da esfera"
-              className={`mt-8 flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#C8A86B]/50 bg-[#FAF8F5]/5 backdrop-blur-md text-[#FAF8F5] hover:bg-[#FAF8F5]/15 hover:border-[#C8A86B] text-[10px] tracking-[0.25em] uppercase font-mono transition-opacity duration-500 ${
+              className={`mt-6 flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#C8A86B]/50 bg-[#FAF8F5]/5 backdrop-blur-md text-[#FAF8F5] hover:bg-[#FAF8F5]/15 hover:border-[#C8A86B] text-[10px] tracking-[0.25em] uppercase font-mono transition-opacity duration-500 ${
                 showOverlay ? 'opacity-100' : 'opacity-0'
               }`}
             >

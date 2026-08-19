@@ -9,7 +9,7 @@ export const MEDIA_ARTICLES: MediaArticle[] = [
     date: 'O Globo Brasil',
     url: 'https://oglobo.globo.com/brasil/sucesso-nos-anos-1980-boneca-eva-esta-de-volta-15186468',
     excerpt: 'A lendária escultura monumental de 45 metros de comprimento, concebida em compósitos de fibra de vidro pelo escultor Fernando Quincas, resgata a memória afetiva de milhões de brasileiros ao apresentar o interior do corpo humano em escala gigante.',
-    extendedBody: 'Projetada com 45 metros de extensão e toneladas de compósitos estruturais esculpidos e laminados, a Boneca Eva foi um marco absoluto na história da escultura monumental interativa brasileira. Sucesso inesquecível em grandes parques (Tivoli Parque, Playcenter), a atração foi revitalizada e hoje encanta novas e antigas gerações no Parque do Teleférico em Nova Friburgo (RJ). O público realiza um percurso imersivo por dentro dos órgãos humanos, celebrando o pioneirismo técnico e volumétrico de Fernando Quincas na escultura em fibra de vidro.',
+    extendedBody: 'Projetada com 45 metros de extensão e toneladas de compósitos estruturais esculpidos e laminados, a Boneca Eva foi um marco absoluto na história da escultura monumental interativa brasileira. Sucesso inesquecível em grandes parques (Tivoli Parque, Playcenter), a peça foi revitalizada anos depois — intervenção que não passou pelas mãos de Fernando Quincas. A revitalização recebeu muitas críticas do público e da imprensa especializada: comparada ao acabamento original do mestre, a versão revitalizada ficou muito aquém, descaracterizada e sem a alma do original.',
     quote: '"Uma façanha da escultura monumental brasileira: 45 metros de estrutura em fibra de vidro que transcendeu décadas e marcou a imaginação de todo o país."',
     stats: [
       { label: 'Dimensão Monumental', value: '45 Metros' },
@@ -18,7 +18,7 @@ export const MEDIA_ARTICLES: MediaArticle[] = [
       { label: 'Localização Atual', value: 'Teleférico Nova Friburgo — RJ' }
     ],
     tags: ['Escultura Monumental', 'Fibra de Vidro', 'Memória Nacional', '45 Metros', 'O Globo'],
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
+    image: encodeURI('/Eva Original, Playcenter.jpg'),
     isMainHeadline: true
   },
   {
