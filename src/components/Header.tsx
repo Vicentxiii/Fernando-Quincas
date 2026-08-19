@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Sparkles, Compass, Bookmark, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Bookmark, Menu, X, ArrowUpRight } from 'lucide-react';
 
 interface HeaderProps {
   activeSection: string;
@@ -30,17 +30,14 @@ export const Header: React.FC<HeaderProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 40);
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems: NavItem[] = [
+  const mainNavItems: NavItem[] = [
     { id: 'home', label: 'INÍCIO', subtitle: 'Apresentação' },
     { id: 'artist', label: 'O ARTISTA', subtitle: 'Biografia & Filosofia' },
     { id: 'works', label: 'OBRAS', subtitle: 'Galeria de Esculturas' },
@@ -51,6 +48,10 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'boutique', label: 'COLEÇÃO', subtitle: 'Peças & Esculturas' },
     { id: 'commissions', label: 'ENCOMENDAS', subtitle: 'Projetos sob Medida' },
     { id: 'blog', label: 'BLOG', subtitle: 'Diário & Ensaios', route: '/blog' },
+  ];
+
+  const mobileNavItems: NavItem[] = [
+    ...mainNavItems,
     { id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' },
   ];
 
@@ -65,81 +66,113 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pt-3 sm:pt-4 transition-all duration-700 pointer-events-none">
+      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pt-3 sm:pt-5 transition-all duration-700 pointer-events-none">
         <div
           id="main-floating-header"
-          className={`pointer-events-auto w-full max-w-7xl rounded-full transition-all duration-700 ease-out flex items-center justify-between px-5 sm:px-8 py-3.5 sm:py-4 ${
+          className={`pointer-events-auto w-full max-w-7xl xl:max-w-[1320px] 2xl:max-w-[1680px] rounded-full transition-all duration-700 ease-out flex items-center justify-between gap-6 xl:gap-8 px-6 sm:px-8 py-3.5 xl:py-4 ${
             isScrolled
               ? 'glass-header-scrolled border border-[#C8A86B]/30 shadow-[0_8px_32px_rgba(30,29,26,0.08)]'
               : 'glass-header-top border border-[#C8A86B]/15 shadow-[0_4px_20px_rgba(30,29,26,0.03)]'
           }`}
         >
-          {/* Brand Logo & Monogram */}
-          <button
-            onClick={() => handleItemClick(navItems[0])}
-            className="flex items-center gap-3 group text-left transition-transform duration-300 hover:scale-[1.01]"
-            aria-label="Fernando Quincas Início"
-          >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-[#C8A86B]/50 flex items-center justify-center bg-[#FAF8F5]/80 text-[#C8A86B] font-display font-medium text-xs sm:text-sm tracking-wider shadow-sm group-hover:border-[#C8A86B] transition-colors">
-              FQ
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display tracking-[0.18em] text-xs sm:text-sm font-semibold text-[#1E1D1A]">
-                FERNANDO QUINCAS
-              </span>
-              <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-[#C8A86B] font-serif italic uppercase">
-                Escultor & Mestre Artesão
-              </span>
-            </div>
-          </button>
+          {/* Brand Logo & Monogram — own territory (≈20–25% width) */}
+          <div className="flex items-center gap-3 shrink-0 w-auto sm:w-[240px] xl:w-[270px] 2xl:w-[360px]">
+            <button
+              onClick={() => handleItemClick(mainNavItems[0])}
+              className="flex items-center gap-3 group text-left transition-opacity duration-300 hover:opacity-70"
+              aria-label="Fernando Quincas Início"
+            >
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-[#C8A86B]/50 flex items-center justify-center bg-[#FAF8F5]/80 text-[#C8A86B] font-display font-medium text-xs sm:text-sm tracking-wider shadow-sm group-hover:border-[#C8A86B] transition-colors duration-300">
+                FQ
+              </div>
+              <div className="flex flex-col">
+                <span className="hidden min-[400px]:block font-display tracking-[0.18em] text-xs sm:text-sm font-semibold text-[#1E1D1A] leading-tight">
+                  FERNANDO QUINCAS
+                </span>
+                <span className="hidden xl:block text-[9px] sm:text-[10px] tracking-[0.22em] text-[#C8A86B] font-serif italic uppercase leading-tight">
+                  Escultor & Mestre Artesão
+                </span>
+              </div>
+            </button>
+          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="Navegação Principal">
-            {navItems.map((item) => {
+          {/* Desktop Navigation — centered, generous spacing (xl and up) */}
+          <nav
+            className="hidden xl:flex flex-1 items-center justify-center gap-x-2.5 2xl:gap-x-6"
+            aria-label="Navegação Principal"
+          >
+            {mainNavItems.map((item) => {
               const isActive = item.route ? isBlogRoute : activeSection === item.id;
               return (
                 <button
                   key={item.id}
                   onClick={() => handleItemClick(item)}
-                  className={`text-[11px] xl:text-[12px] tracking-[0.18em] font-medium transition-all duration-300 relative py-1 hover:text-[#C8A86B] ${
-                    isActive ? 'text-[#C8A86B] font-semibold' : 'text-[#2C2A26]/80'
+                  className={`group relative py-2 whitespace-nowrap text-[10px] xl:text-[11px] tracking-[0.12em] 2xl:tracking-[0.14em] font-medium uppercase transition-colors duration-300 ${
+                    isActive ? 'text-[#C8A86B]' : 'text-[#2C2A26]/70 hover:text-[#C8A86B]'
                   }`}
                 >
                   {item.label}
-                  {isActive && (
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-[1.5px] bg-[#C8A86B] rounded-full animate-pulse" />
-                  )}
+                  <span
+                    aria-hidden
+                    className={`absolute left-1/2 -translate-x-1/2 -bottom-px h-px bg-[#C8A86B] transition-all duration-300 ${
+                      isActive ? 'w-5 opacity-100' : 'w-0 opacity-0 group-hover:w-5 group-hover:opacity-100'
+                    }`}
+                  />
                 </button>
               );
             })}
           </nav>
 
-          {/* Actions: Dossier Curation, Mobile Trigger */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          {/* Actions — Contact (text) + Dossier (pill), visually separated */}
+          <div className="hidden xl:flex shrink-0 w-[140px] 2xl:w-[240px] items-center justify-end gap-3 2xl:gap-4">
+            <button
+              onClick={() => handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' })}
+              className={`group hidden xl:inline-flex items-center gap-1.5 whitespace-nowrap text-[10px] xl:text-[11px] tracking-[0.18em] uppercase font-medium transition-colors duration-300 ${
+                activeSection === 'contact' ? 'text-[#C8A86B]' : 'text-[#2C2A26]/70 hover:text-[#C8A86B]'
+              }`}
+            >
+              CONTATO
+              <ArrowUpRight className="w-3 h-3 text-[#C8A86B] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </button>
+
             {/* Collector Dossier Drawer Button */}
             <button
               onClick={onOpenDossier}
-              className="relative px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#C8A86B]/40 bg-[#FAF8F5]/70 hover:bg-[#1E1D1A] hover:text-[#FAF8F5] hover:border-[#1E1D1A] transition-all duration-300 flex items-center gap-2 group"
+              className="relative flex items-center gap-2 pl-3.5 pr-3 py-2 rounded-full border border-[#C8A86B]/35 bg-[#FAF8F5]/70 hover:bg-[#1E1D1A] hover:text-[#FAF8F5] hover:border-[#1E1D1A] transition-colors duration-300"
               aria-label="Abrir dossiê de obras salvas"
+              title="Abrir dossiê de obras salvas"
             >
-              <Bookmark className="w-3.5 h-3.5 text-[#C8A86B] group-hover:text-[#D4B376] transition-colors" />
-              <span className="hidden sm:inline text-[10px] sm:text-[11px] tracking-[0.18em] font-semibold">
-                DOSSIÊ
-              </span>
+              <Bookmark className="w-3.5 h-3.5 text-[#C8A86B] transition-colors duration-300 group-hover:text-[#E0C995]" />
+              <span className="hidden 2xl:inline text-[10px] tracking-[0.18em] font-medium">DOSSIÊ</span>
               {savedCount > 0 && (
                 <span className="w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
                   {savedCount}
                 </span>
               )}
             </button>
+          </div>
 
-            {/* Mobile Editorial Menu Trigger */}
+          {/* Mobile / Tablet Actions — compact, not a squeezed desktop nav */}
+          <div className="xl:hidden flex items-center gap-2">
+            <button
+              onClick={onOpenDossier}
+              className="relative p-2.5 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
+              aria-label="Abrir dossiê de obras salvas"
+              title="Abrir dossiê de obras salvas"
+            >
+              <Bookmark className="w-4 h-4 text-[#1E1D1A]" />
+              {savedCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
+                  {savedCount}
+                </span>
+              )}
+            </button>
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="lg:hidden p-2 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
+              className="p-2.5 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
               aria-label="Abrir menu"
             >
-              <Menu className="w-4 h-4 text-[#1E1D1A]" />
+              <Menu className="w-5 h-5 text-[#1E1D1A]" />
             </button>
           </div>
         </div>
@@ -169,25 +202,32 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Navigation Links with Subtitles */}
           <div className="py-6 flex flex-col gap-3 sm:gap-4 overflow-y-auto">
-            {navItems.map((item, idx) => (
-              <button
-                key={item.id}
-                onClick={() => handleItemClick(item)}
-                className="group flex items-baseline justify-between text-left py-2 border-b border-[#C8A86B]/10 hover:border-[#C8A86B]/40 transition-colors"
-              >
-                <div className="flex items-baseline gap-3">
-                  <span className="text-[10px] tracking-widest text-[#C8A86B] font-mono">
-                    0{idx + 1}
+            {mobileNavItems.map((item, idx) => {
+              const isActive = item.route
+                ? isBlogRoute
+                : activeSection === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => handleItemClick(item)}
+                  className={`group flex items-baseline justify-between text-left py-2 border-b border-[#C8A86B]/10 hover:border-[#C8A86B]/40 transition-colors ${
+                    isActive ? 'text-[#C8A86B]' : 'text-[#1E1D1A]'
+                  }`}
+                >
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-[10px] tracking-widest text-[#C8A86B] font-mono">
+                      0{idx + 1}
+                    </span>
+                    <span className="font-serif text-2xl sm:text-3xl group-hover:text-[#C8A86B] transition-colors">
+                      {item.label}
+                    </span>
+                  </div>
+                  <span className="text-xs font-serif italic text-[#8A82A5] group-hover:text-[#1E1D1A] transition-colors">
+                    {item.subtitle}
                   </span>
-                  <span className="font-serif text-2xl sm:text-3xl text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors">
-                    {item.label}
-                  </span>
-                </div>
-                <span className="text-xs font-serif italic text-[#8A82A5] group-hover:text-[#1E1D1A] transition-colors">
-                  {item.subtitle}
-                </span>
-              </button>
-            ))}
+                </button>
+              );
+            })}
           </div>
 
           {/* Mobile Footer Area */}
