@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Sparkles, Compass, Bookmark, Menu, X, ArrowUpRight } from 'lucide-react';
 
 interface HeaderProps {
@@ -8,12 +9,22 @@ interface HeaderProps {
   onNavigate: (sectionId: string) => void;
 }
 
+interface NavItem {
+  id: string;
+  label: string;
+  subtitle: string;
+  route?: string;
+}
+
 export const Header: React.FC<HeaderProps> = ({
   activeSection,
   savedCount,
   onOpenDossier,
   onNavigate
 }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isBlogRoute = location.pathname.startsWith('/blog');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -29,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { id: 'home', label: 'INÍCIO', subtitle: 'Apresentação' },
     { id: 'artist', label: 'O ARTISTA', subtitle: 'Biografia & Filosofia' },
     { id: 'works', label: 'OBRAS', subtitle: 'Galeria de Esculturas' },
@@ -39,11 +50,16 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
     { id: 'boutique', label: 'COLEÇÃO', subtitle: 'Peças & Esculturas' },
     { id: 'commissions', label: 'ENCOMENDAS', subtitle: 'Projetos sob Medida' },
+    { id: 'blog', label: 'BLOG', subtitle: 'Diário & Ensaios', route: '/blog' },
     { id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' },
   ];
 
-  const handleItemClick = (id: string) => {
-    onNavigate(id);
+  const handleItemClick = (item: NavItem) => {
+    if (item.route) {
+      navigate(item.route);
+    } else {
+      onNavigate(item.id);
+    }
     setIsMobileMenuOpen(false);
   };
 
@@ -60,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
         >
           {/* Brand Logo & Monogram */}
           <button
-            onClick={() => handleItemClick('home')}
+            onClick={() => handleItemClick(navItems[0])}
             className="flex items-center gap-3 group text-left transition-transform duration-300 hover:scale-[1.01]"
             aria-label="Fernando Quincas Início"
           >
@@ -80,11 +96,11 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="Navegação Principal">
             {navItems.map((item) => {
-              const isActive = activeSection === item.id;
+              const isActive = item.route ? isBlogRoute : activeSection === item.id;
               return (
                 <button
                   key={item.id}
-                  onClick={() => handleItemClick(item.id)}
+                  onClick={() => handleItemClick(item)}
                   className={`text-[11px] xl:text-[12px] tracking-[0.18em] font-medium transition-all duration-300 relative py-1 hover:text-[#C8A86B] ${
                     isActive ? 'text-[#C8A86B] font-semibold' : 'text-[#2C2A26]/80'
                   }`}
@@ -156,7 +172,7 @@ export const Header: React.FC<HeaderProps> = ({
             {navItems.map((item, idx) => (
               <button
                 key={item.id}
-                onClick={() => handleItemClick(item.id)}
+                onClick={() => handleItemClick(item)}
                 className="group flex items-baseline justify-between text-left py-2 border-b border-[#C8A86B]/10 hover:border-[#C8A86B]/40 transition-colors"
               >
                 <div className="flex items-baseline gap-3">

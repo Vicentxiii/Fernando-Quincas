@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowUp } from 'lucide-react';
 
 interface FooterProps {
@@ -52,6 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li><button onClick={() => onNavigate('artist')} className="hover:text-[#E0C995]">O Artista & Filosofia</button></li>
               <li><button onClick={() => onNavigate('story')} className="hover:text-[#E0C995]">Trajetória na Escultura</button></li>
               <li><button onClick={() => onNavigate('monumental')} className="hover:text-[#E0C995]">Obras Monumentais</button></li>
+              <li><Link to="/blog" className="hover:text-[#E0C995]">Blog & Ensaios</Link></li>
             </ul>
           </div>
 

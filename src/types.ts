@@ -117,6 +117,39 @@ export interface MediaArticle {
   isMainHeadline?: boolean;
 }
 
+export type BlogCategory =
+  | 'ATELIER'
+  | 'PROJETOS'
+  | 'MATERIAIS'
+  | 'JARDIM'
+  | 'IMPRENSA'
+  | 'COMUNIDADE';
+
+export type BlogBlock =
+  | { type: 'paragraph'; text: string }
+  | { type: 'heading'; text: string }
+  | { type: 'subheading'; text: string }
+  | { type: 'quote'; text: string; attribution?: string }
+  | { type: 'image'; src: string; alt: string; caption?: string }
+  | { type: 'list'; items: string[] };
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: BlogCategory;
+  date: string;
+  author: string;
+  authorRole?: string;
+  readingTimeMinutes: number;
+  excerpt: string;
+  coverImage: string;
+  tags: string[];
+  featured?: boolean;
+  blocks: BlogBlock[];
+}
+
 export interface InquiryFormData {
   name: string;
   email: string;

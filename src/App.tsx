@@ -4,28 +4,24 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { IntroPhilosophy } from './components/IntroPhilosophy';
-import { TheStoryTimeline } from './components/TheStoryTimeline';
-import { MonumentalWorks } from './components/MonumentalWorks';
-import { WorksGallery } from './components/WorksGallery';
-import { MaterialTechnique } from './components/MaterialTechnique';
-import { GardenExperience } from './components/GardenExperience';
-import { TheAtelier } from './components/TheAtelier';
-import { MediaSection } from './components/MediaSection';
-import { BoutiqueSection } from './components/BoutiqueSection';
-import { CommissionsSection } from './components/CommissionsSection';
-import { ContactSection } from './components/ContactSection';
+import { Footer } from './components/Footer';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
-import { Footer } from './components/Footer';
+import { HomePage } from './pages/HomePage';
+import { BlogIndexPage } from './pages/BlogIndexPage';
+import { BlogPostPage } from './pages/BlogPostPage';
 import { Artwork } from './types';
 
-export default function App() {
+const SECTION_IDS = ['home', 'artist', 'story', 'monumental', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
+
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === '/';
+
   const [activeSection, setActiveSection] = useState('home');
-  const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
-  const [isDossierOpen, setIsDossierOpen] = useState(false);
   const [savedArtworkIds, setSavedArtworkIds] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem('quincas_saved_artworks');
@@ -34,13 +30,8 @@ export default function App() {
       return ['o-cisne-imperatriz'];
     }
   });
-
-  const [contactInitialConfig, setContactInitialConfig] = useState<{
-    spaceType?: string;
-    motif?: string;
-    scale?: string;
-    artworkTitle?: string;
-  } | null>(null);
+  const [isDossierOpen, setIsDossierOpen] = useState(false);
+  const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
 
   // Sync saved artworks to localStorage
   useEffect(() => {
@@ -51,29 +42,43 @@ export default function App() {
     }
   }, [savedArtworkIds]);
 
-  // Section observer to update active navigation item during scroll
+  // Scroll to top on every route change unless a section target was requested
   useEffect(() => {
-    const sections = ['home', 'artist', 'story', 'monumental', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
-    
+    const state = location.state as { scrollTo?: string } | null;
+    if (!state?.scrollTo) {
+      window.scrollTo({ top: 0 });
+    }
+  }, [location.pathname]);
+
+  // Section observer to update active navigation item during scroll (home only)
+  useEffect(() => {
+    if (!isHome) {
+      setActiveSection('home');
+      return;
+    }
+
     const handleScroll = () => {
       const scrollPos = window.scrollY + 200;
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
+      for (let i = SECTION_IDS.length - 1; i >= 0; i--) {
+        const el = document.getElementById(SECTION_IDS[i]);
         if (el && el.offsetTop <= scrollPos) {
-          setActiveSection(sections[i]);
+          setActiveSection(SECTION_IDS[i]);
           break;
         }
       }
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isHome]);
 
   const handleNavigate = (sectionId: string) => {
-    const el = document.getElementById(sectionId);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+    if (isHome) {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/', { state: { scrollTo: sectionId } });
     }
   };
 
@@ -83,27 +88,6 @@ export default function App() {
         ? prev.filter((id) => id !== artworkId)
         : [...prev, artworkId]
     );
-  };
-
-  const handleInquireArtwork = (artwork: Artwork) => {
-    setContactInitialConfig({
-      artworkTitle: artwork.title,
-    });
-    handleNavigate('contact');
-  };
-
-  const handleInquireMonumentalProject = (projectTitle: string) => {
-    setContactInitialConfig({
-      artworkTitle: `Monumental Case Study: ${projectTitle}`,
-    });
-    handleNavigate('contact');
-  };
-
-  const handleStartCommission = (config?: { spaceType: string; motif: string; scale: string }) => {
-    if (config) {
-      setContactInitialConfig(config);
-    }
-    handleNavigate('contact');
   };
 
   return (
@@ -116,83 +100,46 @@ export default function App() {
         onNavigate={handleNavigate}
       />
 
-      {/* Main Experience */}
       <main className="flex-1">
-        {/* Hero Section */}
-        <Hero
-          onExploreCollection={() => handleNavigate('works')}
-          onEnterAtelier={() => handleNavigate('atelier')}
-          onDiscoverGarden={() => handleNavigate('garden')}
-        />
-
-        {/* 01: Introduction & Philosophy */}
-        <IntroPhilosophy
-          onLearnTechniques={() => handleNavigate('techniques')}
-          onExploreStory={() => handleNavigate('story')}
-        />
-
-        {/* 02: The Story / A Life in Sculpture Timeline */}
-        <TheStoryTimeline />
-
-        {/* 03: Monumental Works */}
-        <MonumentalWorks
-          onInquireProject={handleInquireMonumentalProject}
-        />
-
-        {/* 04: Works / The Collection */}
-        <WorksGallery
-          onSelectArtwork={(art) => setSelectedArtwork(art)}
-          onToggleSave={handleToggleSave}
-          savedArtworkIds={savedArtworkIds}
-        />
-
-        {/* 05: Material & Technique */}
-        <MaterialTechnique />
-
-        {/* 06: The Living Garden */}
-        <GardenExperience
-          onSelectArtwork={(art) => setSelectedArtwork(art)}
-        />
-
-        {/* 07: The Atelier Documentary */}
-        <TheAtelier />
-
-        {/* 08: Media & Press Recognition */}
-        <MediaSection
-          onContactPress={() => handleNavigate('contact')}
-        />
-
-        {/* 09: The Gallery Boutique */}
-        <BoutiqueSection
-          onSelectArtwork={(art) => setSelectedArtwork(art)}
-          onInquireArtwork={handleInquireArtwork}
-          onToggleSave={handleToggleSave}
-          savedArtworkIds={savedArtworkIds}
-        />
-
-        {/* 09: Bespoke Commissions */}
-        <CommissionsSection
-          onStartCommission={handleStartCommission}
-        />
-
-        {/* 10: Private Salon Contact */}
-        <ContactSection
-          initialConfig={contactInitialConfig}
-          savedArtworksCount={savedArtworkIds.length}
-        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                savedArtworkIds={savedArtworkIds}
+                onToggleSave={handleToggleSave}
+              />
+            }
+          />
+          <Route path="/blog" element={<BlogIndexPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route
+            path="*"
+            element={
+              <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center space-y-6 bg-[#FAF8F5] text-[#1E1D1A]">
+                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#C8A86B]">
+                  Erro 404
+                </span>
+                <h1 className="font-display text-3xl sm:text-4xl font-semibold">
+                  Página não encontrada
+                </h1>
+                <p className="font-serif italic text-[#8A82A5] max-w-md">
+                  O endereço que você acessou não existe ou foi movido.
+                </p>
+                <button
+                  onClick={() => navigate('/')}
+                  className="px-6 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-xs font-mono tracking-widest uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors"
+                >
+                  Voltar ao Início
+                </button>
+              </div>
+            }
+          />
+        </Routes>
       </main>
 
       {/* Art Book Closing Page Footer */}
       <Footer onNavigate={handleNavigate} />
-
-      {/* Detailed Artwork Inspector Modal */}
-      <ArtworkModal
-        artwork={selectedArtwork}
-        onClose={() => setSelectedArtwork(null)}
-        onInquire={handleInquireArtwork}
-        onToggleSave={handleToggleSave}
-        isSaved={selectedArtwork ? savedArtworkIds.includes(selectedArtwork.id) : false}
-      />
 
       {/* Private Curation Dossier Drawer */}
       <InquiryDossierDrawer
@@ -200,9 +147,26 @@ export default function App() {
         onClose={() => setIsDossierOpen(false)}
         savedArtworkIds={savedArtworkIds}
         onRemoveArtwork={handleToggleSave}
-        onSelectArtwork={(art) => setSelectedArtwork(art)}
+        onSelectArtwork={setSelectedArtwork}
         onProceedToInquiry={() => handleNavigate('contact')}
       />
+
+      {/* Detailed Artwork Inspector Modal (from dossier drawer) */}
+      <ArtworkModal
+        artwork={selectedArtwork}
+        onClose={() => setSelectedArtwork(null)}
+        onInquire={() => handleNavigate('contact')}
+        onToggleSave={handleToggleSave}
+        isSaved={selectedArtwork ? savedArtworkIds.includes(selectedArtwork.id) : false}
+      />
     </div>
+  );
+};
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
