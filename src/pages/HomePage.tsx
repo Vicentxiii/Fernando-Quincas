@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { IntroPhilosophy } from '../components/IntroPhilosophy';
@@ -19,6 +19,10 @@ import { CommissionsSection } from '../components/CommissionsSection';
 import { ContactSection } from '../components/ContactSection';
 import { ArtworkModal } from '../components/ArtworkModal';
 import { Artwork } from '../types';
+
+const GlobeFolioSection = lazy(() =>
+  import('../components/GlobeFolioSection').then((m) => ({ default: m.GlobeFolioSection }))
+);
 
 interface HomePageProps {
   savedArtworkIds: string[];
@@ -87,6 +91,11 @@ export const HomePage: React.FC<HomePageProps> = ({
         onEnterAtelier={() => handleNavigate('atelier')}
         onDiscoverGarden={() => handleNavigate('garden')}
       />
+
+      {/* GlobeFolio — Galeria 3D Interativa */}
+      <Suspense fallback={<div className="bg-[#16251E] py-24" aria-hidden="true" />}>
+        <GlobeFolioSection />
+      </Suspense>
 
       {/* 01: Introduction & Philosophy */}
       <IntroPhilosophy
