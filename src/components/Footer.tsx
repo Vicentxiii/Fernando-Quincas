@@ -103,6 +103,22 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <span>Folha de Ouro 24k & Compósitos Monumentais</span>
           </div>
         </div>
+
+        {/* Back to Top */}
+        <div className="flex justify-center pt-12">
+          <button
+            onClick={scrollToTop}
+            aria-label="Voltar ao topo"
+            className="flex flex-col items-center gap-2 group"
+          >
+            <span className="w-12 h-12 rounded-full border border-[#C8A86B]/50 flex items-center justify-center text-[#E0C995] hover:bg-[#C8A86B] hover:text-[#16251E] transition-colors">
+              <ArrowUp className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+            </span>
+            <span className="text-[10px] tracking-[0.25em] uppercase font-mono text-[#FAF8F5]/60 group-hover:text-[#C8A86B] transition-colors">
+              Voltar ao topo
+            </span>
+          </button>
+        </div>
       </div>
     </footer>
   );

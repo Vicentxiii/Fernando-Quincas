@@ -11,7 +11,6 @@ const localWorks: string[] = [
   'Fonte com peixes Fernando Quincas.png',
   'Obra TORÔ fernando Quincas.png',
   'Fonte By FERNANDO quincas ornamentada efeito de pedra.jpeg',
-  'Obra Chafariz Fernando Quincas.png',
   'Obra Chafariz com pinha Fernando Quincas.png',
   'Eva Original, Playcenter.jpg',
   'Galinha Monte Verde Fernando Quincas.png',
@@ -21,7 +20,6 @@ const localWorks: string[] = [
   'Fontes Fernando Quincas.png',
   'Bonecas de cozinheira By Fernando Quincas.jpeg',
   'Bebê  no interior da EVA do playcenter by Fernando Quincas.jpg',
-  'Altar para igreja Universal By Fernando Quincas.jpeg',
   'Vaso Grego by Fernando Quincas.jpeg',
   'Mesa Luis VXIII by Fernando Quincas.jpeg',
   'Leao, Chafariz antigo by Fernando Quincas.jpeg',
@@ -34,7 +32,11 @@ const localWorks: string[] = [
   'Cisne com plantas by Fernando Quincas.jpeg',
   'Cantoneira by Fernando Quincas.jpeg',
   'Bambi Veado By FERNANDO QUINCAS.jpeg',
-  'Bambi Veado Angulo lateral By FERNANDO QUINCAS.jpeg'
+  'Bambi Veado Angulo lateral By FERNANDO QUINCAS.jpeg',
+  'Finalizando Galinha da Roça, do restaurante Monte Verde.png',
+  'Espaço Tematico com Bambu e Fontes de agua by Fernando Quincas.png',
+  'Espaço Tematico com Bambu e Fontes Angulo Aberto by Fernando Quincas.png',
+  'Atelier no Jaguari, By Fernando Quincas.png'
 ];
 
 export const globeImages: string[] = localWorks.map((name) => encodeURI(`/${name}`));

@@ -247,10 +247,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             {/* Social */}
             <div className="pt-6 border-t border-[#C8A86B]/25 flex items-center justify-between">
               <span className="text-xs font-serif italic text-[#8A82A5]">
-                Instagram: @fernandoquincas.escultor
+                Instagram: @fernando_quincas
               </span>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/fernando_quincas"
                 target="_blank"
                 rel="noreferrer"
                 className="p-3 rounded-full border border-[#C8A86B]/40 hover:bg-[#C8A86B] hover:text-white transition-colors"

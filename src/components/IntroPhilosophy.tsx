@@ -45,7 +45,7 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
           <div className="lg:col-span-7 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border border-[#C8A86B]/30 shadow-2xl bg-[#EAE5D8]">
               <img
-                src="/fernando-quincas.webp"
+                src={encodeURI('/Escultor mestre artesão fernando quincas de almeida.png')}
                 alt="Fernando Quincas — Escultor & Mestre Artesão em seu ateliê"
                 className="w-full h-[450px] sm:h-[580px] object-cover object-top hover:scale-105 transition-transform duration-1000"
               />
@@ -63,12 +63,12 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
             {/* Overlapping Secondary Image / Material Detail */}
             <div className="hidden sm:block absolute -bottom-10 -right-8 z-20 w-48 h-64 rounded-xl overflow-hidden border-2 border-[#FAF8F5] shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=600&q=80"
-                alt="Aplicação de folha de ouro 24k sobre bolo armênio"
+                src={encodeURI('/Galinha Monte Verde Fernando Quincas.png')}
+                alt="Escultura Galinha da roça by Fernando Quincas"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3 text-white text-[10px] font-mono tracking-wider">
-                DOURAÇÃO EM OURO 24K
+                Escultura Galinha da roça by Fernando Quincas
               </div>
             </div>
 
