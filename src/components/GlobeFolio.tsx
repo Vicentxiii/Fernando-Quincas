@@ -108,8 +108,9 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
 
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
     const count = Math.min(cardCount, isMobile ? Math.round(cardCount / 2) : cardCount);
-    const cardWidth = radius * 0.18;
-    const cardHeight = radius * 0.225;
+    const sphereRadius = isMobile ? radius * 0.9 : radius * 1.7;
+    const cardWidth = sphereRadius * 0.18;
+    const cardHeight = sphereRadius * 0.225;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
@@ -118,7 +119,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       0.1,
       1000
     );
-    const initialCameraPosition = new THREE.Vector3(0, radius * 0.06, radius * 3.5);
+    const initialCameraPosition = new THREE.Vector3(0, sphereRadius * 0.06, sphereRadius * 2.8);
     camera.position.copy(initialCameraPosition);
 
     const controls = new OrbitControls(camera, canvas);
@@ -160,7 +161,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       const theta = goldenAngle * i;
       const x = Math.cos(theta) * r;
       const z = Math.sin(theta) * r;
-      const pos = new THREE.Vector3(x, y, z).multiplyScalar(radius);
+      const pos = new THREE.Vector3(x, y, z).multiplyScalar(sphereRadius);
 
       const mesh = new THREE.Mesh(geometry, materialCache.get(images[i % images.length])!);
       mesh.position.copy(pos);
@@ -183,6 +184,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
             material.needsUpdate = true;
             material.visible = true;
           }
+          THREE.Cache.remove(src);
         },
         undefined,
         () => {
@@ -241,7 +243,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       controls.enabled = false;
       const worldPos = mesh.getWorldPosition(new THREE.Vector3());
       const dir = worldPos.clone().normalize();
-      const toPos = worldPos.clone().addScaledVector(dir, radius * 1.2);
+      const toPos = worldPos.clone().addScaledVector(dir, sphereRadius * 1.2);
       tween = {
         fromPos: camera.position.clone(),
         toPos,
@@ -389,7 +391,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     <div className="relative">
       <div
         ref={containerRef}
-        className="w-full h-[62vh] min-h-[380px] max-h-[720px] cursor-grab select-none touch-none"
+        className="w-full h-[60vh] min-h-[360px] max-h-[520px] md:h-[90vh] md:max-h-[1000px] lg:max-h-[1050px] cursor-grab select-none touch-none"
       />
 
       {/* Hover micro-label */}
