@@ -3,7 +3,7 @@ import { TimelineMilestone } from '../types';
 export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   {
     id: 'early-classical-training',
-    year: '1998 — 2004',
+    year: '1979 — 1984',
     period: 'As Fundações da Forma',
     title: 'Mestria na Escultura Clássica e Tradição da Madeira',
     subtitle: 'Aprendizado rigoroso no entalhe ornamental e técnicas ancestrais',
@@ -14,18 +14,18 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   },
   {
     id: 'the-fiberglass-revelation',
-    year: '2005 — 2009',
+    year: '1985 — 1995',
     period: 'A Revolução da Matéria',
     title: 'A Descoberta da Fibra de Vidro Estrutural',
-    subtitle: 'Libertando a escultura monumental do peso e limites do mármore',
-    narrative: 'Fernando Quincas desenvolve métodos próprios utilizando compósitos de fibra de vidro de alta resistência estrutural. O material oferece a robustez do bronze com uma fração do peso, permitindo monumentalidade e formas audaciosas sem perder a delicadeza do entalhe de precisão.',
+    subtitle: 'Do domínio da fibra à lendária Boneca Eva de 45 metros (1985)',
+    narrative: 'Fernando Quincas desenvolve métodos próprios utilizando compósitos de fibra de vidro de alta resistência estrutural. É neste período que concebe a lendária Boneca Eva, escultura monumental interativa de 45 metros de comprimento, sucesso inesquecível em grandes parques e marco absoluto na história da escultura brasileira. O material oferece a robustez do bronze com uma fração do peso, permitindo monumentalidade e formas audaciosas sem perder a delicadeza do entalhe de precisão.',
     location: 'Litoral & Ateliê Central',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
     quote: 'A fibra de vidro libertou minhas mãos. Subitamente, uma escultura pode erguer-se a oito metros no ar e apoiar-se na ponta de uma folha de acanto dourada.'
   },
   {
     id: 'the-botanical-turn',
-    year: '2010 — 2015',
+    year: '1996 — 2005',
     period: 'O Santuário da Serra',
     title: 'Criação do Ateliê Botânico em Minas Gerais',
     subtitle: 'Harmonia entre a ornamentação nobre e a exuberância da Mata Atlântica',
@@ -36,7 +36,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   },
   {
     id: 'monumental-epoch',
-    year: '2016 — 2021',
+    year: '2006 — 2015',
     period: 'A Era Monumental',
     title: 'Fontes Arquitetônicas & Obras de Grande Porte',
     subtitle: 'Projetos integrados a residências de prestígio e jardins monumentais',
@@ -47,7 +47,7 @@ export const TIMELINE_MILESTONES: TimelineMilestone[] = [
   },
   {
     id: 'contemporary-sanctuary',
-    year: '2022 — Presente',
+    year: '2016 — Presente',
     period: 'O Universo Vivo',
     title: 'O Santuário de Esculturas & Obras sob Medida',
     subtitle: 'Projetos sob encomenda para colecionadores e arquitetos renomados',
