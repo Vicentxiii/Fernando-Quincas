@@ -70,9 +70,6 @@ export const TheStoryTimeline: React.FC = () => {
                   alt={activeMilestone.title}
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 glass-card px-3 py-1.5 rounded-full border border-[#C8A86B]/30 text-[10px] font-mono tracking-widest text-[#1E1D1A]">
-                  REGISTRO HISTÓRICO • {activeMilestone.year}
-                </div>
               </div>
             </div>
 

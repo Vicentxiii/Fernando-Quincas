@@ -224,7 +224,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </h4>
                 <p className="text-xs text-[#2C2A26]/80 font-mono leading-relaxed">
                   Região Serrana • Minas Gerais<br />
-                  Rio de Janeiro — Brasil
                 </p>
                 <div className="text-xs font-mono text-[#8A82A5] pt-2">
                   * Visitas privativas agendadas previamente

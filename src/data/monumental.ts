@@ -9,11 +9,11 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2024,
     dimensions: '12 × 8.5 × 6.2 metros',
     materials: ['Fibra de vidro estrutural de alto desempenho', 'Douração em folha de ouro 24k', 'Mármore travertino e scagliola esculpidos à mão', 'Sistemas de fluxo em bronze'],
-    heroImage: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1800&q=85',
+    heroImage: '/Fonte com Cisnes by Fernando Quincas .jpeg',
     galleryImages: [
+      '/Fonte com Cisnes by Fernando Quincas .jpeg',
       'https://images.unsplash.com/photo-1516570161787-2fd917215a3d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80'
     ],
     concept: 'Um anfiteatro arquitetônico monumental de águas límpidas, cisnes dourados e conchas em volutas clássicas integrado a um cânion de mata preservada. A cascata central traz dois cisnes monumentais de 4 metros emergindo da bruma, ladeados por bacias botânicas escalonadas.',
     architecturalContext: 'Instalação projetada para uma propriedade de 40 hectares, concebida para evocar os grandes teatros de água renascentistas filtrados pela exuberância tropical e simetria refinada.',
@@ -46,8 +46,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2022,
     dimensions: '9.5 × 9.5 × 5.8 metros',
     materials: ['Fibra de vidro estrutural esculpida à mão', 'Mascarões ornamentais em bronze fundido', 'Matriz de mármore verde faux-cipolino', 'Detalhamento em ouro vermeil'],
-    heroImage: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1800&q=85',
+    heroImage: '/Fonte de agua por dentro Fernando Quincas.png',
     galleryImages: [
+      '/Fonte de agua por dentro Fernando Quincas.png',
       'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80'
     ],
