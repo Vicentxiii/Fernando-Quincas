@@ -28,8 +28,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2023,
     dimensions: '7.8 × 5.4 × 2.1 metros',
     materials: ['Compósito de fibra de vidro de alta densidade', 'Estrutura em aço inox 316L', 'Folha de ouro 23.75k com acabamento acetinado', 'Verniz poliuretano náutico'],
-    heroImage: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1800&q=85',
+    heroImage: '/Arco botanico Triunfal by Fernando Quincas.png',
     galleryImages: [
+      '/Arco botanico Triunfal by Fernando Quincas.png',
       'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -46,9 +47,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2022,
     dimensions: '9.5 × 9.5 × 5.8 metros',
     materials: ['Fibra de vidro estrutural esculpida à mão', 'Mascarões ornamentais em bronze fundido', 'Matriz de mármore verde faux-cipolino', 'Detalhamento em ouro vermeil'],
-    heroImage: '/Fonte de agua por dentro Fernando Quincas.png',
+    heroImage: '/Fonte by Fernando QUINCAS.png',
     galleryImages: [
-      '/Fonte de agua por dentro Fernando Quincas.png',
+      '/Fonte by Fernando QUINCAS.png',
       'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80'
     ],
