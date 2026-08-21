@@ -38,11 +38,8 @@ export const Header: React.FC<HeaderProps> = ({
   }, []);
 
   const mainNavItems: NavItem[] = [
-    { id: 'home', label: 'INÍCIO', subtitle: 'Apresentação' },
     { id: 'artist', label: 'O ARTISTA', subtitle: 'Biografia & Filosofia' },
     { id: 'works', label: 'OBRAS', subtitle: 'Galeria de Esculturas' },
-    { id: 'techniques', label: 'SABER-FAZER', subtitle: 'Técnicas & Matérias' },
-    { id: 'garden', label: 'O JARDIM', subtitle: 'Santuário Botânico' },
     { id: 'atelier', label: 'ATELIÊ', subtitle: 'Processo Criativo' },
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
     { id: 'boutique', label: 'COLEÇÃO', subtitle: 'Peças & Esculturas' },
@@ -78,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Brand Logo & Monogram — own territory (≈20–25% width) */}
           <div className="flex items-center gap-3 shrink-0 w-auto sm:w-[240px] xl:w-[270px] 2xl:w-[360px]">
             <button
-              onClick={() => handleItemClick(mainNavItems[0])}
+              onClick={() => handleItemClick({ id: 'home', label: 'INÍCIO', subtitle: '' })}
               className="flex items-center gap-3 group text-left transition-opacity duration-300 hover:opacity-70"
               aria-label="Fernando Quincas Início"
             >
@@ -98,7 +95,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Desktop Navigation — centered, generous spacing (xl and up) */}
           <nav
-            className="hidden xl:flex flex-1 items-center justify-center gap-x-2.5 2xl:gap-x-6"
+            className="hidden xl:flex flex-1 items-center justify-center gap-x-10 2xl:gap-x-16"
             aria-label="Navegação Principal"
           >
             {mainNavItems.map((item) => {

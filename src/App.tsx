@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { Preloader } from './components/Preloader';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
 import { HomePage } from './pages/HomePage';
@@ -32,6 +33,7 @@ const AppContent: React.FC = () => {
   });
   const [isDossierOpen, setIsDossierOpen] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
+  const [isPreloading, setIsPreloading] = useState(true);
 
   // Sync saved artworks to localStorage
   useEffect(() => {
@@ -92,6 +94,9 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-[#1E1D1A] flex flex-col selection:bg-[#C8A86B]/25">
+      {/* Elegant Entry Preloader */}
+      {isPreloading && <Preloader onComplete={() => setIsPreloading(false)} />}
+
       {/* Floating Glassmorphism Header */}
       <Header
         activeSection={activeSection}
