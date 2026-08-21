@@ -70,6 +70,24 @@ export const TheStoryTimeline: React.FC = () => {
                   alt={activeMilestone.title}
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
+
+                {/* Mobile Prev / Next Arrows overlay on the photo */}
+                <button
+                  disabled={activeMilestoneIndex === 0}
+                  onClick={() => setActiveMilestoneIndex((prev) => Math.max(0, prev - 1))}
+                  aria-label="Fase anterior"
+                  className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#1E1D1A]/70 backdrop-blur-sm text-[#FAF8F5] border border-[#C8A86B]/40 flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-all duration-300 disabled:opacity-30 disabled:pointer-events-none active:scale-90"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  disabled={activeMilestoneIndex === TIMELINE_MILESTONES.length - 1}
+                  onClick={() => setActiveMilestoneIndex((prev) => Math.min(TIMELINE_MILESTONES.length - 1, prev + 1))}
+                  aria-label="Próxima fase"
+                  className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#1E1D1A]/70 backdrop-blur-sm text-[#FAF8F5] border border-[#C8A86B]/40 flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-all duration-300 disabled:opacity-30 disabled:pointer-events-none active:scale-90"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
               </div>
             </div>
 

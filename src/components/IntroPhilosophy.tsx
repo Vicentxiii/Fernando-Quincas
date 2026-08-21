@@ -104,11 +104,11 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
 
               <div className="p-3 rounded-lg bg-[#FAF6EE] border border-[#C8A86B]/15">
                 <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-[#C8A86B] block mb-1">
-                  02 • LUZ
+                  02 • PINTURA
                 </span>
-                <h4 className="font-serif text-sm font-semibold text-[#1E1D1A]">Alquimia do Ouro</h4>
+                <h4 className="font-serif text-sm font-semibold text-[#1E1D1A]">Mestre do Pincel</h4>
                 <p className="text-[11px] text-[#2C2A26]/70 mt-1">
-                  Douração tradicional em folha de ouro 24k brunida com pedras de ágata.
+                  Pintura expressiva que dá vida e alma às superfícies, das peças ornamentais às composições monumentais.
                 </p>
               </div>
 

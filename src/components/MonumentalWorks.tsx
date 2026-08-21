@@ -56,13 +56,13 @@ export const MonumentalWorks: React.FC<MonumentalWorksProps> = ({ onInquireProje
           return (
             <div className="relative rounded-3xl overflow-hidden border border-[#C8A86B]/30 shadow-2xl bg-[#0D1713]">
               {/* Massive Hero Image Canvas */}
-              <div className="relative h-[480px] sm:h-[620px] lg:h-[720px] w-full overflow-hidden group">
+              <div className="relative h-[420px] sm:h-[620px] lg:h-[720px] w-full overflow-hidden group">
                 <img
                   src={project.heroImage}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D1713] via-[#0D1713]/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0D1713] via-[#0D1713]/20 to-transparent" />
 
                 {/* Top Badge Overlay */}
                 <div className="absolute top-6 left-6 right-6 flex items-center justify-between pointer-events-none">
@@ -74,10 +74,10 @@ export const MonumentalWorks: React.FC<MonumentalWorksProps> = ({ onInquireProje
                   </div>
                 </div>
 
-                {/* Bottom Overlay Case Study Card */}
-                <div className="absolute bottom-6 left-6 right-6 lg:left-12 lg:right-12 glass-card rounded-2xl p-6 sm:p-8 border border-[#C8A86B]/40 shadow-2xl text-[#1E1D1A] backdrop-blur-md">
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                    <div className="lg:col-span-8 space-y-2">
+                {/* Bottom Overlay Case Study Card — desktop only, keeps photo visible on mobile */}
+                <div className="hidden lg:block absolute bottom-6 left-12 right-12 glass-card rounded-2xl p-8 border border-[#C8A86B]/40 shadow-2xl text-[#1E1D1A] backdrop-blur-md">
+                  <div className="grid grid-cols-12 gap-6 items-center">
+                    <div className="col-span-8 space-y-2">
                       <div className="flex flex-wrap items-center gap-3 text-xs text-[#9C7D3E] font-mono tracking-wider">
                         <span className="flex items-center gap-1">
                           <MapPin className="w-3.5 h-3.5" />
@@ -88,15 +88,15 @@ export const MonumentalWorks: React.FC<MonumentalWorksProps> = ({ onInquireProje
                         <span>•</span>
                         <span>{project.year}</span>
                       </div>
-                      <h3 className="font-serif text-2xl sm:text-4xl font-light text-[#1E1D1A]">
+                      <h3 className="font-serif text-4xl font-light text-[#1E1D1A]">
                         {project.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-[#2C2A26]/80 font-serif italic line-clamp-2">
+                      <p className="text-sm text-[#2C2A26]/80 font-serif italic line-clamp-2">
                         {project.concept}
                       </p>
                     </div>
 
-                    <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
+                    <div className="col-span-4 flex flex-col gap-3 justify-end">
                       <button
                         onClick={() => setSelectedProject(project)}
                         className="w-full px-6 py-3.5 rounded-full bg-[#1E1D1A] text-[#FAF8F5] hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-all text-xs tracking-[0.2em] font-semibold flex items-center justify-center gap-2 shadow-lg"
@@ -113,6 +113,41 @@ export const MonumentalWorks: React.FC<MonumentalWorksProps> = ({ onInquireProje
                       </button>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Mobile Case Study Card — below the photo, no overlay */}
+              <div className="lg:hidden p-6 sm:p-8 bg-[#FAF8F5] text-[#1E1D1A] border-t border-[#C8A86B]/30">
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[#9C7D3E] font-mono tracking-wider mb-3">
+                  <span className="flex items-center gap-1">
+                    <MapPin className="w-3.5 h-3.5" />
+                    {project.clientOrLocation}
+                  </span>
+                  <span>•</span>
+                  <span>{project.dimensions}</span>
+                  <span>•</span>
+                  <span>{project.year}</span>
+                </div>
+                <h3 className="font-serif text-2xl sm:text-3xl font-light text-[#1E1D1A] mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-[#2C2A26]/80 font-serif italic mb-6">
+                  {project.concept}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <button
+                    onClick={() => setSelectedProject(project)}
+                    className="w-full sm:flex-1 px-6 py-3.5 rounded-full bg-[#1E1D1A] text-[#FAF8F5] hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-all text-xs tracking-[0.2em] font-semibold flex items-center justify-center gap-2 shadow-lg"
+                  >
+                    <Maximize2 className="w-4 h-4" />
+                    <span>VER DOSSIÊ DO PROJETO</span>
+                  </button>
+                  <button
+                    onClick={() => onInquireProject(project.title)}
+                    className="w-full sm:flex-1 px-6 py-3 rounded-full border border-[#C8A86B]/50 hover:bg-[#C8A86B]/15 text-[#1E1D1A] transition-colors text-xs tracking-[0.18em] font-medium flex items-center justify-center gap-2"
+                  >
+                    <span>ENCOMENDAR PROJETO SIMILAR</span>
+                  </button>
                 </div>
               </div>
             </div>

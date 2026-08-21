@@ -15,14 +15,20 @@ export const Hero: React.FC<HeroProps> = ({
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center md:justify-start overflow-hidden bg-[#16251E] text-[#FAF8F5] pt-20 pb-16 px-6 sm:px-8 md:px-0 md:pl-[14%] md:pr-10"
+      className="relative min-h-screen flex items-center justify-center md:justify-start overflow-hidden bg-[#16251E] text-[#FAF8F5] pt-28 sm:pt-24 md:pt-20 pb-16 px-6 sm:px-8 md:px-0 md:pl-[14%] md:pr-10"
     >
       {/* Background Monumental Sculpture & Botanical Imagery */}
       <div className="absolute inset-0 z-0">
         <img
           src={encodeURI('/Atelier Fernando Quincas.png')}
           alt="Atelier do escultor Fernando Quincas com obras monumentais e ornamentação artística"
-          className="w-full h-full object-cover object-right scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
+          className="hidden md:block w-full h-full object-cover object-right scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
+          loading="eager"
+        />
+        <img
+          src={encodeURI('/Hero para Mobile Fernando Quincas Escultor.png')}
+          alt="Atelier do escultor Fernando Quincas com obras monumentais e ornamentação artística"
+          className="md:hidden w-full h-full object-cover object-center scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"
         />
         {/* Editorial Gradients & Vignettes */}

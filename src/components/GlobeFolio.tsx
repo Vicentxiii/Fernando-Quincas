@@ -131,10 +131,10 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     container.appendChild(canvas);
 
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    const count = Math.min(cardCount, isMobile ? Math.round(cardCount / 2) : cardCount);
-    const sphereRadius = isMobile ? radius * 0.81 : radius * 1.53;
-    const cardWidth = sphereRadius * 0.18;
-    const cardHeight = sphereRadius * 0.225;
+    const count = Math.min(cardCount, isMobile ? cardCount : cardCount);
+    const sphereRadius = isMobile ? radius * 0.6 : radius * 1.53;
+    const cardWidth = sphereRadius * (isMobile ? 0.26 : 0.18);
+    const cardHeight = sphereRadius * (isMobile ? 0.325 : 0.225);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
