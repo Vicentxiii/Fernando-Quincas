@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="hidden xl:flex shrink-0 w-[140px] 2xl:w-[240px] items-center justify-end gap-3 2xl:gap-4">
             <button
               onClick={() => handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' })}
-              className={`group hidden xl:inline-flex items-center gap-1.5 whitespace-nowrap text-[10px] xl:text-[11px] tracking-[0.18em] uppercase font-medium transition-colors duration-300 ${
+              className={`group hidden xl:inline-flex items-center gap-1.5 whitespace-nowrap ml-8 2xl:ml-12 text-[10px] xl:text-[11px] tracking-[0.18em] uppercase font-medium transition-colors duration-300 ${
                 activeSection === 'contact' ? 'text-[#C8A86B]' : 'text-[#2C2A26]/70 hover:text-[#C8A86B]'
               }`}
             >
