@@ -10,9 +10,14 @@ import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
+import { CartProvider } from './context/CartContext';
+import { CartDrawer } from './components/shop/CartDrawer';
 import { HomePage } from './pages/HomePage';
 import { BlogIndexPage } from './pages/BlogIndexPage';
 import { BlogPostPage } from './pages/BlogPostPage';
+import { ShopPage } from './pages/ShopPage';
+import { ProductPage } from './pages/ProductPage';
+import { CheckoutPage } from './pages/CheckoutPage';
 import { Artwork } from './types';
 
 const SECTION_IDS = ['home', 'artist', 'story', 'monumental', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
@@ -118,6 +123,9 @@ const AppContent: React.FC = () => {
           />
           <Route path="/blog" element={<BlogIndexPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/loja" element={<ShopPage />} />
+          <Route path="/loja/checkout" element={<CheckoutPage />} />
+          <Route path="/loja/:slug" element={<ProductPage />} />
           <Route
             path="*"
             element={
@@ -156,6 +164,9 @@ const AppContent: React.FC = () => {
         onProceedToInquiry={() => handleNavigate('contact')}
       />
 
+      {/* Shop Cart Drawer (global, accessible across the whole site) */}
+      <CartDrawer />
+
       {/* Detailed Artwork Inspector Modal (from dossier drawer) */}
       <ArtworkModal
         artwork={selectedArtwork}
@@ -171,7 +182,9 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <BrowserRouter>
-      <AppContent />
+      <CartProvider>
+        <AppContent />
+      </CartProvider>
     </BrowserRouter>
   );
 }

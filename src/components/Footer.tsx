@@ -50,6 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </span>
             <ul className="space-y-2 text-[#FAF8F5]/75">
               <li><button onClick={() => onNavigate('home')} className="hover:text-[#E0C995]">Início</button></li>
+              <li><Link to="/loja" className="hover:text-[#E0C995]">Loja — Obras Disponíveis</Link></li>
               <li><button onClick={() => onNavigate('artist')} className="hover:text-[#E0C995]">O Artista & Filosofia</button></li>
               <li><button onClick={() => onNavigate('story')} className="hover:text-[#E0C995]">Trajetória na Escultura</button></li>
               <li><button onClick={() => onNavigate('monumental')} className="hover:text-[#E0C995]">Obras Monumentais</button></li>
@@ -96,11 +97,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom Colophon Bar */}
         <div className="pt-10 border-t border-[#FAF8F5]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-[#FAF8F5]/50">
           <div>
-            © {new Date().getFullYear()} Fernando Quincas Ateliê. Todos os direitos reservados.
+            © {new Date().getFullYear()} Fernando Quincas. Todos os direitos reservados.
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a
+              href="https://www.instagram.com/fernando_quincas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#E0C995] transition-colors"
+            >
+              Instagram
+            </a>
+            <Link to="/loja" className="hover:text-[#E0C995] transition-colors">
+              Loja
+            </Link>
+            <span>Termos</span>
+            <span>Privacidade</span>
           </div>
           <div className="flex items-center gap-6">
             <span>Arte Escultural × Natureza</span>
-            <span>Folha de Ouro 24k & Compósitos Monumentais</span>
           </div>
         </div>
 

@@ -150,6 +150,30 @@ export interface BlogPost {
   blocks: BlogBlock[];
 }
 
+export type ProductCategory = 'ESCULTURAS' | 'OBRAS' | 'EDIÇÕES' | 'OBJETOS' | 'COLEÇÕES';
+
+export type ProductStatus = 'AVAILABLE' | 'SOLD';
+
+export interface Product {
+  id: string;
+  slug: string;
+  name: string;
+  category: ProductCategory;
+  shortDescription: string;
+  description: string[];
+  price: number;
+  images: string[];
+  dimensions?: string;
+  materials?: string[];
+  technique?: string;
+  year?: number;
+  weight?: string;
+  edition?: string;
+  stock: number;
+  status: ProductStatus;
+  featured?: boolean;
+}
+
 export interface InquiryFormData {
   name: string;
   email: string;

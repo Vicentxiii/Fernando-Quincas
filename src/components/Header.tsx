@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Bookmark, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Bookmark, Menu, X, ArrowUpRight, ShoppingBag } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 interface HeaderProps {
   activeSection: string;
@@ -25,6 +26,8 @@ export const Header: React.FC<HeaderProps> = ({
   const navigate = useNavigate();
   const location = useLocation();
   const isBlogRoute = location.pathname.startsWith('/blog');
+  const isShopRoute = location.pathname.startsWith('/loja');
+  const { count: cartCount, openCart } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -40,6 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
   const mainNavItems: NavItem[] = [
     { id: 'artist', label: 'O ARTISTA', subtitle: 'Biografia & Filosofia' },
     { id: 'works', label: 'OBRAS', subtitle: 'Galeria de Esculturas' },
+    { id: 'shop', label: 'LOJA', subtitle: 'Obras & Edições Disponíveis', route: '/loja' },
     { id: 'atelier', label: 'ATELIÊ', subtitle: 'Processo Criativo' },
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
     { id: 'boutique', label: 'COLEÇÃO', subtitle: 'Peças & Esculturas' },
@@ -59,6 +63,13 @@ export const Header: React.FC<HeaderProps> = ({
       onNavigate(item.id);
     }
     setIsMobileMenuOpen(false);
+  };
+
+  const isRouteActive = (route?: string) => {
+    if (!route) return false;
+    if (route.startsWith('/blog')) return isBlogRoute;
+    if (route.startsWith('/loja')) return isShopRoute;
+    return false;
   };
 
   return (
@@ -99,7 +110,7 @@ export const Header: React.FC<HeaderProps> = ({
             aria-label="Navegação Principal"
           >
             {mainNavItems.map((item) => {
-              const isActive = item.route ? isBlogRoute : activeSection === item.id;
+              const isActive = item.route ? isRouteActive(item.route) : activeSection === item.id;
               return (
                 <button
                   key={item.id}
@@ -120,7 +131,7 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Actions — Contact (text) + Dossier (pill), visually separated */}
+          {/* Actions — Contact (text) + Cart + Dossier (pill), visually separated */}
           <div className="hidden xl:flex shrink-0 w-[140px] 2xl:w-[240px] items-center justify-end gap-3 2xl:gap-4">
             <button
               onClick={() => handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' })}
@@ -130,6 +141,21 @@ export const Header: React.FC<HeaderProps> = ({
             >
               CONTATO
               <ArrowUpRight className="w-3 h-3 text-[#C8A86B] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </button>
+
+            {/* Shop Cart Button */}
+            <button
+              onClick={openCart}
+              className="relative p-2.5 rounded-full border border-[#C8A86B]/35 bg-[#FAF8F5]/70 hover:border-[#C8A86B] transition-colors duration-300"
+              aria-label={`Abrir carrinho${cartCount > 0 ? ` (${cartCount} itens)` : ''}`}
+              title="Abrir carrinho"
+            >
+              <ShoppingBag className="w-4 h-4 text-[#1E1D1A]" strokeWidth={1.75} />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
             </button>
 
             {/* Collector Dossier Drawer Button */}
@@ -151,6 +177,19 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Mobile / Tablet Actions — compact, not a squeezed desktop nav */}
           <div className="xl:hidden flex items-center gap-2">
+            <button
+              onClick={openCart}
+              className="relative p-2.5 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
+              aria-label={`Abrir carrinho${cartCount > 0 ? ` (${cartCount} itens)` : ''}`}
+              title="Abrir carrinho"
+            >
+              <ShoppingBag className="w-4 h-4 text-[#1E1D1A]" strokeWidth={1.75} />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+            </button>
             <button
               onClick={onOpenDossier}
               className="relative p-2.5 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
@@ -201,7 +240,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="py-6 flex flex-col gap-3 sm:gap-4 overflow-y-auto">
             {mobileNavItems.map((item, idx) => {
               const isActive = item.route
-                ? isBlogRoute
+                ? isRouteActive(item.route)
                 : activeSection === item.id;
               return (
                 <button
@@ -234,6 +273,10 @@ export const Header: React.FC<HeaderProps> = ({
               <span>Ateliê & Parque de Esculturas • Minas Gerais</span>
             </div>
             <div className="flex items-center gap-4 text-[#C8A86B]">
+              <button onClick={() => { setIsMobileMenuOpen(false); openCart(); }} className="flex items-center gap-1 hover:underline">
+                <ShoppingBag className="w-3.5 h-3.5" />
+                <span>Carrinho ({cartCount})</span>
+              </button>
               <button onClick={() => { setIsMobileMenuOpen(false); onOpenDossier(); }} className="flex items-center gap-1 hover:underline">
                 <span>Ver Dossiê ({savedCount})</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
