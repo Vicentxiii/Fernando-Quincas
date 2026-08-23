@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /loja/pedido/
+Disallow: /api/
+
+Sitemap: https://fernandoquincas.art/sitemap.xml

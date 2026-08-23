@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
+import { ShopPreloader } from './components/ShopPreloader';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
 import { CartProvider } from './context/CartContext';
@@ -18,6 +19,7 @@ import { BlogPostPage } from './pages/BlogPostPage';
 import { ShopPage } from './pages/ShopPage';
 import { ProductPage } from './pages/ProductPage';
 import { CheckoutPage } from './pages/CheckoutPage';
+import { OrderStatusPage } from './pages/OrderStatusPage';
 import { Artwork } from './types';
 
 const SECTION_IDS = ['home', 'artist', 'story', 'monumental', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
@@ -39,6 +41,16 @@ const AppContent: React.FC = () => {
   const [isDossierOpen, setIsDossierOpen] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
   const [isPreloading, setIsPreloading] = useState(true);
+  const [isShopPreloading, setIsShopPreloading] = useState(false);
+  const prevPathRef = useRef(location.pathname);
+
+  // Elegant curtain preloader when entering the Shop from another page
+  useEffect(() => {
+    if (location.pathname === '/loja' && prevPathRef.current !== '/loja') {
+      setIsShopPreloading(true);
+    }
+    prevPathRef.current = location.pathname;
+  }, [location.pathname]);
 
   // Sync saved artworks to localStorage
   useEffect(() => {
@@ -102,6 +114,11 @@ const AppContent: React.FC = () => {
       {/* Elegant Entry Preloader */}
       {isPreloading && <Preloader onComplete={() => setIsPreloading(false)} />}
 
+      {/* Shop Route Preloader */}
+      {isShopPreloading && (
+        <ShopPreloader onFinish={() => setIsShopPreloading(false)} />
+      )}
+
       {/* Floating Glassmorphism Header */}
       <Header
         activeSection={activeSection}
@@ -125,6 +142,7 @@ const AppContent: React.FC = () => {
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/loja" element={<ShopPage />} />
           <Route path="/loja/checkout" element={<CheckoutPage />} />
+          <Route path="/loja/pedido/:id" element={<OrderStatusPage />} />
           <Route path="/loja/:slug" element={<ProductPage />} />
           <Route
             path="*"

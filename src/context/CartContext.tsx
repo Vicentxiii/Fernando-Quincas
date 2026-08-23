@@ -1,11 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PRODUCTS } from '../data/products';
 import { Product } from '../types';
-
-interface CartLine {
-  slug: string;
-  qty: number;
-}
+import { addToLines, removeFromLines, setLineQty, CartLine } from '../lib/cartRules';
 
 interface CartContextValue {
   lines: CartLine[];
@@ -52,32 +48,17 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [lines]);
 
   const addItem = useCallback((slug: string, qty = 1) => {
-    const product = PRODUCTS.find((p) => p.slug === slug);
-    if (!product || product.status !== 'AVAILABLE' || product.stock <= 0) return;
-    setLines((prev) => {
-      const existing = prev.find((l) => l.slug === slug);
-      if (existing) {
-        return prev.map((l) =>
-          l.slug === slug ? { ...l, qty: Math.min(l.qty + qty, product.stock) } : l
-        );
-      }
-      return [...prev, { slug, qty: Math.min(qty, product.stock) }];
-    });
+    if (!PRODUCTS.some((p) => p.slug === slug)) return;
+    setLines((prev) => addToLines(prev, slug, qty));
     setIsOpen(true);
   }, []);
 
   const removeItem = useCallback((slug: string) => {
-    setLines((prev) => prev.filter((l) => l.slug !== slug));
+    setLines((prev) => removeFromLines(prev, slug));
   }, []);
 
   const setQty = useCallback((slug: string, qty: number) => {
-    const product = PRODUCTS.find((p) => p.slug === slug);
-    const max = product ? product.stock : 99;
-    setLines((prev) =>
-      qty <= 0
-        ? prev.filter((l) => l.slug !== slug)
-        : prev.map((l) => (l.slug === slug ? { ...l, qty: Math.min(qty, max) } : l))
-    );
+    setLines((prev) => setLineQty(prev, slug, qty));
   }, []);
 
   const clear = useCallback(() => setLines([]), []);

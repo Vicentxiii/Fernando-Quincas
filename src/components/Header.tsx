@@ -41,12 +41,9 @@ export const Header: React.FC<HeaderProps> = ({
   }, []);
 
   const mainNavItems: NavItem[] = [
-    { id: 'artist', label: 'O ARTISTA', subtitle: 'Biografia & Filosofia' },
-    { id: 'works', label: 'OBRAS', subtitle: 'Galeria de Esculturas' },
     { id: 'shop', label: 'LOJA', subtitle: 'Obras & Edições Disponíveis', route: '/loja' },
     { id: 'atelier', label: 'ATELIÊ', subtitle: 'Processo Criativo' },
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
-    { id: 'boutique', label: 'COLEÇÃO', subtitle: 'Peças & Esculturas' },
     { id: 'commissions', label: 'ENCOMENDAS', subtitle: 'Projetos sob Medida' },
     { id: 'blog', label: 'BLOG', subtitle: 'Diário & Ensaios', route: '/blog' },
   ];

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Artwork } from '../types';
 import { ARTWORKS } from '../data/artworks';
 import { X, Trash2, Bookmark, Send } from 'lucide-react';
@@ -20,13 +20,28 @@ export const InquiryDossierDrawer: React.FC<InquiryDossierDrawerProps> = ({
   onSelectArtwork,
   onProceedToInquiry,
 }) => {
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   const savedArtworks = ARTWORKS.filter((a) => savedArtworkIds.includes(a.id));
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="w-full max-w-lg bg-[#FAF8F5] text-[#1E1D1A] h-full shadow-2xl flex flex-col justify-between border-l border-[#C8A86B]/30 animate-slideInRight">
+    <div
+      className={`fixed inset-0 z-50 flex justify-end bg-black/60 backdrop-blur-sm dossier-overlay ${
+        isOpen ? 'is-open' : ''
+      }`}
+    >
+      <div
+        className={`w-full max-w-lg bg-[#FAF8F5] text-[#1E1D1A] h-full shadow-2xl flex flex-col justify-between border-l border-[#C8A86B]/30 dossier-panel ${
+          isOpen ? 'is-open' : ''
+        }`}
+      >
         {/* Drawer Header */}
         <div className="p-6 sm:p-8 border-b border-[#C8A86B]/25 flex items-center justify-between">
           <div className="flex items-center gap-3">
