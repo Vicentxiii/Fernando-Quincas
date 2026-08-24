@@ -34,6 +34,12 @@ export function webhookUrl(): string {
   return `${appUrl()}/api/webhooks/mercadopago`;
 }
 
+/** O Mercado Pago rejeita localhost como notification_url — omitir em dev local. */
+function notificationUrl(): string | undefined {
+  if (/localhost|127\.0\.0\.1/.test(appUrl())) return undefined;
+  return webhookUrl();
+}
+
 async function mpFetch<T>(
   path: string,
   init: RequestInit & { idempotencyKey?: string } = {}
@@ -92,7 +98,7 @@ export async function createPixPayment(
       description: `Ateliê Fernando Quincas — Pedido ${order.code}`,
       payment_method_id: 'pix',
       external_reference: order.id,
-      notification_url: webhookUrl(),
+      notification_url: notificationUrl(),
       statement_descriptor: 'ATELIE FQUINCAS',
       payer: {
         email: payerEmail,
@@ -168,7 +174,7 @@ export async function createCardPreference(
       binary_mode: true,
       external_reference: order.id,
       statement_descriptor: 'ATELIE FQUINCAS',
-      notification_url: webhookUrl(),
+      notification_url: notificationUrl(),
     }),
   });
 
