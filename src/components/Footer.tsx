@@ -87,9 +87,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               LOCALIZAÇÃO & CONTATO
             </span>
             <div className="text-[#FAF8F5]/75 space-y-2 leading-relaxed font-light">
-              <p><strong>Ateliê:</strong> Minas Gerais, Brasil</p>
-              <p><strong>Parque:</strong> Serra dos Órgãos</p>
-              <p className="text-[#E0C995]">contato@fernandoquincas.art</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Que%C3%B3ps+1923+Jardim+Ellus+S%C3%A3o+Paulo+SP+04852670"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-[#E0C995] transition-colors"
+              >
+                Rua Queóps, 1923 — Esq. R. Rodrigues<br />
+                Jardim Ellus — São Paulo / SP<br />
+                CEP 04852-670
+              </a>
+              <a href="mailto:byfernandoscenesgarden@gmail.com" className="block text-[#E0C995] hover:text-[#FAF8F5] transition-colors">byfernandoscenesgarden@gmail.com</a>
             </div>
           </div>
         </div>

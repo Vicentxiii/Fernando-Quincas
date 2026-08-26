@@ -13,7 +13,7 @@ import { Order } from './types';
  * Enviados: confirmação ao cliente, aviso de venda ao ateliê, atualizações de status.
  */
 
-const ATELIER_INBOX = process.env.ATELIER_EMAIL || 'contato@fernandoquincas.art';
+const ATELIER_INBOX = process.env.ATELIER_EMAIL || 'byfernandoscenesgarden@gmail.com';
 
 function isEmailConfigured(): boolean {
   return Boolean(process.env.RESEND_API_KEY && process.env.EMAIL_FROM);

@@ -45,7 +45,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, eager = false
       <div className="pt-5 pb-1 space-y-1.5 px-0.5">
         <div className="flex items-baseline justify-between gap-3">
           <span className="text-[9px] font-mono tracking-[0.28em] uppercase text-[#C8A86B]">
-            {product.category}
+            {product.categories ? product.categories.join(' • ') : product.category}
           </span>
           <span
             className={`flex items-center gap-1.5 text-[9px] font-mono tracking-[0.18em] uppercase ${

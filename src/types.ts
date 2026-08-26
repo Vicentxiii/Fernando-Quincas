@@ -159,6 +159,8 @@ export interface Product {
   slug: string;
   name: string;
   category: ProductCategory;
+  /** Categorias adicionais para filtros — permite que a obra apareça em mais de um filtro (ex.: OBRAS e ESCULTURAS) */
+  categories?: ProductCategory[];
   shortDescription: string;
   description: string[];
   price: number;

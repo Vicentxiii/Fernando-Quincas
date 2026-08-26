@@ -300,7 +300,7 @@ export const OrderStatusPage: React.FC = () => {
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href={`mailto:contato@fernandoquincas.art?subject=${encodeURIComponent(
+                  href={`mailto:byfernandoscenesgarden@gmail.com?subject=${encodeURIComponent(
                     `Dúvida sobre o pedido ${order.code}`
                   )}`}
                   className="text-[10px] font-mono tracking-[0.22em] uppercase text-[#8A82A5] hover:text-[#C8A86B] transition-colors underline underline-offset-4 decoration-[#C8A86B]/40"

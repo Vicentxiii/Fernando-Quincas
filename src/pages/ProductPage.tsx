@@ -31,7 +31,7 @@ export const ProductPage: React.FC = () => {
       '@type': 'Product',
       name: product.name,
       description: product.shortDescription,
-      category: product.category,
+      category: product.categories ? product.categories.join(', ') : product.category,
       image: product.images,
       brand: { '@type': 'Brand', name: 'Fernando Quincas Ateliê' },
       offers: {
@@ -103,7 +103,7 @@ export const ProductPage: React.FC = () => {
                 }}
                 className="hover:text-[#C8A86B] transition-colors"
               >
-                {product.category}
+                {product.categories ? product.categories.join(' • ') : product.category}
               </Link>
             </li>
             <li aria-hidden className="hidden sm:block text-[#C8A86B]/60">
@@ -134,7 +134,7 @@ export const ProductPage: React.FC = () => {
             <div className="space-y-4">
               <span className="inline-flex items-center gap-2 text-[10px] font-mono tracking-[0.3em] uppercase text-[#C8A86B]">
                 <span className="w-8 h-px bg-[#C8A86B]/60" />
-                {product.category}
+                {product.categories ? product.categories.join(' • ') : product.category}
                 {product.year ? ` · ${product.year}` : ''}
               </span>
 
@@ -179,7 +179,7 @@ export const ProductPage: React.FC = () => {
                   Obra Adquirida
                 </div>
                 <a
-                  href={`mailto:contato@fernandoquincas.art?subject=${encodeURIComponent(
+                  href={`mailto:byfernandoscenesgarden@gmail.com?subject=${encodeURIComponent(
                     `Lista de interesse — ${product.name}`
                   )}`}
                   className="group flex items-center gap-2 text-[11px] font-mono tracking-[0.18em] uppercase text-[#C8A86B] hover:text-[#9C7D3E] transition-colors underline underline-offset-4 decoration-[#C8A86B]/40"

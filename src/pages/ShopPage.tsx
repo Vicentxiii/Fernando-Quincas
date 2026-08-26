@@ -26,15 +26,17 @@ export const ShopPage: React.FC = () => {
     let list = PRODUCTS;
     if (query.trim()) {
       const q = query.trim().toLowerCase();
-      list = list.filter(
-        (p) =>
+      list = list.filter((p) => {
+        const cats = [p.category, ...(p.categories ?? [])].map((c) => c.toLowerCase());
+        return (
           p.name.toLowerCase().includes(q) ||
-          p.category.toLowerCase().includes(q) ||
+          cats.some((c) => c.includes(q)) ||
           p.shortDescription.toLowerCase().includes(q)
-      );
+        );
+      });
     }
     if (filter !== 'ALL') {
-      list = list.filter((p) => p.category === filter);
+      list = list.filter((p) => p.category === filter || (p.categories?.includes(filter) ?? false));
     }
     return list;
   }, [filter, query]);

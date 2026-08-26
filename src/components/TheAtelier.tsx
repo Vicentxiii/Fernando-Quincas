@@ -22,8 +22,8 @@ export const TheAtelier: React.FC = () => {
               Onde a imaginação se faz matéria.
             </p>
           </div>
-          <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
-            Argila viva, compósitos estruturais, entalhe em madeiras nobres e folhas de ouro 24k. Um olhar autêntico no coração do ateliê em Minas Gerais.
+            <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
+            Argila viva, compósitos estruturais, entalhe em madeiras nobres e folhas de ouro 24k. Um olhar autêntico no coração do ateliê em São Paulo — Jardim Ellus.
           </p>
         </div>
 

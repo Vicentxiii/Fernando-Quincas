@@ -71,8 +71,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <span className="italic font-normal text-[#9C7D3E]">EXTRAORDINÁRIO</span>
             </h2>
           </div>
-          <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
-            Visitas privativas ao Ateliê e Parque de Esculturas em Minas Gerais são agendadas mediante contato prévio.
+            <p className="max-w-md text-sm text-[#2C2A26]/80 font-light leading-relaxed">
+            Visitas privativas ao Ateliê em São Paulo são agendadas mediante contato prévio.
           </p>
         </div>
 
@@ -214,18 +214,25 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Right Column: Atelier Coordinates */}
           <div className="lg:col-span-5 space-y-8 flex flex-col justify-between">
             <div className="space-y-6">
-              {/* Minas Gerais Sanctuary */}
-              <div className="p-6 rounded-2xl bg-[#FAF6EE] border border-[#C8A86B]/30 space-y-2">
+              {/* São Paulo Atelier */}
+              <div className="p-6 rounded-2xl bg-[#FAF6EE] border border-[#C8A86B]/30 space-y-3">
                 <span className="text-[10px] font-mono tracking-widest text-[#C8A86B] uppercase block">
-                  ATELIÊ PRINCIPAL & PARQUE DE ESCULTURAS
+                  ATELIÊ PRINCIPAL
                 </span>
                 <h4 className="font-serif text-xl text-[#1E1D1A]">
                   Ateliê Fernando Quincas
                 </h4>
-                <p className="text-xs text-[#2C2A26]/80 font-mono leading-relaxed">
-                  Região Serrana • Minas Gerais<br />
-                </p>
-                <div className="text-xs font-mono text-[#8A82A5] pt-2">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Rua+Que%C3%B3ps+1923+Jardim+Ellus+S%C3%A3o+Paulo+SP+04852670"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-xs text-[#2C2A26]/80 font-mono leading-relaxed hover:text-[#9C7D3E] transition-colors"
+                >
+                  Rua Queóps, 1923<br />
+                  Esquina R. Rodrigues - Jardim Ellus<br />
+                  São Paulo - SP · CEP 04852-670
+                </a>
+                <div className="text-xs font-mono text-[#8A82A5] pt-1">
                   * Visitas privativas agendadas previamente
                 </div>
               </div>
@@ -234,7 +241,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <div className="space-y-3 pt-2 text-xs font-mono text-[#1E1D1A]">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#C8A86B]" />
-                  <span>contato@fernandoquincas.art</span>
+                  <a href="mailto:byfernandoscenesgarden@gmail.com" className="hover:text-[#9C7D3E] transition-colors">byfernandoscenesgarden@gmail.com</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#C8A86B]" />
