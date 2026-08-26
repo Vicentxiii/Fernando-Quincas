@@ -11,6 +11,7 @@ import { Preloader } from './components/Preloader';
 import { ShopPreloader } from './components/ShopPreloader';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { CartProvider } from './context/CartContext';
 import { CartDrawer } from './components/shop/CartDrawer';
 import { HomePage } from './pages/HomePage';
@@ -184,6 +185,9 @@ const AppContent: React.FC = () => {
 
       {/* Shop Cart Drawer (global, accessible across the whole site) */}
       <CartDrawer />
+
+      {/* WhatsApp floating button — canto inferior esquerdo fixo */}
+      <WhatsAppButton />
 
       {/* Detailed Artwork Inspector Modal (from dossier drawer) */}
       <ArtworkModal

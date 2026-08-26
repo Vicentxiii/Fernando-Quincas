@@ -184,6 +184,24 @@
   to { width: 100%; }
 }
 
+/* WhatsApp floating button pulse */
+@keyframes whatsapp-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.28;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="whatsapp-pulse"] {
+    animation: none !important;
+  }
+}
+
 /* Dossier drawer enter/exit */.dossier-overlay {
   opacity: 0;
   pointer-events: none;
