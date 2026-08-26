@@ -238,7 +238,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#C8A86B]" />
-                  <span>+55 (24) 2244-8800 / +55 (21) 99888-7700</span>
+                  <span>+55 11 97585-5263</span>
                 </div>
               </div>
             </div>
