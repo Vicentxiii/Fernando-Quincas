@@ -4,10 +4,10 @@ interface ShopPreloaderProps {
   onFinish: () => void;
 }
 
-const DRAW_MS = 1800;
-const HOLD_MS = 1200;
-const EXIT_MS = 1000;
-const TOTAL_MS = DRAW_MS + HOLD_MS + EXIT_MS;
+const DRAW_MS = 600;
+const HOLD_MS = 500;
+const EXIT_MS = 400;
+const TOTAL_MS = 1500;
 
 export const ShopPreloader: React.FC<ShopPreloaderProps> = ({ onFinish }) => {
   const [exiting, setExiting] = useState(false);

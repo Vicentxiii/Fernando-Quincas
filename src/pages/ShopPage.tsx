@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, SlidersHorizontal, X, ArrowRight, ShieldCheck, Truck, Award, HandHeart } from 'lucide-react';
+import { Search, SlidersHorizontal, X, ArrowRight, ChevronLeft, ChevronRight, ShieldCheck, Truck, Award, HandHeart } from 'lucide-react';
 import { PRODUCTS, SHOP_FILTERS, getFeaturedProduct, formatPrice } from '../data/products';
 import { ProductCategory } from '../types';
 import { ProductCard } from '../components/shop/ProductCard';
@@ -21,6 +21,38 @@ export const ShopPage: React.FC = () => {
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
 
   const featured = getFeaturedProduct();
+  const [featuredIdx, setFeaturedIdx] = useState(0);
+  const [isFeaturedHovered, setIsFeaturedHovered] = useState(false);
+
+  useEffect(() => {
+    if (!featured) {
+      setFeaturedIdx(0);
+      return;
+    }
+    // Mantém fundo verde como primeira na galeria do produto, mas a hero/frontend inicia no jardim conforme pedido anterior
+    const jardimIdx = featured.images.findIndex((img) => img.includes('jardim'));
+    setFeaturedIdx(jardimIdx >= 0 ? jardimIdx : 0);
+  }, [featured?.id]);
+
+  const featuredImages = featured?.images ?? [];
+  const featuredHasMultiple = featuredImages.length > 1;
+  const goPrevFeatured = () => {
+    if (!featured) return;
+    setFeaturedIdx((i) => (i - 1 + featuredImages.length) % featuredImages.length);
+  };
+  const goNextFeatured = () => {
+    if (!featured) return;
+    setFeaturedIdx((i) => (i + 1) % featuredImages.length);
+  };
+
+  // Carrossel WEBGL elegante — avança a cada 2s, pausa no hover
+  useEffect(() => {
+    if (!featuredHasMultiple || isFeaturedHovered) return;
+    const id = window.setInterval(() => {
+      setFeaturedIdx((i) => (i + 1) % featuredImages.length);
+    }, 2000);
+    return () => window.clearInterval(id);
+  }, [featuredHasMultiple, featuredImages.length, isFeaturedHovered]);
 
   const visibleProducts = useMemo(() => {
     let list = PRODUCTS;
@@ -99,7 +131,7 @@ export const ShopPage: React.FC = () => {
               >
                 <img
                   src={
-                    featured?.images[0] ??
+                    (featuredImages.find((img) => img.includes('jardim')) ?? featured?.images[0]) ??
                     'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=85'
                   }
                   alt={featured ? featured.name : 'Obra em destaque'}
@@ -134,14 +166,74 @@ export const ShopPage: React.FC = () => {
           <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 order-2 lg:order-1">
               <Reveal>
-                <div className="rounded-3xl overflow-hidden border border-[#E0C995]/25 aspect-[16/11]">
-                  <img
-                    src={featured.images[1] ?? featured.images[0]}
-                    alt={featured.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-[1200ms]"
-                  />
+                <div
+                  className="relative rounded-3xl overflow-hidden border border-[#E0C995]/25 aspect-[16/11] group bg-[#0F1B15]"
+                  onMouseEnter={() => setIsFeaturedHovered(true)}
+                  onMouseLeave={() => setIsFeaturedHovered(false)}
+                >
+                  {/* WEBGL elegante — crossfade + zoom + blur/displace a cada 2s */}
+                  <div className="absolute inset-0">
+                    {featuredImages.map((img, i) => (
+                      <img
+                        key={img}
+                        src={img}
+                        alt={featured.name}
+                        loading={i === featuredIdx ? 'eager' : 'lazy'}
+                        decoding="async"
+                        className={`absolute inset-0 w-full h-full object-cover will-change-transform transition-all duration-[1200ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] ${
+                          i === featuredIdx
+                            ? 'opacity-100 scale-100 blur-0 brightness-100'
+                            : 'opacity-0 scale-[1.08] blur-[6px] brightness-110'
+                        }`}
+                        style={{
+                          filter: i === featuredIdx ? 'blur(0px) brightness(1)' : 'blur(6px) brightness(1.1)',
+                        }}
+                      />
+                    ))}
+                    {/* Véu WEBGL sutil — gradiente animado que simula displacement */}
+                    <div className="pointer-events-none absolute inset-0 opacity-30 mix-blend-soft-light bg-gradient-to-br from-[#C8A86B]/20 via-transparent to-[#1E3A68]/20 transition-opacity duration-[1200ms]" />
+                  </div>
+                  {/* Setas ao lado da foto principal — navega sem entrar na página */}
+                  {featuredHasMultiple && (
+                    <>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          goPrevFeatured();
+                        }}
+                        aria-label="Imagem anterior da obra em destaque"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#16251E]/60 backdrop-blur-md border border-[#E0C995]/40 text-[#FAF8F5] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#16251E] hover:border-[#C8A86B] transition-colors duration-200"
+                      >
+                        <ChevronLeft className="w-5 h-5" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          goNextFeatured();
+                        }}
+                        aria-label="Próxima imagem da obra em destaque"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#16251E]/60 backdrop-blur-md border border-[#E0C995]/40 text-[#FAF8F5] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#16251E] hover:border-[#C8A86B] transition-colors duration-200"
+                      >
+                        <ChevronRight className="w-5 h-5" />
+                      </button>
+                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#16251E]/55 backdrop-blur-md border border-[#E0C995]/20">
+                        {featuredImages.map((_, i) => (
+                          <button
+                            key={i}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              setFeaturedIdx(i);
+                            }}
+                            aria-label={`Ir para imagem ${i + 1}`}
+                            className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${i === featuredIdx ? 'bg-[#E0C995] w-4' : 'bg-[#FAF8F5]/60 hover:bg-[#FAF8F5]'}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
               </Reveal>
             </div>

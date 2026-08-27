@@ -10,6 +10,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ product }) => {
   const images = product.images;
   const [index, setIndex] = useState(0);
   const [zoomed, setZoomed] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const go = useCallback(
@@ -34,11 +35,20 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ product }) => {
     return () => window.removeEventListener('keydown', onKey);
   }, [go]);
 
+  // Slide automático elegante dentro do container — igual ao esquema da Fonte (WEBGL suave) — pausa no hover/zoom
+  useEffect(() => {
+    if (images.length <= 1 || zoomed || isHovered) return;
+    const id = window.setInterval(() => go(1), 2500);
+    return () => window.clearInterval(id);
+  }, [images.length, zoomed, isHovered, go]);
+
   return (
     <div className="space-y-4">
-      {/* Main stage */}
+      {/* Main stage — slide passando por dentro do container */}
       <div
         className="relative overflow-hidden rounded-3xl border border-[#C8A86B]/25 bg-[#EAE5D8] group/stage select-none"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         onTouchStart={(e) => {
           touchStartX.current = e.touches[0].clientX;
         }}

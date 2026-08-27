@@ -70,6 +70,7 @@ export const ProductPage: React.FC = () => {
   }
 
   const available = isAvailable(product);
+  const isObra = product.category === 'OBRAS' || product.categories?.includes('OBRAS');
 
   const details: { label: string; value?: string | number }[] = [
     { label: 'Dimensões', value: product.dimensions },
@@ -170,13 +171,13 @@ export const ProductPage: React.FC = () => {
                 onClick={() => addItem(product.slug)}
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-[11px] font-mono tracking-[0.25em] uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors duration-300 min-h-[52px]"
               >
-                Adquirir Obra
+                {isObra ? 'Adquirir Obra' : 'Adquirir'}
                 <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
             ) : (
               <div className="space-y-4">
                 <div className="inline-flex w-full sm:w-auto items-center justify-center px-10 py-4 rounded-full border border-[#C8A86B]/40 bg-[#FDFCFB] text-[11px] font-mono tracking-[0.25em] uppercase text-[#8A82A5] cursor-default">
-                  Obra Adquirida
+                  {isObra ? 'Obra Adquirida' : 'Produto Esgotado'}
                 </div>
                 <a
                   href={`mailto:byfernandoscenesgarden@gmail.com?subject=${encodeURIComponent(
@@ -231,7 +232,7 @@ export const ProductPage: React.FC = () => {
         <Reveal>
           <div className="max-w-2xl space-y-6 border-t border-[#C8A86B]/25 pt-14">
             <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#C8A86B] block">
-              Sobre a Obra
+              {isObra ? 'Sobre a Obra' : 'Sobre a Peça'}
             </span>
             {product.description.map((paragraph, i) => (
               <p key={i} className="text-base font-light text-[#2C2A26]/85 leading-[1.9]">

@@ -4,10 +4,15 @@ import { Newspaper, Sparkles, Clock, ArrowUpRight, BookOpen } from 'lucide-react
 import { BLOG_CATEGORIES, BLOG_CATEGORY_LABELS, BLOG_POSTS } from '../data/blog';
 import { BlogCategory } from '../types';
 import { BlogCard } from '../components/blog/BlogCard';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 type CategoryFilter = BlogCategory | 'ALL';
 
 export const BlogIndexPage: React.FC = () => {
+  useDocumentMeta({
+    title: 'Blog do Escultor - Fernando Quincas',
+    description: 'Ensaios, bastidores e memórias do ateliê de Fernando Quincas: processos, materiais, projetos e a vida entre as esculturas.',
+  });
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>('ALL');
 
   const featuredPost = BLOG_POSTS.find((p) => p.featured) || BLOG_POSTS[0];
@@ -24,6 +29,21 @@ export const BlogIndexPage: React.FC = () => {
     <div className="min-h-screen bg-[#FAF8F5] text-[#1E1D1A]">
       {/* Blog Editorial Hero */}
       <section className="relative pt-36 sm:pt-44 pb-16 sm:pb-20 px-4 sm:px-6 md:px-12 bg-[#16251E] text-[#FAF8F5] overflow-hidden">
+        {/* Foto elegante ao fundo — Fernando esculpindo a Galinha — 30% opacidade, grande no canto direito, sem corte visível */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[78%] sm:w-[68%] lg:w-[58%] overflow-hidden">
+          <img
+            src="/products/galinha-monte-verde-processo-atelier.jpeg"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            decoding="async"
+            className="h-full w-full object-cover object-[center_30%] opacity-30 scale-[1.08]"
+          />
+          {/* Degradês para esconder cortes e fundir com o fundo — elegante */}
+          <div className="absolute inset-0 bg-gradient-to-l from-[#16251E]/10 via-[#16251E]/35 to-[#16251E]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16251E] via-[#16251E]/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16251E] via-transparent to-transparent opacity-60" />
+        </div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#C8A86B]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1E3A68]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -33,8 +53,9 @@ export const BlogIndexPage: React.FC = () => {
             <span>DIÁRIO DO ATELIÊ</span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
-            BLOG
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+            Blog do Escultor
+            <span className="block font-light text-[#E0C995] text-2xl sm:text-3xl md:text-4xl mt-1">— Fernando Quincas</span>
           </h1>
           <p className="font-serif italic text-lg sm:text-xl text-[#E0C995] max-w-2xl leading-relaxed">
             Ensaios, bastidores e memórias do ateliê: processos, materiais, projetos e a vida entre as esculturas.

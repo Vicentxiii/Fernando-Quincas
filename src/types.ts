@@ -150,7 +150,7 @@ export interface BlogPost {
   blocks: BlogBlock[];
 }
 
-export type ProductCategory = 'ESCULTURAS' | 'OBRAS' | 'EDIÇÕES' | 'OBJETOS' | 'COLEÇÕES';
+export type ProductCategory = 'ESCULTURAS' | 'OBRAS' | 'EDIÇÕES' | 'OBJETOS' | 'COLEÇÕES' | 'GARDEN';
 
 export type ProductStatus = 'AVAILABLE' | 'SOLD';
 
