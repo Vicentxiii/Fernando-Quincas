@@ -35,7 +35,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
           </span>
         </div>
 
-        <h3 className="font-display text-lg font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug">
+        <h3 className="font-sans text-[17px] sm:text-lg font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug tracking-tight normal-case">
           {post.title}
         </h3>
 

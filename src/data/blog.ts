@@ -22,7 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'iglu-concreto-4x4-fernando-quincas',
     slug: 'iglu-de-concreto-4x4-claraboia-fernando-quincas-jardim',
-    title: 'Quer um Cômodo Novo sem Obra Infinita? O Iglu de Concreto 4×4m por Fernando Quincas que Aguenta Sol, Chuva e Tempo — com e sem Clarabóia',
+    title: 'Quer um cômodo novo sem obra infinita? O iglu de concreto 4×4m por Fernando Quincas que aguenta sol, chuva e tempo — com e sem claraboia',
     subtitle: 'Decoração monumental para grandes jardins e áreas externas: como o iglu 4×4m de concreto armado de Fernando Quincas vira quarto, ateliê ou brinquedoteca — com valor acessível, clarabóia para ventilação e duração que atravessa estações.',
     category: 'JARDIM',
     date: '2026-08-27',
@@ -142,7 +142,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'bonecas-cozinheiras-alice-lua-60cm',
     slug: 'bonecas-cozinheiras-alice-lua-60cm-fibra-de-vidro-fernando-quincas',
-    title: 'Alice e Lua Pararam a Rua: As Bonecas Cozinheiras de 60cm em Fibra de Vidro por Fernando Quincas que Transformaram a Frente do Restaurante em Pura Alegria',
+    title: 'Alice e Lua pararam a rua: as bonecas cozinheiras de 60cm em fibra de vidro por Fernando Quincas que transformaram a frente do restaurante em pura alegria',
     subtitle: 'Duas irmãs, um restaurante erguido sozinhas e duas bonequinhas de 60cm que viraram guardiãs da porta — a obra em fibra de vidro e tinta automotiva de Fernando Quincas que aguenta sol, chuva e distribui sorrisos.',
     category: 'PROJETOS',
     date: '2026-08-27',
@@ -235,7 +235,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'toro-japones-garden-fernando-quincas',
     slug: 'toro-japones-garden-energia-feng-shui-fernando-quincas',
-    title: 'Seu Jardim Está Sem Energia? O Torô Japonês em Fibra de Vidro de Fernando Quincas que Acende Fontes, Lagos e Casas — de Dia e de Noite',
+    title: 'Seu jardim está sem energia? O torô japonês em fibra de vidro de Fernando Quincas que acende fontes, lagos e casas — de dia e de noite',
     subtitle: 'História, energia e graça: como o torô garden de Fernando Quincas harmoniza o ambiente, protege a passagem e brilha tanto sob sol quanto sob estrelas — perto de fontes, lagos e casas.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -347,7 +347,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'fonte-pedra-grande-cinza-fernando-quincas',
     slug: 'fonte-de-pedra-grande-180x170-com-bomba-escultura-obra-fernando-quincas',
-    title: 'Fonte de Pedra Grande 1,80×1,70 com Bomba em Fibra de Vidro por Fernando Quincas: A Escultura 1,80m em Fibra de Vidro que Transforma Água em Obra e Jardim em Santuário',
+    title: 'Fonte de pedra grande 1,80×1,70 com bomba em fibra de vidro por Fernando Quincas: a escultura 1,80m em fibra de vidro que transforma água em obra e jardim em santuário',
     subtitle: 'Pedra reconstituída 1,80×1,70, pátina cinza mineral, bomba e instalação inclusa: os bastidores da fonte escultural das categorias Coleções e Esculturas — pronta para jardim, pátio e hall, com água, luz e tempo.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -450,7 +450,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'gazebo-tenda-ferro-bambu-fernando-quincas',
     slug: 'gazebo-tenda-ferro-bambu-fernando-quincas-jardim-uso-vantagens',
-    title: 'Gazebo Tenda 350×200×270 — Ferro, Resina e Lona por Fernando Quincas: A Obra que Transforma Jardim em Palco e Sombra em Escultura',
+    title: 'Gazebo tenda 350×200×270 — ferro, resina e lona por Fernando Quincas: a obra que transforma jardim em palco e sombra em escultura',
     subtitle: 'Do jardim à festa, do lounge ao palco DJ: como a tenda-gazebo 350×200×270 de ferro, resina e lona do ateliê de Fernando Quincas une escultura, obra e arquitetura leve — e por que toda obra de Fernando Quincas nasce para ficar.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -559,7 +559,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'loba-artesanal-120x80',
     slug: 'loba-artesanal-120x80-fernando-quincas',
-    title: 'Loba Artesanal 1.20×80cm: A Escultura que Fernando Quincas Transformou em Obra de Fibra de Vidro para Encarar Sol e Chuva',
+    title: 'Loba artesanal 1.20×80cm: a escultura que Fernando Quincas transformou em obra de fibra de vidro para encarar sol e chuva',
     subtitle: 'Do isopor ao poliuretano, do gesso à fibra de vidro com tinta PU: os bastidores da obra da Loba 1.20×80 — uma escultura artesanal, poética e pronta para o externo.',
     category: 'PROJETOS',
     date: '2026-08-26',
@@ -689,7 +689,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'galinha-monte-verde-fibra-vidro-obra-1-1',
     slug: 'galinha-de-monte-verde-escultura-fibra-de-vidro-obra-1-1',
-    title: 'Galinha de Monte Verde: A Escultura Gigante em Fibra de Vidro que Levou 45 Dias para Nascer no Ateliê de Fernando Quincas',
+    title: 'Galinha de Monte Verde: a escultura gigante em fibra de vidro que levou 45 dias para nascer no ateliê de Fernando Quincas',
     subtitle: 'Entre isopor, poliuretano, gesso, massa corrida, resina, fibra de vidro, massa plástica, pintura fundo universal e tinta PU: os bastidores da obra 1/1 criada para o Restaurante Monte Verde — pronta para sol, chuva e jardim.',
     category: 'PROJETOS',
     date: '2026-08-26',
@@ -811,199 +811,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    id: 'a-douracao-ouro-24k',
-    slug: 'a-alquimia-da-douracao-ouro-24k',
-    title: 'A Alquimia da Douração: Do Gesso Cré à Folha de Ouro 24k',
-    subtitle: 'Um mergulho no ritual centenário que transforma superfícies esculturais em luz dourada.',
-    category: 'MATERIAIS',
-    date: '2026-08-02',
-    author: 'Fernando Quincas',
-    authorRole: 'Escultor & Mestre Artesão',
-    readingTimeMinutes: 6,
-    excerpt:
-      'Cada curva dourada de uma escultura carrega horas de preparação: camadas de gesso cré, bolo arménio e folha de ouro polida com pedra de ágata. Conheça o processo que confere brilho eterno às obras do ateliê.',
-    coverImage:
-      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Douração Clássica', 'Folha de Ouro', 'Saber-Fazer', 'Minas Gerais'],
-    featured: false,
-    blocks: [
-      {
-        type: 'paragraph',
-        text: 'Há mais de quarenta anos, o ateliê de Fernando Quincas preserva uma das técnicas mais raras e exigentes da escultura decorativa: a douração tradicional a folha de ouro. Longe de ser um simples acabamento, trata-se de um processo alquímico que envolve paciência, precisão milimétrica e um profundo respeito pelos materiais.',
-      },
-      { type: 'heading', text: 'A preparação da superfície' },
-      {
-        type: 'paragraph',
-        text: 'Antes que o brilho apareça, a peça é lixada e recebe camadas sucessivas de gesso cré, um gesso de alta pureza que cria uma base porosa e perfeitamente lisa. Cada camada é seca, lixada e limpa manualmente, até que a superfície se torne tão uniforme quanto porcelana.',
-      },
-      {
-        type: 'paragraph',
-        text: 'Sobre essa base, aplica-se o bolo arménio, uma argila ocre avermelhada que dá profundidade ao dourado e permite que a folha assente com aderência perfeita. É essa camada que confere às peças aquele tom cálido e luminoso característico do ouro antigo.',
-      },
-      {
-        type: 'quote',
-        text: 'A folha de ouro não cobre a peça: ela a revela. O dourado só existe quando o artesão compreende como a luz vai viajar sobre a forma.',
-        attribution: 'Fernando Quincas',
-      },
-      { type: 'heading', text: 'Aplicação e brunimento' },
-      {
-        type: 'paragraph',
-        text: 'As folhas de ouro 24k, mais finas que um fio de cabelo, são aplicadas uma a uma com pincéis macios, sendo fixadas por leve pressão. O polimento final é feito com pedra de ágata, que comprime e acomoda o metal à textura, criando superfícies espelhadas que capturam e devolvem a luz natural dos jardins.',
-      },
-      {
-        type: 'image',
-        src: 'https://images.unsplash.com/photo-1516570161787-2fd917215a3d?auto=format&fit=crop&w=1600&q=85',
-        alt: 'Detalhe de douração com folha de ouro sobre escultura',
-        caption: 'Detalhe de superfície dourada polida com pedra de ágata.',
-      },
-      {
-        type: 'list',
-        items: [
-          'Preparação com gesso cré de alta pureza',
-          'Bolo arménio para aderência e profundidade',
-          'Aplicação de folha de ouro 24k folha a folha',
-          'Brunimento final com pedra de ágata',
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'É este ritual — repetido centenas de vezes em cada obra — que explica por que as esculturas do ateliê mantêm seu esplendor por décadas, mesmo expostas à intempérie da Serra dos Órgãos.',
-      },
-    ],
-  },
-  {
-    id: 'cisne-imperatriz-processo',
-    slug: 'o-cisne-imperatriz-do-modelo-ao-jardim',
-    title: 'O Cisne Imperatriz: Do Modelo ao Jardim',
-    subtitle: 'Os bastidores da criação de uma das obras mais emblemáticas do ateliê.',
-    category: 'PROJETOS',
-    date: '2026-07-18',
-    author: 'Fernando Quincas',
-    authorRole: 'Escultor & Mestre Artesão',
-    readingTimeMinutes: 8,
-    excerpt:
-      'Um cisne monumental em fibra de vidro, acanto dourado e bacia de travertino. Acompanhe o percurso da ideia ao jardim, das primeiras argilas aos últimos toques de ouro 24k.',
-    coverImage:
-      'https://images.unsplash.com/photo-1516570161787-2fd917215a3d?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Cisne Imperatriz', 'Fibra de Vidro', 'Processo Criativo', 'Jardim'],
-    featured: false,
-    blocks: [
-      {
-        type: 'paragraph',
-        text: 'Toda grande escultura começa pequena. O Cisne Imperatriz nasceu de um bloco de argila sobre a bancada do ateliê, onde o movimento do pescoço serpentino foi estudado dezenas de vezes até encontrar a curva exata entre a serenidade do lago e a imponência do ouro.',
-      },
-      { type: 'heading', text: 'O modelo e a estrutura' },
-      {
-        type: 'paragraph',
-        text: 'Após a aprovação do modelo em escala, a obra foi ampliada para 280 × 190 × 210 cm. A estrutura interna em aço garante estabilidade, enquanto o compósito de fibra de vidro de alta densidade recebeu a modelagem final à mão, capturando a textura sedosa das penas.',
-      },
-      {
-        type: 'quote',
-        text: 'Um cisne não se desenha no papel. Ele se descobre na massa, girando o volume, observando a luz cair sobre cada pena.',
-        attribution: 'Fernando Quincas',
-      },
-      { type: 'heading', text: 'Da douração à instalação' },
-      {
-        type: 'paragraph',
-        text: 'O acanto clássico que envolve a base foi entalhado folha a folha e recebeu douração tradicional. A instalação no jardim foi planejada para que o sol da manhã atravessasse o pescoço do cisne, projetando sombras douradas sobre a bacia de travertino.',
-      },
-      {
-        type: 'image',
-        src: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1600&q=85',
-        alt: 'Cisne monumental instalado em jardim botânico',
-        caption: 'O Cisne Imperatriz em seu habitat definitivo, o jardim.',
-      },
-    ],
-  },
-  {
-    id: 'compositos-fibra-vidro',
-    slug: 'por-que-fibra-de-vidro-escultura-monumental',
-    title: 'Por Que Fibra de Vidro? A Engenharia por Trás da Monumentalidade',
-    subtitle: 'Leveza estrutural, resiliência e liberdade de formas na escultura de grande porte.',
-    category: 'MATERIAIS',
-    date: '2026-06-30',
-    author: 'Fernando Quincas',
-    authorRole: 'Escultor & Mestre Artesão',
-    readingTimeMinutes: 5,
-    excerpt:
-      'Da Boneca Eva aos portais de jardins, os compósitos de fibra de vidro permitiram obras com balanços audaciosos e escalas arquitetônicas que a pedra jamais comportaria.',
-    coverImage:
-      'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Fibra de Vidro', 'Engenharia', 'Obras Monumentais', 'Técnica'],
-    featured: false,
-    blocks: [
-      {
-        type: 'paragraph',
-        text: 'A escultura monumental sempre enfrentou o mesmo dilema: como criar formas ousadas e imponentes sem que o peso se tornasse um inimigo? A pedra e o bronze impõem limites físicos que a fibra de vidro simplesmente dissolve.',
-      },
-      { type: 'heading', text: 'Leveza que desafia a gravidade' },
-      {
-        type: 'paragraph',
-        text: 'Com os compósitos reforçados, é possível criar balanços vertiginosos, asas que parecem flutuar e cascatas de vários níveis. Toneladas de pedra dão lugar a estruturas de poucas centenas de quilos, capazes de ser instaladas em telhados, jardins suspensos e locais de difícil acesso.',
-      },
-      {
-        type: 'quote',
-        text: 'A fibra de vidro não é um atalho: é uma libertação. Ela permite que a forma obedeça à imaginação, e não ao peso.',
-        attribution: 'Fernando Quincas',
-      },
-      {
-        type: 'list',
-        items: [
-          'Alta resistência a intempéries e umidade',
-          'Pintura e douração aplicáveis como na pedra',
-          'Instalação simplificada e menor custo estrutural',
-          'Preservação de detalhes finos por décadas',
-        ],
-      },
-      {
-        type: 'paragraph',
-        text: 'Foi com essa técnica que o ateliê realizou a lendária Boneca Eva, de 45 metros de comprimento, um marco na história da escultura interativa brasileira que segue encantando gerações.',
-      },
-    ],
-  },
-  {
-    id: 'jardim-santuario-botanico',
-    slug: 'jardim-santuario-botanico-visita-guiada',
-    title: 'O Jardim como Galeria: Uma Visita Guiada ao Santuário Botânico',
-    subtitle: 'Fontes, cisnes e esculturas integrados à flora serrana de Minas Gerais.',
-    category: 'JARDIM',
-    date: '2026-06-08',
-    author: 'Ateliê Fernando Quincas',
-    authorRole: 'Equipe do Ateliê',
-    readingTimeMinutes: 7,
-    excerpt:
-      'Em meio à Serra dos Órgãos, um parque de esculturas onde a arte e a botânica se encontram em equilíbrio. Um passeio pelas zonas do santuário e as obras que as habitam.',
-    coverImage:
-      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1600&q=85',
-    tags: ['Jardim', 'Paisagismo', 'Minas Gerais', 'Fontes Ornamentais'],
-    featured: false,
-    blocks: [
-      {
-        type: 'paragraph',
-        text: 'O santuário botânico não é um jardim com esculturas: é uma galeria viva. Cada zona foi desenhada para que uma obra dialogue com determinada flora, umidade e incidência de luz.',
-      },
-      { type: 'heading', text: 'O lago dos cisnes' },
-      {
-        type: 'paragraph',
-        text: 'No ponto mais sereno do parque, o Cisne Imperatriz emerge de um espelho d’água cercado por agapantos e salgueiros. A bacia de travertino foi esculpida para refletir o céu da serra, criando um quadro que muda a cada hora do dia.',
-      },
-      {
-        type: 'image',
-        src: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1600&q=85',
-        alt: 'Lago do santuário botânico com escultura de cisne',
-        caption: 'O espelho d’água e o cisne em conversa permanente com a serra.',
-      },
-      { type: 'heading', text: 'A praça das fontes' },
-      {
-        type: 'paragraph',
-        text: 'Mais adiante, as fontes rocaille de três níveis conduzem a água por conchas entalhadas, produzindo uma melodia acústica constante. Bromélias e costelas-de-adão completam a cena, provando que a arte hidráulica pode ser ao mesmo tempo técnica e poesia.',
-      },
-    ],
-  },
-  {
     id: 'boneca-eva-retorno',
     slug: 'boneca-eva-45-metros-retorno-nova-friburgo',
-    title: 'Boneca Eva: O Retorno de um Ícone de 45 Metros',
+    title: 'Boneca Eva: o retorno de um ícone de 45 metros',
     subtitle: 'A monumental escultura interativa ressurge no Parque do Teleférico em Nova Friburgo.',
     category: 'IMPRENSA',
     date: '2026-05-22',
@@ -1012,8 +822,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 4,
     excerpt:
       'Sucesso nos anos 1980, a boneca gigante em fibra de vidro voltou a receber visitantes, resgatando a memória afetiva de milhões de brasileiros.',
-    coverImage:
-      'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=85',
+    coverImage: encodeURI('/Eva Original, Playcenter.jpg'),
     tags: ['Boneca Eva', 'Escultura Monumental', 'Fibra de Vidro', 'Memória Nacional'],
     featured: false,
     blocks: [
@@ -1022,8 +831,26 @@ export const BLOG_POSTS: BlogPost[] = [
         text: 'Projetada com 45 metros de extensão e toneladas de compósitos estruturais esculpidos e laminados, a Boneca Eva foi um marco absoluto na história da escultura monumental interativa brasileira.',
       },
       {
+        type: 'image',
+        src: encodeURI('/Eva Original, Playcenter.jpg'),
+        alt: 'Boneca Eva original no Playcenter - escultura monumental de 45 metros por Fernando Quincas',
+        caption: 'A Boneca Eva original: 45 metros de fibra de vidro e memória afetiva de milhões de brasileiros.',
+      },
+      {
         type: 'paragraph',
         text: 'Sucesso inesquecível em grandes parques como Tivoli Parque e Playcenter, a atração foi revitalizada e hoje encanta novas e antigas gerações no Parque do Teleférico em Nova Friburgo (RJ).',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Antiga foto da Eva Construção no Playcenter.jpeg'),
+        alt: 'Construção da Boneca Eva no Playcenter por Fernando Quincas',
+        caption: 'Bastidores: a construção da Boneca Eva no Playcenter — estrutura em fibra de vidro esculpida à mão.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Pessoas visitando a EVA by Fernando Quincas.jpg'),
+        alt: 'Visitantes explorando o interior da Boneca Eva',
+        caption: 'Por dentro: visitantes percorrendo o interior da Boneca Eva — a escultura interativa que marcou gerações.',
       },
       {
         type: 'quote',
@@ -1034,12 +861,18 @@ export const BLOG_POSTS: BlogPost[] = [
         type: 'paragraph',
         text: 'O público realiza um percurso imersivo por dentro dos órgãos humanos, celebrando o pioneirismo técnico e volumétrico de Fernando Quincas na escultura em fibra de vidro.',
       },
+      {
+        type: 'image',
+        src: encodeURI('/Por dentro da Boca da EVA by Fernando Quincas.png'),
+        alt: 'Interior da boca da Boneca Eva',
+        caption: 'Detalhe: por dentro da boca da Boneca Eva — a entrada do percurso imersivo.',
+      }
     ],
   },
   {
     id: 'novos-rumos-atelie',
     slug: 'novos-rumos-do-atelie-2026',
-    title: 'Novos Rumos: O Ateliê e a Nova Geração de Artesãos',
+    title: 'Novos rumos: o ateliê e a nova geração de artesãos',
     subtitle: 'Como o saber-fazer é transmitido aos próximos mestres da escultura ornamental.',
     category: 'ATELIER',
     date: '2026-04-11',

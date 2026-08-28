@@ -9,13 +9,13 @@ const BlockRenderer: React.FC<{ block: BlogBlock }> = ({ block }) => {
   switch (block.type) {
     case 'heading':
       return (
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1E1D1A] leading-snug">
+        <h2 className="font-sans text-xl sm:text-2xl font-semibold text-[#1E1D1A] leading-snug tracking-tight normal-case">
           {block.text}
         </h2>
       );
     case 'subheading':
       return (
-        <h3 className="font-display text-xl sm:text-2xl font-semibold text-[#1E1D1A]">
+        <h3 className="font-sans text-lg sm:text-xl font-semibold text-[#1E1D1A] leading-snug tracking-tight normal-case">
           {block.text}
         </h3>
       );
@@ -140,7 +140,7 @@ export const BlogPostPage: React.FC = () => {
             )}
           </div>
 
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+          <h1 className="font-sans text-3xl sm:text-4xl md:text-[42px] font-bold tracking-tight leading-[1.1] normal-case">
             {post.title}
           </h1>
 
@@ -223,7 +223,7 @@ export const BlogPostPage: React.FC = () => {
                 <ArrowLeft className="w-3.5 h-3.5" />
                 Artigo Anterior
               </span>
-              <p className="font-display text-sm font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors">
+              <p className="font-sans text-sm font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug normal-case">
                 {prevPost.title}
               </p>
             </Link>
@@ -239,7 +239,7 @@ export const BlogPostPage: React.FC = () => {
                 Próximo Artigo
                 <ArrowRight className="w-3.5 h-3.5" />
               </span>
-              <p className="font-display text-sm font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors">
+              <p className="font-sans text-sm font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug normal-case">
                 {nextPost.title}
               </p>
             </Link>
@@ -250,7 +250,7 @@ export const BlogPostPage: React.FC = () => {
         {relatedPosts.length > 0 && (
           <section className="pt-16 space-y-6">
             <div className="border-b border-[#C8A86B]/20 pb-4">
-              <h3 className="font-display text-xl sm:text-2xl font-semibold text-[#1E1D1A]">
+              <h3 className="font-sans text-xl sm:text-2xl font-semibold text-[#1E1D1A] tracking-tight">
                 Leituras Relacionadas
               </h3>
             </div>

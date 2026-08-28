@@ -89,7 +89,7 @@ export const BlogIndexPage: React.FC = () => {
                 </span>
               </div>
 
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-snug">
+              <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight normal-case">
                 {featuredPost.title}
               </h2>
 
