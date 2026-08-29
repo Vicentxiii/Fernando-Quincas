@@ -53,6 +53,6 @@ export const COMMISSION_STEPS: CommissionStep[] = [
     duration: 'Semanas 21 — 24',
     description: 'Transporte de obras de arte em caixas especiais climatizadas. Fernando Quincas e sua equipe acompanham pessoalmente a ancoragem no local, regulagem de iluminação e calibração de fluxo de água das fontes.',
     deliverables: ['Transporte de alta segurança para obras de arte', 'Supervisão presencial de instalação', 'Ajuste fino de iluminação e hidráulica', 'Manual de conservação preventiva da obra'],
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80'
+    image: '/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg'
   }
 ];

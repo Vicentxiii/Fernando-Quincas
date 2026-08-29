@@ -9,8 +9,6 @@ import { Hero } from '../components/Hero';
 import { IntroPhilosophy } from '../components/IntroPhilosophy';
 import { TheStoryTimeline } from '../components/TheStoryTimeline';
 import { WorksGallery } from '../components/WorksGallery';
-import { MaterialTechnique } from '../components/MaterialTechnique';
-import { GardenExperience } from '../components/GardenExperience';
 import { TheAtelier } from '../components/TheAtelier';
 import { MediaSection } from '../components/MediaSection';
 import { BoutiqueSection } from '../components/BoutiqueSection';
@@ -103,14 +101,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         onSelectArtwork={(art) => setSelectedArtwork(art)}
         onToggleSave={onToggleSave}
         savedArtworkIds={savedArtworkIds}
-      />
-
-      {/* 05: Material & Technique */}
-      <MaterialTechnique />
-
-      {/* 06: The Living Garden */}
-      <GardenExperience
-        onSelectArtwork={(art) => setSelectedArtwork(art)}
       />
 
       {/* 07: The Atelier Documentary */}

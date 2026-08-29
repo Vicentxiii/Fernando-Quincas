@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Newspaper, ExternalLink, Sparkles, Award, ArrowUpRight, BookOpen, Quote, ShieldCheck, Check } from 'lucide-react';
+import { Newspaper, ExternalLink, Sparkles, Award, ArrowUpRight, Quote, ShieldCheck, Check } from 'lucide-react';
 import { MEDIA_ARTICLES } from '../data/media';
 import { MediaArticle } from '../types';
 
@@ -12,7 +12,6 @@ export const MediaSection: React.FC<MediaSectionProps> = ({ onContactPress }) =>
   const [copiedLink, setCopiedLink] = useState(false);
 
   const mainArticle = MEDIA_ARTICLES.find((a) => a.isMainHeadline) || MEDIA_ARTICLES[0];
-  const secondaryArticles = MEDIA_ARTICLES.filter((a) => !a.isMainHeadline);
 
   const handleShareMain = () => {
     if (navigator.clipboard) {
@@ -182,79 +181,7 @@ export const MediaSection: React.FC<MediaSectionProps> = ({ onContactPress }) =>
         </div>
 
         {/* ============================================================ */}
-        {/* 2. SECONDARY PRESS ARTICLES & COVERAGE ARCHIVE */}
-        {/* ============================================================ */}
-        <div className="space-y-6">
-          <div className="flex items-center justify-between border-b border-[#C8A86B]/20 pb-4">
-            <h3 className="font-display text-xl sm:text-2xl font-semibold text-[#1E1D1A]">
-              Outras Reportagens & Ensaios Críticos
-            </h3>
-            <span className="text-xs font-mono text-[#8A82A5]">
-              {secondaryArticles.length} Artigos Catalogados
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {secondaryArticles.map((article) => (
-              <article
-                key={article.id}
-                className="rounded-2xl border border-[#C8A86B]/30 bg-[#FAF8F5] p-6 flex flex-col justify-between space-y-6 hover:shadow-xl hover:border-[#C8A86B] transition-all duration-300 group"
-              >
-                <div className="space-y-4">
-                  {/* Article Thumbnail */}
-                  <div className="relative rounded-xl overflow-hidden h-48 bg-[#EAE5D8]">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#1E1D1A]/85 backdrop-blur-md text-[#E0C995] text-[9px] font-mono uppercase tracking-widest border border-[#C8A86B]/30">
-                      {article.outlet}
-                    </div>
-                  </div>
-
-                  {/* Metadata */}
-                  <div className="flex items-center gap-2 text-[10px] font-mono text-[#8A82A5] uppercase tracking-wider">
-                    <span>{article.section}</span>
-                    <span>•</span>
-                    <span>{article.date}</span>
-                  </div>
-
-                  {/* Title */}
-                  <h4 className="font-display text-lg font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug">
-                    {article.title}
-                  </h4>
-
-                  {/* Summary */}
-                  <p className="text-xs sm:text-sm text-[#2C2A26]/80 font-light leading-relaxed font-serif">
-                    {article.excerpt}
-                  </p>
-                </div>
-
-                <div className="space-y-3 pt-4 border-t border-[#C8A86B]/20">
-                  <div className="flex flex-wrap gap-1.5">
-                    {article.tags.slice(0, 2).map((t, idx) => (
-                      <span key={idx} className="text-[9px] font-mono px-2 py-0.5 rounded bg-[#C8A86B]/10 text-[#C8A86B]">
-                        #{t}
-                      </span>
-                    ))}
-                  </div>
-
-                  <button
-                    onClick={() => setSelectedArticle(article)}
-                    className="w-full py-2.5 rounded-full border border-[#C8A86B]/40 hover:border-[#1E1D1A] hover:bg-[#1E1D1A] hover:text-[#FAF8F5] text-[#1E1D1A] text-xs font-mono font-medium tracking-widest uppercase transition-colors flex items-center justify-center gap-1.5"
-                  >
-                    <span>LER RESUMO CURATORIAL</span>
-                    <BookOpen className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        {/* ============================================================ */}
-        {/* 3. PRESS INQUIRY & ACCREDITATION BANNER */}
+        {/* 3. PRESS INQUIRY & ACCREDITATION BANNER — mantido */}
         {/* ============================================================ */}
         <div className="rounded-2xl border border-[#C8A86B]/30 bg-[#FAF8F5] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
           <div className="flex items-center gap-4">

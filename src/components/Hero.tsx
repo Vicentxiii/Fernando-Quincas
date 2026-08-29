@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowDown, Sparkles, Compass, Hammer, ChevronRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { ArrowDown, Sparkles, Hammer, ChevronRight, ShoppingBag } from 'lucide-react';
 
 interface HeroProps {
   onExploreCollection: () => void;
@@ -12,6 +13,7 @@ export const Hero: React.FC<HeroProps> = ({
   onEnterAtelier,
   onDiscoverGarden
 }) => {
+  const navigate = useNavigate();
   return (
     <section
       id="home"
@@ -100,14 +102,14 @@ export const Hero: React.FC<HeroProps> = ({
           </button>
         </div>
 
-        {/* Quick Garden Portal Teaser */}
+        {/* Quick Shop Portal Teaser */}
         <div className="mt-10 pt-6 border-t border-[#FAF8F5]/10 flex flex-wrap items-center justify-center md:justify-start gap-6 sm:gap-8 text-xs tracking-[0.18em] text-[#FAF8F5]/60">
           <button
-            onClick={onDiscoverGarden}
+            onClick={() => navigate('/loja')}
             className="flex items-center gap-2 hover:text-[#C8A86B] transition-colors group"
           >
-            <Compass className="w-4 h-4 text-[#C8A86B] group-hover:rotate-45 transition-transform" />
-            <span className="underline-offset-4 hover:underline">VISITAR O SANTUÁRIO BOTÂNICO VIVO</span>
+            <ShoppingBag className="w-4 h-4 text-[#C8A86B] group-hover:scale-110 transition-transform" />
+            <span className="underline-offset-4 hover:underline">Conhecer a loja</span>
           </button>
           <div className="hidden sm:block text-[#C8A86B]/40">•</div>
           <div className="flex items-center gap-2">

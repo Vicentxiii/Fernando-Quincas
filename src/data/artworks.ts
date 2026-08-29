@@ -103,35 +103,39 @@ export const ARTWORKS: Artwork[] = [
     isMonumental: false
   },
   {
-    id: 'le-violoncelle-d-apollon',
-    title: 'O Violoncelo de Apolo',
-    frenchTitle: 'Sculpture Sonore & Corde Baroques',
-    subtitle: 'Instrumento escultural sonoro em cedro entalhado, filigranas douradas e pátina lápis-lazúli',
+    id: 'lira-instrumento-corda-fernando-quincas',
+    title: 'Lira — Instrumento de Corda',
+    frenchTitle: 'Lyre Artisanale — Bois, Cordes & Cœur',
+    subtitle: 'Lira de 15 cordas em madeira nobre por Fernando Quincas — timbre cristalino com bolsa porta-lira e guia musical para toque',
     category: 'INSTRUMENTS',
-    year: 2023,
-    dimensions: '185 × 65 × 45 cm',
-    weight: '34 kg',
-    materials: ['Jacarandá e cedro nobre envelhecido', 'Tampo de ressonância em abeto', 'Voluta entalhada à mão', 'Pigmento lápis-lazúli', 'Folha de ouro 24k'],
-    techniques: ['Escultura de alta lutheria', 'Lustro francês tradicional em goma-laca', 'Incrustação em folha de ouro', 'Voluta clássica'],
-    finishes: ['Verniz a óleo âmbar', 'Voluta folheada a ouro 24k', 'Incrustações em azul lápis polido'],
+    year: 2026,
+    dimensions: '52 × 38 × 6 cm (C × L × Esp)',
+    weight: '1,2 kg',
+    materials: ['Madeira nobre selecionada', 'Cordas de aço com cravelhas metálicas', 'Cavalete e pestana em latão dourado', 'Bolsa porta-lira em tecido', 'Guia musical didático para toque'],
+    techniques: ['Marcenaria fina e entalhe', 'Calibragem de cordas e afinação', 'Acabamento em verniz acetinado', 'Confecção de bolsa e guia'],
+    finishes: ['Verniz natural acetinado', 'Coração vazado central', 'Contas coloridas de marcação', 'Bordas arredondadas'],
     colorPalette: [
-      { name: 'Nogueira Quente', hex: '#5C3826' },
-      { name: 'Ouro Nobre', hex: '#C8A86B' },
-      { name: 'Azul Lápis', hex: '#1E3A68' },
-      { name: 'Marfim Antigo', hex: '#FAF8F5' }
+      { name: 'Madeira Natural', hex: '#C8A86B' },
+      { name: 'Dourado Latão', hex: '#D4B376' },
+      { name: 'Azul Corda', hex: '#1E3A68' },
+      { name: 'Magenta Corda', hex: '#A92A6B' }
     ],
-    location: 'Sala de Música do Ateliê Fernando Quincas',
-    description: 'Uma escultura musical acústica de concerto. As costas e laterais apresentam entalhes em alto-relevo com figuras da natureza, enquanto a voluta termina na cabeça nobre de um cisne folheado a ouro brunido.',
-    curatorNotes: 'Onde a escultura visual e a engenharia acústica se encontram em harmonia.',
-    inspiration: 'A harmonia entre as artes plásticas e a música camerística.',
-    image: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=1600&q=85',
+    location: 'Ateliê Fernando Quincas — instrumentos artesanais',
+    description: 'A Lira por Fernando Quincas é instrumento e escultura: 15 cordas sobre tampo em madeira nobre com coração vazado, acabamento acetinado e contas coloridas que guiam o toque. Cada lira é afinada à mão por Fernando Quincas e acompanha bolsa porta-lira e guia musical para toque — pronta para soar, estudar e meditar. Leve, portátil e de sonoridade doce, a lira transforma qualquer canto em sala de música.',
+    curatorNotes: 'Instrumento artesanal de Fernando Quincas em nova aba Instrumentos — substitui o Violoncelo de Apolo. Acompanha bolsa porta-lira e guia musical didático. Backstage com etapas de construção, traseira e detalhes disponíveis nas fotos.',
+    inspiration: 'A harpa antiga e a luteria intimista — música que se toca com o colo.',
+    image: '/products/lira-instrumento-musical-corda.jpeg',
     secondaryImages: [
-      'https://images.unsplash.com/photo-1520523839898-5071214878a8?auto=format&fit=crop&w=1200&q=80'
+      '/products/lira-backstage-01.jpeg',
+      '/products/lira-traseira-backstage.jpeg',
+      '/products/lira-bolsa-close.jpeg',
+      '/products/lira-guia-musical.jpeg',
+      '/products/lira-backstage-02.jpeg'
     ],
     availability: 'AVAILABLE',
-    edition: 'Série Limitada de 3 Peças (Nº 2/3)',
-    priceEstimate: 'Sob Consulta para Dossiê Privado',
-    featured: false,
+    edition: 'Série Artesanal do Ateliê — com bolsa e guia',
+    priceEstimate: 'Sob Consulta',
+    featured: true,
     isMonumental: false
   }
 ];
