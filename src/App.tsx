@@ -23,7 +23,7 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { OrderStatusPage } from './pages/OrderStatusPage';
 import { Artwork } from './types';
 
-const SECTION_IDS = ['home', 'artist', 'story', 'monumental', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
+const SECTION_IDS = ['home', 'artist', 'story', 'works', 'techniques', 'garden', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
 
 const AppContent: React.FC = () => {
   const location = useLocation();

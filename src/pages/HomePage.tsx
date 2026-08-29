@@ -8,7 +8,6 @@ import { useLocation } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { IntroPhilosophy } from '../components/IntroPhilosophy';
 import { TheStoryTimeline } from '../components/TheStoryTimeline';
-import { MonumentalWorks } from '../components/MonumentalWorks';
 import { WorksGallery } from '../components/WorksGallery';
 import { MaterialTechnique } from '../components/MaterialTechnique';
 import { GardenExperience } from '../components/GardenExperience';
@@ -69,13 +68,6 @@ export const HomePage: React.FC<HomePageProps> = ({
     handleNavigate('contact');
   };
 
-  const handleInquireMonumentalProject = (projectTitle: string) => {
-    setContactInitialConfig({
-      artworkTitle: `Monumental Case Study: ${projectTitle}`,
-    });
-    handleNavigate('contact');
-  };
-
   const handleStartCommission = (config?: { spaceType: string; motif: string; scale: string }) => {
     if (config) {
       setContactInitialConfig(config);
@@ -105,11 +97,6 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* 02: The Story / A Life in Sculpture Timeline */}
       <TheStoryTimeline />
-
-      {/* 03: Monumental Works */}
-      <MonumentalWorks
-        onInquireProject={handleInquireMonumentalProject}
-      />
 
       {/* 04: Works / The Collection */}
       <WorksGallery

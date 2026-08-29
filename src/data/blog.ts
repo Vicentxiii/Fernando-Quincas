@@ -20,6 +20,270 @@ export const BLOG_CATEGORY_LABELS: Record<BlogCategory, string> = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fernando-quincas',
+    slug: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra-de-vidro-fernando-quincas',
+    title: 'Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas no Portal do Morumbi: a obra monumental de 2.000 kg de fibra de vidro com tanque para peixes e 3 bombas que milhares veem todo dia — R$ 50.000',
+    subtitle: 'Quase 10 m de fachada por 3 m de profundidade, mais de 2.000 kg de fibra de vidro, tanque para peixes com espaço para plantas, 3 bombas dedicadas e vários meses de trabalho artesanal por Fernando Quincas — a fonte gigantesca do Portal do Morumbi que aguenta calor, chuva, frio e vento sem precisar cuidar toda hora, vista por milhares de pessoas todos os dias.',
+    category: 'JARDIM',
+    date: '2026-08-28',
+    author: 'Fernando Quincas',
+    authorRole: 'Escultor & Mestre Artesão',
+    readingTimeMinutes: 7,
+    excerpt:
+      'Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas no Portal do Morumbi: a obra gigantesca de mais de 2.000 kg em fibra de vidro, com tanque para peixes, espaço para plantas e 3 bombas dedicadas, criada em vários meses de trabalho artesanal por Fernando Quincas. Quase 10 m de fachada vista por milhares de pessoas por dia, que aguenta calor, chuva, frio e vento sem precisar cuidar toda hora — uma fonte monumental de Fernando Quincas por R$ 50.000.',
+    coverImage: '/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg',
+    tags: ['Fernando Quincas', 'Fonte Gigante Paulo Leardi', 'Portal do Morumbi', 'Fonte 10m', 'Fibra de Vidro', '2000 kg', 'Tanque para Peixes', '3 Bombas', 'R$ 50.000', 'Obra Monumental'],
+    featured: false,
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'A Fonte Gigante Paulo Leardi 10m × 3m no Portal do Morumbi por Fernando Quincas não é uma fonte — é uma fachada que virou paisagem. São quase 10 m de comprimento por 3 m de profundidade, mais de 2.000 kg de fibra de vidro esculpida à mão por Fernando Quincas, com rochas, cascatas em degraus, tanque para peixes e espaço para plantas que tomam a frente do imóvel como uma serra à beira da calçada. Criada em vários meses de trabalho artesanal no ateliê de Fernando Quincas, com muita fibra de vidro e três bombas dedicadas, a obra já nasceu gigantesca: não é tão interessante remover, mas se você puder remover, dá — com equipe — e ela renasce em outro grande terreno. Hoje, a fonte gigantesca de Fernando Quincas no Portal do Morumbi é vista por milhares de pessoas todos os dias, sob calor, chuva, frio e vento, sem precisar ficar cuidando toda hora. É uma obra monumental de Fernando Quincas por R$ 50.000 que transforma fachada em monumento — e que foi feita para aparecer nos mecanismos de busca quando alguém procurar por fonte gigante Paulo Leardi, Portal do Morumbi, fonte 10m, fibra de vidro, tanque para peixes, 3 bombas e obra de Fernando Quincas.',
+      },
+      { type: 'heading', text: 'Magnitude que não cabe na foto: quase 10 m de fachada por Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'No ateliê de Fernando Quincas, magnitude não é só tamanho — é presença que se impõe a 10 m. A Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas foi desenhada como arquitetura líquida: 10 m de rochas esculpidas que acompanham a rua, 3 m de profundidade com degraus d’água, quedas múltiplas e espelhos que recortam o céu. Cada metro dos 10 m foi modelado à mão por Fernando Quincas — não existe molde corrido, existe gesto repetido por vários meses até a fibra de vidro virar pedra. São mais de 2.000 kg de fibra de vidro que, mesmo gigantesca, mantém leveza visual de rocha natural, mas com resistência de casco naval. É uma obra gigantesca de Fernando Quincas que, mesmo parada na foto, parece jorrar — por isso, toda obra e toda escultura monumental do ateliê de Fernando Quincas nasce para ser vista por milhares, todos os dias.',
+      },
+      {
+        type: 'list',
+        items: [
+          '10 m de comprimento × 3 m de profundidade: fachada inteira tomada pela escultura líquida de Fernando Quincas — a fonte gigantesca do Portal do Morumbi.',
+          'Mais de 2.000 kg de fibra de vidro: corpo da obra monumental — muita fibra de vidro laminada à mão por Fernando Quincas em vários meses.',
+          'Tanque para peixes + espaço para plantas: nichos e reentrâncias que viram berçário e jardim — a obra de Fernando Quincas que é também ecossistema.',
+          'Vista por milhares de pessoas por dia: fachada no Portal do Morumbi — a fonte de Fernando Quincas que virou cartão-postal diário.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-gigante-paulo-leardi-studio-green-casa.jpeg',
+        alt: 'Fonte Gigante Paulo Leardi 10m com casa ao fundo verde de estúdio - maquete monumental em fibra de vidro por Fernando Quincas no Portal do Morumbi',
+        caption: 'Em estúdio com casa ao fundo verde: a Fonte Gigante 10m × 3m de Fernando Quincas — maquete monumental que revela os quase 10 m de fachada antes da instalação no Portal do Morumbi.',
+      },
+      { type: 'heading', text: 'Tanque para peixes com espaço para plantas: a fonte que vira lago' },
+      {
+        type: 'paragraph',
+        text: 'Uma graça da Fonte Gigante Paulo Leardi de Fernando Quincas é que ela não é só queda d’água — é lago. O tanque para peixes, com profundidade e bancadas para plantas, cria um espelho azul que abriga carpas e forrações, enquanto as rochas em fibra de vidro sustentam bromélias, samambaias e suculentas. O espaço para plantas foi desenhado por Fernando Quincas como parte da escultura: cada reentrância é cachepô, cada degrau é jardineira. Resultado: a obra de Fernando Quincas não pede cuidado toda hora — o sistema se equilibra, a sombra das plantas refresca a água e as rochas não criam limo estrutural. É uma fonte gigante de Fernando Quincas que é também lago e jardim — e toda obra do ateliê de Fernando Quincas em fibra de vidro foi pensada para viver com água, verde e tempo, sob calor, chuva, frio e vento.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Tanque para peixes: espelho d’água da obra 10m × 3m de Fernando Quincas — pronto para carpas, com margens que protegem do sol.',
+          'Espaço para plantas: nichos, degraus e bacias para forração — a escultura de Fernando Quincas que planta junto com a água.',
+          'Fibra de vidro selada: pele da fonte gigante que aguenta calor, chuva, frio e vento — a obra de Fernando Quincas que não precisa ficar cuidando toda hora.',
+          '10m × 3m com profundidade: escala de lago raso — a obra monumental de Fernando Quincas que transforma fachada em oásis.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-01.jpeg',
+        alt: 'Detalhe interno da Fonte Gigante Paulo Leardi com cascata e tanque azul para peixes - espaço para plantas por Fernando Quincas',
+        caption: 'Visão de dentro 01: cascata em degraus e tanque azul para peixes — detalhe da obra 10m × 3m de Fernando Quincas com espaço para plantas e 3 bombas dedicadas.',
+      },
+      { type: 'heading', text: 'Três bombas dedicadas: o coração triplo que mantém a fonte viva' },
+      {
+        type: 'paragraph',
+        text: 'Toda obra monumental do ateliê de Fernando Quincas precisa de coração que não para, e a Fonte Gigante Paulo Leardi tem três. São 3 bombas dedicadas, independentes, que alimentam quedas, circulação e oxigenação do tanque para peixes — se uma precisa de revisão, as outras duas mantêm a cena em movimento. O tanque com três bombas dedicadas foi instalado por Fernando Quincas para garantir que a fonte gigantesca 10m × 3m nunca fique muda: mesmo no calor forte, na chuva, no frio ou no vento, a água circula, oxigena os peixes e desenha som contínuo. É uma obra hidráulica de Fernando Quincas pensada para quem não pode ficar cuidando toda hora — as 3 bombas dedicadas são a tranquilidade da fonte gigante de Fernando Quincas, vista por milhares todos os dias no Portal do Morumbi.',
+      },
+      {
+        type: 'list',
+        items: [
+          '3 bombas dedicadas: redundância hidráulica da obra 10m × 3m — a fonte gigante de Fernando Quincas não para se uma bomba pausar.',
+          'Tanque para peixes oxigenado: circulação tripla que mantém peixes e plantas — a obra de Fernando Quincas que respira mesmo sob calor, chuva, frio e vento.',
+          'Cascatas independentes: cada queda com linha própria — a escultura líquida de Fernando Quincas mantém som mesmo em manutenção parcial.',
+          'Vários meses de instalação: ajuste fino das 3 bombas por Fernando Quincas — a obra monumental do Portal do Morumbi calibrada gota a gota.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-02.jpeg',
+        alt: 'Segunda visão interna da Fonte Gigante Paulo Leardi com quedas d’água e iluminação - tanque para peixes por Fernando Quincas no Portal do Morumbi',
+        caption: 'Visão de dentro 02: quedas iluminadas e recortes do tanque — segundo ângulo da obra 10m × 3m de Fernando Quincas com 3 bombas dedicadas, que vista por milhares no Morumbi.',
+      },
+      { type: 'heading', text: 'Vários meses de fibra de vidro: o artesanato por trás dos 2.000 kg' },
+      {
+        type: 'paragraph',
+        text: 'No ateliê de Fernando Quincas, fibra de vidro não é atalho — é ofício. A Fonte Gigante Paulo Leardi exigiu vários meses de trabalho artesanal: modelagem dos blocos de rocha em isopor e gesso, laminação em fibra de vidro com muita fibra de vidro até superar 2.000 kg, refino das texturas, pintura pérea e selante para externo. Cada quilo dos mais de 2.000 kg foi assentado à mão por Fernando Quincas — por isso, mesmo sendo gigantesca, a fonte mantém leveza de gesto e não parece industrial. A obra monumental do Portal do Morumbi por Fernando Quincas é prova de que fibra de vidro, quando trabalhada por Fernando Quincas, vira pedra que não pesa como pedra, mas dura como rocha — pronta para calor, chuva, frio, vento e para ser vista por milhares todos os dias sem precisar cuidar toda hora.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Mais de 2.000 kg de fibra de vidro: casca naval da obra 10m × 3m — muita fibra de vidro laminada por Fernando Quincas em vários meses.',
+          'Vários meses de ateliê: do traço ao brilho final — a obra gigantesca do Portal do Morumbi amadurecida à mão por Fernando Quincas.',
+          'Resiste a calor, chuva, frio e vento: fibra selada da fonte gigante — a escultura de Fernando Quincas que não pede cuidado toda hora.',
+          'Não é tão interessante remover, mas dá para remover: estrutura removível com equipe — a obra monumental de Fernando Quincas que pode renascer em outro grande portal.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-gigante-paulo-leardi-escala-humana.jpeg',
+        alt: 'Pessoa ao lado da Fonte Gigante Paulo Leardi 10m no Portal do Morumbi - escala humana da obra em fibra de vidro por Fernando Quincas',
+        caption: 'Escala humana: pessoa ao lado da Fonte Gigante 10m × 3m — a obra de mais de 2.000 kg em fibra de vidro de Fernando Quincas mostra por que é vista por milhares todos os dias no Morumbi.',
+      },
+      {
+        type: 'quote',
+        text: 'Uma fonte de 10 metros não é enfeite — é responsabilidade. Ela tem que emocionar quem passa todo dia e continuar bonita no calor, na chuva, no frio e no vento.',
+        attribution: 'Fernando Quincas',
+      },
+      { type: 'heading', text: 'Feita para ficar na rua: calor, chuva, frio, vento e milhares de olhares por dia' },
+      {
+        type: 'paragraph',
+        text: 'Essa é uma obra para viver na rua. A Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas foi projetada como fachada líquida do Portal do Morumbi: fibra de vidro com mais de 2.000 kg, tanque para peixes, espaço para plantas e 3 bombas dedicadas criam uma escultura que aguenta calor de meio-dia, chuva de tarde, frio de madrugada e vento de avenida — sem precisar ficar cuidando toda hora. Vista por milhares de pessoas todos os dias, a obra de Fernando Quincas já virou referência: quem passa de carro, a pé ou de ônibus leva a imagem da cascata, do tanque azul e do verde que brota da pedra. Diferente de obra apenas decorativa, esta fonte gigante tem profundidade 3 m e presença 10 m — a mesma lógica de toda escultura monumental do ateliê de Fernando Quincas. A obra já está no Portal do Morumbi, não é tão interessante remover, mas se você puder remover, dá — com equipe, a fibra de vidro permite desmontagem assistida. É uma escultura que envelhece com charme, como toda obra de Fernando Quincas feita para a rua, para o portal e para o tempo.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Aguenta calor, chuva, frio e vento: fibra de vidro da fonte gigante 10m × 3m — a obra de Fernando Quincas que não pede cuidado toda hora.',
+          'Vista por milhares de pessoas todos os dias: fachada no Portal do Morumbi — a fonte gigantesca de Fernando Quincas que virou monumento urbano.',
+          '10m × 3m com tanque para peixes e espaço para plantas: lago e jardim em um — a escultura de Fernando Quincas que une água e verde.',
+          '3 bombas dedicadas: hidráulica tripla — a obra monumental de Fernando Quincas que nunca silencia.',
+        ],
+      },
+      { type: 'heading', text: 'Quanto custa e como ter sua Fonte Gigante 10m no ateliê de Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'Cada Fonte Gigante Paulo Leardi 10m × 3m do ateliê de Fernando Quincas é obra sob encomenda — réplica da ícone do Portal do Morumbi. A fonte gigantesca em fibra de vidro — quase 10 m de fachada por 3 m de profundidade, mais de 2.000 kg, tanque para peixes com espaço para plantas, 3 bombas dedicadas, vários meses de trabalho artesanal com muita fibra de vidro, que aguenta calor, chuva, frio e vento sem precisar cuidar toda hora e que é vista por milhares todos os dias — custa R$ 50.000. O valor, para uma escultura hidráulica 10m desse porte, com tanque e 3 bombas, explica por que a Fonte Gigante de Fernando Quincas é tão procurada para portais, fachadas e grandes terrenos. Como toda escultura e toda obra gigantesca de Fernando Quincas, a fonte leva acabamento manual e orientação — do ponto na fachada à calibragem das 3 bombas. Não é tão interessante remover a original do Morumbi, mas se você puder remover, dá — a obra em fibra de vidro permite desmontagem — e o ateliê de Fernando Quincas entrega uma nova sob medida para seu portal.',
+      },
+      {
+        type: 'list',
+        items: [
+          'R$ 50.000 — fonte gigantesca 10,00 × 3,00 m em fibra de vidro, mais de 2.000 kg, tanque para peixes com espaço para plantas e 3 bombas dedicadas.',
+          'Vários meses de trabalho artesanal: muita fibra de vidro moldada à mão por Fernando Quincas — a obra monumental do Portal do Morumbi que milhares veem todo dia.',
+          'Aguenta calor, chuva, frio e vento sem precisar cuidar toda hora — fibra da fonte gigante de Fernando Quincas selada para externo.',
+          'Encontre na loja: Fonte Gigante Paulo Leardi 10m no Portal do Morumbi em COLEÇÕES (/loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra) — obra gigantesca de Fernando Quincas.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Hoje, a Fonte Gigante Paulo Leardi 10m × 3m vive na loja do ateliê de Fernando Quincas nas categorias COLEÇÕES e GARDEN — encontre em /loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra por R$ 50.000, com 5 fotos: a primeira com fundo verde e casa grande ao fundo (foto estúdio) e as demais são a fachada na rua do Portal do Morumbi, as duas visões de dentro com tanque azul e cascatas, e a escala humana ao lado da obra. Como toda obra do ateliê, cada Fonte Gigante 10m é acabada à mão por Fernando Quincas e feita em fibra de vidro com muita fibra de vidro. Se você busca uma fonte gigantesca 10m que pega quase 10 m de fachada, com 3 m de profundidade, tanque para peixes, espaço para plantas, 3 bombas dedicadas, que aguenta calor, chuva, frio e vento sem cuidar toda hora, vista por milhares por dia, feita em vários meses com mais de 2.000 kg de fibra de vidro, ou simplesmente uma obra monumental que leve o nome Fernando Quincas para seu portal, esta obra é a escolha. A fonte gigante e monumental 10m × 3m em fibra de vidro de Fernando Quincas está pronta para transformar sua fachada — e para aparecer nos mecanismos de busca quando alguém procurar por fonte gigante Paulo Leardi, Portal do Morumbi, fonte 10m, fibra de vidro, tanque para peixes, 3 bombas e obra de Fernando Quincas.',
+      },
+    ],
+  },
+  {
+    id: 'fonte-pedra-tratada-250-fibra-fernando-quincas',
+    slug: 'fonte-de-pedra-tratada-250x250-fibra-de-vidro-fernando-quincas-piscina-jardim',
+    title: 'Fonte de Pedra Tratada 2,50×2,50m em fibra de vidro por Fernando Quincas: a fonte grande que imita pedra, leve, desmontável, com bomba automática e pronta para piscina e jardim',
+    subtitle: '2,50 m por 2,50 m por 1,50 m de profundidade, 150 a 200 kg, desmontável, fibra de vidro que imita pedra tratada, bomba automática integrada por dentro, resiste a sol e chuva sem criar musgo e embeleza muito lugar — a fonte grande e bonita do ateliê por R$ 19.000.',
+    category: 'JARDIM',
+    date: '2026-08-28',
+    author: 'Fernando Quincas',
+    authorRole: 'Escultor & Mestre Artesão',
+    readingTimeMinutes: 6,
+    excerpt:
+      'Fonte de Pedra Tratada 2,50×2,50m com 1,50 m de profundidade por Fernando Quincas: a nova fonte grande e bonita em fibra de vidro que imita pedra, leve (150–200 kg), desmontável para levar a outros locais, com bomba automática integrada por dentro. Resiste a sol, chuva e tempo sem pedir tratamento contra musgo — pronta para piscina e jardim por R$ 19.000. Veja como a obra de Fernando Quincas em fibra de vidro embeleza muito lugar.',
+    coverImage: '/products/fonte-pedra-tratada-piscina-01.jpeg',
+    tags: ['Fernando Quincas', 'Fonte de Pedra Tratada', 'Fonte 2,50x2,50', 'Fibra de Vidro', 'Imita Pedra', 'Fonte Grande', 'Bomba Automática', 'Piscina', 'Jardim', 'R$ 19.000'],
+    featured: false,
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'A Fonte de Pedra Tratada 2,50×2,50m com Bomba Automática de Fernando Quincas não é só uma fonte — é uma fonte grande e bonita que parece pedra, mas é fibra de vidro leve, desmontável e feita para durar. Com 2,50 m por 2,50 m e 1,50 m de profundidade, entre 150 e 200 kg, ela entrega presença de pedra sem o peso de pedra: pode ser desmontada e levada para outros locais, da borda da piscina ao jardim, da varanda gourmet à área de lazer. Modelada no ateliê de Fernando Quincas, a fibra de vidro imita pedra tratada com fidelidade — textura, veios e pátina — e já vem com bomba automática inteira e integrada por dentro, que faz a fonte funcionar assim que liga. É uma escultura hidráulica de Fernando Quincas feita para embelezar muito lugar — e para aparecer nos mecanismos de busca quando alguém procurar por fonte de pedra tratada, fibra de vidro, fonte grande 2,50, bomba automática e obra de Fernando Quincas.',
+      },
+      { type: 'heading', text: 'Por que essa fonte imita pedra mas não pesa como pedra?' },
+      {
+        type: 'paragraph',
+        text: 'No ateliê de Fernando Quincas, uma fonte grande 2,50×2,50 precisa resolver água, escala e leveza ao mesmo tempo. A Fonte de Pedra Tratada é uma escultura de presença clássica: bacia ampla com 1,50 m de profundidade que acolhe o jato, bordas que desenham o espelho d’água e queda que cria som contínuo. Só que, em pedra natural, uma peça 2,50×2,50 pesaria toneladas e não sairia do lugar. Em fibra de vidro que imita pedra, a escultura de Fernando Quincas mantém o visual de pedra tratada — grão, porosidade sutil, pátina — com 150 a 200 kg e estrutura desmontável que permite levar a fonte para outros locais. É uma obra desenhada por Fernando Quincas para quem quer fonte grande sem obra pesada: chega, monta, liga a bomba automática integrada e a fonte funciona.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Fibra de vidro que imita pedra tratada: corpo da escultura leve — 2,50×2,50×1,50 m com 150–200 kg, desmontável para levar a outros locais.',
+          'Bomba automática integrada por dentro: coração hidráulico da obra — já vem inteira na fonte, faz a fonte funcionar sem casa de máquinas externa.',
+          'Acabamento pedra tratada: alma visual da escultura — textura e pátina que enganam o olho, mas sem o peso nem a porosidade da pedra natural.',
+          'Escala grande e bonita: presença monumental de Fernando Quincas que embeleza muito lugar — piscina, jardim, pátio e hall externo.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-pedra-tratada-escala-piscina.jpeg',
+        alt: 'Fonte de Pedra Tratada 2,50×2,50 ao lado de Fernando Quincas na piscina - escala humana da fonte em fibra de vidro',
+        caption: 'Escala na piscina: Fernando Quincas ao lado da Fonte 2,50×2,50 — a nova fonte grande em fibra de vidro que imita pedra, já com bomba automática integrada.',
+      },
+      { type: 'heading', text: 'Leve, desmontável e pronta para viajar: a fonte que muda de lugar com você' },
+      {
+        type: 'paragraph',
+        text: 'Uma graça da Fonte de Pedra Tratada de Fernando Quincas é que ela não prende o projeto. Por ser em fibra de vidro, a fonte 2,50×2,50 é leve para o porte (150 a 200 kg) e desmontável — pode ser desmontada e levada para outros locais quando a casa muda, a festa muda ou o jardim pede nova cena. Diferente de fontes em pedra ou concreto, a obra de Fernando Quincas não exige guindaste nem fundação definitiva: a escultura assenta na borda da piscina, no deck ou no jardim e, quando preciso, viaja. É uma fonte grande de Fernando Quincas pensada como mobiliário hidráulico: presença de pedra, logística de fibra — por isso, toda obra do ateliê de Fernando Quincas em fibra de vidro é tão procurada para piscina e jardim.',
+      },
+      {
+        type: 'list',
+        items: [
+          '2,50 × 2,50 × 1,50 m de profundidade: bacia generosa que comporta jato, queda e espelho d’água — a escultura grande de Fernando Quincas para piscina.',
+          '150–200 kg desmontável: leveza que permite desmontar e levar a outros locais — a obra de Fernando Quincas que não condena o projeto a um só ponto.',
+          'Fibra de vidro imita pedra: textura tratada com selante — a escultura de Fernando Quincas parece pedra, mas não pesa como pedra.',
+          'Bomba automática por dentro: já integrada, faz a fonte funcionar inteira — a obra hidráulica de Fernando Quincas pronta para ligar.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-pedra-tratada-piscina-02.jpeg',
+        alt: 'Fonte de Pedra Tratada 2,50×2,50 funcionando na piscina - segundo ângulo da fonte em fibra de vidro por Fernando Quincas',
+        caption: 'Na piscina, funcionando: segundo ângulo da Fonte 2,50×2,50 em fibra de vidro — água em movimento com bomba automática integrada de Fernando Quincas.',
+      },
+      { type: 'heading', text: 'Resiste a sol, chuva e tempo — e não pede tratamento contra musgo' },
+      {
+        type: 'paragraph',
+        text: 'Toda obra do ateliê de Fernando Quincas precisa provar que fica bonita no tempo, e a Fonte de Pedra Tratada 2,50×2,50 com Bomba é a prova. A escultura em fibra de vidro imita pedra tratada, mas não tem a porosidade da pedra que cria limo: a superfície selada resiste a sol e chuva sem criar musgo, sem precisar de tratamento contra musgo ou verniz anual. A fibra de vidro, com selante e pátina mineral, não infiltra, não mofa e mantém a cor — por isso, a obra de Fernando Quincas embeleza muito lugar sem manutenção heroica. A bomba automática integrada fica protegida por dentro da própria fonte, com acesso discreto: liga, circula e recircula a água com som contínuo, sem casa de máquinas aparente. É uma fonte grande de Fernando Quincas feita para ficar no externo — e para continuar bonita.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Fibra de vidro selada: pele da escultura que resiste a sol e chuva — a fonte 2,50×2,50 de Fernando Quincas não pede tratamento contra musgo.',
+          'Pátina pedra tratada: acabamento da obra que embeleza muito lugar — de piscina a jardim, a escultura de Fernando Quincas valoriza o entorno.',
+          'Bomba automática integrada por dentro: hidráulica inteira na fonte — faz a fonte funcionar com um botão, sem instalação externa complexa.',
+          'Manutenção simples: água e limpeza leve bastam — a obra 2,50×2,50 em fibra de vidro de Fernando Quincas foi feita para durar.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-pedra-tratada-angulo-lateral.jpeg',
+        alt: 'Fonte de Pedra Tratada em fibra de vidro ângulo lateral - detalhe da borda e textura pedra tratada por Fernando Quincas',
+        caption: 'Ângulo lateral: a borda e a textura pedra tratada em fibra de vidro — detalhe da escultura 2,50×2,50 de Fernando Quincas.',
+      },
+      {
+        type: 'image',
+        src: '/products/fonte-pedra-tratada-angulo-cima.jpeg',
+        alt: 'Fonte de Pedra Tratada em fibra de vidro ângulo superior lateral - vista de cima da bacia 2,50×2,50 por Fernando Quincas',
+        caption: 'Vista superior lateral: a bacia com 1,50 m de profundidade — a escultura hidráulica 2,50×2,50 de Fernando Quincas pronta para receber água.',
+      },
+      {
+        type: 'quote',
+        text: 'Pedra bonita é pesada e prende. Fibra bonita que imita pedra é leve e liberta. Minha fonte tem que embelezar e, se precisar, viajar.',
+        attribution: 'Fernando Quincas',
+      },
+      { type: 'heading', text: 'Onde a fonte embeleza: piscina, jardim e grandes áreas' },
+      {
+        type: 'paragraph',
+        text: 'A Fonte de Pedra Tratada 2,50×2,50 de Fernando Quincas nasceu para o canto da piscina — e é ali, funcionando, que a obra mostra sua força (foto de capa deste post). Mas, por ser leve (150–200 kg), desmontável e já com bomba automática integrada, a escultura em fibra de vidro vai bem em muito lugar: no jardim como ponto focal, na varanda gourmet como espelho d’água, no pátio interno como som de fundo, no hall externo de pousada ou sítio como boas-vindas. Em todo lugar, a fonte grande de Fernando Quincas embeleza muito — a água em movimento dobra a luz, o som acalma e a textura pedra tratada organiza o verde ao redor. É uma obra do ateliê de Fernando Quincas que, como toda escultura hidráulica do ateliê, foi pensada para viver com água, sol e chuva, sem musgo e sem medo.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Canto da piscina: berço ideal da obra 2,50×2,50 — a escultura hidráulica de Fernando Quincas com bomba automática integrada cria som e frescor na área de lazer.',
+          'Jardim e deck: ponto focal da escultura grande — a fonte em fibra de vidro que imita pedra de Fernando Quincas embeleza muito lugar com só 150–200 kg.',
+          'Pátios e halls externos: escultura desmontável de Fernando Quincas que pode mudar de lugar — leve para levar a outros locais.',
+          'Áreas de pousada e sítio: obra 2,50×2,50 que resiste a sol e chuva — a fonte de Fernando Quincas sem tratamento contra musgo.',
+        ],
+      },
+      { type: 'heading', text: 'Quanto custa e como ter sua Fonte 2,50×2,50 no ateliê de Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'Cada Fonte de Pedra Tratada 2,50×2,50 com Bomba Automática do ateliê de Fernando Quincas é obra sob encomenda. A fonte grande em fibra de vidro que imita pedra — 2,50 m por 2,50 m por 1,50 m de profundidade, 150 a 200 kg, leve, desmontável, com bomba automática inteira e integrada por dentro, resiste a sol e chuva sem criar musgo — custa R$ 19.000 e já vem pronta para funcionar. O valor, para uma escultura hidráulica 2,50×2,50 desse porte, com acabamento pedra tratada e bomba inclusa, explica por que a Fonte de Fernando Quincas é tão procurada para piscina e jardim. Como toda escultura e toda obra de Fernando Quincas, a fonte leva acabamento manual e orientação — do ponto na piscina à ligação da bomba.',
+      },
+      {
+        type: 'list',
+        items: [
+          'R$ 19.000 — fonte grande 2,50×2,50×1,50 m em fibra de vidro que imita pedra, leve e desmontável (150–200 kg).',
+          'Bomba automática integrada por dentro — já inclusa, faz a fonte funcionar inteira, sem casa de máquinas externa.',
+          'Resiste a sol, chuva e tempo sem criar musgo — fibra de vidro com pedra tratada selada é a obra de Fernando Quincas que embeleza muito lugar.',
+          'Encontre na loja: Fonte de Pedra Tratada 2,50×2,50 com Bomba em GARDEN (/loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro) — obra de Fernando Quincas.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Hoje, a Fonte de Pedra Tratada 2,50×2,50 com Bomba vive na loja do ateliê de Fernando Quincas na categoria GARDEN (também em COLEÇÕES) — encontre em /loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro por R$ 19.000, com 6 fotos: a primeira com fundo verde de estúdio (foto “Fonte de Pedra Tratada”) e as demais são as fotos na piscina funcionando, em escala com Fernando Quincas e nos ângulos lateral e superior. Como toda obra do ateliê, cada Fonte 2,50×2,50 é acabada à mão por Fernando Quincas. Se você busca uma fonte grande que imita pedra, uma fonte leve e desmontável que pode ser levada para outros locais, uma fonte com bomba automática integrada que resiste a sol e chuva sem musgo, ou uma escultura hidráulica que embeleza muito lugar, esta obra é a escolha. A fonte grande e bonita 2,50×2,50 em fibra de vidro de Fernando Quincas está pronta para transformar sua piscina e seu jardim — e para aparecer nos mecanismos de busca quando alguém procurar por fonte de pedra tratada 2,50, fibra de vidro, fonte grande, bomba automática e obra de Fernando Quincas.',
+      },
+    ],
+  },
+  {
     id: 'iglu-concreto-4x4-fernando-quincas',
     slug: 'iglu-de-concreto-4x4-claraboia-fernando-quincas-jardim',
     title: 'Quer um cômodo novo sem obra infinita? O iglu de concreto 4×4m por Fernando Quincas que aguenta sol, chuva e tempo — com e sem claraboia',
