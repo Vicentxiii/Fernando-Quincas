@@ -1,9 +1,21 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Clock, CalendarDays, User, Quote, Sparkles, ArrowUpRight } from 'lucide-react';
 import { BLOG_CATEGORY_LABELS, BLOG_POSTS } from '../data/blog';
 import { BlogBlock } from '../types';
 import { BlogCard } from '../components/blog/BlogCard';
+
+const SITE_URL = 'https://fernandoquincas.art';
+
+const setMetaTag = (attr: 'name' | 'property', key: string, content: string) => {
+  let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+};
 
 const BlockRenderer: React.FC<{ block: BlogBlock }> = ({ block }) => {
   switch (block.type) {
@@ -75,7 +87,97 @@ export const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
 
-  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  const post =
+    BLOG_POSTS.find((p) => p.slug === slug) ||
+    // alias para não quebrar link antigo do post Novos Rumos
+    (slug === 'novos-rumos-do-atelie-2026' ? BLOG_POSTS.find((p) => p.id === 'novos-rumos-atelie') : undefined);
+
+  // SEO avançado para Google e IAs: title, description, OG, Twitter, canonical e JSON-LD Article
+  useEffect(() => {
+    if (!post) return;
+    const url = `${SITE_URL}/blog/${post.slug}`;
+    const fullTitle = post.title.includes('Fernando Quincas') ? post.title : `${post.title} | Fernando Quincas`;
+    document.title = fullTitle;
+    setMetaTag('name', 'description', post.excerpt);
+    setMetaTag('name', 'keywords', post.tags.join(', '));
+    setMetaTag('property', 'og:title', fullTitle);
+    setMetaTag('property', 'og:description', post.excerpt);
+    setMetaTag('property', 'og:image', post.coverImage.startsWith('http') ? post.coverImage : `${SITE_URL}${post.coverImage}`);
+    setMetaTag('property', 'og:url', url);
+    setMetaTag('property', 'og:type', 'article');
+    setMetaTag('property', 'article:published_time', post.date);
+    setMetaTag('property', 'article:author', post.author);
+    setMetaTag('property', 'article:tag', post.tags.join(', '));
+    setMetaTag('name', 'twitter:card', 'summary_large_image');
+    setMetaTag('name', 'twitter:title', fullTitle);
+    setMetaTag('name', 'twitter:description', post.excerpt);
+    setMetaTag('name', 'twitter:image', post.coverImage.startsWith('http') ? post.coverImage : `${SITE_URL}${post.coverImage}`);
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', url);
+
+    const imageBlocks = post.blocks.filter((b) => b.type === 'image') as Extract<BlogBlock, { type: 'image' }>[];
+    const images = [post.coverImage, ...imageBlocks.map((b) => b.src)].map((src) => (src.startsWith('http') ? src : `${SITE_URL}${src}`));
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.title,
+      alternativeHeadline: post.subtitle,
+      description: post.excerpt,
+      image: images,
+      author: {
+        '@type': 'Person',
+        name: post.author,
+        jobTitle: post.authorRole || 'Escultor & Mestre Artesão',
+        url: SITE_URL,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Ateliê Fernando Quincas',
+        logo: { '@type': 'ImageObject', url: `${SITE_URL}/fernando-quincas.webp` },
+      },
+      datePublished: post.date,
+      dateModified: post.date,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      keywords: post.tags.join(', '),
+      articleSection: BLOG_CATEGORY_LABELS[post.category],
+      inLanguage: 'pt-BR',
+      isAccessibleForFree: true,
+    };
+
+    let script = document.head.querySelector<HTMLScriptElement>('script[data-blog-jsonld="true"]');
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-blog-jsonld', 'true');
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(jsonLd);
+
+    // Breadcrumb para IAs e Google
+    const breadcrumbLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Início', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+        { '@type': 'ListItem', position: 3, name: post.title, item: url },
+      ],
+    };
+    let breadcrumbScript = document.head.querySelector<HTMLScriptElement>('script[data-breadcrumb-jsonld="true"]');
+    if (!breadcrumbScript) {
+      breadcrumbScript = document.createElement('script');
+      breadcrumbScript.type = 'application/ld+json';
+      breadcrumbScript.setAttribute('data-breadcrumb-jsonld', 'true');
+      document.head.appendChild(breadcrumbScript);
+    }
+    breadcrumbScript.textContent = JSON.stringify(breadcrumbLd);
+  }, [post]);
 
   const relatedPosts = useMemo(() => {
     if (!post) return [];
