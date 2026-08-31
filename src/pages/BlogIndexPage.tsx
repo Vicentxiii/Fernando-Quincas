@@ -10,8 +10,8 @@ type CategoryFilter = BlogCategory | 'ALL';
 
 export const BlogIndexPage: React.FC = () => {
   useDocumentMeta({
-    title: 'Blog do Escultor - Fernando Quincas',
-    description: 'Ensaios, bastidores e memórias do ateliê de Fernando Quincas: processos, materiais, projetos e a vida entre as esculturas.',
+    title: 'Blog do Atelier de Fernando Quincas — Mestre Artesão em Fibra de Vidro | Bastidores e Obras',
+    description: 'Blog do Atelier de Fernando Quincas, mestre artesão em fibra de vidro: bastidores de esculturas monumentais, fontes, vasos, fibra de vidro, douração 24k e histórias do atelier em Minas Gerais.',
   });
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>('ALL');
 

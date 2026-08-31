@@ -5,7 +5,7 @@ import { BLOG_CATEGORY_LABELS, BLOG_POSTS } from '../data/blog';
 import { BlogBlock } from '../types';
 import { BlogCard } from '../components/blog/BlogCard';
 
-const SITE_URL = 'https://fernandoquincas.art';
+const SITE_URL = 'https://fernandoquincas.com.br';
 
 const setMetaTag = (attr: 'name' | 'property', key: string, content: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);

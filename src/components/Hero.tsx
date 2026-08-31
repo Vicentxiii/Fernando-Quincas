@@ -23,15 +23,23 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src={encodeURI('/Atelier Fernando Quincas.png')}
-          alt="Atelier do escultor Fernando Quincas com obras monumentais e ornamentação artística"
+          alt="Atelier de Fernando Quincas, mestre artesão em fibra de vidro, com esculturas monumentais e fontes esculturais"
           className="hidden md:block w-full h-full object-cover object-right scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          width="1920"
+          height="1080"
         />
         <img
           src={encodeURI('/Hero para Mobile Fernando Quincas Escultor.png')}
-          alt="Atelier do escultor Fernando Quincas com obras monumentais e ornamentação artística"
+          alt="Atelier de Fernando Quincas, mestre artesão em fibra de vidro - esculturas monumentais"
           className="md:hidden w-full h-full object-cover object-center scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          width="800"
+          height="1200"
         />
         {/* Editorial Gradients & Vignettes */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#16251E]/90 via-[#16251E]/35 to-[#16251E]/5" />
@@ -65,12 +73,13 @@ export const Hero: React.FC<HeroProps> = ({
           </span>
         </div>
 
-        {/* Main Statement */}
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl 2xl:text-[4rem] tracking-tight font-light leading-[1.08] text-[#FAF8F5] mb-7 drop-shadow-sm">
-          ONDE A ARTE <br />
-          <span className="italic font-normal text-[#E0C995] font-serif">ENCONTRA A</span> <br />
-          <span className="italic font-normal text-[#E0C995] font-serif">NATUREZA</span>
+        {/* Main Statement - SEO H1 otimizado para Google e IAs: mestre artesão em fibra de vidro */}
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-[2.95rem] 2xl:text-[3.4rem] tracking-tight font-light leading-[1.12] text-[#FAF8F5] mb-4 drop-shadow-sm text-balance">
+          Conheça o Atelier de <br />
+          <span className="font-semibold text-[#FAF8F5]">Fernando Quincas</span> <br />
+          <span className="italic font-normal text-[#E0C995] font-serif text-2xl sm:text-3xl md:text-[2.2rem]">Mestre Artesão em Fibra de Vidro</span>
         </h1>
+        <p className="font-serif italic text-base sm:text-lg text-[#E0C995]/90 tracking-wide mb-1">Onde a Arte Encontra a Natureza</p>
 
         {/* Delicate Gold Divider */}
         <div className="flex items-center gap-3 w-24 md:w-28 my-6 opacity-60">
@@ -78,9 +87,9 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="w-1.5 h-1.5 rotate-45 border border-[#C8A86B] bg-[#16251E]" />
         </div>
 
-        {/* Secondary Text */}
-        <p className="font-sans text-base md:text-lg text-[#FAF8F5]/85 max-w-[430px] font-light leading-relaxed mb-10 text-balance">
-          Esculturas, peças decorativas e criações monumentais moldadas pela imaginação, maestria artesanal e pelo mundo natural.
+        {/* Secondary Text - SEO */}
+        <p className="font-sans text-base md:text-lg text-[#FAF8F5]/85 max-w-[480px] font-light leading-relaxed mb-10 text-balance">
+          Esculturas monumentais, fontes, vasos e peças decorativas em <strong className="font-semibold text-[#FAF8F5]/95">fibra de vidro</strong>, douração 24k e pedra reconstituída — feitas à mão no atelier de Minas Gerais para jardins, fazendas e projetos sob medida.
         </p>
 
         {/* Action Buttons */}

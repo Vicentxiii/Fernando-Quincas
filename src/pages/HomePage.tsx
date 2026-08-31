@@ -73,6 +73,83 @@ export const HomePage: React.FC<HomePageProps> = ({
     handleNavigate('contact');
   };
 
+  // SEO Home - garante title/description/canonical e FAQ para Google e IAs ao navegar via SPA
+  useEffect(() => {
+    const title = 'Conheça o Atelier de Fernando Quincas — Mestre Artesão em Fibra de Vidro | Esculturas Monumentais';
+    const description = 'Conheça o Atelier de Fernando Quincas, mestre artesão em fibra de vidro em Minas Gerais. Esculturas monumentais, fontes, vasos e obras sob medida feitas à mão há 40 anos.';
+    const url = 'https://fernandoquincas.com.br/';
+    document.title = title;
+    const setMeta = (attr: 'name' | 'property', key: string, content: string) => {
+      let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', content);
+    };
+    setMeta('name', 'description', description);
+    setMeta('property', 'og:title', title);
+    setMeta('property', 'og:description', description);
+    setMeta('property', 'og:url', url);
+    setMeta('property', 'og:type', 'website');
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', url);
+
+    // FAQ para IAs citarem — GEO
+    const faqLd = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Quem é Fernando Quincas?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Fernando Quincas é mestre artesão em fibra de vidro há 40 anos, criador da Boneca Eva de 45 metros, da Galinha de Monte Verde e de fontes monumentais como a Fonte Gigante Paulo Leardi 10m. Seu atelier fica em Minas Gerais, na Serra dos Órgãos.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'O que é o Atelier de Fernando Quincas?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'É o atelier de esculturas monumentais em fibra de vidro, douração 24k e pedra reconstituída em Minas Gerais. Produz fontes, vasos, colunas, lobas, galinhas gigantes e obras sob medida para jardins, fazendas, hotéis e praças. Conheça o Atelier de Fernando Quincas, mestre artesão em fibra de vidro.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'O que é fibra de vidro e por que o atelier usa?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Fibra de vidro é um compósito leve e resistente à chuva, sol e tempo. O atelier de Fernando Quincas domina laminação com resina e fibra, tinta PU automotiva e pátina mineral, criando obras que imitam pedra e bronze mas resistem décadas no externo.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Como encomendar uma obra sob medida?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'São 6 etapas: diálogo inicial, conceito e maquete em argila, engenharia e matrizes, escultura direta no atelier, acabamento e douração 24k, e logística especializada com instalação in situ em todo o Brasil.',
+          },
+        },
+      ],
+    };
+    let script = document.head.querySelector<HTMLScriptElement>('script[data-faq-home="true"]');
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-faq-home', 'true');
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(faqLd);
+  }, []);
+
   return (
     <main className="flex-1">
       {/* Hero Section */}

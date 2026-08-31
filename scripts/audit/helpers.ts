@@ -19,7 +19,7 @@ export function makeReq(opts: {
     method: opts.method ?? 'POST',
     body: opts.body,
     query,
-    url: `${opts.url ?? 'https://fernandoquincas.art/api/x'}${search ? `?${search}` : ''}`,
+    url: `${opts.url ?? 'https://fernandoquincas.com.br/api/x'}${search ? `?${search}` : ''}`,
     headers: opts.headers ?? {},
   };
 }

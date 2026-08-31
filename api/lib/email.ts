@@ -5,7 +5,7 @@ import { Order } from './types';
  *
  * ENV VARS (opcionais hoje):
  * • RESEND_API_KEY → chave da API Resend (https://resend.com)
- * • EMAIL_FROM     → remetente aprovado, ex.: "Ateliê Fernando Quincas <ateliê@fernandoquincas.art>"
+ * • EMAIL_FROM     → remetente aprovado, ex.: "Ateliê Fernando Quincas <ateliê@fernandoquincas.com.br>"
  *
  * Sem as credenciais, os envios viram no-op registrados em log — nenhum erro é
  * propagado para o fluxo de compra.
