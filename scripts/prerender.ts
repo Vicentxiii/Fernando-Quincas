@@ -281,6 +281,13 @@ async function generate() {
     const ogImage = product.images[0];
     const absImages = product.images.map((img) => (img.startsWith('http') ? img : `${SITE_URL}${img}`));
 
+    const availability =
+      product.status !== 'AVAILABLE' || product.stock <= 0
+        ? 'https://schema.org/OutOfStock'
+        : product.stock === 1
+          ? 'https://schema.org/LimitedAvailability'
+          : 'https://schema.org/InStock';
+
     const productLd = {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -289,14 +296,17 @@ async function generate() {
       description: product.shortDescription,
       category: product.categories ? product.categories.join(', ') : product.category,
       image: absImages,
-      brand: { '@type': 'Brand', name: 'Fernando Quincas Ateliê' },
       sku: product.id,
+      mpn: product.id,
+      brand: { '@type': 'Brand', name: 'Ateliê Fernando Quincas' },
       offers: {
         '@type': 'Offer',
+        url,
         priceCurrency: 'BRL',
         price: product.price,
-        availability: product.status === 'AVAILABLE' && product.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/SoldOut',
-        url,
+        priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+        availability,
+        itemCondition: 'https://schema.org/NewCondition',
         seller: { '@type': 'Organization', name: 'Ateliê Fernando Quincas', url: SITE_URL },
       },
     };

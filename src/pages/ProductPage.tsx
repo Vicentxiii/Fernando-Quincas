@@ -23,34 +23,66 @@ export const ProductPage: React.FC = () => {
     keywords: product ? `${product.name}, Fernando Quincas, fibra de vidro, ${product.category}` : undefined,
   });
 
-  // JSON-LD structured data for the product
+  // JSON-LD structured data for the product (SPA navigation — prerender já injeta no HTML estático via scripts/prerender.ts:284)
   useEffect(() => {
     if (!product) return;
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'product-jsonld';
-    script.textContent = JSON.stringify({
+    const SITE_URL = 'https://fernandoquincas.com.br';
+    const url = `https://fernandoquincas.com.br/loja/${product.slug}`;
+    const absImages = product.images.map((img) => (img.startsWith('http') ? img : `${SITE_URL}${img}`));
+    const availability =
+      product.status !== 'AVAILABLE' || product.stock <= 0
+        ? 'https://schema.org/OutOfStock'
+        : product.stock === 1
+          ? 'https://schema.org/LimitedAvailability'
+          : 'https://schema.org/InStock';
+
+    const payload = {
       '@context': 'https://schema.org',
       '@type': 'Product',
+      '@id': `${url}#product`,
       name: product.name,
       description: product.shortDescription,
       category: product.categories ? product.categories.join(', ') : product.category,
-      image: product.images,
-      brand: { '@type': 'Brand', name: 'Fernando Quincas Ateliê' },
+      image: absImages,
+      sku: product.id,
+      mpn: product.id,
+      brand: { '@type': 'Brand', name: 'Ateliê Fernando Quincas' },
       offers: {
         '@type': 'Offer',
+        url,
         priceCurrency: 'BRL',
         price: product.price,
-        availability:
-          isAvailable(product)
-            ? 'https://schema.org/InStock'
-            : 'https://schema.org/SoldOut',
-        url: window.location.href,
+        priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+        availability,
+        itemCondition: 'https://schema.org/NewCondition',
+        seller: { '@type': 'Organization', name: 'Ateliê Fernando Quincas', url: SITE_URL },
       },
-    });
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'product-jsonld';
+    script.textContent = JSON.stringify(payload);
     document.head.appendChild(script);
+
+    const breadcrumb = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Início', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Loja', item: `${SITE_URL}/loja` },
+        { '@type': 'ListItem', position: 3, name: product.name, item: url },
+      ],
+    };
+    const bScript = document.createElement('script');
+    bScript.type = 'application/ld+json';
+    bScript.id = 'product-breadcrumb-jsonld';
+    bScript.textContent = JSON.stringify(breadcrumb);
+    document.head.appendChild(bScript);
+
     return () => {
       document.getElementById('product-jsonld')?.remove();
+      document.getElementById('product-breadcrumb-jsonld')?.remove();
     };
   }, [product]);
 
