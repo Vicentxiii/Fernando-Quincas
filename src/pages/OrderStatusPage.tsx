@@ -34,20 +34,12 @@ export const OrderStatusPage: React.FC = () => {
   const attemptsRef = useRef(0);
   const cleanedCartRef = useRef(false);
 
-  // Pedidos são páginas privadas — fora dos motores de busca.
-  useEffect(() => {
-    const el = document.createElement('meta');
-    el.name = 'robots';
-    el.content = 'noindex,nofollow';
-    document.head.appendChild(el);
-    return () => {
-      el.remove();
-    };
-  }, []);
-
   useDocumentMeta({
     title: 'Acompanhar Pedido',
     description: 'Acompanhe o status do seu pedido no ateliê Fernando Quincas.',
+    canonical: id ? `https://fernandoquincas.com.br/loja/pedido/${id}` : 'https://fernandoquincas.com.br/loja/pedido',
+    noindex: true,
+    type: 'website',
   });
 
   const load = async () => {

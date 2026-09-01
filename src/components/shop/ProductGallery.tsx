@@ -63,9 +63,12 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ product }) => {
           <img
             key={images[index]}
             src={images[index]}
-            alt={`${product.name} — imagem ${index + 1} de ${images.length}`}
+            alt={`${product.name} — imagem ${index + 1} de ${images.length} por Fernando Quincas`}
             loading={index === 0 ? 'eager' : 'lazy'}
+            fetchPriority={index === 0 ? 'high' : 'auto'}
             decoding="async"
+            width="800"
+            height="800"
             onClick={() => setZoomed((z) => !z)}
             className={`max-h-full max-w-full object-contain animate-galleryFade cursor-zoom-in transition-transform duration-700 ease-out ${
               zoomed ? 'scale-[1.35]' : 'scale-100'
@@ -114,7 +117,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({ product }) => {
                   : 'border-[#C8A86B]/20 opacity-60 hover:opacity-100 hover:border-[#C8A86B]/60'
               }`}
             >
-              <img src={src} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+              <img src={src} alt={`${product.name} — miniatura ${i + 1}`} loading="lazy" decoding="async" width="80" height="80" className="w-full h-full object-cover" />
             </button>
           ))}
         </div>

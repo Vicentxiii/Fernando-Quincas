@@ -22,7 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fernando-quincas',
     slug: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra-de-vidro-fernando-quincas',
-    title: 'Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas no Portal do Morumbi: a obra monumental de 2.000 kg de fibra de vidro com tanque para peixes e 3 bombas que milhares veem todo dia — R$ 50.000',
+    title: 'Fonte Gigante Paulo Leardi 10m | Portal Morumbi',
     subtitle: 'Quase 10 m de fachada por 3 m de profundidade, mais de 2.000 kg de fibra de vidro, tanque para peixes com espaço para plantas, 3 bombas dedicadas e vários meses de trabalho artesanal por Fernando Quincas — a fonte gigantesca do Portal do Morumbi que aguenta calor, chuva, frio e vento sem precisar cuidar toda hora, vista por milhares de pessoas todos os dias.',
     category: 'JARDIM',
     date: '2026-08-28',
@@ -37,7 +37,7 @@ export const BLOG_POSTS: BlogPost[] = [
     blocks: [
       {
         type: 'paragraph',
-        text: 'A Fonte Gigante Paulo Leardi 10m × 3m no Portal do Morumbi por Fernando Quincas não é uma fonte — é uma fachada que virou paisagem. São quase 10 m de comprimento por 3 m de profundidade, mais de 2.000 kg de fibra de vidro esculpida à mão por Fernando Quincas, com rochas, cascatas em degraus, tanque para peixes e espaço para plantas que tomam a frente do imóvel como uma serra à beira da calçada. Criada em vários meses de trabalho artesanal no ateliê de Fernando Quincas, com muita fibra de vidro e três bombas dedicadas, a obra já nasceu gigantesca: não é tão interessante remover, mas se você puder remover, dá — com equipe — e ela renasce em outro grande terreno. Hoje, a fonte gigantesca de Fernando Quincas no Portal do Morumbi é vista por milhares de pessoas todos os dias, sob calor, chuva, frio e vento, sem precisar ficar cuidando toda hora. É uma obra monumental de Fernando Quincas por R$ 50.000 que transforma fachada em monumento — e que foi feita para aparecer nos mecanismos de busca quando alguém procurar por fonte gigante Paulo Leardi, Portal do Morumbi, fonte 10m, fibra de vidro, tanque para peixes, 3 bombas e obra de Fernando Quincas.',
+        text: 'A Fonte Gigante Paulo Leardi 10m × 3m no Portal do Morumbi por Fernando Quincas não é uma fonte — é uma fachada que virou paisagem. São quase 10 m de comprimento por 3 m de profundidade, mais de 2.000 kg de fibra de vidro esculpida à mão por Fernando Quincas, com rochas, cascatas em degraus, tanque para peixes e espaço para plantas que tomam a frente do imóvel como uma serra à beira da calçada. Criada em vários meses de trabalho artesanal no ateliê de Fernando Quincas, com muita fibra de vidro e três bombas dedicadas, a obra já nasceu gigantesca: não é tão interessante remover, mas se você puder remover, dá — com equipe — e ela renasce em outro grande terreno. Hoje, a fonte gigantesca de Fernando Quincas no Portal do Morumbi é vista por milhares de pessoas todos os dias, sob calor, chuva, frio e vento, sem precisar ficar cuidando toda hora. É uma obra monumental de Fernando Quincas por R$ 50.000 que transforma fachada em monumento.',
       },
       { type: 'heading', text: 'Magnitude que não cabe na foto: quase 10 m de fachada por Fernando Quincas' },
       {
@@ -154,14 +154,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, a Fonte Gigante Paulo Leardi 10m × 3m vive na loja do ateliê de Fernando Quincas nas categorias COLEÇÕES e GARDEN — encontre em /loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra por R$ 50.000, com 5 fotos: a primeira com fundo verde e casa grande ao fundo (foto estúdio) e as demais são a fachada na rua do Portal do Morumbi, as duas visões de dentro com tanque azul e cascatas, e a escala humana ao lado da obra. Como toda obra do ateliê, cada Fonte Gigante 10m é acabada à mão por Fernando Quincas e feita em fibra de vidro com muita fibra de vidro. Se você busca uma fonte gigantesca 10m que pega quase 10 m de fachada, com 3 m de profundidade, tanque para peixes, espaço para plantas, 3 bombas dedicadas, que aguenta calor, chuva, frio e vento sem cuidar toda hora, vista por milhares por dia, feita em vários meses com mais de 2.000 kg de fibra de vidro, ou simplesmente uma obra monumental que leve o nome Fernando Quincas para seu portal, esta obra é a escolha. A fonte gigante e monumental 10m × 3m em fibra de vidro de Fernando Quincas está pronta para transformar sua fachada — e para aparecer nos mecanismos de busca quando alguém procurar por fonte gigante Paulo Leardi, Portal do Morumbi, fonte 10m, fibra de vidro, tanque para peixes, 3 bombas e obra de Fernando Quincas.',
+        text: 'Hoje, a Fonte Gigante Paulo Leardi 10m × 3m vive na loja do ateliê de Fernando Quincas nas categorias COLEÇÕES e GARDEN — encontre em /loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra por R$ 50.000, com 5 fotos: a primeira com fundo verde e casa grande ao fundo (foto estúdio) e as demais são a fachada na rua do Portal do Morumbi, as duas visões de dentro com tanque azul e cascatas, e a escala humana ao lado da obra. Como toda obra do ateliê, cada Fonte Gigante 10m é acabada à mão por Fernando Quincas e feita em fibra de vidro com muita fibra de vidro. Se você busca uma fonte gigantesca 10m que pega quase 10 m de fachada, com 3 m de profundidade, tanque para peixes, espaço para plantas, 3 bombas dedicadas, que aguenta calor, chuva, frio e vento sem cuidar toda hora, vista por milhares por dia, feita em vários meses com mais de 2.000 kg de fibra de vidro, ou simplesmente uma obra monumental que leve o nome Fernando Quincas para seu portal, esta obra é a escolha. A fonte gigante e monumental 10m × 3m em fibra de vidro de Fernando Quincas está pronta para transformar sua fachada.',
       },
     ],
   },
   {
     id: 'fonte-pedra-tratada-250-fibra-fernando-quincas',
     slug: 'fonte-de-pedra-tratada-250x250-fibra-de-vidro-fernando-quincas-piscina-jardim',
-    title: 'Fonte de Pedra Tratada 2,50×2,50m em fibra de vidro por Fernando Quincas: a fonte grande que imita pedra, leve, desmontável, com bomba automática e pronta para piscina e jardim',
+    title: 'Fonte de Pedra Tratada 2,50×2,50m | Jardim',
     subtitle: '2,50 m por 2,50 m por 1,50 m de profundidade, 150 a 200 kg, desmontável, fibra de vidro que imita pedra tratada, bomba automática integrada por dentro, resiste a sol e chuva sem criar musgo e embeleza muito lugar — a fonte grande e bonita do ateliê por R$ 19.000.',
     category: 'JARDIM',
     date: '2026-08-28',
@@ -176,7 +176,7 @@ export const BLOG_POSTS: BlogPost[] = [
     blocks: [
       {
         type: 'paragraph',
-        text: 'A Fonte de Pedra Tratada 2,50×2,50m com Bomba Automática de Fernando Quincas não é só uma fonte — é uma fonte grande e bonita que parece pedra, mas é fibra de vidro leve, desmontável e feita para durar. Com 2,50 m por 2,50 m e 1,50 m de profundidade, entre 150 e 200 kg, ela entrega presença de pedra sem o peso de pedra: pode ser desmontada e levada para outros locais, da borda da piscina ao jardim, da varanda gourmet à área de lazer. Modelada no ateliê de Fernando Quincas, a fibra de vidro imita pedra tratada com fidelidade — textura, veios e pátina — e já vem com bomba automática inteira e integrada por dentro, que faz a fonte funcionar assim que liga. É uma escultura hidráulica de Fernando Quincas feita para embelezar muito lugar — e para aparecer nos mecanismos de busca quando alguém procurar por fonte de pedra tratada, fibra de vidro, fonte grande 2,50, bomba automática e obra de Fernando Quincas.',
+        text: 'A Fonte de Pedra Tratada 2,50×2,50m com Bomba Automática de Fernando Quincas não é só uma fonte — é uma fonte grande e bonita que parece pedra, mas é fibra de vidro leve, desmontável e feita para durar. Com 2,50 m por 2,50 m e 1,50 m de profundidade, entre 150 e 200 kg, ela entrega presença de pedra sem o peso de pedra: pode ser desmontada e levada para outros locais, da borda da piscina ao jardim, da varanda gourmet à área de lazer. Modelada no ateliê de Fernando Quincas, a fibra de vidro imita pedra tratada com fidelidade — textura, veios e pátina — e já vem com bomba automática inteira e integrada por dentro, que faz a fonte funcionar assim que liga. É uma escultura hidráulica de Fernando Quincas feita para embelezar muito lugar.',
       },
       { type: 'heading', text: 'Por que essa fonte imita pedra mas não pesa como pedra?' },
       {
@@ -279,14 +279,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, a Fonte de Pedra Tratada 2,50×2,50 com Bomba vive na loja do ateliê de Fernando Quincas na categoria GARDEN (também em COLEÇÕES) — encontre em /loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro por R$ 19.000, com 6 fotos: a primeira com fundo verde de estúdio (foto “Fonte de Pedra Tratada”) e as demais são as fotos na piscina funcionando, em escala com Fernando Quincas e nos ângulos lateral e superior. Como toda obra do ateliê, cada Fonte 2,50×2,50 é acabada à mão por Fernando Quincas. Se você busca uma fonte grande que imita pedra, uma fonte leve e desmontável que pode ser levada para outros locais, uma fonte com bomba automática integrada que resiste a sol e chuva sem musgo, ou uma escultura hidráulica que embeleza muito lugar, esta obra é a escolha. A fonte grande e bonita 2,50×2,50 em fibra de vidro de Fernando Quincas está pronta para transformar sua piscina e seu jardim — e para aparecer nos mecanismos de busca quando alguém procurar por fonte de pedra tratada 2,50, fibra de vidro, fonte grande, bomba automática e obra de Fernando Quincas.',
+        text: 'Hoje, a Fonte de Pedra Tratada 2,50×2,50 com Bomba vive na loja do ateliê de Fernando Quincas na categoria GARDEN (também em COLEÇÕES) — encontre em /loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro por R$ 19.000, com 6 fotos: a primeira com fundo verde de estúdio (foto “Fonte de Pedra Tratada”) e as demais são as fotos na piscina funcionando, em escala com Fernando Quincas e nos ângulos lateral e superior. Como toda obra do ateliê, cada Fonte 2,50×2,50 é acabada à mão por Fernando Quincas. Se você busca uma fonte grande que imita pedra, uma fonte leve e desmontável que pode ser levada para outros locais, uma fonte com bomba automática integrada que resiste a sol e chuva sem musgo, ou uma escultura hidráulica que embeleza muito lugar, esta obra é a escolha. A fonte grande e bonita 2,50×2,50 em fibra de vidro de Fernando Quincas está pronta para transformar sua piscina e seu jardim.',
       },
     ],
   },
   {
     id: 'iglu-concreto-4x4-fernando-quincas',
     slug: 'iglu-de-concreto-4x4-claraboia-fernando-quincas-jardim',
-    title: 'Quer um cômodo novo sem obra infinita? O iglu de concreto 4×4m por Fernando Quincas que aguenta sol, chuva e tempo — com e sem claraboia',
+    title: 'Iglu de Concreto 4×4m com Clarabóia',
     subtitle: 'Decoração monumental para grandes jardins e áreas externas: como o iglu 4×4m de concreto armado de Fernando Quincas vira quarto, ateliê ou brinquedoteca — com valor acessível, clarabóia para ventilação e duração que atravessa estações.',
     category: 'JARDIM',
     date: '2026-08-27',
@@ -399,14 +399,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, o Iglu de Concreto 4×4m vive na loja do ateliê de Fernando Quincas na categoria Garden — encontre em /loja/iglu-de-concreto-4x4-com-claraboia de R$ 25.000 a R$ 28.500. Como toda obra do ateliê, cada iglu é produzido sob encomenda por Fernando Quincas. Se você busca um iglu de concreto, uma escultura para grandes jardins, uma obra que crie cômodo novo com valor acessível e que aguente sol, chuva e tempo, esta obra é a escolha. A escultura 4×4 de concreto armado de Fernando Quincas está pronta para transformar sua área externa em casa — e para aparecer nos mecanismos de busca quando alguém procurar por iglu de concreto 4×4, clarabóia, jardim, escultura e obra de Fernando Quincas.',
+        text: 'Hoje, o Iglu de Concreto 4×4m vive na loja do ateliê de Fernando Quincas na categoria Garden — encontre em /loja/iglu-de-concreto-4x4-com-claraboia de R$ 25.000 a R$ 28.500. Como toda obra do ateliê, cada iglu é produzido sob encomenda por Fernando Quincas. Se você busca um iglu de concreto, uma escultura para grandes jardins, uma obra que crie cômodo novo com valor acessível e que aguente sol, chuva e tempo, esta obra é a escolha. A escultura 4×4 de concreto armado de Fernando Quincas está pronta para transformar sua área externa em casa.',
       },
     ],
   },
   {
     id: 'bonecas-cozinheiras-alice-lua-60cm',
     slug: 'bonecas-cozinheiras-alice-lua-60cm-fibra-de-vidro-fernando-quincas',
-    title: 'Alice e Lua pararam a rua: as bonecas cozinheiras de 60cm em fibra de vidro por Fernando Quincas que transformaram a frente do restaurante em pura alegria',
+    title: 'Bonecas Cozinheiras Alice e Lua 60cm',
     subtitle: 'Duas irmãs, um restaurante erguido sozinhas e duas bonequinhas de 60cm que viraram guardiãs da porta — a obra em fibra de vidro e tinta automotiva de Fernando Quincas que aguenta sol, chuva e distribui sorrisos.',
     category: 'PROJETOS',
     date: '2026-08-27',
@@ -499,7 +499,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'toro-japones-garden-fernando-quincas',
     slug: 'toro-japones-garden-energia-feng-shui-fernando-quincas',
-    title: 'Seu jardim está sem energia? O torô japonês em fibra de vidro de Fernando Quincas que acende fontes, lagos e casas — de dia e de noite',
+    title: 'Torô Japonês Garden | Energia do Jardim',
     subtitle: 'História, energia e graça: como o torô garden de Fernando Quincas harmoniza o ambiente, protege a passagem e brilha tanto sob sol quanto sob estrelas — perto de fontes, lagos e casas.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -554,7 +554,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'heading', text: 'Dia e noite, perto de fontes, lagos e casas: onde o torô brilha' },
       {
         type: 'paragraph',
-        text: 'Uma graça do Torô Japonês de Fernando Quincas é que ele não escolhe horário. De dia, sua silhueta escultural recorta o céu e dá escala ao jardim — perto de fontes, emoldura o jato; à beira de lagos, espelha-se; na entrada de casas, recebe com imponência gentil. De noite, a mágica vira obra de luz: iluminado por dentro, o torô garden de Fernando Quincas vira lanterna — uma escultura que ilumina caminho, reflete na água e transforma o jardim em santuário noturno. Essa dupla vida — escultura de dia, luminária de noite — é o que faz toda obra garden de Fernando Quincas ser tão fotografada e tão buscada nos mecanismos de busca por torô japonês, jardim e obra de Fernando Quincas.',
+        text: 'Uma graça do Torô Japonês de Fernando Quincas é que ele não escolhe horário. De dia, sua silhueta escultural recorta o céu e dá escala ao jardim — perto de fontes, emoldura o jato; à beira de lagos, espelha-se; na entrada de casas, recebe com imponência gentil. De noite, a mágica vira obra de luz: iluminado por dentro, o torô garden de Fernando Quincas vira lanterna — uma escultura que ilumina caminho, reflete na água e transforma o jardim em santuário noturno.',
       },
       {
         type: 'list',
@@ -604,14 +604,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, o Torô Japonês Garden vive na loja do ateliê de Fernando Quincas na categoria Garden — encontre em /loja/toro-japones-garden por R$ 3.500. Como toda obra do ateliê, cada torô é produzido sob encomenda por Fernando Quincas. Se você busca um torô japonês, uma escultura para jardim, uma obra que harmonize energia, ou uma escultura que brilhe dia e noite perto de fontes, lagos e casas, esta obra é a escolha. A escultura garden de Fernando Quincas está pronta para transformar seu jardim em portal — e para aparecer nos mecanismos de busca quando alguém procurar por torô japonês, garden, jardim, escultura e obra de Fernando Quincas.',
+        text: 'Hoje, o Torô Japonês Garden vive na loja do ateliê de Fernando Quincas na categoria Garden — encontre em /loja/toro-japones-garden por R$ 3.500. Como toda obra do ateliê, cada torô é produzido sob encomenda por Fernando Quincas. Se você busca um torô japonês, uma escultura para jardim, uma obra que harmonize energia, ou uma escultura que brilhe dia e noite perto de fontes, lagos e casas, esta obra é a escolha. A escultura garden de Fernando Quincas está pronta para transformar seu jardim em portal.',
       },
     ],
   },
   {
     id: 'fonte-pedra-grande-cinza-fernando-quincas',
     slug: 'fonte-de-pedra-grande-180x170-com-bomba-escultura-obra-fernando-quincas',
-    title: 'Fonte de pedra grande 1,80×1,70 com bomba em fibra de vidro por Fernando Quincas: a escultura 1,80m em fibra de vidro que transforma água em obra e jardim em santuário',
+    title: 'Fonte de Pedra Grande 1,80×1,70 com Bomba',
     subtitle: 'Pedra reconstituída 1,80×1,70, pátina cinza mineral, bomba e instalação inclusa: os bastidores da fonte escultural das categorias Coleções e Esculturas — pronta para jardim, pátio e hall, com água, luz e tempo.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -714,7 +714,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'gazebo-tenda-ferro-bambu-fernando-quincas',
     slug: 'gazebo-tenda-ferro-bambu-fernando-quincas-jardim-uso-vantagens',
-    title: 'Gazebo tenda 350×200×270 — ferro, resina e lona por Fernando Quincas: a obra que transforma jardim em palco e sombra em escultura',
+    title: 'Gazebo Tenda 350×200×270 | Jardim',
     subtitle: 'Do jardim à festa, do lounge ao palco DJ: como a tenda-gazebo 350×200×270 de ferro, resina e lona do ateliê de Fernando Quincas une escultura, obra e arquitetura leve — e por que toda obra de Fernando Quincas nasce para ficar.',
     category: 'JARDIM',
     date: '2026-08-26',
@@ -764,7 +764,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'heading', text: 'Vantagens da Tenda de Ferro, Resina e Lona do ateliê de Fernando Quincas' },
       {
         type: 'paragraph',
-        text: 'Toda obra do ateliê de Fernando Quincas precisa provar vantagem no tempo, não só na foto. O Gazebo Tenda 350×200×270 de Ferro, Resina e Lona de Fernando Quincas reúne vantagens que explicam por que a obra permanece: é escultura 350×200×270 e abrigo, é obra e sombra. Como escultura de Fernando Quincas, tem presença; como obra de jardim, tem desempenho. A seguir, as vantagens que fazem desta obra e desta escultura de Fernando Quincas uma escolha que aparece — e permanece — nos mecanismos de busca por gazebo 350×200×270, tenda e jardim.',
+        text: 'Toda obra do ateliê de Fernando Quincas precisa provar vantagem no tempo, não só na foto. O Gazebo Tenda 350×200×270 de Ferro, Resina e Lona de Fernando Quincas reúne vantagens que explicam por que a obra permanece: é escultura 350×200×270 e abrigo, é obra e sombra. Como escultura de Fernando Quincas, tem presença; como obra de jardim, tem desempenho.',
       },
       {
         type: 'list',
@@ -816,14 +816,14 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, o Gazebo Tenda 350×200×270 de Ferro, Resina e Lona vive na loja do ateliê de Fernando Quincas — encontre em /loja/gazebo-tenda-ferro-bambu. Como toda obra do ateliê, cada gazebo tenda 350×200×270 é produzido sob encomenda por Fernando Quincas e acompanhado pelo ateliê. Se você busca um gazebo 350×200×270, uma tenda elegante, uma obra para jardim ou uma escultura habitável que leve o nome Fernando Quincas para seu espaço, esta obra é a escolha. A escultura 350×200×270 em ferro, resina e lona de Fernando Quincas está pronta para dar sombra, virar palco e transformar seu jardim — e para aparecer nos mecanismos de busca quando alguém procurar por gazebo 350×200×270, tenda, jardim, escultura e obra de Fernando Quincas.',
+        text: 'Hoje, o Gazebo Tenda 350×200×270 de Ferro, Resina e Lona vive na loja do ateliê de Fernando Quincas — encontre em /loja/gazebo-tenda-ferro-bambu. Como toda obra do ateliê, cada gazebo tenda 350×200×270 é produzido sob encomenda por Fernando Quincas e acompanhado pelo ateliê. Se você busca um gazebo 350×200×270, uma tenda elegante, uma obra para jardim ou uma escultura habitável que leve o nome Fernando Quincas para seu espaço, esta obra é a escolha. A escultura 350×200×270 em ferro, resina e lona de Fernando Quincas está pronta para dar sombra, virar palco e transformar seu jardim.',
       },
     ],
   },
   {
     id: 'loba-artesanal-120x80',
     slug: 'loba-artesanal-120x80-fernando-quincas',
-    title: 'Loba artesanal 1.20×80cm: a escultura que Fernando Quincas transformou em obra de fibra de vidro para encarar sol e chuva',
+    title: 'Loba Artesanal 1.20×80cm',
     subtitle: 'Do isopor ao poliuretano, do gesso à fibra de vidro com tinta PU: os bastidores da obra da Loba 1.20×80 — uma escultura artesanal, poética e pronta para o externo.',
     category: 'PROJETOS',
     date: '2026-08-26',
@@ -953,7 +953,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'galinha-monte-verde-fibra-vidro-obra-1-1',
     slug: 'galinha-de-monte-verde-escultura-fibra-de-vidro-obra-1-1',
-    title: 'Galinha de Monte Verde: a escultura gigante em fibra de vidro que levou 45 dias para nascer no ateliê de Fernando Quincas',
+    title: 'Galinha de Monte Verde | 45 Dias de Ateliê',
     subtitle: 'Entre isopor, poliuretano, gesso, massa corrida, resina, fibra de vidro, massa plástica, pintura fundo universal e tinta PU: os bastidores da obra 1/1 criada para o Restaurante Monte Verde — pronta para sol, chuva e jardim.',
     category: 'PROJETOS',
     date: '2026-08-26',
@@ -1136,7 +1136,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'novos-rumos-atelie',
     slug: 'novos-rumos-atelier-nova-geracao-artesaos-fernando-quincas-waldorf-alemanha',
-    title: 'Novos Rumos, o Atelier e a Nova Geração de Artesãos: Fernando Quincas Abre seu Espaço Atelier Colorido, Revela a Fonte de Água com Cisnes em Processo e a Missão na Alemanha que Levou sua Arte às Escolas Waldorf para Ensinar Crianças',
+    title: 'Novos Rumos do Atelier | Waldorf Alemanha',
     subtitle: 'Do Brasil à Alemanha: como o escultor e mestre artesão Fernando Quincas transforma o Espaço Atelier by Fernando Quincas em escola viva, esculpe a Fonte de Água com Cisnes em processo no jardim e, pela pedagogia Waldorf, formou crianças em escolas alemãs — semeando a nova geração de artesãos que vai manter viva a escultura em fibra de vidro, pedra e bambu.',
     category: 'ATELIER',
     date: '2026-08-30',
@@ -1190,7 +1190,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Espaço Atelier by Fernando Quincas .jpeg'),
+        src: encodeURI('/Espaço Atelier by Fernando Quincas.jpeg'),
         alt: 'Espaço Atelier by Fernando Quincas - ateliê colorido de lonas, bambu e tecidos feito à mão por Fernando Quincas',
         caption: 'Espaço Atelier by Fernando Quincas: o novo ateliê colorido feito à mão — lonas, bambu e tecido que transformam o jardim em sala de encontros e escola viva de Fernando Quincas.',
       },
@@ -1214,7 +1214,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Fonte de agua com cisnes, processo by Fernando Quincas .jpeg'),
+        src: encodeURI('/Fonte de agua com cisnes, processo by Fernando Quincas.jpeg'),
         alt: 'Fonte de Água com Cisnes em processo by Fernando Quincas - obra em fibra de vidro colorida esculpida à mão no jardim',
         caption: 'Fonte de Água com Cisnes em Processo by Fernando Quincas: ainda sem água, a obra já revela bacias, quedas e rochas coloridas esculpidas à mão no ateliê de Fernando Quincas — o lago que vai nascer no jardim.',
       },

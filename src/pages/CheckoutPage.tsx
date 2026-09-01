@@ -68,6 +68,9 @@ export const CheckoutPage: React.FC = () => {
   useDocumentMeta({
     title: 'Finalizar Aquisição — Loja',
     description: 'Conclua sua aquisição com atendimento direto do ateliê Fernando Quincas.',
+    canonical: 'https://fernandoquincas.com.br/loja/checkout',
+    noindex: true,
+    type: 'website',
   });
 
   const navigate = useNavigate();

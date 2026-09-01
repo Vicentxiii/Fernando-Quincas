@@ -80,10 +80,11 @@ export const Header: React.FC<HeaderProps> = ({
               : 'glass-header-top border border-[#C8A86B]/15 shadow-[0_4px_20px_rgba(30,29,26,0.03)]'
           }`}
         >
-          {/* Brand Logo & Monogram — own territory (≈20–25% width) */}
+          {/* Brand Logo & Monogram — own territory (≈20–25% width) - agora crawlable */}
           <div className="flex items-center gap-3 shrink-0 w-auto sm:w-[240px] xl:w-[270px] 2xl:w-[360px]">
-            <button
-              onClick={() => handleItemClick({ id: 'home', label: 'INÍCIO', subtitle: '' })}
+            <a
+              href="/"
+              onClick={(e) => { e.preventDefault(); handleItemClick({ id: 'home', label: 'INÍCIO', subtitle: '' }); }}
               className="flex items-center gap-3 group text-left transition-opacity duration-300 hover:opacity-70"
               aria-label="Fernando Quincas Início"
             >
@@ -98,20 +99,22 @@ export const Header: React.FC<HeaderProps> = ({
                   Escultor & Mestre Artesão
                 </span>
               </div>
-            </button>
+            </a>
           </div>
 
-          {/* Desktop Navigation — centered, generous spacing (xl and up) */}
+          {/* Desktop Navigation — centered, generous spacing (xl and up) - agora crawlable com <a> */}
           <nav
             className="hidden xl:flex flex-1 items-center justify-center gap-x-10 2xl:gap-x-16"
             aria-label="Navegação Principal"
           >
             {mainNavItems.map((item) => {
               const isActive = item.route ? isRouteActive(item.route) : activeSection === item.id;
+              const href = item.route || `/#${item.id}`;
               return (
-                <button
+                <a
                   key={item.id}
-                  onClick={() => handleItemClick(item)}
+                  href={href}
+                  onClick={(e) => { e.preventDefault(); handleItemClick(item); }}
                   className={`group relative py-2 whitespace-nowrap text-[10px] xl:text-[11px] tracking-[0.12em] 2xl:tracking-[0.14em] font-medium uppercase transition-colors duration-300 ${
                     isActive ? 'text-[#C8A86B]' : 'text-[#2C2A26]/70 hover:text-[#C8A86B]'
                   }`}
@@ -123,22 +126,23 @@ export const Header: React.FC<HeaderProps> = ({
                       isActive ? 'w-5 opacity-100' : 'w-0 opacity-0 group-hover:w-5 group-hover:opacity-100'
                     }`}
                   />
-                </button>
+                </a>
               );
             })}
           </nav>
 
           {/* Actions — Contact (text) + Cart + Dossier (pill), visually separated */}
           <div className="hidden xl:flex shrink-0 w-[140px] 2xl:w-[240px] items-center justify-end gap-3 2xl:gap-4">
-            <button
-              onClick={() => handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' })}
+            <a
+              href="/#contact"
+              onClick={(e) => { e.preventDefault(); handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' }); }}
               className={`group hidden xl:inline-flex items-center gap-1.5 whitespace-nowrap ml-8 2xl:ml-12 text-[10px] xl:text-[11px] tracking-[0.18em] uppercase font-medium transition-colors duration-300 ${
                 activeSection === 'contact' ? 'text-[#C8A86B]' : 'text-[#2C2A26]/70 hover:text-[#C8A86B]'
               }`}
             >
               CONTATO
               <ArrowUpRight className="w-3 h-3 text-[#C8A86B] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </button>
+            </a>
 
             {/* Shop Cart Button */}
             <button
@@ -233,16 +237,18 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           </div>
 
-          {/* Navigation Links with Subtitles */}
+          {/* Navigation Links with Subtitles - agora crawlable */}
           <div className="py-6 flex flex-col gap-3 sm:gap-4 overflow-y-auto">
             {mobileNavItems.map((item, idx) => {
               const isActive = item.route
                 ? isRouteActive(item.route)
                 : activeSection === item.id;
+              const href = item.route || `/#${item.id}`;
               return (
-                <button
+                <a
                   key={item.id}
-                  onClick={() => handleItemClick(item)}
+                  href={href}
+                  onClick={(e) => { e.preventDefault(); handleItemClick(item); }}
                   className={`group flex items-baseline justify-between text-left py-2 border-b border-[#C8A86B]/10 hover:border-[#C8A86B]/40 transition-colors ${
                     isActive ? 'text-[#C8A86B]' : 'text-[#1E1D1A]'
                   }`}
@@ -258,7 +264,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <span className="text-xs font-serif italic text-[#8A82A5] group-hover:text-[#1E1D1A] transition-colors">
                     {item.subtitle}
                   </span>
-                </button>
+                </a>
               );
             })}
           </div>

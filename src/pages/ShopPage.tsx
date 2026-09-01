@@ -13,7 +13,10 @@ export const ShopPage: React.FC = () => {
   useDocumentMeta({
     title: 'Loja — Obras Disponíveis',
     description:
-      'Obras originais, esculturas, edições numeradas e objetos de arte de Fernando Quincas, disponíveis para aquisição direta do ateliê.',
+      'Obras originais, esculturas, edições numeradas e objetos de arte de Fernando Quincas, disponíveis para aquisição direta do ateliê. Esculturas monumentais em fibra de vidro, fontes e vasos.',
+    canonical: 'https://fernandoquincas.com.br/loja',
+    type: 'website',
+    keywords: 'Fernando Quincas, loja, esculturas monumentais, fibra de vidro, atelier',
   });
 
   const [filter, setFilter] = useState<Filter>('ALL');

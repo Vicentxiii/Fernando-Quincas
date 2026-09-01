@@ -10,8 +10,11 @@ type CategoryFilter = BlogCategory | 'ALL';
 
 export const BlogIndexPage: React.FC = () => {
   useDocumentMeta({
-    title: 'Blog do Atelier de Fernando Quincas — Mestre Artesão em Fibra de Vidro | Bastidores e Obras',
-    description: 'Blog do Atelier de Fernando Quincas, mestre artesão em fibra de vidro: bastidores de esculturas monumentais, fontes, vasos, fibra de vidro, douração 24k e histórias do atelier em Minas Gerais.',
+    title: 'Blog do Atelier — Bastidores e Obras',
+    description: 'Blog do Atelier de Fernando Quincas, mestre artesão em fibra de vidro: bastidores de esculturas monumentais, fontes, vasos e histórias do atelier em Minas Gerais.',
+    canonical: 'https://fernandoquincas.com.br/blog',
+    type: 'website',
+    keywords: 'Fernando Quincas, blog, esculturas monumentais, fibra de vidro, atelier',
   });
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>('ALL');
 

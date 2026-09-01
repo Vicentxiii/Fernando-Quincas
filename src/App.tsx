@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -14,18 +14,51 @@ import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { CartProvider } from './context/CartContext';
 import { CartDrawer } from './components/shop/CartDrawer';
-import { HomePage } from './pages/HomePage';
-import { BlogIndexPage } from './pages/BlogIndexPage';
-import { BlogPostPage } from './pages/BlogPostPage';
-import { ShopPage } from './pages/ShopPage';
-import { ProductPage } from './pages/ProductPage';
-import { CheckoutPage } from './pages/CheckoutPage';
-import { OrderStatusPage } from './pages/OrderStatusPage';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Artwork } from './types';
+import { useDocumentMeta } from './hooks/useDocumentMeta';
+
+// Code-split: Home já é eager para LCP, demais páginas lazy para reduzir bundle inicial
+import { HomePage } from './pages/HomePage';
+const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage').then(m => ({ default: m.BlogIndexPage })));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
+const ShopPage = lazy(() => import('./pages/ShopPage').then(m => ({ default: m.ShopPage })));
+const ProductPage = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })));
+const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then(m => ({ default: m.CheckoutPage })));
+const OrderStatusPage = lazy(() => import('./pages/OrderStatusPage').then(m => ({ default: m.OrderStatusPage })));
+
+// Fallback leve para rotas lazy (não bloqueia LCP da Home)
+const PageFallback: React.FC = () => (
+  <div className="min-h-screen flex items-center justify-center bg-[#FAF8F5]">
+    <div className="w-6 h-6 border-2 border-[#C8A86B]/30 border-t-[#C8A86B] rounded-full animate-spin" aria-label="Carregando" />
+  </div>
+);
 
 const SECTION_IDS = ['home', 'artist', 'story', 'works', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
+
+const NotFoundPage: React.FC = () => {
+  const navigate = useNavigate();
+  useDocumentMeta({
+    title: 'Página não encontrada',
+    description: 'Página não encontrada no atelier de Fernando Quincas, mestre artesão em fibra de vidro.',
+    canonical: 'https://fernandoquincas.com.br/404',
+    noindex: true,
+  });
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center space-y-6 bg-[#FAF8F5] text-[#1E1D1A]">
+      <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#C8A86B]">Erro 404</span>
+      <h1 className="font-display text-3xl sm:text-4xl font-semibold">Página não encontrada</h1>
+      <p className="font-serif italic text-[#8A82A5] max-w-md">O endereço que você acessou não existe ou foi movido.</p>
+      <button
+        onClick={() => navigate('/')}
+        className="px-6 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-xs font-mono tracking-widest uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors"
+      >
+        Voltar ao Início
+      </button>
+    </div>
+  );
+};
 
 const AppContent: React.FC = () => {
   const location = useLocation();
@@ -131,45 +164,26 @@ const AppContent: React.FC = () => {
       />
 
       <main className="flex-1">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage
-                savedArtworkIds={savedArtworkIds}
-                onToggleSave={handleToggleSave}
-              />
-            }
-          />
-          <Route path="/blog" element={<BlogIndexPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
-          <Route path="/loja" element={<ShopPage />} />
-          <Route path="/loja/checkout" element={<CheckoutPage />} />
-          <Route path="/loja/pedido/:id" element={<OrderStatusPage />} />
-          <Route path="/loja/:slug" element={<ProductPage />} />
-          <Route
-            path="*"
-            element={
-              <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center space-y-6 bg-[#FAF8F5] text-[#1E1D1A]">
-                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#C8A86B]">
-                  Erro 404
-                </span>
-                <h1 className="font-display text-3xl sm:text-4xl font-semibold">
-                  Página não encontrada
-                </h1>
-                <p className="font-serif italic text-[#8A82A5] max-w-md">
-                  O endereço que você acessou não existe ou foi movido.
-                </p>
-                <button
-                  onClick={() => navigate('/')}
-                  className="px-6 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-xs font-mono tracking-widest uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors"
-                >
-                  Voltar ao Início
-                </button>
-              </div>
-            }
-          />
-        </Routes>
+        <Suspense fallback={<PageFallback />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  savedArtworkIds={savedArtworkIds}
+                  onToggleSave={handleToggleSave}
+                />
+              }
+            />
+            <Route path="/blog" element={<BlogIndexPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/loja" element={<ShopPage />} />
+            <Route path="/loja/checkout" element={<CheckoutPage />} />
+            <Route path="/loja/pedido/:id" element={<OrderStatusPage />} />
+            <Route path="/loja/:slug" element={<ProductPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
       </main>
 
       {/* Art Book Closing Page Footer */}

@@ -21,9 +21,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, eager = false
       <div className="relative overflow-hidden rounded-2xl border border-[#C8A86B]/20 bg-[#EAE5D8] aspect-[4/5] gold-border-glow transition-all duration-500">
         <img
           src={product.images[0]}
-          alt={product.name}
+          alt={`${product.name} — ${product.category} em fibra de vidro por Fernando Quincas`}
           loading={eager ? 'eager' : 'lazy'}
           decoding="async"
+          fetchPriority={eager ? 'high' : 'low'}
+          width="400"
+          height="500"
           className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.045]"
         />
 

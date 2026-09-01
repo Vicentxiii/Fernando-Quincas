@@ -12,7 +12,15 @@
     <meta name="googlebot" content="index, follow, max-image-preview:large" />
     <meta name="bingbot" content="index, follow" />
     <link rel="canonical" href="https://fernandoquincas.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://fernandoquincas.com.br/" />
+    <link rel="alternate" hreflang="x-default" href="https://fernandoquincas.com.br/" />
+    <link rel="icon" href="/fernando-quincas.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="/fernando-quincas.webp" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#16251E" />
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="/Atelier%20Fernando%20Quincas.png" fetchpriority="high" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="/Hero%20para%20Mobile%20Fernando%20Quincas%20Escultor.png" fetchpriority="high" media="(max-width: 767px)" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
@@ -39,13 +47,14 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://fernandoquincas.com.br/#fernando",
       "name": "Fernando Quincas",
       "alternateName": ["Fernando Quincas de Almeida", "Mestre Fernando Quincas"],
       "jobTitle": "Mestre Artesão em Fibra de Vidro",
-      "description": "Mestre artesão em fibra de vidro há 40 anos. Criador da Boneca Eva de 45 metros, Galinha de Monte Verde e fontes monumentais. Atelier em Minas Gerais, Serra dos Órgãos.",
+      "description": "Mestre artesão em fibra de vidro há 40 anos. Criador da Boneca Eva de 45 metros, Galinha de Monte Verde e fontes monumentais. Atelier em Minas Gerais, Serra dos Órgãos e São Paulo.",
       "image": "https://fernandoquincas.com.br/fernando-quincas.webp",
       "url": "https://fernandoquincas.com.br",
-      "sameAs": [],
+      "sameAs": ["https://www.instagram.com/fernando_quincas"],
       "knowsAbout": ["Escultura monumental", "Fibra de vidro", "Douração 24k", "Pedra reconstituída", "Fontes esculturais", "Arte barroca"],
       "worksFor": { "@type": "Organization", "name": "Ateliê Fernando Quincas", "url": "https://fernandoquincas.com.br" }
     }
@@ -54,6 +63,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://fernandoquincas.com.br/#atelier",
       "name": "Ateliê Fernando Quincas",
       "alternateName": "Atelier Fernando Quincas - Mestre Artesão em Fibra de Vidro",
       "url": "https://fernandoquincas.com.br",
@@ -61,20 +71,29 @@
       "image": "https://fernandoquincas.com.br/fernando-quincas.webp",
       "description": "Atelier de esculturas monumentais em fibra de vidro, douração 24k e pedra reconstituída. Obras sob medida para jardins, fazendas, hotéis e praças. 40 anos de atelier.",
       "foundingDate": "1985",
-      "founder": { "@type": "Person", "name": "Fernando Quincas" }
+      "founder": { "@type": "Person", "@id": "https://fernandoquincas.com.br/#fernando" },
+      "sameAs": ["https://www.instagram.com/fernando_quincas"],
+      "address": { "@type": "PostalAddress", "streetAddress": "Rua Queóps, 1923 - Jardim Ellus", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "04852-670", "addressCountry": "BR" },
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+55-11-97585-5263", "contactType": "customer service", "availableLanguage": "pt-BR" }
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      "@id": "https://fernandoquincas.com.br/#local",
       "name": "Ateliê Fernando Quincas — Mestre Artesão em Fibra de Vidro",
       "image": "https://fernandoquincas.com.br/fernando-quincas.webp",
-      "description": "Atelier de esculturas monumentais em fibra de vidro. Fontes, vasos, colunas e obras gigantes sob encomenda. Visitas ao atelier em Minas Gerais.",
+      "description": "Atelier de esculturas monumentais em fibra de vidro. Fontes, vasos, colunas e obras gigantes sob encomenda. Visitas ao atelier em Minas Gerais e São Paulo.",
       "url": "https://fernandoquincas.com.br",
-      "address": { "@type": "PostalAddress", "addressRegion": "Minas Gerais", "addressCountry": "BR" },
+      "telephone": "+55-11-97585-5263",
+      "address": { "@type": "PostalAddress", "streetAddress": "Rua Queóps, 1923 - Jardim Ellus", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "04852-670", "addressCountry": "BR" },
+      "geo": { "@type": "GeoCoordinates", "latitude": -23.666, "longitude": -46.699 },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua+Que%C3%B3ps+1923+Jardim+Ellus+S%C3%A3o+Paulo+SP+04852670",
+      "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" }],
       "priceRange": "$$",
-      "areaServed": "BR"
+      "areaServed": "BR",
+      "sameAs": ["https://www.instagram.com/fernando_quincas"]
     }
     </script>
     <script type="application/ld+json">

@@ -17,7 +17,11 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
       <div className="relative h-52 overflow-hidden bg-[#EAE5D8]">
         <img
           src={post.coverImage}
-          alt={post.title}
+          alt={`${post.title} — ${BLOG_CATEGORY_LABELS[post.category]} por Fernando Quincas`}
+          loading="lazy"
+          decoding="async"
+          width="400"
+          height="300"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#1E1D1A]/85 backdrop-blur-md text-[#E0C995] text-[9px] font-mono uppercase tracking-widest border border-[#C8A86B]/30">

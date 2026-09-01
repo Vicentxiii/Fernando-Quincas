@@ -18,6 +18,9 @@ export const ProductPage: React.FC = () => {
     title: product ? `${product.name} — Loja` : 'Obra não encontrada — Loja',
     description: product?.shortDescription,
     image: product?.images[0],
+    canonical: product ? `https://fernandoquincas.com.br/loja/${product.slug}` : 'https://fernandoquincas.com.br/loja',
+    type: product ? 'product' : 'website',
+    keywords: product ? `${product.name}, Fernando Quincas, fibra de vidro, ${product.category}` : undefined,
   });
 
   // JSON-LD structured data for the product

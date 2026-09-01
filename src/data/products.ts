@@ -128,9 +128,9 @@ export const PRODUCTS: Product[] = [
     category: 'OBJETOS',
     shortDescription: 'Vaso em fibra de vidro de borda larga com guirlandas em relevo — a fibra atemporal do ateliê, pronta para florescer.',
     description: [
-      'De perfil tronco-cônico e borda generosa, este vaso em fibra de vidro traz em seu bojo uma guirlanda contínua em relevo — festões, rosetas e folhagens estilizadas que correm como coroas ao redor da peça. Um clássico em fibra de vidro que nunca sai de cena.',
-      'A fibra de vidro com acabamento pétreo confere leveza visual e resistência à intempérie. O interior liso e o fundo com dreno oculto permitem plantio direto com substrato, sem comprometer a peça em fibra de vidro.',
-      'Da sala minimalista ao jardim romântico, ele compõe com naturalidade: sozinho como escultura em fibra de vidro, ou em uso pleno com samambaias, heras e florais coloridos.',
+      'De perfil tronco-cônico e borda generosa, este vaso em fibra de vidro traz em seu bojo uma guirlanda contínua em relevo — festões, rosetas e folhagens estilizadas que correm como coroas ao redor da peça. Um clássico atemporal que nunca sai de cena.',
+      'A fibra de vidro com acabamento pétreo confere leveza visual e resistência à intempérie. O interior liso e o fundo com dreno oculto permitem plantio direto com substrato, sem comprometer a peça.',
+      'Da sala minimalista ao jardim romântico, ele compõe com naturalidade: sozinho como escultura, ou em uso pleno com samambaias, heras e florais coloridos.',
     ],
     price: 890,
     images: [
@@ -153,11 +153,11 @@ export const PRODUCTS: Product[] = [
     slug: 'mesa-luiz-xv-fibra-de-vidro',
     name: 'Mesa Luiz XV em Fibra de Vidro',
     category: 'OBJETOS',
-    shortDescription: 'Mesa de apoio Luiz XV em fibra de vidro, com pernas cabriolé e filigrana entalhada — marcenaria escultural em fibra.',
+    shortDescription: 'Mesa de apoio Luiz XV com pernas cabriolé e filigrana entalhada — marcenaria escultural.',
     description: [
-      'Uma mesa que é escultura em fibra de vidro. De tampo quadrado com bordas suavemente arredondadas, apoia-se sobre quatro pernas cabriolé de curva pronunciada, terminando em pés de garra — assinatura da marcenaria Luiz XV reinterpretada pelo ateliê em fibra de vidro.',
-      'Cada perna recebe filigrana em baixo-relevo modelada à mão em fibra de vidro, com volutas e folhagens que se revelam conforme a luz. O tampo em fibra de vidro com acabamento nobre recebe verniz acetinado de alta resistência que aprofunda o tom e protege o uso diário em fibra de vidro.',
-      'Perfeita como mesa lateral, de cabeceira ou base para vaso e luminária em fibra de vidro. Estável, elegante e atemporal — um móvel de ateliê em fibra de vidro para atravessar gerações.',
+      'Uma mesa que é escultura em fibra de vidro. De tampo quadrado com bordas suavemente arredondadas, apoia-se sobre quatro pernas cabriolé de curva pronunciada, terminando em pés de garra — assinatura da marcenaria Luiz XV reinterpretada pelo ateliê.',
+      'Cada perna recebe filigrana em baixo-relevo modelada à mão, com volutas e folhagens que se revelam conforme a luz. O tampo com acabamento nobre recebe verniz acetinado de alta resistência que aprofunda o tom e protege o uso diário.',
+      'Perfeita como mesa lateral, de cabeceira ou base para vaso e luminária. Estável, elegante e atemporal — um móvel de ateliê para atravessar gerações.',
     ],
     price: 4200,
     images: [
@@ -166,8 +166,8 @@ export const PRODUCTS: Product[] = [
       '/products/mesa-luizxv-sala.jpeg',
     ],
     dimensions: '54 × 54 × 62 cm (L × P × A)',
-    materials: ['Fibra de vidro de alta resistência', 'Entalhe manual em pernas cabriolé em fibra de vidro', 'Verniz acetinado premium para fibra de vidro'],
-    technique: 'Modelagem em fibra de vidro, entalhe manual e acabamento em laca — fibra de vidro',
+    materials: ['Fibra de vidro de alta resistência', 'Entalhe manual em pernas cabriolé', 'Verniz acetinado premium'],
+    technique: 'Modelagem, entalhe manual e acabamento em laca',
     year: 2026,
     weight: '11 kg',
     edition: 'Série limitada do ateliê',
@@ -209,16 +209,16 @@ export const PRODUCTS: Product[] = [
     shortDescription: 'Cervo em salto, fibra de vidro branco brilhante — uma aparição delicada entre canteiros e caminhos.',
     description: [
       'Leveza em movimento congelado. Este cervo jovem em fibra de vidro, em pleno salto, parece brotar do solo entre lavandas e margaridas. As pernas esticadas e o olhar sereno capturam o instante exato da corrida — pura alegria silvestre em fibra de vidro.',
-      'O acabamento branco de alto brilho em fibra de vidro cria superfície espelhada que reflete o céu e a vegetação ao redor, fazendo a peça em fibra de vidro dialogar com o jardim em cada estação.',
-      'Resistente à chuva e ao sol em fibra de vidro, com base plana para apoio direto sobre terra, pedrisco ou gramado. Um toque poético em fibra de vidro para jardins, varandas e memória afetiva.',
+      'O acabamento branco de alto brilho em fibra de vidro cria superfície espelhada que reflete o céu e a vegetação ao redor, fazendo a peça dialogar com o jardim em cada estação.',
+      'Resistente à chuva e ao sol, com base plana para apoio direto sobre terra, pedrisco ou gramado. Um toque poético para jardins, varandas e memória afetiva.',
     ],
     price: 1650,
     images: [
       '/products/cervo-jardim-1.jpeg',
     ],
     dimensions: '48 × 22 × 32 cm (C × L × A)',
-    materials: ['Fibra de vidro com acabamento branco brilhante', 'Resina e fibra de vidro', 'Base plana estável em fibra de vidro'],
-    technique: 'Modelagem animalista em fibra de vidro e pintura automotiva — acabamento manual',
+    materials: ['Acabamento branco brilhante', 'Resina de alta resistência', 'Base plana estável'],
+    technique: 'Modelagem animalista e pintura automotiva — acabamento manual',
     year: 2026,
     weight: '3,1 kg',
     edition: 'Edição aberta do ateliê',
@@ -324,7 +324,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p-fonte-pedra-tratada-250-fibra',
     slug: 'fonte-de-pedra-tratada-250x250-fibra-de-vidro',
-    name: 'Fonte de Pedra Tratada — 2,50×2,50m em Fibra de Vidro por Fernando Quincas',
+    name: 'Fonte de Pedra Tratada — 2,50×2,50m',
     category: 'GARDEN',
     categories: ['GARDEN', 'COLEÇÕES'],
     shortDescription: 'Fonte grande 2,50×2,50m em fibra de vidro que imita pedra — 150–200 kg, leve e desmontável, com bomba automática integrada. Resiste a sol e chuva sem criar musgo, pronta para embelezar piscina, jardim e grandes áreas.',
@@ -359,7 +359,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p-fonte-gigante-paulo-leardi-10m',
     slug: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra',
-    name: 'Fonte Gigante Paulo Leardi — 10m no Portal do Morumbi em Fibra de Vidro por Fernando Quincas',
+    name: 'Fonte Gigante Paulo Leardi — 10m no Portal do Morumbi',
     category: 'COLEÇÕES',
     categories: ['COLEÇÕES', 'GARDEN'],
     shortDescription: 'Fonte gigantesca 10m × 3m no Portal do Morumbi por Fernando Quincas — mais de 2.000 kg de fibra de vidro, tanque para peixes, espaço para plantas e 3 bombas dedicadas. Vários meses de trabalho artesanal vista por milhares de pessoas por dia.',
@@ -452,7 +452,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p-bonecas-cozinheiras-alice-lua',
     slug: 'bonecas-cozinheiras-alice-lua-60cm-fibra-de-vidro',
-    name: 'Bonecas Cozinheiras Alice e Lua — 60cm em Fibra de Vidro por Fernando Quincas',
+    name: 'Bonecas Cozinheiras Alice e Lua — 60cm por Fernando Quincas',
     category: 'OBRAS',
     shortDescription: 'Par de bonecas cozinheiras Alice e Lua — 60cm em fibra de vidro por Fernando Quincas, com tinta automotiva e revestimento para sol e chuva. Alegria na porta do restaurante.',
     description: [
