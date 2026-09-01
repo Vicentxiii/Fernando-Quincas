@@ -22,6 +22,7 @@ import { ProductPage } from './pages/ProductPage';
 import { CheckoutPage } from './pages/CheckoutPage';
 import { OrderStatusPage } from './pages/OrderStatusPage';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Artwork } from './types';
 
 const SECTION_IDS = ['home', 'artist', 'story', 'works', 'atelier', 'media', 'boutique', 'commissions', 'contact'];
@@ -200,6 +201,7 @@ const AppContent: React.FC = () => {
       />
 
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
