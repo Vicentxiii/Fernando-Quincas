@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
+    "indexnow": "tsx scripts/submit-indexnow.ts --all",
+    "indexnow:dry": "tsx scripts/submit-indexnow.ts --all --dry-run",
+    "indexnow:changed": "tsx scripts/submit-indexnow.ts",
     "audit": "tsx scripts/audit/run-cart.ts && tsx scripts/audit/run-prices.ts && tsx scripts/audit/run-stock.ts && tsx scripts/audit/run-webhook.ts && tsx scripts/audit/run-prod-security.ts"
   },
   "dependencies": {
