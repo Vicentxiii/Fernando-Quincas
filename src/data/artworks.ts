@@ -2,6 +2,40 @@ import { Artwork } from '../types';
 
 export const ARTWORKS: Artwork[] = [
   {
+    id: 'boneca-eva-45m-monumental',
+    title: 'Boneca Eva — 45 metros',
+    frenchTitle: 'La Poupée Eva — Sculpture Monumentale Interactive 45m',
+    subtitle: 'Escultura monumental interativa 45 m por Fernando Quincas — ícone nacional do Playcenter, Tivoli e memória afetiva de milhões',
+    category: 'MONUMENTAL',
+    year: 1987,
+    dimensions: '45 m extensão × estrutura walk-through visitável',
+    weight: 'Toneladas de compósitos estruturais',
+    materials: ['Fibra de vidro estrutural de alto desempenho', 'Compósitos laminados à mão', 'Estrutura interna em aço e carbono'],
+    techniques: ['Modelagem monumental escultural', 'Laminação em fibra de vidro de alta espessura', 'Montagem arquitetônica walk-through'],
+    finishes: ['Fibra pigmentada alto brilho', 'Acabamento interativo visitável por dentro', 'Resistente a intempéries extremas'],
+    colorPalette: [
+      { name: 'Rosa Eva', hex: '#E8A0B8' },
+      { name: 'Loiro Clássico', hex: '#D4B376' },
+      { name: 'Azul Playcenter', hex: '#1E3A68' },
+      { name: 'Branco Porcelana', hex: '#F7F5F0' }
+    ],
+    location: 'Playcenter / Tivoli Parque — São Paulo (obra histórica, réplica monumental sob consulta)',
+    description: 'A Boneca Eva por Fernando Quincas é a obra-prima monumental que entrou para a história: 45 metros de extensão, toneladas de compósitos estruturais esculpidos e laminados à mão, concebida como escultura interativa onde o público entrava pela boca e percorria seu interior. Criada com o mestre Ezidoro, a Eva dominou TV, imprensa e memória afetiva nacional nos anos 80/90 — sucesso inesquecível em grandes parques (Tivoli, Playcenter). Réplica sob consulta mantém a alma do original, com acabamento do ateliê de Fernando Quincas.',
+    curatorNotes: 'Obra monumental histórica — categoria MONUMENTAL em ESCULTURAS & CRIAÇÕES. A revitalização posterior ao original não passou pelas mãos de Fernando Quincas e ficou muito aquém do original. Réplica autorizada somente pelo ateliê, com certificado.',
+    inspiration: 'A boneca gigante como arquitetura lúdica — escultura que se habita.',
+    image: encodeURI('/Eva Original, Playcenter.jpg'),
+    secondaryImages: [
+      encodeURI('/Antiga foto da Eva Construção no Playcenter.jpeg'),
+      encodeURI('/Pessoas visitando a EVA by Fernando Quincas.jpg'),
+      encodeURI('/Por dentro da Boca da EVA by Fernando Quincas.png')
+    ],
+    availability: 'COMMISSION_ONLY',
+    edition: 'Obra Monumental Histórica — Réplica sob Encomenda • 45m',
+    priceEstimate: 'Sob Consulta — Monumental',
+    featured: true,
+    isMonumental: true
+  },
+  {
     id: 'galinha-monte-verde-escultura',
     title: 'Galinha de Monte Verde',
     frenchTitle: 'La Poule de Monte Verde — Sculpture Monumentale 1/1',

@@ -66,15 +66,15 @@ export const WorksGallery: React.FC<WorksGalleryProps> = ({
           </div>
         </div>
 
-        {/* Category Filter Bar */}
-        <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-4 mb-14 scrollbar-none">
+        {/* Category Filter Bar — flex-wrap evita corte do "MONUMENTAL" no final; scroll horizontal só em telas médias+ com snap e padding para revelar borda */}
+        <div className="flex flex-wrap sm:flex-nowrap sm:overflow-x-auto gap-2 sm:gap-3 pb-4 mb-14 sm:scrollbar-none sm:snap-x sm:snap-mandatory sm:-mx-6 sm:px-6 md:mx-0 md:px-0">
           {categories.map((cat) => {
             const isSelected = activeCategory === cat;
             return (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs tracking-[0.18em] font-medium transition-all duration-300 uppercase whitespace-nowrap border ${
+                className={`shrink-0 snap-start px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs tracking-[0.14em] sm:tracking-[0.18em] font-medium transition-all duration-300 uppercase whitespace-nowrap border ${
                   isSelected
                     ? 'bg-[#1E1D1A] text-[#FAF8F5] border-[#1E1D1A] shadow-md scale-[1.02]'
                     : 'bg-[#FAF8F5] text-[#2C2A26]/70 border-[#C8A86B]/25 hover:border-[#C8A86B] hover:text-[#1E1D1A]'
