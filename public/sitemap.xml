@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fernandoquincas.com.br/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -27,17 +27,35 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/blog</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.jpeg</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://fernandoquincas.com.br/blog/arvore-seca-4-metros-fibra-de-vidro-fernando-quincas-escultura-monumental-jardim</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-montanha.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
     </image:image>
   </url>
   <url>
@@ -240,7 +258,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/cisne-imperial-vaso-escultural-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -258,7 +276,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/coluna-grega-classica-com-vaso-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -276,7 +294,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/coluna-do-anjo-guardiao-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -294,7 +312,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/pedestal-amarelo-canario-coluna-jonica-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -312,7 +330,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/vaso-classico-guirlanda-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -330,7 +348,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/mesa-luiz-xv-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -348,7 +366,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-cabeca-de-leao-bica-barroca-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -366,7 +384,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/cervo-do-jardim-escultura-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -376,7 +394,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/galinha-de-monte-verde-escultura-1-1-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -394,7 +412,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/loba-artesanal-120x80-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -412,7 +430,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-de-pedra-grande-180x170-com-bomba-fibra-de-vidro-cinza-mineral</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -430,7 +448,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -448,7 +466,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -466,7 +484,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/gazebo-tenda-ferro-resina-lona</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -484,7 +502,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/toro-japones-garden-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -502,7 +520,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/bonecas-cozinheiras-alice-lua-60cm-fibra-de-vidro</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -520,7 +538,7 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/iglu-de-concreto-4x4-com-claraboia</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -534,6 +552,24 @@
     <image:image>
       <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-pessoa.jpeg</image:loc>
       <image:caption>Iglu de Concreto 4×4m com Clarabóia — por Fernando Quincas</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fernandoquincas.com.br/loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.jpeg</image:loc>
+      <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
   </url>
 </urlset>

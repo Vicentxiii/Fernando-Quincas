@@ -20,6 +20,178 @@ export const BLOG_CATEGORY_LABELS: Record<BlogCategory, string> = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental',
+    slug: 'arvore-seca-4-metros-fibra-de-vidro-fernando-quincas-escultura-monumental-jardim',
+    title: 'Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000',
+    subtitle: '4,00 m de altura, 48 kg, tronco retorcido hiper-realista em fibra de vidro naval por Fernando Quincas — a árvore seca monumental que cria sombra escultural sem quebrar calçada, resiste a sol e chuva e transforma fachada, jardim, pousada e cenografia por R$ 3.000 (R$ 18 mil completa com folhagem de goiaba em seda via Treesco para Gift Fair — unidades para Salvador e Olinda).',
+    category: 'JARDIM',
+    date: '2026-09-02',
+    author: 'Fernando Quincas',
+    authorRole: 'Escultor & Mestre Artesão',
+    readingTimeMinutes: 9,
+    excerpt:
+      'Árvore Seca 4m em fibra de vidro por Fernando Quincas: escultura monumental 4,00 m × 48 kg por R$ 3.000 (R$ 18 mil completa com folhagem de goiaba em seda). Tronco retorcido hiper-realista modelado à mão por Fernando Quincas, fibra naval 48 kg autoportante para sol e chuva. Encomenda Treesco para Gift Fair (feira de presente), unidades para Salvador e Olinda — veja produção, escala humana e onde usar. Loja: /loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas.',
+    coverImage: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg',
+    tags: ['Fernando Quincas', 'Árvore Seca 4m', 'Fibra de Vidro', 'Escultura Monumental', 'Árvore Artificial', 'Árvore Cenográfica', '48 kg', 'R$ 3.000', 'R$ 18 mil completa', 'Goiaba em Seda', 'Gift Fair', 'Treesco', 'Salvador', 'Olinda', 'Jardim', 'Fachada'],
+    featured: true,
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'Uma árvore de 4 metros sem raiz que quebra calçada, sem folha que suja e sem espera de anos para crescer. A Árvore Seca 4m em Fibra de Vidro por Fernando Quincas é exatamente isso: 4,00 m de altura, 48 kg, tronco retorcido e galhos secos hiper-realistas modelados à mão no ateliê de Fernando Quincas, em fibra de vidro naval com pátina tronco seco em camadas. Leve para o porte (48 kg para 4m), autoportante e pronta para sol e chuva, a escultura monumental de Fernando Quincas cria sombra escultural instantânea na calçada, no jardim, na praça ou no hall — e, por R$ 3.000, é a obra de Fernando Quincas de melhor custo-benefício para quem busca monumentalidade sem obra.',
+      },
+      { type: 'heading', text: 'Por que uma árvore seca de 4 metros muda o jardim inteiro?' },
+      {
+        type: 'paragraph',
+        text: 'No ateliê de Fernando Quincas, árvore seca não é falta — é desenho. A Árvore Seca 4m por Fernando Quincas foi esculpida como arquitetura vegetal: tronco com nós, casca rachada e galhos retorcidos que recortam o céu como se fossem de um cerrado centenário. Cada centímetro dos 4 metros foi modelado à mão por Fernando Quincas — não existe molde industrial, existe gesto que vira casca. Com 48 kg e base estável, a árvore em fibra de vidro de Fernando Quincas entrega o que a muda natural levaria décadas: presença, sombra e fotografia. Por isso, toda obra e toda escultura monumental do ateliê de Fernando Quincas nasce para ser vista todo dia, sem regar, sem podar e sem medo de tempo.',
+      },
+      {
+        type: 'list',
+        items: [
+          '4,00 m de altura × 48 kg: escala monumental autoportante — a árvore seca de Fernando Quincas que marca fachada sem fundação.',
+          'Tronco retorcido hiper-realista: casca rachada e nós modelados à mão por Fernando Quincas — fibra de vidro que engana o olho.',
+          'Galhos secos cenográficos: silhueta retorcida que cria sombra escultural — a obra de Fernando Quincas que fotografa bem em qualquer luz.',
+          'R$ 3.000 por 4 metros: escultura monumental leve — a árvore de fibra de vidro de Fernando Quincas que custa menos que plantar e esperar.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg',
+        alt: 'Árvore Seca 4m em fibra de vidro por Fernando Quincas em fundo verde de estúdio - escultura monumental 48 kg hiper-realista capa',
+        caption: 'Capa em estúdio verde: Árvore Seca 4m × 48 kg de Fernando Quincas — escultura monumental em fibra de vidro com tronco retorcido e galhos secos hiper-realistas, pronta para externo.',
+      },
+      { type: 'heading', text: '48 kg para 4 metros: leveza que engana — a engenharia da fibra naval' },
+      {
+        type: 'paragraph',
+        text: 'Como uma escultura de 4 metros pesa só 48 kg e fica em pé na calçada? No ateliê de Fernando Quincas, leveza é projeto: núcleo leve, laminação em fibra de vidro naval de alta resistência, resina + massa plástica para o relevo da casca e pátina tronco seco em tinta PU automotiva com verniz acetinado anti-UV. O resultado é uma casca que pesa 48 kg no total, mas resiste como casco de barco — por isso, a Árvore Seca 4m de Fernando Quincas pode ser carregada por 2 pessoas, instalada sem guindaste e permanece autoportante mesmo com vento. Cada árvore de Fernando Quincas leva acabamento 100% à mão: veios, rachaduras e nós pintados camada a camada até o marrom-dourado que brilha ao sol como casca real. É a fibra de vidro de Fernando Quincas que vira madeira sem pesar como madeira.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Fibra de vidro naval: pele da escultura 4m — a árvore seca de Fernando Quincas com 48 kg e base 60×60 cm autoportante.',
+          'Massa plástica + resina: relevo da casca rachada — a obra de Fernando Quincas que cria tato de tronco centenário.',
+          'Tinta PU + verniz acetinado: pátina tronco seco anti-UV — a escultura de Fernando Quincas que resiste a sol e chuva sem criar limo.',
+          'Base estável 48 kg: leve para 4m — a árvore monumental de Fernando Quincas que não precisa quebrar calçada nem fazer fundação.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg',
+        alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas na calçada com artista apontando galhos - escala 4 metros 48 kg',
+        caption: 'Na calçada com o artista: Fernando Quincas ao lado da Árvore Seca 4m × 48 kg — escala monumental na rua, fibra de vidro hiper-realista com galhos retorcidos.',
+      },
+      { type: 'heading', text: 'Do ateliê à calçada: produção artesanal em fibra de vidro' },
+      {
+        type: 'paragraph',
+        text: 'No galpão do ateliê de Fernando Quincas, a árvore nasce bruta. A foto em produção mostra o tronco ainda com resina avermelhada, sem pátina final, sob telhado de zinco — é a fibra de vidro de Fernando Quincas antes do encanto: estrutura já com 4 metros, galhos já retorcidos, mas sem o marrom-dourado que virá com as camadas de tinta PU. Dali, a escultura vai para o fundo verde, depois para a calçada: cada etapa da Árvore Seca 4m de Fernando Quincas é fotografada para provar que o gesto é manual, do fio de fibra ao pincel. Por isso, mesmo replicável, nenhuma árvore de Fernando Quincas sai idêntica — a mão que torce o galho deixa assinatura.',
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-em-producao-atelier-bruta-04.jpeg',
+        alt: 'Árvore Seca 4m em produção no ateliê de Fernando Quincas - fibra de vidro bruta com resina avermelhada em galpão',
+        caption: 'Em produção no ateliê: tronco com resina ainda bruta — a Árvore Seca 4m de Fernando Quincas no galpão, antes da pátina tronco seco definitiva.',
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-detalhe-galhos-03.jpeg',
+        alt: 'Detalhe dos galhos retorcidos da Árvore Seca 4m fibra de vidro Fernando Quincas - hiper-realismo da casca',
+        caption: 'Detalhe dos galhos retorcidos: hiper-realismo da Árvore Seca 4m — cada nó e rachadura da casca modelado à mão por Fernando Quincas.',
+      },
+      { type: 'heading', text: 'Hiper-realismo que resiste a sol, chuva e tempo — sem manutenção heroica' },
+      {
+        type: 'paragraph',
+        text: 'A graça da Árvore Seca 4m de Fernando Quincas é que ela é hiper-realista e, ao mesmo tempo, prática. A fibra de vidro com tinta PU e verniz acetinado não infiltra, não mofa e não cria limo estrutural — por isso, a escultura de 48 kg aguenta sol forte, chuva, sereno e vento sem desbotar nem pedir verniz anual. Diferente de árvore natural ou madeira, a obra de Fernando Quincas não racha com o tempo, não atrai cupim e mantém o marrom-dourado por anos com apenas limpeza leve. É a árvore de Fernando Quincas que parece seca de verdade, mas dura como escultura naval.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Resiste a sol e chuva: fibra naval selada — a árvore 4m de Fernando Quincas de 48 kg não pede tratamento contra musgo.',
+          'Não racha, não apodrece: resina + PU de Fernando Quincas — a escultura seca mantém cor e forma estação após estação.',
+          'Leve e autoportante: 48 kg para 4m — a obra monumental de Fernando Quincas que não precisa de obra civil.',
+          'Hiper-realismo tátil: casca rachada e galhos secos — a arte de Fernando Quincas que engana até o toque.',
+        ],
+      },
+      { type: 'heading', text: 'Escala humana: 4 metros ao lado de gente — a prova dos 4m e 48 kg' },
+      {
+        type: 'paragraph',
+        text: 'Fotos com gente não mentem. Na calçada, ao lado de Fernando Quincas e de um casal, a Árvore Seca 4m por Fernando Quincas mostra por que 4 metros é monumental: ultrapassa a altura das pessoas, projeta sombra e ainda deixa o céu passar entre os galhos secos. Com 48 kg, a base larga garante estabilidade sem chumbar no chão — por isso, a árvore de fibra de vidro de Fernando Quincas pode ficar na entrada da pousada, no jardim seco ou na praça sem medo. É a escala humana que vende a obra de Fernando Quincas: quem vê a foto entende na hora o tamanho real dos 4 metros.',
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.jpeg',
+        alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas na calçada - vista frontal tronco retorcido 48 kg',
+        caption: 'Vista frontal na calçada: tronco retorcido em primeiro plano — Árvore Seca 4m × 48 kg de Fernando Quincas com galhos que recortam o céu.',
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-05.jpeg',
+        alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas com casal ao lado - escala humana homem e mulher',
+        caption: 'Escala humana com casal: homem e mulher ao lado da Árvore Seca 4m — a escultura de 48 kg de Fernando Quincas com proporção monumental.',
+      },
+      {
+        type: 'image',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-lateral-06.jpeg',
+        alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas com casal em ângulo lateral - detalhe base e galhos secos',
+        caption: 'Ângulo lateral com casal: base 60×60 cm e galhos retorcidos — segundo ângulo da Árvore Seca 4m × 48 kg de Fernando Quincas na calçada.',
+      },
+      {
+        type: 'quote',
+        text: 'Árvore seca não é árvore morta. É desenho da natureza quando ela decide ser escultura. Minha árvore de fibra tem que fazer sombra sem pedir água.',
+        attribution: 'Fernando Quincas',
+      },
+      { type: 'heading', text: 'Onde usar: jardim seco, fachada, pousada, praça e cenografia' },
+      {
+        type: 'paragraph',
+        text: 'A Árvore Seca 4m de Fernando Quincas nasceu para o jardim seco — aquele jardim que quer alma de cerrado sem manutenção. Mas, por ser 48 kg e 4 metros autoportante em fibra de vidro, a escultura de Fernando Quincas vai longe: marca entrada de sítio e pousada sem quebrar calçada, compõe praça e hall externo como ponto focal, sombreia fachada e varanda gourmet, vira cenografia de restaurante temático, evento, novela ou vitrine. Aceita iluminação pendente nos galhos, pássaros esculturais, trepadeiras artificiais ou fitas — e, por ser fibra de vidro, pode ser pintada em outra pátina sob encomenda no ateliê de Fernando Quincas. É a árvore de Fernando Quincas que, como toda escultura do ateliê, foi pensada para viver com sol e chuva.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Jardim seco e praça: ponto focal 4m — a árvore seca monumental de Fernando Quincas que organiza o verde sem rega.',
+          'Fachada e calçada: sombra escultural 48 kg — a obra de Fernando Quincas que marca endereço sem obra civil.',
+          'Pousada, sítio e restaurante temático: cenografia instantânea — a escultura 4m de Fernando Quincas que fotografável vira cartão-postal.',
+          'Hall, evento e vitrine: escultura leve — a árvore de fibra de vidro de Fernando Quincas aceita luz e adereço nos galhos.',
+        ],
+      },
+      { type: 'heading', text: 'Quanto custa e como comprar na Loja do ateliê de Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'Cada Árvore Seca 4m do ateliê de Fernando Quincas é obra sob encomenda — não é obra única 1/1, é replicável com acabamento manual. A escultura monumental em fibra de vidro — 4,00 m de altura, 48 kg, tronco retorcido hiper-realista, base 60×60 cm autoportante, pátina tronco seco com tinta PU e verniz anti-UV, pronta para sol e chuva — custa R$ 3.000. O valor, para uma escultura 4m desse porte e leveza, explica por que a árvore de fibra de vidro de Fernando Quincas é tão procurada para jardim e cenografia. Como toda escultura e toda obra de Fernando Quincas, a árvore leva certificado do ateliê e orientação de instalação.',
+      },
+      {
+        type: 'list',
+        items: [
+          'R$ 3.000 — árvore seca monumental 4,00 m × 48 kg em fibra de vidro por Fernando Quincas, base 60×60 cm autoportante (versão seca).',
+          '48 kg para 4m: leve para monumental — a obra de Fernando Quincas que 2 pessoas instalam sem guindaste.',
+          'Fibra naval + pátina tronco seco: hiper-realismo que resiste a sol e chuva — a escultura de Fernando Quincas sem manutenção heroica.',
+          'Encontre na Loja: Árvore Seca 4m em Fibra de Vidro por Fernando Quincas em ESCULTURAS e GARDEN (/loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas) — capa em fundo verde + 6 fotos de calçada, ateliê e escala humana.',
+        ],
+      },
+      { type: 'heading', text: 'História real: folhagem de goiaba em seda para a Gift Fair — 18 mil completa via Treesco para Salvador e Olinda' },
+      {
+        type: 'paragraph',
+        text: 'Esta não é só promessa de catálogo — a Árvore Seca 4m de Fernando Quincas já tem histórico de feira e venda nacional. A árvore de fibra com galhos secos foi criada sob encomenda para receber folhagem de goiaba em seda feita à mão, a pedido da Treesco Companhia, para participar da feira de presente Gift Fair (Gift feur). Completa — tronco 4m + folhagem de goiaba em seda — a obra foi vendida por R$ 18 mil completa. Duas unidades da mesma linhagem seguiram para o Nordeste: uma para Salvador (BA) e a outra para Olinda (PE), onde seguem como cenário e ponto de foto. É a validação que faltava: a mesma árvore seca de 48 kg que hoje sai por R$ 3.000 na versão seca, quando vestida com goiabeira em seda para feira, vira produto de R$ 18 mil — e viaja o Brasil pela Treesco. Por isso, no ateliê de Fernando Quincas você escolhe: árvore seca pura por R$ 3.000 ou árvore completa com folhagem de goiaba em seda por R$ 18 mil, mesma base 4m e mesma fibra naval.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Para folhagem de goiaba em seda: galhos secos projetados para receber folhagem artesanal em seda — a árvore de Fernando Quincas vira goiabeira cenográfica hiper-realista.',
+          'Feira de presente Gift Fair via Treesco Companhia: encomenda oficial para estande da Treesco na Gift Fair (feira de presente) — validação comercial e curatorial.',
+          'R$ 18 mil completa: valor da árvore 4m completa com folhagem de goiaba em seda — versão seca base R$ 3.000, completa com seda R$ 18 mil (fibra + seda + montagem).',
+          'Salvador e Olinda: destinos reais — uma árvore seguiu para Salvador, a outra para Olinda, ambas via Treesco, provando demanda nacional por árvore cenográfica de Fernando Quincas.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Para folhagem de goiaba em seda. Foi para participar de feira de presente Gift Fair pela Treesco companhia. 18 mil completa. Ela foi para Salvador e a outra para Olinda.',
+        attribution: 'Fernando Quincas — chat de ateliê (história real da árvore)',
+      },
+      {
+        type: 'paragraph',
+        text: 'Hoje, a Árvore Seca 4m vive na Loja do ateliê de Fernando Quincas nas categorias ESCULTURAS e GARDEN — encontre em /loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas por R$ 3.000 (seca) e consulte o ateliê para a versão completa com folhagem de goiaba em seda por R$ 18 mil, mesma exposição de 7 fotos: a primeira é a capa em fundo verde de estúdio (foto studio-verde-capa-00) e as demais são a árvore na calçada com Fernando Quincas, a vista frontal, o detalhe dos galhos retorcidos, a árvore ainda bruta no ateliê e as duas escalas humanas com casal. Como toda obra do ateliê, cada árvore 4m é acabada à mão por Fernando Quincas e feita em fibra de vidro naval. Se você busca uma árvore seca monumental, uma árvore artificial 4 metros, uma árvore com folhagem de goiaba em seda, uma escultura em fibra de vidro que pareça madeira seca para Gift Fair, pousada ou fachada em Salvador/Olinda, ou simplesmente uma obra de Fernando Quincas que dê sombra escultural sem quebrar calçada, esta obra é a escolha. A árvore seca 4m em fibra de vidro de 48 kg por Fernando Quincas está pronta para transformar seu jardim — seca por R$ 3.000 ou completa com goiabeira em seda por R$ 18 mil.',
+      },
+    ],
+  },
+  {
     id: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fernando-quincas',
     slug: 'fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra-de-vidro-fernando-quincas',
     title: 'Fonte Gigante Paulo Leardi 10m | Portal Morumbi',

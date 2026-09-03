@@ -63,9 +63,43 @@ export const ARTWORKS: Artwork[] = [
       '/products/galinha-monte-verde-macro.jpeg',
       '/products/galinha-monte-verde-instalada-1.png'
     ],
-    availability: 'AVAILABLE',
-    edition: 'Obra Única 1/1',
+    availability: 'LIMITED_EDITION',
+    edition: 'Edição Limitada — Obra Única 1/1',
     priceEstimate: 'Sob Consulta — R$ 12.800 na loja',
+    featured: true,
+    isMonumental: true
+  },
+  {
+    id: 'loba-artesanal-120x80-escultura',
+    title: 'Loba Artesanal — 1,20 × 0,80 m',
+    frenchTitle: 'La Louve Artisanale — Sculpture Monumentale 1,20m',
+    subtitle: 'Escultura monumental 120 × 80 cm em fibra de vidro por Fernando Quincas — força e poesia animalista em escala guardiã',
+    category: 'ANIMALS',
+    year: 2026,
+    dimensions: '120 × 80 × 60 cm (Compr. × Alt. × Larg)',
+    weight: 'Aprox. 45 kg',
+    materials: ['Isopor esculpível', 'Poliuretano', 'Gesso e massa corrida', 'Resina + fibra de vidro', 'Massa plástica', 'Tinta PU automotiva'],
+    techniques: ['Modelagem manual em isopor e poliuretano', 'Laminação em resina com fibra de vidro', 'Pintura fundo universal e tinta PU — 50 dias de ateliê'],
+    finishes: ['Tinta PU automotiva alto brilho', 'Pelagem em volumes com luz e sombra', 'Resistente a sol e chuva'],
+    colorPalette: [
+      { name: 'Cinza Loba', hex: '#8A7A6B' },
+      { name: 'Areia Pelagem', hex: '#C8A86B' },
+      { name: 'Preto Focinho', hex: '#1E1D1A' },
+      { name: 'Verde Jardim', hex: '#16251E' }
+    ],
+    location: 'Ateliê Fernando Quincas — coleção particular, jardim ou hall nobre',
+    description: 'A Loba Artesanal por Fernando Quincas é presença absoluta: 120 cm de comprimento por 80 cm de altura, musculatura tensa, olhar atento e pelagem em volumes que capturam luz e sombra. Modelada à mão em 50 dias no mesmo processo da Galinha de Monte Verde — isopor, poliuretano, gesso, fibra de vidro e tinta PU — impõe respeito sem perder ternura: a predadora que vira guardiã do jardim.',
+    curatorNotes: 'Edição limitada: cada Loba é esculpida e pintada à mão por Fernando Quincas, gesto irrepetível — nenhuma sairá idêntica mesmo em nova edição. Assinada e com certificado de autenticidade.',
+    inspiration: 'A loba como guardiã — força mansa que protege o território.',
+    image: '/products/lobo-gigante-studio-green.jpeg',
+    secondaryImages: [
+      '/products/lobo-gigante-tamanho-real.jpeg',
+      '/products/lobo-gigante-macro.jpeg',
+      '/products/lobo-gigante-traseira.jpeg'
+    ],
+    availability: 'LIMITED_EDITION',
+    edition: 'Edição Limitada — Assinada e Certificada',
+    priceEstimate: 'Sob Consulta — R$ 8.500 na loja',
     featured: true,
     isMonumental: true
   },
