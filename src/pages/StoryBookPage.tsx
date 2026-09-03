@@ -779,14 +779,14 @@ export const StoryBookPage: React.FC = () => {
           </div>
         </header>
 
-        {/* Foto do StoryBook físico */}
+        {/* Foto do StoryBook físico — capa solicitada */}
         <section aria-label="Foto do StoryBook físico" className="mt-8">
           <h3 className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#C8A86B]">O StoryBook físico</h3>
           <figure className="mt-3 rounded-2xl overflow-hidden border border-[#C8A86B]/15 bg-[#FDFCFB]">
             <img
-              src={STORYBOOK_IMAGES[50].src}
-              alt={STORYBOOK_IMAGES[50].alt}
-              title={STORYBOOK_IMAGES[50].title}
+              src={STORYBOOK_IMAGES[49].src}
+              alt={STORYBOOK_IMAGES[49].alt}
+              title={STORYBOOK_IMAGES[49].title}
               width={1200}
               height={900}
               loading="eager"
@@ -794,7 +794,7 @@ export const StoryBookPage: React.FC = () => {
               className="w-full h-auto object-cover"
             />
             <figcaption className="px-4 py-3 bg-[#FAF8F5] font-serif italic text-sm text-[#2C2A26]/70">
-              Capa do StoryBook — acervo histórico de Fernando Quincas com 51 páginas de feiras antigas, galpões e obras monumentais em fibra de vidro.
+              {STORYBOOK_IMAGES[49].caption} — capa do StoryBook físico.
             </figcaption>
           </figure>
         </section>
