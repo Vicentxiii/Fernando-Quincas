@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Bookmark, Menu, X, ArrowUpRight, ShoppingBag } from 'lucide-react';
+import { Menu, X, ArrowUpRight, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 interface HeaderProps {
@@ -19,8 +19,8 @@ interface NavItem {
 
 export const Header: React.FC<HeaderProps> = ({
   activeSection,
-  savedCount,
-  onOpenDossier,
+  savedCount: _savedCount,
+  onOpenDossier: _onOpenDossier,
   onNavigate
 }) => {
   const navigate = useNavigate();
@@ -134,8 +134,8 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Actions — Contact (text) + Cart + Dossier (pill), visually separated */}
-          <div className="hidden xl:flex shrink-0 w-[140px] 2xl:w-[240px] items-center justify-end gap-3 2xl:gap-4">
+          {/* Actions — Contact (text) + Cart, header mais limpa */}
+          <div className="hidden xl:flex shrink-0 w-auto items-center justify-end gap-3 2xl:gap-4">
             <a
               href="/#contact"
               onClick={(e) => { e.preventDefault(); handleItemClick({ id: 'contact', label: 'CONTATO', subtitle: 'Atendimento Exclusivo' }); }}
@@ -161,25 +161,9 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               )}
             </button>
-
-            {/* Collector Dossier Drawer Button */}
-            <button
-              onClick={onOpenDossier}
-              className="relative flex items-center gap-2 pl-3.5 pr-3 py-2 rounded-full border border-[#C8A86B]/35 bg-[#FAF8F5]/70 hover:bg-[#1E1D1A] hover:text-[#FAF8F5] hover:border-[#1E1D1A] transition-colors duration-300"
-              aria-label="Abrir dossiê de obras salvas"
-              title="Abrir dossiê de obras salvas"
-            >
-              <Bookmark className="w-3.5 h-3.5 text-[#C8A86B] transition-colors duration-300 group-hover:text-[#E0C995]" />
-              <span className="hidden 2xl:inline text-[10px] tracking-[0.18em] font-medium">DOSSIÊ</span>
-              {savedCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
-                  {savedCount}
-                </span>
-              )}
-            </button>
           </div>
 
-          {/* Mobile / Tablet Actions — compact, not a squeezed desktop nav */}
+          {/* Mobile / Tablet Actions — compact, header mais limpa */}
           <div className="xl:hidden flex items-center gap-2">
             <button
               onClick={openCart}
@@ -191,19 +175,6 @@ export const Header: React.FC<HeaderProps> = ({
               {cartCount > 0 && (
                 <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
                   {cartCount}
-                </span>
-              )}
-            </button>
-            <button
-              onClick={onOpenDossier}
-              className="relative p-2.5 rounded-full border border-[#C8A86B]/30 text-[#1E1D1A] hover:border-[#C8A86B] transition-colors bg-[#FAF8F5]/60"
-              aria-label="Abrir dossiê de obras salvas"
-              title="Abrir dossiê de obras salvas"
-            >
-              <Bookmark className="w-4 h-4 text-[#1E1D1A]" />
-              {savedCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#6B1D2F] text-white text-[9px] font-bold flex items-center justify-center">
-                  {savedCount}
                 </span>
               )}
             </button>
@@ -272,22 +243,16 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </div>
 
-          {/* Mobile Footer Area */}
+          {/* Mobile Footer Area — header mais limpa */}
           <div className="border-t border-[#C8A86B]/20 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#2C2A26]/70">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#6A7D69] animate-ping" />
               <span>Ateliê & Parque de Esculturas • Minas Gerais</span>
             </div>
-            <div className="flex items-center gap-4 text-[#C8A86B]">
-              <button onClick={() => { setIsMobileMenuOpen(false); openCart(); }} className="flex items-center gap-1 hover:underline">
-                <ShoppingBag className="w-3.5 h-3.5" />
-                <span>Carrinho ({cartCount})</span>
-              </button>
-              <button onClick={() => { setIsMobileMenuOpen(false); onOpenDossier(); }} className="flex items-center gap-1 hover:underline">
-                <span>Ver Dossiê ({savedCount})</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
+            <button onClick={() => { setIsMobileMenuOpen(false); openCart(); }} className="flex items-center gap-1 text-[#C8A86B] hover:underline">
+              <ShoppingBag className="w-3.5 h-3.5" />
+              <span>Carrinho ({cartCount})</span>
+            </button>
           </div>
         </div>
       )}
