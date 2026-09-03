@@ -779,22 +779,22 @@ export const StoryBookPage: React.FC = () => {
           </div>
         </header>
 
-        {/* Video quando existir - semantic */}
-        <section aria-label="Vídeo bastidores" className="mt-8">
-          <h3 className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#C8A86B]">Vídeo — bastidores do galpão</h3>
-          <figure className="mt-3 rounded-2xl overflow-hidden border border-[#C8A86B]/15 bg-black">
-            <video
-              controls
-              preload="metadata"
-              poster={`/Book/${STORYBOOK_IMAGES[27]?.filename}`}
-              className="w-full h-auto"
-              aria-label="Vídeo bastidores do ateliê galpão de Fernando Quincas"
-            >
-              <source src="/Book/fernando-quincas-historia-video-bastidores-atelie-galpao-obra-monumental.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo HTML5.
-            </video>
+        {/* Foto do StoryBook físico */}
+        <section aria-label="Foto do StoryBook físico" className="mt-8">
+          <h3 className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#C8A86B]">O StoryBook físico</h3>
+          <figure className="mt-3 rounded-2xl overflow-hidden border border-[#C8A86B]/15 bg-[#FDFCFB]">
+            <img
+              src={STORYBOOK_IMAGES[50].src}
+              alt={STORYBOOK_IMAGES[50].alt}
+              title={STORYBOOK_IMAGES[50].title}
+              width={1200}
+              height={900}
+              loading="eager"
+              decoding="async"
+              className="w-full h-auto object-cover"
+            />
             <figcaption className="px-4 py-3 bg-[#FAF8F5] font-serif italic text-sm text-[#2C2A26]/70">
-              Bastidores do ateliê galpão — fabricação de obra monumental em fibra de vidro por Fernando Quincas. Acervo histórico.
+              Capa do StoryBook — acervo histórico de Fernando Quincas com 51 páginas de feiras antigas, galpões e obras monumentais em fibra de vidro.
             </figcaption>
           </figure>
         </section>
