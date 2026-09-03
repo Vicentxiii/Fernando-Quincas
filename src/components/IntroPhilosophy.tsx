@@ -7,7 +7,7 @@ interface IntroPhilosophyProps {
 }
 
 export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
-  onLearnTechniques,
+  onLearnTechniques: _onLearnTechniques,
   onExploreStory
 }) => {
   return (
@@ -123,19 +123,13 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
               </div>
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Button — Saber-Fazer removido pois não leva a lugar nenhum */}
             <div className="flex items-center gap-4 pt-4">
               <button
                 onClick={onExploreStory}
                 className="px-6 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-all duration-300 text-xs tracking-[0.18em] font-semibold flex items-center gap-2"
               >
                 <span>UMA VIDA NA ESCULTURA</span>
-              </button>
-              <button
-                onClick={onLearnTechniques}
-                className="px-6 py-3 rounded-full border border-[#C8A86B]/40 hover:border-[#C8A86B] text-[#1E1D1A] hover:bg-[#C8A86B]/10 transition-colors text-xs tracking-[0.18em] font-medium"
-              >
-                <span>SABER-FAZER</span>
               </button>
             </div>
           </div>
