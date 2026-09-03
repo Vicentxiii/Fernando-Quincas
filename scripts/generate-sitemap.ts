@@ -43,6 +43,8 @@ async function generate() {
   xml += `  <url>\n    <loc>${SITE_URL}/</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n${imageEntries(['/fernando-quincas.webp'], 'Fernando Quincas, mestre artesão em fibra de vidro')}\n  </url>\n`;
   // Loja
   xml += `  <url>\n    <loc>${SITE_URL}/loja</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n${imageEntries(PRODUCTS.slice(0, 3).map((p) => p.images[0]))}\n  </url>\n`;
+  // Instrumentos
+  xml += `  <url>\n    <loc>${SITE_URL}/instrumentos</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(['/products/lira-instrumento-musical-corda.jpeg', '/products/lira-bolsa-close.jpeg', '/products/lira-guia-musical.jpeg'], 'Lira 15 cordas por Fernando Quincas')}\n  </url>\n`;
   // Blog
   xml += `  <url>\n    <loc>${SITE_URL}/blog</loc>\n    <lastmod>${formatLastMod(BLOG_POSTS[0]?.date)}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(BLOG_POSTS.slice(0, 3).map((p) => p.coverImage))}\n  </url>\n`;
 

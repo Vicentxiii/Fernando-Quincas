@@ -9,6 +9,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Preloader } from './components/Preloader';
 import { ShopPreloader } from './components/ShopPreloader';
+import { InstrumentsPreloader } from './components/InstrumentsPreloader';
 import { ArtworkModal } from './components/ArtworkModal';
 import { InquiryDossierDrawer } from './components/InquiryDossierDrawer';
 import { WhatsAppButton } from './components/WhatsAppButton';
@@ -27,6 +28,7 @@ const ShopPage = lazy(() => import('./pages/ShopPage').then(m => ({ default: m.S
 const ProductPage = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })));
 const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then(m => ({ default: m.CheckoutPage })));
 const OrderStatusPage = lazy(() => import('./pages/OrderStatusPage').then(m => ({ default: m.OrderStatusPage })));
+const InstrumentsPage = lazy(() => import('./pages/InstrumentsPage').then(m => ({ default: m.InstrumentsPage })));
 
 // Fallback leve para rotas lazy (não bloqueia LCP da Home)
 const PageFallback: React.FC = () => (
@@ -78,12 +80,16 @@ const AppContent: React.FC = () => {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
   const [isPreloading, setIsPreloading] = useState(true);
   const [isShopPreloading, setIsShopPreloading] = useState(false);
+  const [isInstrumentsPreloading, setIsInstrumentsPreloading] = useState(false);
   const prevPathRef = useRef(location.pathname);
 
-  // Elegant curtain preloader when entering the Shop from another page
+  // Elegant curtain preloader when entering the Shop / Instrumentos from another page
   useEffect(() => {
     if (location.pathname === '/loja' && prevPathRef.current !== '/loja') {
       setIsShopPreloading(true);
+    }
+    if (location.pathname === '/instrumentos' && prevPathRef.current !== '/instrumentos') {
+      setIsInstrumentsPreloading(true);
     }
     prevPathRef.current = location.pathname;
   }, [location.pathname]);
@@ -155,6 +161,11 @@ const AppContent: React.FC = () => {
         <ShopPreloader onFinish={() => setIsShopPreloading(false)} />
       )}
 
+      {/* Instrumentos Route Preloader — mesmo elegante da loja */}
+      {isInstrumentsPreloading && (
+        <InstrumentsPreloader onFinish={() => setIsInstrumentsPreloading(false)} />
+      )}
+
       {/* Floating Glassmorphism Header */}
       <Header
         activeSection={activeSection}
@@ -181,6 +192,7 @@ const AppContent: React.FC = () => {
             <Route path="/loja/checkout" element={<CheckoutPage />} />
             <Route path="/loja/pedido/:id" element={<OrderStatusPage />} />
             <Route path="/loja/:slug" element={<ProductPage />} />
+            <Route path="/instrumentos" element={<InstrumentsPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

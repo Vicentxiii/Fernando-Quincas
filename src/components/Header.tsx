@@ -27,6 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
   const location = useLocation();
   const isBlogRoute = location.pathname.startsWith('/blog');
   const isShopRoute = location.pathname.startsWith('/loja');
+  const isInstrumentsRoute = location.pathname.startsWith('/instrumentos');
   const { count: cartCount, openCart } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const mainNavItems: NavItem[] = [
     { id: 'shop', label: 'LOJA', subtitle: 'Obras & Edições Disponíveis', route: '/loja' },
+    { id: 'instruments', label: 'INSTRUMENTOS', subtitle: 'Liras Artesanais', route: '/instrumentos' },
     { id: 'atelier', label: 'ATELIÊ', subtitle: 'Processo Criativo' },
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
     { id: 'commissions', label: 'ENCOMENDAS', subtitle: 'Projetos sob Medida' },
@@ -66,6 +68,7 @@ export const Header: React.FC<HeaderProps> = ({
     if (!route) return false;
     if (route.startsWith('/blog')) return isBlogRoute;
     if (route.startsWith('/loja')) return isShopRoute;
+    if (route.startsWith('/instrumentos')) return isInstrumentsRoute;
     return false;
   };
 
@@ -104,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Desktop Navigation — centered, generous spacing (xl and up) - agora crawlable com <a> */}
           <nav
-            className="hidden xl:flex flex-1 items-center justify-center gap-x-10 2xl:gap-x-16"
+            className="hidden xl:flex flex-1 items-center justify-center gap-x-6 xl:gap-x-7 2xl:gap-x-10"
             aria-label="Navegação Principal"
           >
             {mainNavItems.map((item) => {
