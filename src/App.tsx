@@ -30,6 +30,7 @@ const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then(m => ({ defa
 const OrderStatusPage = lazy(() => import('./pages/OrderStatusPage').then(m => ({ default: m.OrderStatusPage })));
 const InstrumentsPage = lazy(() => import('./pages/InstrumentsPage').then(m => ({ default: m.InstrumentsPage })));
 const InstrumentPhotoPage = lazy(() => import('./pages/InstrumentPhotoPage').then(m => ({ default: m.InstrumentPhotoPage })));
+const StoryBookPage = lazy(() => import('./pages/StoryBookPage').then(m => ({ default: m.StoryBookPage })));
 
 // Fallback leve para rotas lazy (não bloqueia LCP da Home)
 const PageFallback: React.FC = () => (
@@ -195,6 +196,7 @@ const AppContent: React.FC = () => {
             <Route path="/loja/:slug" element={<ProductPage />} />
             <Route path="/instrumentos" element={<InstrumentsPage />} />
             <Route path="/instrumentos/:photoSlug" element={<InstrumentPhotoPage />} />
+            <Route path="/storybook" element={<StoryBookPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

@@ -19,6 +19,7 @@ const SITE_URL = 'https://fernandoquincas.com.br';
 import { PRODUCTS } from '../src/data/products';
 import { BLOG_POSTS, BLOG_CATEGORY_LABELS } from '../src/data/blog';
 import { INSTRUMENTS } from '../src/data/instruments';
+import { STORYBOOK_IMAGES } from '../src/data/storyBookImages';
 
 interface PrerenderMeta {
   title: string;
@@ -207,6 +208,52 @@ async function generate() {
       ogType: 'website',
       keywords: 'Fernando Quincas, lira, instrumentos, lira 15 cordas, madeira nobre, instrumentos artesanais, luteria, Waldorf',
       jsonLds: instrumentosJsonLd,
+    },
+  });
+
+  // ── STORYBOOK ──
+  const storyBookJsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      name: 'StoryBook — Livro Histórico de Fernando Quincas | 51 Páginas de Feiras, Galpões e Obras Monumentais',
+      description: 'StoryBook 3D de Fernando Quincas com 51 páginas do acervo histórico: feiras antigas, galpões do ateliê, esculturas gigantes em fibra de vidro e bastidores de quatro décadas. Experiência WebGL premium com camada HTML indexável.',
+      url: `${SITE_URL}/storybook`,
+      creator: { '@type': 'Person', name: 'Fernando Quincas', url: SITE_URL },
+      isAccessibleForFree: true,
+      inLanguage: 'pt-BR',
+      numberOfPages: STORYBOOK_IMAGES.length,
+      image: STORYBOOK_IMAGES.slice(0, 3).map(i => (i.src.startsWith('http') ? i.src : `${SITE_URL}${i.src}`)),
+      hasPart: STORYBOOK_IMAGES.slice(0, 8).map((img, idx) => ({
+        '@type': 'ImageObject',
+        contentUrl: img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`,
+        name: img.title,
+        description: img.description,
+        caption: img.caption,
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Início', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'StoryBook', item: `${SITE_URL}/storybook` },
+      ],
+    },
+  ];
+
+  pages.push({
+    filePath: 'storybook/index.html',
+    meta: {
+      title: 'StoryBook — Livro Histórico de Fernando Quincas | 51 Páginas de Feiras, Galpões e Obras Monumentais',
+      description: 'Folheie o StoryBook 3D de Fernando Quincas: 51 páginas do acervo histórico com feiras antigas, galpões, esculturas gigantes em fibra de vidro e bastidores do ateliê. Experiência imersiva e indexável.',
+      canonical: `${SITE_URL}/storybook`,
+      ogTitle: 'StoryBook — Livro Histórico de Fernando Quincas | 51 Páginas de Feiras, Galpões e Obras Monumentais',
+      ogDescription: 'Folheie o StoryBook 3D: 51 páginas do acervo histórico de Fernando Quincas — feiras antigas, galpões e obras monumentais em fibra de vidro. Mobile-first, WebGL premium e SEO/GEO completo.',
+      ogImage: STORYBOOK_IMAGES[0]?.src || '/fernando-quincas.webp',
+      ogType: 'website',
+      keywords: 'Fernando Quincas, StoryBook, livro histórico, escultor brasileiro, fibra de vidro, obras monumentais, feiras antigas, galpão ateliê, acervo histórico',
+      jsonLds: storyBookJsonLd,
     },
   });
 

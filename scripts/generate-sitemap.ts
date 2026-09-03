@@ -13,6 +13,7 @@ const SITE_URL = 'https://fernandoquincas.com.br';
 import { PRODUCTS } from '../src/data/products';
 import { BLOG_POSTS } from '../src/data/blog';
 import { INSTRUMENTS } from '../src/data/instruments';
+import { STORYBOOK_IMAGES } from '../src/data/storyBookImages';
 
 function esc(str: string): string {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -42,6 +43,8 @@ async function generate() {
 
   // Home
   xml += `  <url>\n    <loc>${SITE_URL}/</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n${imageEntries(['/fernando-quincas.webp'], 'Fernando Quincas, mestre artesão em fibra de vidro')}\n  </url>\n`;
+  // StoryBook — página exclusiva + imagens indexáveis
+  xml += `  <url>\n    <loc>${SITE_URL}/storybook</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.85</priority>\n${STORYBOOK_IMAGES.slice(0, 3).map(i => imageEntries([i.src], i.caption)).join('\n')}\n  </url>\n`;
   // Loja
   xml += `  <url>\n    <loc>${SITE_URL}/loja</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n${imageEntries(PRODUCTS.slice(0, 3).map((p) => p.images[0]))}\n  </url>\n`;
   // Instrumentos

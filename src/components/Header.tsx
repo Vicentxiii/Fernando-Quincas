@@ -28,6 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
   const isBlogRoute = location.pathname.startsWith('/blog');
   const isShopRoute = location.pathname.startsWith('/loja');
   const isInstrumentsRoute = location.pathname.startsWith('/instrumentos');
+  const isStoryBookRoute = location.pathname.startsWith('/storybook');
   const { count: cartCount, openCart } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,6 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
   const mainNavItems: NavItem[] = [
     { id: 'shop', label: 'LOJA', subtitle: 'Obras & Edições Disponíveis', route: '/loja' },
     { id: 'instruments', label: 'INSTRUMENTOS', subtitle: 'Liras Artesanais', route: '/instrumentos' },
+    { id: 'storybook', label: 'STORYBOOK', subtitle: 'Livro Histórico 3D', route: '/storybook' },
     { id: 'atelier', label: 'ATELIÊ', subtitle: 'Processo Criativo' },
     { id: 'media', label: 'MÍDIA', subtitle: 'Imprensa & Notícias' },
     { id: 'commissions', label: 'ENCOMENDAS', subtitle: 'Projetos sob Medida' },
@@ -69,6 +71,7 @@ export const Header: React.FC<HeaderProps> = ({
     if (route.startsWith('/blog')) return isBlogRoute;
     if (route.startsWith('/loja')) return isShopRoute;
     if (route.startsWith('/instrumentos')) return isInstrumentsRoute;
+    if (route.startsWith('/storybook')) return isStoryBookRoute;
     return false;
   };
 

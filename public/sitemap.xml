@@ -11,6 +11,24 @@
     </image:image>
   </url>
   <url>
+    <loc>https://fernandoquincas.com.br/storybook</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-historia-vasos-colunas-fibra-vidro-feira-antiga-01.jpg</image:loc>
+      <image:caption>Historia Vasos Colunas Fibra Vidro Feira Antiga — fotografia do livro histórico de Fernando Quincas (p. 1)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-escultor-atelie-galpao-vasos-colunas-anos-80-02.jpg</image:loc>
+      <image:caption>Escultor Atelie Galpao Vasos Colunas Anos 80 — fotografia do livro histórico de Fernando Quincas (p. 2)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-feira-exposicao-esculturas-gigantes-colunas-03.jpg</image:loc>
+      <image:caption>Feira Exposicao Esculturas Gigantes Colunas — fotografia do livro histórico de Fernando Quincas (p. 3)</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://fernandoquincas.com.br/loja</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>

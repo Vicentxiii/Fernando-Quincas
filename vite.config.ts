@@ -25,7 +25,6 @@ export default defineConfig(() => {
         output: {
           manualChunks: {
             react: ['react', 'react-dom', 'react-router-dom'],
-            motion: ['motion'],
             three: ['three'],
             vendor: ['lucide-react', '@vercel/analytics', '@vercel/speed-insights'],
           },
