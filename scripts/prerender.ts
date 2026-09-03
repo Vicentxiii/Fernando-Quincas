@@ -18,6 +18,7 @@ const SITE_URL = 'https://fernandoquincas.com.br';
 // Importa dados do site (via tsx, funciona com ESNext)
 import { PRODUCTS } from '../src/data/products';
 import { BLOG_POSTS, BLOG_CATEGORY_LABELS } from '../src/data/blog';
+import { INSTRUMENTS } from '../src/data/instruments';
 
 interface PrerenderMeta {
   title: string;
@@ -208,6 +209,49 @@ async function generate() {
       jsonLds: instrumentosJsonLd,
     },
   });
+
+  // ── INSTRUMENTOS FOTOS — cada foto com URL dedicada para SEO ──
+  for (const inst of INSTRUMENTS) {
+    for (const img of inst.gallery) {
+      const url = `${SITE_URL}/instrumentos/${img.slug}`;
+      const title = img.seoTitle ?? img.caption ?? inst.name;
+      const description = img.seoDescription ?? img.alt;
+      const imageLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ImageObject',
+        name: title,
+        description,
+        caption: img.seoCaption ?? img.caption,
+        contentUrl: img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`,
+        url,
+        author: { '@type': 'Person', name: 'Fernando Quincas' },
+        creator: { '@type': 'Person', name: 'Fernando Quincas' },
+      };
+      const breadcrumbLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Início', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: 'Instrumentos', item: `${SITE_URL}/instrumentos` },
+          { '@type': 'ListItem', position: 3, name: title, item: url },
+        ],
+      };
+      pages.push({
+        filePath: `instrumentos/${img.slug}/index.html`,
+        meta: {
+          title,
+          description,
+          canonical: url,
+          ogTitle: `${title} | Fernando Quincas`,
+          ogDescription: description,
+          ogImage: img.src,
+          ogType: 'article',
+          keywords: `${title}, Fernando Quincas, lira, instrumentos, madeira nobre, ${img.caption ?? ''}`,
+          jsonLds: [imageLd, breadcrumbLd],
+        },
+      });
+    }
+  }
 
   // ── BLOG INDEX ──
   const blogJsonLd = [

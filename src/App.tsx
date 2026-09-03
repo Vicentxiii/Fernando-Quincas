@@ -29,6 +29,7 @@ const ProductPage = lazy(() => import('./pages/ProductPage').then(m => ({ defaul
 const CheckoutPage = lazy(() => import('./pages/CheckoutPage').then(m => ({ default: m.CheckoutPage })));
 const OrderStatusPage = lazy(() => import('./pages/OrderStatusPage').then(m => ({ default: m.OrderStatusPage })));
 const InstrumentsPage = lazy(() => import('./pages/InstrumentsPage').then(m => ({ default: m.InstrumentsPage })));
+const InstrumentPhotoPage = lazy(() => import('./pages/InstrumentPhotoPage').then(m => ({ default: m.InstrumentPhotoPage })));
 
 // Fallback leve para rotas lazy (não bloqueia LCP da Home)
 const PageFallback: React.FC = () => (
@@ -88,7 +89,7 @@ const AppContent: React.FC = () => {
     if (location.pathname === '/loja' && prevPathRef.current !== '/loja') {
       setIsShopPreloading(true);
     }
-    if (location.pathname === '/instrumentos' && prevPathRef.current !== '/instrumentos') {
+    if ((location.pathname === '/instrumentos' || location.pathname.startsWith('/instrumentos/')) && !prevPathRef.current.startsWith('/instrumentos')) {
       setIsInstrumentsPreloading(true);
     }
     prevPathRef.current = location.pathname;
@@ -193,6 +194,7 @@ const AppContent: React.FC = () => {
             <Route path="/loja/pedido/:id" element={<OrderStatusPage />} />
             <Route path="/loja/:slug" element={<ProductPage />} />
             <Route path="/instrumentos" element={<InstrumentsPage />} />
+            <Route path="/instrumentos/:photoSlug" element={<InstrumentPhotoPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

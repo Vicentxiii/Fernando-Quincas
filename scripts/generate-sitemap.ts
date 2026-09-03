@@ -12,6 +12,7 @@ const SITE_URL = 'https://fernandoquincas.com.br';
 
 import { PRODUCTS } from '../src/data/products';
 import { BLOG_POSTS } from '../src/data/blog';
+import { INSTRUMENTS } from '../src/data/instruments';
 
 function esc(str: string): string {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -45,6 +46,12 @@ async function generate() {
   xml += `  <url>\n    <loc>${SITE_URL}/loja</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n${imageEntries(PRODUCTS.slice(0, 3).map((p) => p.images[0]))}\n  </url>\n`;
   // Instrumentos
   xml += `  <url>\n    <loc>${SITE_URL}/instrumentos</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(['/products/lira-instrumento-musical-corda.jpeg', '/products/lira-bolsa-close.jpeg', '/products/lira-guia-musical.jpeg'], 'Lira 15 cordas por Fernando Quincas')}\n  </url>\n`;
+  // Instrumentos — fotos com URL dedicada para SEO
+  for (const inst of INSTRUMENTS) {
+    for (const img of inst.gallery) {
+      xml += `  <url>\n    <loc>${SITE_URL}/instrumentos/${esc(img.slug)}</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n${imageEntries([img.src], img.seoTitle ?? img.caption ?? img.alt)}\n  </url>\n`;
+    }
+  }
   // Blog
   xml += `  <url>\n    <loc>${SITE_URL}/blog</loc>\n    <lastmod>${formatLastMod(BLOG_POSTS[0]?.date)}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(BLOG_POSTS.slice(0, 3).map((p) => p.coverImage))}\n  </url>\n`;
 
@@ -73,7 +80,8 @@ async function generate() {
   const distPath = path.resolve(__dirname, '../dist/sitemap.xml');
 
   await writeFile(publicPath, xml, 'utf-8');
-  console.log(`[sitemap] Gerado public/sitemap.xml com ${PRODUCTS.length + BLOG_POSTS.length + 3} URLs`);
+  const instrumentosCount = INSTRUMENTS.flatMap((i) => i.gallery).length;
+  console.log(`[sitemap] Gerado public/sitemap.xml com ${PRODUCTS.length + BLOG_POSTS.length + 3 + instrumentosCount} URLs`);
 
   try {
     await mkdir(path.dirname(distPath), { recursive: true });

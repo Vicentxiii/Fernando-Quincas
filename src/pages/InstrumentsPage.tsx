@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { X, Music, Heart, Award, Sparkles, ChevronLeft, ChevronRight, Mail } from 'lucide-react';
-import { INSTRUMENTS, getFeaturedInstrument } from '../data/instruments';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { X, Music, Heart, Award, Sparkles, ChevronLeft, ChevronRight, Mail, ShoppingBag, Maximize2 } from 'lucide-react';
+import { getFeaturedInstrument } from '../data/instruments';
 import { Reveal } from '../components/shop/Reveal';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
@@ -28,8 +28,45 @@ export const InstrumentsPage: React.FC = () => {
   const goPrev = () => setLightboxIdx((i) => (i !== null ? (i - 1 + allImages.length) % allImages.length : null));
   const goNext = () => setLightboxIdx((i) => (i !== null ? (i + 1) % allImages.length : null));
 
-  // Elegant muse: cada 6 fotos, a primeira ocupa 2 colunas
-  const galleryItems = allImages;
+  // ★ Fix: setas do teclado e Escape funcionam no lightbox + swipe no mobile
+  useEffect(() => {
+    if (lightboxIdx === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goPrev(); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
+      if (e.key === 'Escape') { e.preventDefault(); closeLightbox(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [lightboxIdx, allImages.length]);
+
+  useEffect(() => {
+    if (lightboxIdx === null) return;
+    let startX = 0;
+    const onTouchStart = (e: TouchEvent) => { startX = e.touches[0].clientX; };
+    const onTouchEnd = (e: TouchEvent) => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 60) {
+        if (dx < 0) goNext();
+        if (dx > 0) goPrev();
+      }
+    };
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchend', onTouchEnd);
+    return () => {
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchend', onTouchEnd);
+    };
+  }, [lightboxIdx]);
+
+  // trava scroll quando lightbox aberto
+  useEffect(() => {
+    if (lightboxIdx !== null) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = '';
+    return () => { document.body.style.overflow = ''; };
+  }, [lightboxIdx]);
+
+  const handleAcquire = () => navigate('/', { state: { scrollTo: 'contact' } });
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-[#1E1D1A]">
@@ -73,7 +110,11 @@ export const InstrumentsPage: React.FC = () => {
 
           <div className="lg:col-span-5">
             <Reveal delay={260}>
-              <div className="group relative rounded-3xl overflow-hidden border border-[#C8A86B]/25 aspect-[4/5] max-h-[520px] w-full gold-border-glow bg-white">
+              <Link
+                to={`/instrumentos/${allImages[0].slug}`}
+                className="group block relative rounded-3xl overflow-hidden border border-[#C8A86B]/25 aspect-[4/5] max-h-[520px] w-full gold-border-glow bg-white"
+                aria-label={`Ver ${allImages[0].seoTitle}`}
+              >
                 <img
                   src={instrument.featuredImage}
                   alt={instrument.name}
@@ -92,7 +133,7 @@ export const InstrumentsPage: React.FC = () => {
                     <Heart className="w-4 h-4" />
                   </span>
                 </div>
-              </div>
+              </Link>
             </Reveal>
           </div>
         </div>
@@ -111,7 +152,21 @@ export const InstrumentsPage: React.FC = () => {
                   className="w-full h-full object-cover transition-all duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D1713]/40 via-transparent to-transparent pointer-events-none" />
-                {/* Dots */}
+                {/* Dots + setas agora funcionam */}
+                <button
+                  onClick={() => setActiveIdx((i) => (i - 1 + featuredImages.length) % featuredImages.length)}
+                  aria-label="Anterior"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#16251E]/60 backdrop-blur-md border border-[#E0C995]/30 text-[#FAF8F5] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#16251E] transition-colors"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setActiveIdx((i) => (i + 1) % featuredImages.length)}
+                  aria-label="Próxima"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#16251E]/60 backdrop-blur-md border border-[#E0C995]/30 text-[#FAF8F5] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#16251E] transition-colors"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#16251E]/55 backdrop-blur-md border border-[#E0C995]/20">
                   {featuredImages.map((_, i) => (
                     <button
@@ -124,7 +179,7 @@ export const InstrumentsPage: React.FC = () => {
                 </div>
               </div>
               <p className="mt-3 text-center text-xs font-serif italic text-[#E0C995]/70">
-                {featuredImages[activeIdx]?.caption ?? instrument.subtitle}
+                {featuredImages[activeIdx]?.seoCaption ?? featuredImages[activeIdx]?.caption ?? instrument.subtitle}
               </p>
             </Reveal>
           </div>
@@ -160,7 +215,7 @@ export const InstrumentsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* ───────── Gallery — toutes les lires ───────── */}
+      {/* ───────── Gallery — toutes les lires + SEO por foto + botão ───────── */}
       <section className="py-20 sm:py-28 px-6 sm:px-8 md:px-12">
         <div className="max-w-7xl mx-auto space-y-12">
           <Reveal>
@@ -170,43 +225,83 @@ export const InstrumentsPage: React.FC = () => {
                 <h2 className="font-serif text-3xl sm:text-5xl font-light tracking-tight">
                   TODAS AS <span className="italic text-[#9C7D3E]">LIRAS</span>
                 </h2>
-                <p className="mt-3 font-serif italic text-[#8A82A5] max-w-lg">Toque para ampliar • {allImages.length} fotografias do atelier: instrumento, bolsa, guia e bastidores.</p>
+                <p className="mt-3 font-serif italic text-[#8A82A5] max-w-lg">Cada foto tem URL dedicada para SEO • Use as setas ← → no lightbox • Toque em qualquer imagem</p>
               </div>
-              <span className="hidden md:block text-xs font-mono text-[#8A82A5]">{allImages.length} fotos • clique para lightbox</span>
+              <span className="hidden md:block text-xs font-mono text-[#8A82A5]">{allImages.length} fotos • clique para ampliar ou ver página SEO</span>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 auto-rows-[320px] sm:auto-rows-[360px]">
-            {galleryItems.map((img, i) => {
-              const isWide = i % 6 === 0; // a cada 6, destaque elegante
-              return (
-                <Reveal key={`${img.src}-${i}`} delay={(i % 3) * 80} className={isWide ? 'sm:col-span-2 lg:col-span-2' : ''}>
-                  <button
-                    onClick={() => openLightbox(i)}
-                    className="group relative w-full h-full rounded-3xl overflow-hidden border border-[#C8A86B]/20 bg-white text-left shadow-sm hover:shadow-md transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#C8A86B]/40"
-                    aria-label={`Ampliar ${img.alt}`}
-                  >
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      loading={i < 6 ? 'eager' : 'lazy'}
-                      decoding="async"
-                      className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1E1D1A]/55 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                      <span className="inline-flex items-center gap-1.5 text-[9px] font-mono tracking-[0.22em] uppercase text-[#E0C995] bg-[#1E1D1A]/40 backdrop-blur-md px-2.5 py-1 rounded-full border border-[#E0C995]/20">
-                        <Music className="w-3 h-3" /> {String(i + 1).padStart(2, '0')} / {String(allImages.length).padStart(2, '0')}
-                      </span>
-                      <p className="mt-2 font-serif text-sm sm:text-base text-[#FAF8F5] leading-snug line-clamp-2">{img.caption ?? img.alt}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {allImages.map((img, i) => (
+              <Reveal key={img.slug} delay={(i % 3) * 60} className={i % 6 === 0 ? 'sm:col-span-2 lg:col-span-2' : ''}>
+                <article className="group flex flex-col rounded-3xl overflow-hidden border border-[#C8A86B]/20 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+                  {/* Imagem: link para página SEO + botão ampliar no hover */}
+                  <div className="relative">
+                    <Link
+                      to={`/instrumentos/${img.slug}`}
+                      className="block relative aspect-[4/3] overflow-hidden bg-[#FDFCFB]"
+                      aria-label={`Ver página SEO de ${img.seoTitle}`}
+                    >
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        loading={i < 6 ? 'eager' : 'lazy'}
+                        decoding="async"
+                        className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#1E1D1A]/45 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
+                      <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+                        <span className="inline-flex items-center gap-1.5 text-[9px] font-mono tracking-[0.22em] uppercase text-[#E0C995] bg-[#1E1D1A]/45 backdrop-blur-md px-2.5 py-1 rounded-full border border-[#E0C995]/20">
+                          <Music className="w-3 h-3" /> {String(i + 1).padStart(2, '0')} / {String(allImages.length).padStart(2, '0')}
+                        </span>
+                        <span className="hidden sm:inline-flex items-center gap-1 text-[9px] font-mono tracking-wide uppercase text-[#FAF8F5]/80 bg-[#1E1D1A]/35 backdrop-blur-md px-2 py-1 rounded-full border border-[#FAF8F5]/20">
+                          Ver página SEO →
+                        </span>
+                      </div>
+                    </Link>
+                    {/* Botão ampliar (lightbox) — agora funciona com setas */}
+                    <button
+                      onClick={() => openLightbox(i)}
+                      aria-label={`Ampliar ${img.alt}`}
+                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#FAF8F5]/90 backdrop-blur-md border border-[#C8A86B]/30 flex items-center justify-center text-[#1E1D1A] opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-300 hover:bg-[#C8A86B] hover:text-[#FAF8F5] hover:border-[#C8A86B]"
+                      title="Ampliar (use ← → para navegar)"
+                    >
+                      <Maximize2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+
+                  {/* Texto SEO embaixo da foto + URL + botão Adquirir */}
+                  <div className="p-5 sm:p-6 space-y-3 bg-[#FAF8F5] flex-1 flex flex-col">
+                    <div className="space-y-1.5">
+                      <h3 className="font-serif text-[15px] sm:text-base font-medium leading-snug text-[#1E1D1A] line-clamp-2">
+                        {img.seoTitle}
+                      </h3>
+                      <p className="text-xs font-mono tracking-[0.16em] uppercase text-[#C8A86B]">/instrumentos/{img.slug}</p>
+                      <p className="font-serif italic text-sm text-[#8A82A5] leading-relaxed line-clamp-2">
+                        {img.seoCaption}
+                      </p>
+                      <p className="text-xs font-light text-[#2C2A26]/75 leading-relaxed line-clamp-3">
+                        {img.seoDescription}
+                      </p>
                     </div>
-                    <span className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#FAF8F5]/85 backdrop-blur-md border border-[#C8A86B]/30 flex items-center justify-center text-[#1E1D1A] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Sparkles className="w-3.5 h-3.5 text-[#9C7D3E]" />
-                    </span>
-                  </button>
-                </Reveal>
-              );
-            })}
+                    <div className="flex flex-col gap-2.5 pt-2 mt-auto">
+                      <button
+                        onClick={handleAcquire}
+                        className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-[11px] font-mono tracking-[0.18em] uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors"
+                      >
+                        <ShoppingBag className="w-3.5 h-3.5" /> Adquirir minha lira
+                      </button>
+                      <Link
+                        to={`/instrumentos/${img.slug}`}
+                        className="inline-flex items-center justify-center gap-1.5 w-full px-4 py-2.5 rounded-full border border-[#C8A86B]/30 text-[10px] font-mono tracking-[0.16em] uppercase text-[#8A82A5] hover:border-[#C8A86B] hover:text-[#9C7D3E] transition-colors"
+                      >
+                        Ver foto em página dedicada →
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
@@ -244,7 +339,7 @@ export const InstrumentsPage: React.FC = () => {
                 {instrument.details.edition}<br />
                 <span className="font-mono text-[11px] tracking-wide text-[#9C7D3E]">{instrument.priceNote}</span>
               </p>
-              <button onClick={() => navigate('/', { state: { scrollTo: 'contact' } })} className="inline-flex items-center gap-2 mt-2 px-5 py-2.5 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-[10px] font-mono tracking-[0.2em] uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors">
+              <button onClick={handleAcquire} className="inline-flex items-center gap-2 mt-2 px-5 py-2.5 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-[10px] font-mono tracking-[0.2em] uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors">
                 <Mail className="w-3.5 h-3.5" /> Consultar o Ateliê
               </button>
             </div>
@@ -252,7 +347,7 @@ export const InstrumentsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* ───────── Lightbox ───────── */}
+      {/* ───────── Lightbox — agora com setas do teclado + swipe + Escape ───────── */}
       {lightboxIdx !== null && (
         <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-8" role="dialog" aria-modal="true" aria-label="Galeria de liras ampliada">
           <button aria-label="Fechar" onClick={closeLightbox} className="absolute inset-0 bg-[#0D1713]/85 backdrop-blur-sm" />
@@ -261,38 +356,60 @@ export const InstrumentsPage: React.FC = () => {
               <img
                 src={allImages[lightboxIdx].src}
                 alt={allImages[lightboxIdx].alt}
-                className="max-w-full max-h-[70vh] w-auto h-auto object-contain"
+                className="max-w-full max-h-[68vh] w-auto h-auto object-contain select-none"
+                draggable={false}
               />
               <button
                 onClick={goPrev}
-                aria-label="Anterior"
+                aria-label="Anterior (←)"
                 className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#FAF8F5]/90 backdrop-blur-md border border-[#C8A86B]/30 text-[#1E1D1A] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#FAF8F5] hover:border-[#C8A86B] transition-colors"
+                title="Anterior — seta ←"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={goNext}
-                aria-label="Próxima"
+                aria-label="Próxima (→)"
                 className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#FAF8F5]/90 backdrop-blur-md border border-[#C8A86B]/30 text-[#1E1D1A] flex items-center justify-center hover:bg-[#C8A86B] hover:text-[#FAF8F5] hover:border-[#C8A86B] transition-colors"
+                title="Próxima — seta →"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
               <button
                 onClick={closeLightbox}
-                aria-label="Fechar"
+                aria-label="Fechar (Esc)"
                 className="absolute top-3 right-3 w-9 h-9 rounded-full bg-[#1E1D1A]/80 backdrop-blur-md border border-[#FAF8F5]/20 text-[#FAF8F5] flex items-center justify-center hover:bg-[#6B1D2F] transition-colors"
+                title="Fechar — Esc"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
-            <div className="px-6 sm:px-8 py-4 bg-[#FAF8F5] border-t border-[#C8A86B]/15 flex items-center justify-between gap-4">
-              <div className="min-w-0">
-                <p className="font-serif text-sm sm:text-base text-[#1E1D1A] truncate">{allImages[lightboxIdx].caption ?? allImages[lightboxIdx].alt}</p>
-                <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#8A82A5]">{String(lightboxIdx + 1).padStart(2, '0')} / {String(allImages.length).padStart(2, '0')} • {instrument.name}</p>
+            <div className="px-6 sm:px-8 py-4 bg-[#FAF8F5] border-t border-[#C8A86B]/15 space-y-3">
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0 space-y-1">
+                  <p className="font-serif text-sm sm:text-base font-medium text-[#1E1D1A]">{allImages[lightboxIdx].seoTitle ?? allImages[lightboxIdx].caption}</p>
+                  <p className="font-serif italic text-xs sm:text-sm text-[#8A82A5]">{allImages[lightboxIdx].seoCaption}</p>
+                  <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#8A82A5]">{String(lightboxIdx + 1).padStart(2, '0')} / {String(allImages.length).padStart(2, '0')} • {instrument.name} • /instrumentos/{allImages[lightboxIdx].slug}</p>
+                </div>
+                <span className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-mono tracking-[0.18em] uppercase text-[#C8A86B] border border-[#C8A86B]/30 px-3 py-1.5 rounded-full shrink-0">
+                  <Music className="w-3 h-3" /> Use ← → ou deslize
+                </span>
               </div>
-              <span className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-mono tracking-[0.18em] uppercase text-[#C8A86B] border border-[#C8A86B]/30 px-3 py-1.5 rounded-full">
-                <Music className="w-3 h-3" /> Use as setas
-              </span>
+              <div className="flex flex-col sm:flex-row gap-2.5">
+                <button
+                  onClick={handleAcquire}
+                  className="inline-flex items-center justify-center gap-2 flex-1 px-5 py-3 rounded-full bg-[#1E1D1A] text-[#FAF8F5] text-[11px] font-mono tracking-[0.18em] uppercase hover:bg-[#C8A86B] hover:text-[#1E1D1A] transition-colors"
+                >
+                  <ShoppingBag className="w-3.5 h-3.5" /> Adquirir minha lira
+                </button>
+                <Link
+                  to={`/instrumentos/${allImages[lightboxIdx].slug}`}
+                  onClick={closeLightbox}
+                  className="inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-full border border-[#C8A86B]/30 text-[10px] font-mono tracking-[0.16em] uppercase text-[#8A82A5] hover:border-[#C8A86B] hover:text-[#9C7D3E] transition-colors"
+                >
+                  Abrir página SEO dedicada →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
