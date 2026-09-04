@@ -20,7 +20,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Luz filtrada pelas folhas, cheiro de terra úmida e o brilho da resina sob o sol da chácara.',
     artisanRole: 'Tour pelo Ateliê — Quintal',
     toolsUsed: ['Pátio de exposição', 'Cadeiras Swan', 'Globo Arte da Terra', 'Esculturas em fibra'],
-    image: '/products/atelier-quintal-chacara-obras.jpeg'
+    image: '/products/atelier-quintal-chacara-obras.webp'
   },
   {
     id: 'galpao-producao',
@@ -31,7 +31,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Barulho de lixadeira ao fundo, poeira fina de gesso e o vão livre que deixa o vento atravessar o fazer.',
     artisanRole: 'Tour pelo Ateliê — Galpão',
     toolsUsed: ['Galpão aberto', 'Bancadas de laminação', 'Moldes de fibra', 'Andaimes'],
-    image: '/products/atelier-galpao-producao.jpeg'
+    image: '/products/atelier-galpao-producao.webp'
   },
   {
     id: 'peca-molde',
@@ -42,7 +42,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Cheiro de resina fresca e o brilho úmido da fibra que ainda respira.',
     artisanRole: 'Tour pelo Ateliê — Moldagem',
     toolsUsed: ['Molde rosa', 'Resina + fibra de vidro', 'Pincel de laminação', 'Bacia de pregos'],
-    image: '/products/atelier-peca-molde.jpeg'
+    image: '/products/atelier-peca-molde.webp'
   },
   {
     id: 'peca-pronta',
@@ -53,7 +53,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'O tintim da corrente entre as esferas douradas e o reflexo do sol no ouro escovado.',
     artisanRole: 'Tour pelo Ateliê — Acabamento',
     toolsUsed: ['Pátina ouro velho', 'Esferas de topo', 'Correntes', 'Base metálica'],
-    image: '/products/atelier-peca-pronta.jpeg'
+    image: '/products/atelier-peca-pronta.webp'
   },
   {
     id: 'mestre-01',
@@ -64,7 +64,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Silêncio de oficina ao entardecer, com obras encostadas como quem espera a vez.',
     artisanRole: 'Tour pelo Ateliê — Mestre',
     toolsUsed: ['Mesa do mestre', 'Paredes de matriz', 'Obras em espera', 'Luz natural'],
-    image: '/products/atelier-mestre-01.jpeg'
+    image: '/products/atelier-mestre-01.webp'
   },
   {
     id: 'mestre-02',
@@ -75,7 +75,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Pó de gesso no ar e o traço firme de quem já modelou centenas de metros de rocha.',
     artisanRole: 'Tour pelo Ateliê — Oficina',
     toolsUsed: ['Goivas', 'Espátulas', 'Moldes', 'Bancada'],
-    image: '/products/atelier-mestre-02.jpeg'
+    image: '/products/atelier-mestre-02.webp'
   },
   {
     id: 'mestre-03',
@@ -86,7 +86,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Cheiro de tinta e verniz, com amostras lado a lado sob a mesma luz.',
     artisanRole: 'Tour pelo Ateliê — Oficina',
     toolsUsed: ['Amostras de pátina', 'Pincéis', 'Lixas', 'Verniz'],
-    image: '/products/atelier-mestre-03.jpeg'
+    image: '/products/atelier-mestre-03.webp'
   },
   {
     id: 'mestre-04',
@@ -97,7 +97,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'A sombra do escultor ao lado da escultura — mesma altura, mesmo orgulho.',
     artisanRole: 'Tour pelo Ateliê — Presença',
     toolsUsed: ['Escala humana', 'Trilha de luz', 'Fundo do ateliê', 'Olhar do mestre'],
-    image: '/products/atelier-mestre-04.jpeg'
+    image: '/products/atelier-mestre-04.webp'
   },
   {
     id: 'piano-backstage-01',
@@ -108,7 +108,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Caixa oca reverberando o vento do galpão e o cheiro forte de resina.',
     artisanRole: 'Tour pelo Ateliê — Piano',
     toolsUsed: ['Caixa em fibra', 'Pernas torneadas', 'Molde de piano', 'Lixamento'],
-    image: '/products/atelier-piano-backstage-01.jpeg'
+    image: '/products/atelier-piano-backstage-01.webp'
   },
   {
     id: 'piano-backstage-02',
@@ -119,7 +119,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Borda bruta esperando o polimento que vai virar espelho.',
     artisanRole: 'Tour pelo Ateliê — Piano',
     toolsUsed: ['Borda em fibra', 'Tampo', 'Resina', 'Espátula'],
-    image: '/products/atelier-piano-backstage-02.jpeg'
+    image: '/products/atelier-piano-backstage-02.webp'
   },
   {
     id: 'piano-backstage-03',
@@ -130,7 +130,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Oca e leve, mas já com peso de instrumento.',
     artisanRole: 'Tour pelo Ateliê — Piano',
     toolsUsed: ['Estrutura interna', 'Reforço', 'Caixa', 'Base'],
-    image: '/products/atelier-piano-backstage-03.jpeg'
+    image: '/products/atelier-piano-backstage-03.webp'
   },
   {
     id: 'piano-backstage-04',
@@ -141,7 +141,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Granulação da fibra sob a luz lateral — promessa de piano espelhado.',
     artisanRole: 'Tour pelo Ateliê — Piano',
     toolsUsed: ['Tampo', 'Dobras', 'Fibra', 'Acabamento'],
-    image: '/products/atelier-piano-backstage-04.jpeg'
+    image: '/products/atelier-piano-backstage-04.webp'
   },
   {
     id: 'toro-backstage-01',
@@ -152,7 +152,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Vermelho vivo cortando o cinza do cimento — portal que já orienta o olhar.',
     artisanRole: 'Tour pelo Ateliê — Torô',
     toolsUsed: ['Vigas do torii', 'Montagem', 'Pintura vermelha', 'Base'],
-    image: '/products/atelier-toro-backstage-01.jpeg'
+    image: '/products/atelier-toro-backstage-01.webp'
   },
   {
     id: 'toro-backstage-02',
@@ -163,7 +163,7 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Encaixe milimétrico que não precisa de prego — só de olhar.',
     artisanRole: 'Tour pelo Ateliê — Torô',
     toolsUsed: ['Travessa', 'Encaixe', 'Nível', 'Pátina'],
-    image: '/products/atelier-toro-backstage-02.jpeg'
+    image: '/products/atelier-toro-backstage-02.webp'
   },
   {
     id: 'toro-backstage-03',
@@ -174,6 +174,6 @@ export const ATELIER_STORIES: AtelierStory[] = [
     sensoryDetail: 'Portal em pé, mesmo sem jardim ao redor — já chama.',
     artisanRole: 'Tour pelo Ateliê — Torô',
     toolsUsed: ['Portal completo', 'Vermelho torii', 'Base', 'Acabamento externo'],
-    image: '/products/atelier-toro-backstage-03.jpeg'
+    image: '/products/atelier-toro-backstage-03.webp'
   }
 ];

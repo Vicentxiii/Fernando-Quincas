@@ -35,7 +35,7 @@ export const BlogIndexPage: React.FC = () => {
         {/* Foto elegante ao fundo — Fernando esculpindo a Galinha — 30% opacidade, grande no canto direito, sem corte visível */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-[78%] sm:w-[68%] lg:w-[58%] overflow-hidden">
           <img
-            src="/products/galinha-monte-verde-processo-atelier.jpeg"
+            src="/products/galinha-monte-verde-processo-atelier.webp"
             alt=""
             aria-hidden="true"
             loading="eager"

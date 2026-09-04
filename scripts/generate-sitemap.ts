@@ -48,7 +48,7 @@ async function generate() {
   // Loja
   xml += `  <url>\n    <loc>${SITE_URL}/loja</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n${imageEntries(PRODUCTS.slice(0, 3).map((p) => p.images[0]))}\n  </url>\n`;
   // Instrumentos
-  xml += `  <url>\n    <loc>${SITE_URL}/instrumentos</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(['/products/lira-instrumento-musical-corda.jpeg', '/products/lira-bolsa-close.jpeg', '/products/lira-guia-musical.jpeg'], 'Lira 15 cordas por Fernando Quincas')}\n  </url>\n`;
+  xml += `  <url>\n    <loc>${SITE_URL}/instrumentos</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(['/products/lira-instrumento-musical-corda.webp', '/products/lira-bolsa-close.webp', '/products/lira-guia-musical.webp'], 'Lira 15 cordas por Fernando Quincas')}\n  </url>\n`;
   // Instrumentos — fotos com URL dedicada para SEO
   for (const inst of INSTRUMENTS) {
     for (const img of inst.gallery) {

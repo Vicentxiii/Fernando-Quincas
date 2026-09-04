@@ -4,7 +4,7 @@ interface PreloaderProps {
   onComplete: () => void;
 }
 
-const LOGO_SRC = '/Logo%20PNG%20Branco%20-%20By%20Fernando%20Quincas.png';
+const LOGO_SRC = '/Logo%20PNG%20Branco%20-%20By%20Fernando%20Quincas.webp';
 const LOAD_DURATION = 2400;
 const HOLD_MS = 500;
 const EXIT_MS = 950;

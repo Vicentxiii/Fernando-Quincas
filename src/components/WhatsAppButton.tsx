@@ -26,7 +26,7 @@ export const WhatsAppButton: React.FC = () => {
 
       {/* Ícone em public/whatsapp.png */}
       <img
-        src="/whatsapp.png"
+        src="/whatsapp.webp"
         alt="WhatsApp"
         width={50}
         height={50}

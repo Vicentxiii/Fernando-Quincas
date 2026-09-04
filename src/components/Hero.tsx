@@ -22,7 +22,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Monumental Sculpture & Botanical Imagery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={encodeURI('/Atelier Fernando Quincas.png')}
+          src={encodeURI('/Atelier Fernando Quincas.webp')}
           alt="Atelier de Fernando Quincas, mestre artesão em fibra de vidro, com esculturas monumentais e fontes esculturais"
           className="hidden md:block w-full h-full object-cover object-right scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"
@@ -32,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({
           height="1080"
         />
         <img
-          src={encodeURI('/Hero para Mobile Fernando Quincas Escultor.png')}
+          src={encodeURI('/Hero para Mobile Fernando Quincas Escultor.webp')}
           alt="Atelier de Fernando Quincas, mestre artesão em fibra de vidro - esculturas monumentais"
           className="md:hidden w-full h-full object-cover object-center scale-100 transition-transform duration-[12000ms] ease-out animate-subtleZoom"
           loading="eager"

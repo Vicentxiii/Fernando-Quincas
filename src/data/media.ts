@@ -18,7 +18,7 @@ export const MEDIA_ARTICLES: MediaArticle[] = [
       { label: 'Localização Atual', value: 'Teleférico Nova Friburgo — RJ' }
     ],
     tags: ['Escultura Monumental', 'Fibra de Vidro', 'Memória Nacional', '45 Metros', 'O Globo'],
-    image: encodeURI('/Eva Original, Playcenter.jpg'),
+    image: encodeURI('/Eva Original, Playcenter.webp'),
     isMainHeadline: true
   },
   {

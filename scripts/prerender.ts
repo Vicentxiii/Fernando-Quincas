@@ -204,7 +204,7 @@ async function generate() {
       canonical: `${SITE_URL}/instrumentos`,
       ogTitle: 'Instrumentos — Liras Artesanais | Ateliê Fernando Quincas',
       ogDescription: 'Liras de 15 cordas em madeira nobre por Fernando Quincas — timbre cristalino, bolsa e guia musical inclusos. Conheça o novo ateliê de instrumentos.',
-      ogImage: '/products/lira-instrumento-musical-corda.jpeg',
+      ogImage: '/products/lira-instrumento-musical-corda.webp',
       ogType: 'website',
       keywords: 'Fernando Quincas, lira, instrumentos, lira 15 cordas, madeira nobre, instrumentos artesanais, luteria, Waldorf',
       jsonLds: instrumentosJsonLd,

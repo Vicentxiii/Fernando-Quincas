@@ -31,7 +31,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 9,
     excerpt:
       'Árvore Seca 4m em fibra de vidro por Fernando Quincas: escultura monumental 4,00 m × 48 kg por R$ 3.000 (R$ 18 mil completa com folhagem de goiaba em seda). Tronco retorcido hiper-realista modelado à mão por Fernando Quincas, fibra naval 48 kg autoportante para sol e chuva. Encomenda Treesco para Gift Fair (feira de presente), unidades para Salvador e Olinda — veja produção, escala humana e onde usar. Loja: /loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas.',
-    coverImage: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg',
+    coverImage: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp',
     tags: ['Fernando Quincas', 'Árvore Seca 4m', 'Fibra de Vidro', 'Escultura Monumental', 'Árvore Artificial', 'Árvore Cenográfica', '48 kg', 'R$ 3.000', 'R$ 18 mil completa', 'Goiaba em Seda', 'Gift Fair', 'Treesco', 'Salvador', 'Olinda', 'Jardim', 'Fachada'],
     featured: true,
     blocks: [
@@ -55,7 +55,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp',
         alt: 'Árvore Seca 4m em fibra de vidro por Fernando Quincas em fundo verde de estúdio - escultura monumental 48 kg hiper-realista capa',
         caption: 'Capa em estúdio verde: Árvore Seca 4m × 48 kg de Fernando Quincas — escultura monumental em fibra de vidro com tronco retorcido e galhos secos hiper-realistas, pronta para externo.',
       },
@@ -75,7 +75,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.webp',
         alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas na calçada com artista apontando galhos - escala 4 metros 48 kg',
         caption: 'Na calçada com o artista: Fernando Quincas ao lado da Árvore Seca 4m × 48 kg — escala monumental na rua, fibra de vidro hiper-realista com galhos retorcidos.',
       },
@@ -86,13 +86,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-em-producao-atelier-bruta-04.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-em-producao-atelier-bruta-04.webp',
         alt: 'Árvore Seca 4m em produção no ateliê de Fernando Quincas - fibra de vidro bruta com resina avermelhada em galpão',
         caption: 'Em produção no ateliê: tronco com resina ainda bruta — a Árvore Seca 4m de Fernando Quincas no galpão, antes da pátina tronco seco definitiva.',
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-detalhe-galhos-03.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-detalhe-galhos-03.webp',
         alt: 'Detalhe dos galhos retorcidos da Árvore Seca 4m fibra de vidro Fernando Quincas - hiper-realismo da casca',
         caption: 'Detalhe dos galhos retorcidos: hiper-realismo da Árvore Seca 4m — cada nó e rachadura da casca modelado à mão por Fernando Quincas.',
       },
@@ -117,19 +117,19 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.webp',
         alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas na calçada - vista frontal tronco retorcido 48 kg',
         caption: 'Vista frontal na calçada: tronco retorcido em primeiro plano — Árvore Seca 4m × 48 kg de Fernando Quincas com galhos que recortam o céu.',
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-05.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-05.webp',
         alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas com casal ao lado - escala humana homem e mulher',
         caption: 'Escala humana com casal: homem e mulher ao lado da Árvore Seca 4m — a escultura de 48 kg de Fernando Quincas com proporção monumental.',
       },
       {
         type: 'image',
-        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-lateral-06.jpeg',
+        src: '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-casal-escala-humana-lateral-06.webp',
         alt: 'Árvore Seca 4m fibra de vidro Fernando Quincas com casal em ângulo lateral - detalhe base e galhos secos',
         caption: 'Ângulo lateral com casal: base 60×60 cm e galhos retorcidos — segundo ângulo da Árvore Seca 4m × 48 kg de Fernando Quincas na calçada.',
       },
@@ -203,7 +203,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 7,
     excerpt:
       'Fonte Gigante Paulo Leardi 10m × 3m por Fernando Quincas no Portal do Morumbi: a obra gigantesca de mais de 2.000 kg em fibra de vidro, com tanque para peixes, espaço para plantas e 3 bombas dedicadas, criada em vários meses de trabalho artesanal por Fernando Quincas. Quase 10 m de fachada vista por milhares de pessoas por dia, que aguenta calor, chuva, frio e vento sem precisar cuidar toda hora — uma fonte monumental de Fernando Quincas por R$ 50.000.',
-    coverImage: '/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg',
+    coverImage: '/products/fonte-gigante-paulo-leardi-fachada-rua.webp',
     tags: ['Fernando Quincas', 'Fonte Gigante Paulo Leardi', 'Portal do Morumbi', 'Fonte 10m', 'Fibra de Vidro', '2000 kg', 'Tanque para Peixes', '3 Bombas', 'R$ 50.000', 'Obra Monumental'],
     featured: false,
     blocks: [
@@ -227,7 +227,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-gigante-paulo-leardi-studio-green-casa.jpeg',
+        src: '/products/fonte-gigante-paulo-leardi-studio-green-casa.webp',
         alt: 'Fonte Gigante Paulo Leardi 10m com casa ao fundo verde de estúdio - maquete monumental em fibra de vidro por Fernando Quincas no Portal do Morumbi',
         caption: 'Em estúdio com casa ao fundo verde: a Fonte Gigante 10m × 3m de Fernando Quincas — maquete monumental que revela os quase 10 m de fachada antes da instalação no Portal do Morumbi.',
       },
@@ -247,7 +247,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-01.jpeg',
+        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-01.webp',
         alt: 'Detalhe interno da Fonte Gigante Paulo Leardi com cascata e tanque azul para peixes - espaço para plantas por Fernando Quincas',
         caption: 'Visão de dentro 01: cascata em degraus e tanque azul para peixes — detalhe da obra 10m × 3m de Fernando Quincas com espaço para plantas e 3 bombas dedicadas.',
       },
@@ -267,7 +267,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-02.jpeg',
+        src: '/products/fonte-gigante-paulo-leardi-visao-dentro-02.webp',
         alt: 'Segunda visão interna da Fonte Gigante Paulo Leardi com quedas d’água e iluminação - tanque para peixes por Fernando Quincas no Portal do Morumbi',
         caption: 'Visão de dentro 02: quedas iluminadas e recortes do tanque — segundo ângulo da obra 10m × 3m de Fernando Quincas com 3 bombas dedicadas, que vista por milhares no Morumbi.',
       },
@@ -287,7 +287,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-gigante-paulo-leardi-escala-humana.jpeg',
+        src: '/products/fonte-gigante-paulo-leardi-escala-humana.webp',
         alt: 'Pessoa ao lado da Fonte Gigante Paulo Leardi 10m no Portal do Morumbi - escala humana da obra em fibra de vidro por Fernando Quincas',
         caption: 'Escala humana: pessoa ao lado da Fonte Gigante 10m × 3m — a obra de mais de 2.000 kg em fibra de vidro de Fernando Quincas mostra por que é vista por milhares todos os dias no Morumbi.',
       },
@@ -342,7 +342,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 6,
     excerpt:
       'Fonte de Pedra Tratada 2,50×2,50m com 1,50 m de profundidade por Fernando Quincas: a nova fonte grande e bonita em fibra de vidro que imita pedra, leve (150–200 kg), desmontável para levar a outros locais, com bomba automática integrada por dentro. Resiste a sol, chuva e tempo sem pedir tratamento contra musgo — pronta para piscina e jardim por R$ 19.000. Veja como a obra de Fernando Quincas em fibra de vidro embeleza muito lugar.',
-    coverImage: '/products/fonte-pedra-tratada-piscina-01.jpeg',
+    coverImage: '/products/fonte-pedra-tratada-piscina-01.webp',
     tags: ['Fernando Quincas', 'Fonte de Pedra Tratada', 'Fonte 2,50x2,50', 'Fibra de Vidro', 'Imita Pedra', 'Fonte Grande', 'Bomba Automática', 'Piscina', 'Jardim', 'R$ 19.000'],
     featured: false,
     blocks: [
@@ -366,7 +366,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-tratada-escala-piscina.jpeg',
+        src: '/products/fonte-pedra-tratada-escala-piscina.webp',
         alt: 'Fonte de Pedra Tratada 2,50×2,50 ao lado de Fernando Quincas na piscina - escala humana da fonte em fibra de vidro',
         caption: 'Escala na piscina: Fernando Quincas ao lado da Fonte 2,50×2,50 — a nova fonte grande em fibra de vidro que imita pedra, já com bomba automática integrada.',
       },
@@ -386,7 +386,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-tratada-piscina-02.jpeg',
+        src: '/products/fonte-pedra-tratada-piscina-02.webp',
         alt: 'Fonte de Pedra Tratada 2,50×2,50 funcionando na piscina - segundo ângulo da fonte em fibra de vidro por Fernando Quincas',
         caption: 'Na piscina, funcionando: segundo ângulo da Fonte 2,50×2,50 em fibra de vidro — água em movimento com bomba automática integrada de Fernando Quincas.',
       },
@@ -406,13 +406,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-tratada-angulo-lateral.jpeg',
+        src: '/products/fonte-pedra-tratada-angulo-lateral.webp',
         alt: 'Fonte de Pedra Tratada em fibra de vidro ângulo lateral - detalhe da borda e textura pedra tratada por Fernando Quincas',
         caption: 'Ângulo lateral: a borda e a textura pedra tratada em fibra de vidro — detalhe da escultura 2,50×2,50 de Fernando Quincas.',
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-tratada-angulo-cima.jpeg',
+        src: '/products/fonte-pedra-tratada-angulo-cima.webp',
         alt: 'Fonte de Pedra Tratada em fibra de vidro ângulo superior lateral - vista de cima da bacia 2,50×2,50 por Fernando Quincas',
         caption: 'Vista superior lateral: a bacia com 1,50 m de profundidade — a escultura hidráulica 2,50×2,50 de Fernando Quincas pronta para receber água.',
       },
@@ -467,7 +467,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 7,
     excerpt:
       'Iglu de concreto 4×4m por Fernando Quincas: a obra que cria um cômodo novo no jardim sem obra infinita. De R$ 25.000 sem clarabóia a R$ 28.500 com clarabóia instalada, essa escultura de concreto armado aguenta sol, chuva e tempo — perfeita como decoração para grandes jardins e áreas externas de casa. Veja por que toda obra de Fernando Quincas é também escultura que dura.',
-    coverImage: '/products/iglu-concreto-montanha.jpeg',
+    coverImage: '/products/iglu-concreto-montanha.webp',
     tags: ['Fernando Quincas', 'Iglu de Concreto', '4x4', 'Clarabóia', 'Escultura', 'Obra', 'Jardim', 'Área Externa', 'Concreto Armado', 'R$ 25.000'],
     featured: true,
     blocks: [
@@ -482,13 +482,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-montanha.jpeg',
+        src: '/products/iglu-concreto-montanha.webp',
         alt: 'Iglu de Concreto 4×4m na montanha por Fernando Quincas - primeira foto do artigo',
         caption: 'Na montanha: primeira foto do Iglu 4×4m de Fernando Quincas — a obra em seu habitat, como deve ser vista ao entrar no artigo.',
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-medidas.jpeg',
+        src: '/products/iglu-concreto-medidas.webp',
         alt: 'Iglu de Concreto 4×4m medidas por Fernando Quincas - desenho técnico com cotas',
         caption: 'Medidas do Iglu 4×4m — a obra com cotas, logo após a foto da montanha.',
       },
@@ -508,7 +508,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-principal.jpeg',
+        src: '/products/iglu-concreto-principal.webp',
         alt: 'Iglu de Concreto 4×4m por Fernando Quincas - escultura para grandes jardins',
         caption: 'No jardim: o Iglu 4×4m de Fernando Quincas — escultura que vira cômodo novo com valor acessível.',
       },
@@ -528,25 +528,25 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-pessoa.jpeg',
+        src: '/products/iglu-concreto-pessoa.webp',
         alt: 'Iglu de Concreto 4×4m com pessoa para escala - obra de Fernando Quincas',
         caption: 'Escala humana: pessoa ao lado do Iglu 4×4m — a obra de Fernando Quincas em tamanho real.',
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-montanha.jpeg',
+        src: '/products/iglu-concreto-montanha.webp',
         alt: 'Iglu de Concreto 4×4m na montanha - escultura de Fernando Quincas para área externa',
         caption: 'Na montanha: o Iglu 4×4m de Fernando Quincas — obra que aguenta tempo, sol e chuva em qualquer paisagem.',
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-games-room-medidas.jpeg',
+        src: '/products/iglu-concreto-games-room-medidas.webp',
         alt: 'Iglu Games Room 4×4m planta - obra de Fernando Quincas como cômodo novo',
         caption: 'Games room 4×4m: planta do ateliê — o iglu como sala de jogos, obra que cria cômodo novo.',
       },
       {
         type: 'image',
-        src: '/products/iglu-concreto-library-medidas.jpeg',
+        src: '/products/iglu-concreto-library-medidas.webp',
         alt: 'Iglu Library 4×4m planta - obra de Fernando Quincas como biblioteca',
         caption: 'Library 4×4m: planta do ateliê — o iglu como biblioteca, obra de Fernando Quincas que vira casa no jardim.',
       },
@@ -587,7 +587,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 6,
     excerpt:
       'Conheça Alice e Lua: as Bonecas Cozinheiras de 60cm em fibra de vidro por Fernando Quincas que nasceram de duas irmãs que levantaram sozinhas seu restaurante. Modeladas à mão por Fernando Quincas, com tinta automotiva e revestimento para sol e chuva, as esculturas-obra ficam na frente do restaurante e já viraram atração — quem passa, para, sorri e fotografa. Uma obra de Fernando Quincas replicável, feita para espalhar alegria.',
-    coverImage: '/products/bonecas-cozinheiras-studio-green.jpeg',
+    coverImage: '/products/bonecas-cozinheiras-studio-green.webp',
     tags: ['Fernando Quincas', 'Bonecas Cozinheiras', 'Alice e Lua', 'Escultura 60cm', 'Obra', 'Fibra de Vidro', 'Tinta Automotiva', 'Restaurante', 'Obras'],
     featured: false,
     blocks: [
@@ -602,7 +602,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/bonecas-cozinheiras-studio-green.jpeg',
+        src: '/products/bonecas-cozinheiras-studio-green.webp',
         alt: 'Bonecas Cozinheiras Alice e Lua em fundo verde de estúdio - escultura 60cm em fibra de vidro por Fernando Quincas',
         caption: 'Alice e Lua em estúdio (fundo verde): 60cm cada, a dupla esculpida à mão por Fernando Quincas antes da pintura automotiva.',
       },
@@ -627,19 +627,19 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/bonecas-cozinheiras-uso.jpeg',
+        src: '/products/bonecas-cozinheiras-uso.webp',
         alt: 'Bonecas Cozinheiras Alice e Lua na frente do restaurante - obra de Fernando Quincas em uso',
         caption: 'Na frente do restaurante: Alice e Lua em fibra de vidro, com tinta automotiva e revestimento para sol e chuva — a obra que trouxe alegria à porta.',
       },
       {
         type: 'image',
-        src: '/products/bonecas-cozinheiras-com-fernando.jpeg',
+        src: '/products/bonecas-cozinheiras-com-fernando.webp',
         alt: 'Bonecas Cozinheiras Alice e Lua posando ao lado de Fernando Quincas - escultura 60cm',
         caption: 'Com o criador: Fernando Quincas ao lado de Alice e Lua — a dupla de 60cm que eterniza duas irmãs empreendedoras.',
       },
       {
         type: 'image',
-        src: '/products/bonecas-cozinheiras-macro.jpeg',
+        src: '/products/bonecas-cozinheiras-macro.webp',
         alt: 'Detalhe macro das Bonecas Cozinheiras Alice e Lua - zoom 60cm em fibra de vidro com tinta automotiva',
         caption: 'Zoom macro: avental, touca e sorriso em detalhe — cada ponto das bonecas de 60cm modelado à mão por Fernando Quincas, agora em outra parte da galeria.',
       },
@@ -680,7 +680,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 6,
     excerpt:
       'Torô japonês não é enfeite — é portal de energia. A obra garden de Fernando Quincas, por R$ 3.500, transforma o jardim em santuário: de dia escultura vermelha que organiza fontes e lagos, de noite lanterna que acende casas. Conheça a história do torô, o que ele impacta na energia do ambiente e por que toda obra de Fernando Quincas é também escultura de luz.',
-    coverImage: '/products/toro-japones-principal.jpeg',
+    coverImage: '/products/toro-japones-principal.webp',
     tags: ['Fernando Quincas', 'Torô Japonês', 'Garden', 'Escultura', 'Obra', 'Jardim', 'Feng Shui', 'Energia do Ambiente', 'Fontes e Lagos', 'Dia e Noite'],
     featured: false,
     blocks: [
@@ -699,7 +699,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/toro-japones-principal.jpeg',
+        src: '/products/toro-japones-principal.webp',
         alt: 'Torô Japonês Garden por Fernando Quincas - escultura portal de energia para jardim',
         caption: 'Torô Japonês Garden por Fernando Quincas: a obra portal — escultura que marca passagem no jardim.',
       },
@@ -719,7 +719,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/toro-japones-fundo-jardim.jpeg',
+        src: '/products/toro-japones-fundo-jardim.webp',
         alt: 'Torô Japonês no jardim - obra de Fernando Quincas perto de plantas',
         caption: 'No jardim: o torô garden de Fernando Quincas organiza o verde — obra que harmoniza energia do ambiente.',
       },
@@ -739,13 +739,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/toro-japones-noite.jpeg',
+        src: '/products/toro-japones-noite.webp',
         alt: 'Torô Japonês iluminado à noite por Fernando Quincas - obra garden que brilha dia e noite',
         caption: 'De noite aceso: o torô garden de Fernando Quincas como lanterna — obra que vai tão bem à noite quanto de dia.',
       },
       {
         type: 'image',
-        src: '/products/toro-japones-decorado.jpeg',
+        src: '/products/toro-japones-decorado.webp',
         alt: 'Torô Japonês decorado no jardim por Fernando Quincas - escultura perto de fonte',
         caption: 'Decorado no jardim: o torô de Fernando Quincas perto de fonte — escultura que harmoniza água e energia.',
       },
@@ -770,7 +770,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/toro-japones-decorado-tarde.jpeg',
+        src: '/products/toro-japones-decorado-tarde.webp',
         alt: 'Torô Japonês à tarde no jardim - obra de Fernando Quincas com luz dourada',
         caption: 'À tarde dourada: o torô garden de Fernando Quincas — escultura que vai bem de dia e de noite.',
       },
@@ -792,7 +792,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 6,
     excerpt:
       'A Fonte de Pedra Grande 1,80×1,70 com Bomba de Fernando Quincas é uma escultura 1,80m e uma obra hidráulica do ateliê: em pedra reconstituída 1,80×1,70 com pátina mineral, essa obra da categoria Coleções e Esculturas nasceu para receber água, luz e tempo — já vem com bomba d’água e instalada, agora em obras em destaque na loja (/loja/fonte-de-pedra-grande-180x170-com-bomba-cinza-mineral) por R$ 6.500.',
-    coverImage: '/products/fonte-pedra-grande-jardim-cinza.jpeg',
+    coverImage: '/products/fonte-pedra-grande-jardim-cinza.webp',
     tags: ['Fernando Quincas', 'Fonte de Pedra 1,80x1,70', 'Fonte com Bomba', 'Escultura 1,80m', 'Obra 1,70', 'Pedra Reconstituída', 'Coleções', 'Esculturas', 'Jardim', 'Água e Tempo', 'Instalada'],
     featured: false,
     blocks: [
@@ -811,13 +811,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-grande-frente.jpeg',
+        src: '/products/fonte-pedra-grande-frente.webp',
         alt: 'Fonte de Pedra Grande Cinza Mineral em estúdio - escultura obra de Fernando Quincas',
         caption: 'Fonte em estúdio (fundo claro): a escultura fotografada antes da pátina final — forma clássica de Fernando Quincas.',
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-grande-macro.jpeg',
+        src: '/products/fonte-pedra-grande-macro.webp',
         alt: 'Detalhe macro da pátina cinza mineral da Fonte de Pedra Grande - escultura de Fernando Quincas',
         caption: 'Macro da pátina cinza mineral: o grão da pedra reconstituída, camada a camada, na obra de Fernando Quincas.',
       },
@@ -856,19 +856,19 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-grande-jardim-cinza.jpeg',
+        src: '/products/fonte-pedra-grande-jardim-cinza.webp',
         alt: 'Fonte de Pedra Grande 1,80×1,70 com Bomba no jardim - obra escultural de Fernando Quincas com água',
         caption: 'No jardim 1,80×1,70: a obra com bomba em seu habitat — a escultura 1,80×1,70 de Fernando Quincas com água, luz e reflexos, já instalada.',
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-grande-02.jpeg',
+        src: '/products/fonte-pedra-grande-02.webp',
         alt: 'Fonte de Pedra Grande 1,80×1,70 com Bomba — novo ângulo 02 por Fernando Quincas',
         caption: 'Novo ângulo 02: a Fonte 1,80×1,70 com Bomba em fibra de vidro — escultura de Fernando Quincas fotografada em estúdio.',
       },
       {
         type: 'image',
-        src: '/products/fonte-pedra-grande-03.jpeg',
+        src: '/products/fonte-pedra-grande-03.webp',
         alt: 'Fonte de Pedra Grande 1,80×1,70 com Bomba — novo ângulo 03 por Fernando Quincas',
         caption: 'Novo ângulo 03: a Fonte 1,80×1,70 com Bomba em fibra de vidro — detalhe da bacia e pátina por Fernando Quincas.',
       },
@@ -895,7 +895,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 6,
     excerpt:
       'Gazebo 350×200×270, tenda elegante, palco e escultura habitável: a obra em ferro, resina e lona de Fernando Quincas é uma escultura que dá sombra. Criada no ateliê de Fernando Quincas para jardim, festas e uso como gazebo DJ, essa obra 350×200×270 une ferro, resina e lona tensionada — uma escultura do ateliê de Fernando Quincas pronta para sol, chuva e todos os usos do jardim.',
-    coverImage: '/products/gazebo-tenda-ferro-bamboo-principal.jpeg',
+    coverImage: '/products/gazebo-tenda-ferro-bamboo-principal.webp',
     tags: ['Fernando Quincas', 'Gazebo', 'Tenda', 'Ferro Resina Lona', '350x200x270', 'Jardim', 'Escultura', 'Obra', 'Arquitetura Leve', 'Festas e Eventos', 'Gazebo DJ'],
     featured: false,
     blocks: [
@@ -914,7 +914,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/gazebo-tenda-ferro-bamboo-principal.jpeg',
+        src: '/products/gazebo-tenda-ferro-bamboo-principal.webp',
         alt: 'Gazebo Tenda de Ferro, Resina e Lona 350×200×270 por Fernando Quincas - obra escultural para jardim',
         caption: 'Tenda elegante 350×200×270 de ferro, resina e lona por Fernando Quincas: a obra no jardim — escultura e arquitetura leve em escala humana.',
       },
@@ -957,13 +957,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/gazebo-tenda-ferro-bamboo-macro.jpeg',
+        src: '/products/gazebo-tenda-ferro-bamboo-macro.webp',
         alt: 'Detalhe macro da estrutura de ferro e resina do gazebo tenda 350×200×270 por Fernando Quincas - obra escultural',
         caption: 'Macro da estrutura: ferro e resina modelados — detalhe da obra-escultura 350×200×270 de Fernando Quincas.',
       },
       {
         type: 'image',
-        src: '/products/gazebo-dj-tenda-bambu.jpeg',
+        src: '/products/gazebo-dj-tenda-bambu.webp',
         alt: 'Gazebo 350×200×270 usado como DJ por Fernando Quincas - tenda de ferro, resina e lona em uso no jardim',
         caption: 'Gazebo 350×200×270 usado como DJ: a obra de Fernando Quincas em uso real — a escultura 350×200×270 que vira palco e tenda elegante ao mesmo tempo.',
       },
@@ -1004,7 +1004,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 7,
     excerpt:
       'A Loba Artesanal 1.20×80cm de Fernando Quincas é uma escultura e uma obra que impõe respeito: 120×80 cm modelada à mão em isopor, poliuretano, gesso, massa corrida, resina, fibra de vidro, massa plástica, pintura fundo universal e tinta PU, a obra nasceu para ficar no externo — sob sol e chuva — e agora vive como escultura da categoria Obras e Esculturas do ateliê.',
-    coverImage: '/products/lobo-gigante-studio-green.jpeg',
+    coverImage: '/products/lobo-gigante-studio-green.webp',
     tags: ['Fernando Quincas', 'Loba Artesanal', 'Escultura', 'Obra', '1.20x80', 'Obra 1/1', 'Fibra de Vidro', 'Tinta PU', 'Obras', 'Esculturas'],
     featured: false,
     blocks: [
@@ -1023,13 +1023,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-studio-green.jpeg',
+        src: '/products/lobo-gigante-studio-green.webp',
         alt: 'Loba Artesanal 1.20×80 em fundo verde de estúdio - escultura em fibra de vidro por Fernando Quincas',
         caption: 'Loba 1.20×80 em estúdio (fundo verde): a escultura fotografada antes do acabamento final em tinta PU.',
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-all-white.jpeg',
+        src: '/products/lobo-gigante-all-white.webp',
         alt: 'Loba Artesanal 1.20×80 em fundo branco - escultura obra de Fernando Quincas',
         caption: 'Versão branco estúdio 1.20×80: a obra revela volumes e musculatura — cada plano da escultura desenhado à mão por Fernando Quincas.',
       },
@@ -1074,19 +1074,19 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-macro.jpeg',
+        src: '/products/lobo-gigante-macro.webp',
         alt: 'Detalhe macro da pelagem da Loba 1.20×80 - escultura em fibra de vidro com massa plástica e tinta PU',
         caption: 'Macro da pelagem: cada pelo esculpido em isopor/poliuretano, laminado em resina com fibra de vidro e refinado em massa plástica antes da tinta PU.',
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-processo-1.jpeg',
+        src: '/products/lobo-gigante-processo-1.webp',
         alt: 'Processo da Loba 1.20×80 no ateliê de Fernando Quincas - escultura em fibra de vidro',
         caption: 'Processo no ateliê: Fernando Quincas modelando a obra 1.20×80. A escultura em fibra de vidro ainda sem tinta PU.',
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-com-crianca.jpeg',
+        src: '/products/lobo-gigante-com-crianca.webp',
         alt: 'Criança sobre a Loba 1.20×80 - escultura artesanal interativa de Fernando Quincas',
         caption: 'Escala e resistência: criança sobre a obra 1.20×80. A escultura em fibra de vidro e tinta PU é feita para interagir e permanecer no externo.',
       },
@@ -1106,7 +1106,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-tamanho-real.jpeg',
+        src: '/products/lobo-gigante-tamanho-real.webp',
         alt: 'Loba 1.20×80 em tamanho real - escultura obra de Fernando Quincas',
         caption: 'Tamanho real 1.20×80: a obra em toda sua imponência. Uma escultura de Fernando Quincas que transforma qualquer jardim em território.',
       },
@@ -1116,7 +1116,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/lobo-gigante-no-colo.jpeg',
+        src: '/products/lobo-gigante-no-colo.webp',
         alt: 'Loba 1.20×80 no colo - detalhe da escultura de Fernando Quincas',
         caption: 'Obra disponível na loja (Obras • Esculturas): a escultura 1.20×80 em fibra de vidro e tinta PU de Fernando Quincas, pronta para seu espaço.',
       },
@@ -1134,7 +1134,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 7,
     excerpt:
       'A obra mais simpática e desafiadora do ateliê: uma escultura monumental da Galinha de Monte Verde, modelada à mão por Fernando Quincas em isopor, poliuretano, gesso, massa corrida, resina, fibra de vidro, massa plástica, pintura fundo universal e tinta PU. Em 45 dias de trabalho intenso, a escultura ganhou 165 cm de altura, 100 cm de envergadura e 40 kg — uma obra única 1/1 feita para enfrentar sol e chuva no jardim.',
-    coverImage: '/products/galinha-monte-verde-studio-green.jpeg',
+    coverImage: '/products/galinha-monte-verde-studio-green.webp',
     tags: ['Fernando Quincas', 'Galinha de Monte Verde', 'Escultura', 'Obra 1/1', 'Fibra de Vidro', 'Escultura Monumental', 'Tinta PU', 'Isopor', 'Resina'],
     featured: false,
     blocks: [
@@ -1153,7 +1153,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-studio-green.jpeg',
+        src: '/products/galinha-monte-verde-studio-green.webp',
         alt: 'Galinha de Monte Verde em fundo verde de estúdio - escultura monumental em fibra de vidro por Fernando Quincas',
         caption: 'A Galinha de Monte Verde em estúdio: 165 cm de altura e 100 cm de envergadura — a escultura fotografada antes de seguir para o Restaurante Monte Verde.',
       },
@@ -1198,19 +1198,19 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-macro.jpeg',
+        src: '/products/galinha-monte-verde-macro.webp',
         alt: 'Detalhe macro da plumagem da Galinha de Monte Verde - escultura em fibra de vidro com massa plástica, fundo universal e tinta PU',
         caption: 'Macro da plumagem: cada pena foi esculpida em isopor e poliuretano, nivelada em gesso e massa corrida, laminada em resina com fibra de vidro, refinada em massa plástica e selada com pintura fundo universal e tinta PU.',
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-processo-finalizando.png',
+        src: '/products/galinha-monte-verde-processo-finalizando.webp',
         alt: 'Fernando Quincas finalizando a Galinha de Monte Verde no ateliê - processo da escultura em resina com fibra de vidro e tinta PU',
         caption: 'No ateliê: Fernando Quincas finalizando a obra. A escultura em resina com fibra de vidro recebe as últimas camadas de tinta PU sobre fundo universal.',
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-processo-atelier.jpeg',
+        src: '/products/galinha-monte-verde-processo-atelier.webp',
         alt: 'Fernando Quincas ao lado da Galinha de Monte Verde no ateliê - escala da escultura monumental',
         caption: 'Escala real: Fernando Quincas ao lado da escultura de 165 cm. A obra em fibra de vidro mostra sua imponência antes da instalação.',
       },
@@ -1230,7 +1230,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-instalada-1.png',
+        src: '/products/galinha-monte-verde-instalada-1.webp',
         alt: 'Galinha de Monte Verde instalada no Restaurante Monte Verde - obra em fibra de vidro no externo',
         caption: 'Em seu habitat: a obra instalada em Monte Verde, provando que a escultura em fibra de vidro nasceu para o externo.',
       },
@@ -1240,7 +1240,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: '/products/galinha-monte-verde-escala.png',
+        src: '/products/galinha-monte-verde-escala.webp',
         alt: 'Galinha de Monte Verde ao lado de Fernando Quincas mostrando escala da escultura de 100 cm de envergadura',
         caption: 'Obra única 1/1 disponível na loja: a escultura em fibra de vidro de Fernando Quincas, com 165 cm de altura e 40 kg, pronta para seu jardim.',
       },
@@ -1258,7 +1258,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 4,
     excerpt:
       'Sucesso nos anos 1980, a boneca gigante em fibra de vidro voltou a receber visitantes, resgatando a memória afetiva de milhões de brasileiros.',
-    coverImage: encodeURI('/Eva Original, Playcenter.jpg'),
+    coverImage: encodeURI('/Eva Original, Playcenter.webp'),
     tags: ['Boneca Eva', 'Escultura Monumental', 'Fibra de Vidro', 'Memória Nacional'],
     featured: false,
     blocks: [
@@ -1268,7 +1268,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Eva Original, Playcenter.jpg'),
+        src: encodeURI('/Eva Original, Playcenter.webp'),
         alt: 'Boneca Eva original no Playcenter - escultura monumental de 45 metros por Fernando Quincas',
         caption: 'A Boneca Eva original: 45 metros de fibra de vidro e memória afetiva de milhões de brasileiros.',
       },
@@ -1278,13 +1278,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Antiga foto da Eva Construção no Playcenter.jpeg'),
+        src: encodeURI('/Antiga foto da Eva Construção no Playcenter.webp'),
         alt: 'Construção da Boneca Eva no Playcenter por Fernando Quincas',
         caption: 'Bastidores: a construção da Boneca Eva no Playcenter — estrutura em fibra de vidro esculpida à mão.',
       },
       {
         type: 'image',
-        src: encodeURI('/Pessoas visitando a EVA by Fernando Quincas.jpg'),
+        src: encodeURI('/Pessoas visitando a EVA by Fernando Quincas.webp'),
         alt: 'Visitantes explorando o interior da Boneca Eva',
         caption: 'Por dentro: visitantes percorrendo o interior da Boneca Eva — a escultura interativa que marcou gerações.',
       },
@@ -1299,7 +1299,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Por dentro da Boca da EVA by Fernando Quincas.png'),
+        src: encodeURI('/Por dentro da Boca da EVA by Fernando Quincas.webp'),
         alt: 'Interior da boca da Boneca Eva',
         caption: 'Detalhe: por dentro da boca da Boneca Eva — a entrada do percurso imersivo.',
       }
@@ -1317,7 +1317,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTimeMinutes: 8,
     excerpt:
       'Novos Rumos, o Atelier e a Nova Geração de Artesãos por Fernando Quincas: conheça o Espaço Atelier by Fernando Quincas colorido de lonas e bambu, a Fonte de Água com Cisnes em processo esculpida no jardim e a história real de como Fernando Quincas ensinou crianças na Alemanha, em escolas alemãs, dentro da metodologia Waldorf. Um ateliê que vira escola, uma fonte que vira lago e um mestre que forma artesãos — de Tiradentes ao mundo.',
-    coverImage: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45.jpeg'),
+    coverImage: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45.webp'),
     tags: ['Fernando Quincas', 'Novos Rumos Atelier', 'Nova Geração de Artesãos', 'Espaço Atelier by Fernando Quincas', 'Fonte de Água com Cisnes', 'Fonte de Água com Cisnes Processo', 'Pedagogia Waldorf', 'Escolas Waldorf Alemanha', 'Escultor Mestre Artesão', 'Atelier Fernando Quincas', 'Ensinar Crianças', 'Alemanha'],
     featured: true,
     blocks: [
@@ -1336,13 +1336,13 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45 (2).jpeg'),
+        src: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45 (2).webp'),
         alt: 'Fernando Quincas com crianças em sala Waldorf na Alemanha - mestre artesão mostrando peça modelada',
         caption: 'Mestre entre aprendizes: Fernando Quincas segura uma placa modelada pelas crianças na escola Waldorf alemã — a nova geração de artesãos começa aqui. Foto de capa também em destaque no blog.',
       },
       {
         type: 'image',
-        src: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45 (1).jpeg'),
+        src: encodeURI('/WhatsApp Image 2026-08-27 at 21.12.45 (1).webp'),
         alt: 'Fernando Quincas sorrindo em oficina Waldorf na Alemanha - escultor e mestre artesão entre crianças',
         caption: 'Sorriso de quem ensina: Fernando Quincas na oficina Waldorf na Alemanha — entre bacias de gesso e plaquinhas ainda úmidas, o escultor e mestre artesão celebra cada peça.',
       },
@@ -1362,7 +1362,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Espaço Atelier by Fernando Quincas.jpeg'),
+        src: encodeURI('/Espaço Atelier by Fernando Quincas.webp'),
         alt: 'Espaço Atelier by Fernando Quincas - ateliê colorido de lonas, bambu e tecidos feito à mão por Fernando Quincas',
         caption: 'Espaço Atelier by Fernando Quincas: o novo ateliê colorido feito à mão — lonas, bambu e tecido que transformam o jardim em sala de encontros e escola viva de Fernando Quincas.',
       },
@@ -1386,7 +1386,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        src: encodeURI('/Fonte de agua com cisnes, processo by Fernando Quincas.jpeg'),
+        src: encodeURI('/Fonte de agua com cisnes, processo by Fernando Quincas.webp'),
         alt: 'Fonte de Água com Cisnes em processo by Fernando Quincas - obra em fibra de vidro colorida esculpida à mão no jardim',
         caption: 'Fonte de Água com Cisnes em Processo by Fernando Quincas: ainda sem água, a obra já revela bacias, quedas e rochas coloridas esculpidas à mão no ateliê de Fernando Quincas — o lago que vai nascer no jardim.',
       },

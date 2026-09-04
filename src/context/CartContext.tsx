@@ -70,17 +70,32 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       lines
         .map((line) => {
           const product = PRODUCTS.find((p) => p.slug === line.slug);
-          return product ? { product, qty: line.qty } : null;
+          // só conta se produto existe, está disponível e qty respeita estoque
+          if (!product || product.status !== 'AVAILABLE' || product.stock <= 0) return null;
+          const qty = Math.min(Math.max(1, Math.floor(line.qty)), product.stock);
+          return { product, qty };
         })
         .filter((v): v is { product: Product; qty: number } => v !== null),
     [lines]
   );
 
+  // auto-limpa carrinho se tiver slugs inválidos / sem estoque (ex.: 5 itens fantasmas de teste antigo)
+  useEffect(() => {
+    if (lines.length !== detailedLines.length) {
+      const validSlugs = new Set(detailedLines.map((d) => d.product.slug));
+      const cleaned = lines.filter((l) => validSlugs.has(l.slug));
+      // só atualiza se realmente mudou e se tem itens inválidos
+      if (cleaned.length !== lines.length) {
+        setLines(cleaned);
+      }
+    }
+  }, [lines, detailedLines]);
+
   const value = useMemo<CartContextValue>(
     () => ({
       lines,
       detailedLines,
-      count: lines.reduce((acc, l) => acc + l.qty, 0),
+      count: detailedLines.reduce((acc, l) => acc + l.qty, 0),
       subtotal: detailedLines.reduce((acc, l) => acc + l.product.price * l.qty, 0),
       isOpen,
       openCart,

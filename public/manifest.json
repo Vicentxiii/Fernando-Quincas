@@ -9,15 +9,15 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "/fernando-quincas.webp",
+      "src": "/Logo%20PNG%20Branco%20-%20By%20Fernando%20Quincas.webp",
       "sizes": "512x512",
       "type": "image/webp",
       "purpose": "any maskable"
     },
     {
-      "src": "/Logo PNG Branco - By Fernando Quincas.png",
+      "src": "/Logo%20PNG%20Branco%20-%20By%20Fernando%20Quincas.webp",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any"
     }
   ],

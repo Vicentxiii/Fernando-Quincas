@@ -33,7 +33,7 @@ export const CommissionsSection: React.FC<CommissionsSectionProps> = ({ onStartC
     {
       title: 'Residências & Fazendas Históricas',
       shortDesc: 'Consolos entalhados, espelhos com moldura dourada e peças centrais exclusivas.',
-      image: encodeURI('/Coluna grega com vaso By fernando Quincas.jpeg'),
+      image: encodeURI('/Coluna grega com vaso By fernando Quincas.webp'),
       fullDesc:
         'Este destino é a alma clássica da casa. Fernando Quincas devolve à residência e à fazenda histórica o vocabulário da arquitetura nobre — consolos cantoneira entalhados à mão, espelhos com moldura dourada em folha 24k, colunas jônicas caneladas com vaso-coroa, mesas Luiz XV cabriolé e vasos guirlanda — tudo em fibra de vidro/pedra reconstituída com pátina mineral resistente a sol e chuva.',
       oQueE:
@@ -53,7 +53,7 @@ export const CommissionsSection: React.FC<CommissionsSectionProps> = ({ onStartC
     {
       title: 'Jardins Botânicos & Parques',
       shortDesc: 'Cisnes monumentais em fibra naval, fontes com cascata e pórticos botânicos.',
-      image: encodeURI('/Fonte com Cisnes by Fernando Quincas .jpeg'),
+      image: encodeURI('/Fonte com Cisnes by Fernando Quincas .webp'),
       fullDesc:
         'O jardim como galeria a céu aberto. Neste destino, o ateliê cria esculturas que organizam o verde: cisnes imperiais que viram vaso, cervos em salto, fontes com cascata em degraus, pórticos botânicos com orquídeas e maracujás dourados e torôs japoneses luminosos.',
       oQueE:
@@ -74,7 +74,7 @@ export const CommissionsSection: React.FC<CommissionsSectionProps> = ({ onStartC
     {
       title: 'Hotéis de Luxo & Spas',
       shortDesc: 'Fontes centrais para pátios nobres, portais de entrada monumentais e esculturas acústicas.',
-      image: encodeURI('/Fonte Paulo LEARDI fernando Quincas.png'),
+      image: encodeURI('/Fonte Paulo LEARDI fernando Quincas.webp'),
       fullDesc:
         'Hospitalidade que vira monumento. Hotéis, pousadas e spas ganham fontes centrais que viram cartão-postal, portais de entrada que marcam chegada e esculturas acústicas (lira) que embalam o lobby com timbre cristalino.',
       oQueE:
@@ -94,7 +94,7 @@ export const CommissionsSection: React.FC<CommissionsSectionProps> = ({ onStartC
     {
       title: 'Salões Nobres & Alta Gastronomia',
       shortDesc: 'Painéis murais em relevo escultural, revestimentos clássicos e composições policromáticas.',
-      image: encodeURI('/Espaço Tematico com Bambu e Fontes Angulo Aberto by Fernando Quincas.png'),
+      image: encodeURI('/Espaço Tematico com Bambu e Fontes Angulo Aberto by Fernando Quincas.webp'),
       fullDesc:
         'Cenografia que vira experiência gastronômica. Salões, restaurantes, capelas e espaços de evento recebem painéis murais em relevo, revestimentos clássicos, composições policromáticas e personagens esculturais que contam história.',
       oQueE:

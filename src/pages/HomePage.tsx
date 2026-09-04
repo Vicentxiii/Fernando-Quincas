@@ -6,17 +6,17 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Hero } from '../components/Hero';
-import { IntroPhilosophy } from '../components/IntroPhilosophy';
-import { TheStoryTimeline } from '../components/TheStoryTimeline';
-import { WorksGallery } from '../components/WorksGallery';
-import { TheAtelier } from '../components/TheAtelier';
-import { MediaSection } from '../components/MediaSection';
-import { BoutiqueSection } from '../components/BoutiqueSection';
-import { CommissionsSection } from '../components/CommissionsSection';
-import { ContactSection } from '../components/ContactSection';
 import { ArtworkModal } from '../components/ArtworkModal';
 import { Artwork } from '../types';
 
+const IntroPhilosophy = lazy(() => import('../components/IntroPhilosophy').then(m => ({ default: m.IntroPhilosophy })));
+const TheStoryTimeline = lazy(() => import('../components/TheStoryTimeline').then(m => ({ default: m.TheStoryTimeline })));
+const WorksGallery = lazy(() => import('../components/WorksGallery').then(m => ({ default: m.WorksGallery })));
+const TheAtelier = lazy(() => import('../components/TheAtelier').then(m => ({ default: m.TheAtelier })));
+const MediaSection = lazy(() => import('../components/MediaSection').then(m => ({ default: m.MediaSection })));
+const BoutiqueSection = lazy(() => import('../components/BoutiqueSection').then(m => ({ default: m.BoutiqueSection })));
+const CommissionsSection = lazy(() => import('../components/CommissionsSection').then(m => ({ default: m.CommissionsSection })));
+const ContactSection = lazy(() => import('../components/ContactSection').then(m => ({ default: m.ContactSection })));
 const GlobeFolioSection = lazy(() =>
   import('../components/GlobeFolioSection').then((m) => ({ default: m.GlobeFolioSection }))
 );
@@ -75,7 +75,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
   // SEO Home - garante title/description/canonical e FAQ para Google e IAs ao navegar via SPA
   useEffect(() => {
-    const title = 'Conheça o Atelier de Fernando Quincas — Mestre Artesão em Fibra de Vidro | Esculturas Monumentais';
+    const title = 'Fernando Quincas — Escultor & Mestre Artesão em Fibra de Vidro | Ateliê de Esculturas Monumentais';
     const description = 'Conheça o Atelier de Fernando Quincas, mestre artesão em fibra de vidro em Minas Gerais. Esculturas monumentais, fontes, vasos e obras sob medida feitas à mão há 40 anos.';
     const url = 'https://fernandoquincas.com.br/';
     document.title = title;
@@ -164,48 +164,50 @@ export const HomePage: React.FC<HomePageProps> = ({
         <GlobeFolioSection />
       </Suspense>
 
-      {/* 01: Introduction & Philosophy */}
-      <IntroPhilosophy
-        onLearnTechniques={() => handleNavigate('techniques')}
-        onExploreStory={() => handleNavigate('story')}
-      />
+      <Suspense fallback={<div className="min-h-[400px] bg-[#FAF8F5]" aria-hidden="true" />}>
+        {/* 01: Introduction & Philosophy */}
+        <IntroPhilosophy
+          onLearnTechniques={() => handleNavigate('techniques')}
+          onExploreStory={() => handleNavigate('story')}
+        />
 
-      {/* 02: The Story / A Life in Sculpture Timeline */}
-      <TheStoryTimeline />
+        {/* 02: The Story / A Life in Sculpture Timeline */}
+        <TheStoryTimeline />
 
-      {/* 04: Works / The Collection */}
-      <WorksGallery
-        onSelectArtwork={(art) => setSelectedArtwork(art)}
-        onToggleSave={onToggleSave}
-        savedArtworkIds={savedArtworkIds}
-      />
+        {/* 04: Works / The Collection */}
+        <WorksGallery
+          onSelectArtwork={(art) => setSelectedArtwork(art)}
+          onToggleSave={onToggleSave}
+          savedArtworkIds={savedArtworkIds}
+        />
 
-      {/* 07: The Atelier Documentary */}
-      <TheAtelier />
+        {/* 07: The Atelier Documentary */}
+        <TheAtelier />
 
-      {/* 08: Media & Press Recognition */}
-      <MediaSection
-        onContactPress={() => handleNavigate('contact')}
-      />
+        {/* 08: Media & Press Recognition */}
+        <MediaSection
+          onContactPress={() => handleNavigate('contact')}
+        />
 
-      {/* 09: The Gallery Boutique */}
-      <BoutiqueSection
-        onSelectArtwork={(art) => setSelectedArtwork(art)}
-        onInquireArtwork={handleInquireArtwork}
-        onToggleSave={onToggleSave}
-        savedArtworkIds={savedArtworkIds}
-      />
+        {/* 09: The Gallery Boutique */}
+        <BoutiqueSection
+          onSelectArtwork={(art) => setSelectedArtwork(art)}
+          onInquireArtwork={handleInquireArtwork}
+          onToggleSave={onToggleSave}
+          savedArtworkIds={savedArtworkIds}
+        />
 
-      {/* 09: Bespoke Commissions */}
-      <CommissionsSection
-        onStartCommission={handleStartCommission}
-      />
+        {/* 09: Bespoke Commissions */}
+        <CommissionsSection
+          onStartCommission={handleStartCommission}
+        />
 
-      {/* 10: Private Salon Contact */}
-      <ContactSection
-        initialConfig={contactInitialConfig}
-        savedArtworksCount={savedArtworkIds.length}
-      />
+        {/* 10: Private Salon Contact */}
+        <ContactSection
+          initialConfig={contactInitialConfig}
+          savedArtworksCount={savedArtworkIds.length}
+        />
+      </Suspense>
 
       {/* Detailed Artwork Inspector Modal */}
       <ArtworkModal

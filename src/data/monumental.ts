@@ -9,9 +9,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2024,
     dimensions: '12 × 8.5 × 6.2 metros',
     materials: ['Fibra de vidro estrutural de alto desempenho', 'Douração em folha de ouro 24k', 'Mármore travertino e scagliola esculpidos à mão', 'Sistemas de fluxo em bronze'],
-    heroImage: '/Fonte com Cisnes by Fernando Quincas .jpeg',
+    heroImage: '/Fonte com Cisnes by Fernando Quincas .webp',
     galleryImages: [
-      '/Fonte com Cisnes by Fernando Quincas .jpeg',
+      '/Fonte com Cisnes by Fernando Quincas .webp',
       'https://images.unsplash.com/photo-1516570161787-2fd917215a3d?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -28,9 +28,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2023,
     dimensions: '7.8 × 5.4 × 2.1 metros',
     materials: ['Compósito de fibra de vidro de alta densidade', 'Estrutura em aço inox 316L', 'Folha de ouro 23.75k com acabamento acetinado', 'Verniz poliuretano náutico'],
-    heroImage: '/Arco botanico Triunfal by Fernando Quincas.png',
+    heroImage: '/Arco botanico Triunfal by Fernando Quincas.webp',
     galleryImages: [
-      '/Arco botanico Triunfal by Fernando Quincas.png',
+      '/Arco botanico Triunfal by Fernando Quincas.webp',
       'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -47,9 +47,9 @@ export const MONUMENTAL_PROJECTS: MonumentalProject[] = [
     year: 2022,
     dimensions: '9.5 × 9.5 × 5.8 metros',
     materials: ['Fibra de vidro estrutural esculpida à mão', 'Mascarões ornamentais em bronze fundido', 'Matriz de mármore verde faux-cipolino', 'Detalhamento em ouro vermeil'],
-    heroImage: '/Fonte by Fernando QUINCAS.png',
+    heroImage: '/Fonte by Fernando QUINCAS.webp',
     galleryImages: [
-      '/Fonte by Fernando QUINCAS.png',
+      '/Fonte by Fernando QUINCAS.webp',
       'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80'
     ],

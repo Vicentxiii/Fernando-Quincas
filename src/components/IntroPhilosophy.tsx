@@ -45,7 +45,7 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
           <div className="lg:col-span-7 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border border-[#C8A86B]/30 shadow-2xl bg-[#EAE5D8]">
               <img
-                src={encodeURI('/escultor-mestre-fernando-quincas-foto-2.png')}
+                src={encodeURI('/escultor-mestre-fernando-quincas-foto-2.webp')}
                 alt="Fernando Quincas — Escultor & Mestre Artesão em seu ateliê"
                 className="w-full h-[450px] sm:h-[580px] object-cover object-top hover:scale-105 transition-transform duration-1000"
               />
@@ -63,7 +63,7 @@ export const IntroPhilosophy: React.FC<IntroPhilosophyProps> = ({
             {/* Overlapping Secondary Image / Material Detail */}
             <div className="hidden sm:block absolute -bottom-10 -right-8 z-20 w-48 h-64 rounded-xl overflow-hidden border-2 border-[#FAF8F5] shadow-2xl">
               <img
-                src={encodeURI('/Galinha Monte Verde Fernando Quincas.png')}
+                src={encodeURI('/Galinha Monte Verde Fernando Quincas.webp')}
                 alt="Escultura Galinha da roça by Fernando Quincas"
                 className="w-full h-full object-cover"
               />
