@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fernandoquincas.com.br/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,212 +12,212 @@
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/storybook</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-historia-vasos-colunas-fibra-vidro-feira-antiga-01.jpg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-historia-vasos-colunas-fibra-vidro-feira-antiga-01.webp</image:loc>
       <image:caption>Historia Vasos Colunas Fibra Vidro Feira Antiga — fotografia do livro histórico de Fernando Quincas (p. 1)</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-escultor-atelie-galpao-vasos-colunas-anos-80-02.jpg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-escultor-atelie-galpao-vasos-colunas-anos-80-02.webp</image:loc>
       <image:caption>Escultor Atelie Galpao Vasos Colunas Anos 80 — fotografia do livro histórico de Fernando Quincas (p. 2)</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-feira-exposicao-esculturas-gigantes-colunas-03.jpg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Book/fernando-quincas-feira-exposicao-esculturas-gigantes-colunas-03.webp</image:loc>
       <image:caption>Feira Exposicao Esculturas Gigantes Colunas — fotografia do livro histórico de Fernando Quincas (p. 3)</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/cisne-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/cisne-studio-green.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-studio-green.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-studio-green.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-instrumento-musical-corda.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-instrumento-musical-corda.webp</image:loc>
       <image:caption>Lira 15 cordas por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-close.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-close.webp</image:loc>
       <image:caption>Lira 15 cordas por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-guia-musical.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-guia-musical.webp</image:loc>
       <image:caption>Lira 15 cordas por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-vista-frontal-coracao-vazado</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-instrumento-musical-corda.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-instrumento-musical-corda.webp</image:loc>
       <image:caption>Lira Vista Frontal com Coração Vazado — 15 cordas por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-traseira-madeira-nobre</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-traseira-backstage.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-traseira-backstage.webp</image:loc>
       <image:caption>Traseira da Lira em Madeira Nobre — Acabamento Acetínado</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-tampo-em-construcao-backstage</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Lira%20traseira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Lira%20traseira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.webp</image:loc>
       <image:caption>Tampo da Lira em Construção — Backstage do Ateliê</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-bolsa-close-tecido</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-close.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-close.webp</image:loc>
       <image:caption>Bolsa Porta-Lira — Close do Tecido</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-bolsa-costura-artesanal</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Close%20da%20bolsa%20porta%20lira.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Close%20da%20bolsa%20porta%20lira.webp</image:loc>
       <image:caption>Bolsa Porta-Lira — Costura Artesanal</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-bolsa-confeccao-atelier</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Bols%20porta%20Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Bols%20porta%20Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.webp</image:loc>
       <image:caption>Confecção da Bolsa Porta-Lira no Ateliê</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-conjunto-completo-bolsa</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-backstage.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-bolsa-backstage.webp</image:loc>
       <image:caption>Conjunto Lira + Bolsa Porta-Lira — Kit Completo</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-guia-musical-partitura</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-guia-musical.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-guia-musical.webp</image:loc>
       <image:caption>Guia Musical para Toque de Lira — Partitura Didática</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-guia-capa-instrucoes</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Guia%20musical%20para%20toque%20de%20lira%20by%20Fernando%20Quincas.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Guia%20musical%20para%20toque%20de%20lira%20by%20Fernando%20Quincas.webp</image:loc>
       <image:caption>Guia Musical — Capa com Instruções de Toque</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-backstage-01-cravelhas</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-01.webp</image:loc>
       <image:caption>Lira Lateral — Cravelhas e Cordas de Aço</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-backstage-02-cavalete-latao</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-02.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-02.webp</image:loc>
       <image:caption>Lira Cavalete em Latão Dourado — Detalhe</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-backstage-03-perspectiva-superior</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-03.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lira-backstage-03.webp</image:loc>
       <image:caption>Lira Perspectiva Superior — Visão do Topo</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-montagem-cordas-atelier</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas.webp</image:loc>
       <image:caption>Montagem das Cordas da Lira no Ateliê</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-afinacao-manual</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas%202.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas%202.webp</image:loc>
       <image:caption>Afinação Manual da Lira — Som Cristalino</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-acabamento-acetinado</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas%203.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20sendo%20feito%20Backstage%20by%20fernando%20quincas%203.webp</image:loc>
       <image:caption>Acabamento Acetinado da Lira — Verniz Manual</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/instrumentos/lira-vista-artistica-completa</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20musical%20de%20corda%20by%20fernando%20quincas,.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/Lira%20instrumento%20musical%20de%20corda%20by%20fernando%20quincas,.webp</image:loc>
       <image:caption>Vista Artística Completa da Lira 15 Cordas</image:caption>
     </image:image>
   </url>
@@ -227,13 +227,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -242,15 +242,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp</image:loc>
       <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp</image:loc>
       <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.webp</image:loc>
       <image:caption>Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000</image:caption>
     </image:image>
   </url>
@@ -260,15 +260,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45.webp</image:loc>
       <image:caption>Novos Rumos do Atelier | Waldorf Alemanha</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45%20(2).jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45%20(2).webp</image:loc>
       <image:caption>Novos Rumos do Atelier | Waldorf Alemanha</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45%20(1).jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/WhatsApp%20Image%202026-08-27%20at%2021.12.45%20(1).webp</image:loc>
       <image:caption>Novos Rumos do Atelier | Waldorf Alemanha</image:caption>
     </image:image>
   </url>
@@ -278,15 +278,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi 10m | Portal Morumbi</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-studio-green-casa.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-studio-green-casa.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi 10m | Portal Morumbi</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-visao-dentro-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-visao-dentro-01.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi 10m | Portal Morumbi</image:caption>
     </image:image>
   </url>
@@ -296,15 +296,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada 2,50×2,50m | Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-escala-piscina.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-escala-piscina.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada 2,50×2,50m | Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-02.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-02.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada 2,50×2,50m | Jardim</image:caption>
     </image:image>
   </url>
@@ -314,16 +314,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-montanha.jpeg</image:loc>
-      <image:caption>Iglu de Concreto 4×4m com Clarabóia</image:caption>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-montanha.webp</image:loc>
+      <image:caption>Iglu de Concreto 4×4m com Clarabóia — do Columbia em Campos do Jordão ao Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-montanha.jpeg</image:loc>
-      <image:caption>Iglu de Concreto 4×4m com Clarabóia</image:caption>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-montanha.webp</image:loc>
+      <image:caption>Iglu de Concreto 4×4m com Clarabóia — do Columbia em Campos do Jordão ao Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-medidas.jpeg</image:loc>
-      <image:caption>Iglu de Concreto 4×4m com Clarabóia</image:caption>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-medidas.webp</image:loc>
+      <image:caption>Iglu de Concreto 4×4m com Clarabóia — do Columbia em Campos do Jordão ao Jardim</image:caption>
     </image:image>
   </url>
   <url>
@@ -332,15 +332,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua 60cm</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua 60cm</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-uso.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-uso.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua 60cm</image:caption>
     </image:image>
   </url>
@@ -350,15 +350,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.webp</image:loc>
       <image:caption>Torô Japonês Garden | Energia do Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.webp</image:loc>
       <image:caption>Torô Japonês Garden | Energia do Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-fundo-jardim.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-fundo-jardim.webp</image:loc>
       <image:caption>Torô Japonês Garden | Energia do Jardim</image:caption>
     </image:image>
   </url>
@@ -368,15 +368,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-jardim-cinza.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-jardim-cinza.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-frente.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-frente.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-macro.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba</image:caption>
     </image:image>
   </url>
@@ -386,15 +386,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 | Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 | Jardim</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-macro.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 | Jardim</image:caption>
     </image:image>
   </url>
@@ -404,15 +404,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-all-white.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-all-white.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm</image:caption>
     </image:image>
   </url>
@@ -422,15 +422,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.webp</image:loc>
       <image:caption>Galinha de Monte Verde | 45 Dias de Ateliê</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.webp</image:loc>
       <image:caption>Galinha de Monte Verde | 45 Dias de Ateliê</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-macro.webp</image:loc>
       <image:caption>Galinha de Monte Verde | 45 Dias de Ateliê</image:caption>
     </image:image>
   </url>
@@ -440,331 +440,331 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Eva%20Original,%20Playcenter.jpg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Eva%20Original,%20Playcenter.webp</image:loc>
       <image:caption>Boneca Eva: o retorno de um ícone de 45 metros</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Eva%20Original,%20Playcenter.jpg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Eva%20Original,%20Playcenter.webp</image:loc>
       <image:caption>Boneca Eva: o retorno de um ícone de 45 metros</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/Antiga%20foto%20da%20Eva%20Constru%C3%A7%C3%A3o%20no%20Playcenter.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/Antiga%20foto%20da%20Eva%20Constru%C3%A7%C3%A3o%20no%20Playcenter.webp</image:loc>
       <image:caption>Boneca Eva: o retorno de um ícone de 45 metros</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/cisne-imperial-vaso-escultural-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/cisne-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/cisne-studio-green.webp</image:loc>
       <image:caption>Cisne Imperial — Vaso Escultural em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/cisne-interior.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/cisne-interior.webp</image:loc>
       <image:caption>Cisne Imperial — Vaso Escultural em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/cisne-jardim.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/cisne-jardim.webp</image:loc>
       <image:caption>Cisne Imperial — Vaso Escultural em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/coluna-grega-classica-com-vaso-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-studio-green.webp</image:loc>
       <image:caption>Coluna Grega Clássica — com Vaso de Coroa em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-jardim.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-jardim.webp</image:loc>
       <image:caption>Coluna Grega Clássica — com Vaso de Coroa em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-detalhe.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-grega-detalhe.webp</image:loc>
       <image:caption>Coluna Grega Clássica — com Vaso de Coroa em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/coluna-do-anjo-guardiao-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-studio-green.webp</image:loc>
       <image:caption>Coluna do Anjo Guardião em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-sala.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-sala.webp</image:loc>
       <image:caption>Coluna do Anjo Guardião em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-detalhe.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/coluna-anjo-detalhe.webp</image:loc>
       <image:caption>Coluna do Anjo Guardião em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/pedestal-amarelo-canario-coluna-jonica-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-studio-baixo.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-studio-baixo.webp</image:loc>
       <image:caption>Pedestal Amarelo Canário — Coluna Jônica em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-jardim-cascalho.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-jardim-cascalho.webp</image:loc>
       <image:caption>Pedestal Amarelo Canário — Coluna Jônica em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-sala-moderna.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/pedestal-amarelo-sala-moderna.webp</image:loc>
       <image:caption>Pedestal Amarelo Canário — Coluna Jônica em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/vaso-classico-guirlanda-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-studio-green.webp</image:loc>
       <image:caption>Vaso Clássico Guirlanda em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-jardim.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-jardim.webp</image:loc>
       <image:caption>Vaso Clássico Guirlanda em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-sala.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/vaso-ceramico-sala.webp</image:loc>
       <image:caption>Vaso Clássico Guirlanda em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/mesa-luiz-xv-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-studio-green.webp</image:loc>
       <image:caption>Mesa Luiz XV em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-jardim.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-jardim.webp</image:loc>
       <image:caption>Mesa Luiz XV em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-sala.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/mesa-luizxv-sala.webp</image:loc>
       <image:caption>Mesa Luiz XV em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-cabeca-de-leao-bica-barroca-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-studio-green.webp</image:loc>
       <image:caption>Fonte Cabeça de Leão — Bica Barroca em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-detalhe-rosto.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-detalhe-rosto.webp</image:loc>
       <image:caption>Fonte Cabeça de Leão — Bica Barroca em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-patio.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-leao-patio.webp</image:loc>
       <image:caption>Fonte Cabeça de Leão — Bica Barroca em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/cervo-do-jardim-escultura-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/cervo-jardim-1.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/cervo-jardim-1.webp</image:loc>
       <image:caption>Cervo do Jardim — Escultura em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/galinha-de-monte-verde-escultura-1-1-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-studio-green.webp</image:loc>
       <image:caption>Galinha de Monte Verde — Escultura 1/1 em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-completa.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-completa.webp</image:loc>
       <image:caption>Galinha de Monte Verde — Escultura 1/1 em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-all-white.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/galinha-monte-verde-all-white.webp</image:loc>
       <image:caption>Galinha de Monte Verde — Escultura 1/1 em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/loba-artesanal-120x80-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-studio-green.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-all-white.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-all-white.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm em Fibra de Vidro</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-tamanho-real.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/lobo-gigante-tamanho-real.webp</image:loc>
       <image:caption>Loba Artesanal 1.20×80cm em Fibra de Vidro</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-de-pedra-grande-180x170-com-bomba-fibra-de-vidro-cinza-mineral</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-frente.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-frente.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba em Fibra de Vidro — Cinza Mineral por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-macro.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba em Fibra de Vidro — Cinza Mineral por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-jardim-cinza.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-grande-jardim-cinza.webp</image:loc>
       <image:caption>Fonte de Pedra Grande 1,80×1,70 com Bomba em Fibra de Vidro — Cinza Mineral por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-de-pedra-tratada-250x250-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-studio-green.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada — 2,50×2,50m</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-01.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada — 2,50×2,50m</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-02.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-pedra-tratada-piscina-02.webp</image:loc>
       <image:caption>Fonte de Pedra Tratada — 2,50×2,50m</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/fonte-gigante-paulo-leardi-10m-portal-morumbi-fibra</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-studio-green-casa.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-studio-green-casa.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi — 10m no Portal do Morumbi</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-fachada-rua.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi — 10m no Portal do Morumbi</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-visao-dentro-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/fonte-gigante-paulo-leardi-visao-dentro-01.webp</image:loc>
       <image:caption>Fonte Gigante Paulo Leardi — 10m no Portal do Morumbi</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/gazebo-tenda-ferro-resina-lona</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-principal.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 — Ferro, Resina e Lona por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-tenda-ferro-bamboo-macro.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 — Ferro, Resina e Lona por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/gazebo-dj-tenda-bambu.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/gazebo-dj-tenda-bambu.webp</image:loc>
       <image:caption>Gazebo Tenda 350×200×270 — Ferro, Resina e Lona por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/toro-japones-garden-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-fundo-verde.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-fundo-verde.webp</image:loc>
       <image:caption>Torô Japonês — Garden em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-principal.webp</image:loc>
       <image:caption>Torô Japonês — Garden em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/toro-japones-restaurante.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/toro-japones-restaurante.webp</image:loc>
       <image:caption>Torô Japonês — Garden em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/bonecas-cozinheiras-alice-lua-60cm-fibra-de-vidro</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-principal.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua — 60cm por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-studio-green.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua — 60cm por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-macro.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/bonecas-cozinheiras-macro.webp</image:loc>
       <image:caption>Bonecas Cozinheiras Alice e Lua — 60cm por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/iglu-de-concreto-4x4-com-claraboia</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-medidas.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-medidas.webp</image:loc>
       <image:caption>Iglu de Concreto 4×4m com Clarabóia — por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-principal.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-principal.webp</image:loc>
       <image:caption>Iglu de Concreto 4×4m com Clarabóia — por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-pessoa.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/products/iglu-concreto-pessoa.webp</image:loc>
       <image:caption>Iglu de Concreto 4×4m com Clarabóia — por Fernando Quincas</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://fernandoquincas.com.br/loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp</image:loc>
       <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.webp</image:loc>
       <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.jpeg</image:loc>
+      <image:loc>https://fernandoquincas.com.br/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.webp</image:loc>
       <image:caption>Árvore Seca 4m — Escultura em Fibra de Vidro por Fernando Quincas</image:caption>
     </image:image>
   </url>
