@@ -81,8 +81,11 @@ export const StoryBookPage: React.FC = () => {
       <article className="max-w-5xl mx-auto w-full px-6 sm:px-8 mt-6 sm:mt-8">
         <header className="border-t border-[#C8A86B]/15 pt-7">
           <h2 className="font-display text-xl sm:text-2xl font-semibold tracking-[-0.01em] text-[#1E1D1A]">Sobre este StoryBook — acervo histórico</h2>
-          <p className="mt-3 font-sans text-[14px] leading-6 text-[#2C2A26]/75">
-            O StoryBook reúne 51 fotografias do livro físico de Fernando Quincas, mestre em fibra de vidro há quatro décadas. Cada página foi fotografada e renomeada semanticamente para descoberta por Google, Bing e IAs. As imagens mostram feiras antigas, galpões do ateliê no Jaguari, transporte de esculturas gigantes, fontes e colunas, e obras como a Boneca Eva (45 m) e o Papai Noel gigante de Blumenau. Todas em <code className="px-1.5 py-0.5 rounded bg-[#F0ECE1] text-[12px]">/Book/nome-do-arquivo.jpg</code>.
+          <p className="mt-3 font-serif text-[15px] sm:text-[16px] leading-7 text-[#2C2A26]/75">
+            Um livro para folhear sem pressa. Aqui estão 51 páginas de história viva — <span className="font-sans font-medium text-[#1E1D1A]">feiras que pararam ruas, galpões onde gigantes nasceram, obras que atravessaram o Brasil</span> de caminhão e ainda hoje encantam jardins e praças.
+          </p>
+          <p className="mt-3 font-serif italic text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-[#8A82A5]">
+            Cada foto guarda o gesto de quem molda à mão há quatro décadas. Desça, toque e deixe o tempo te levar — a próxima página sempre guarda uma surpresa.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="px-2.5 py-1 rounded-full bg-[#1E1D1A] text-[#FAF8F5] font-mono text-[10px] tracking-widest uppercase">Escultor • Fernando Quincas</span>
