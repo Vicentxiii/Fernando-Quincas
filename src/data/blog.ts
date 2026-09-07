@@ -20,6 +20,175 @@ export const BLOG_CATEGORY_LABELS: Record<BlogCategory, string> = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'espaco-atelier-fontes-cisnes-golfinhos-pedras-colunas-fernando-quincas',
+    slug: 'espaco-atelier-fernando-quincas-fontes-cisnes-golfinhos-pedras-colunas-fibra-de-vidro',
+    title: 'Espaço Atelier Fernando Quincas — Fontes com Cisnes, Golfinhos, Pedras e Colunas em Fibra de Vidro',
+    subtitle: 'No Espaço Atelier by Fernando Quincas, nove fontes esculpidas à mão ganham forma e lago: cisnes em fibra de vidro de pescoço sinuoso, golfinhos em salto, rochas patinadas em rosa, azul e ocre, colunas que viram cascata e tanques que refletem o céu — o jardim do ateliê de Fernando Quincas que virou galeria viva, escola ao ar livre e coleção de fontes para quem busca água, arte e tempo em Minas Gerais.',
+    category: 'ATELIER',
+    date: '2026-09-07',
+    author: 'Fernando Quincas',
+    authorRole: 'Escultor & Mestre Artesão',
+    readingTimeMinutes: 10,
+    excerpt:
+      'Espaço Atelier by Fernando Quincas em 9 fotos novas: fontes com cisnes, golfinhos e pedras esculpidas à mão em fibra de vidro no jardim do ateliê de Fernando Quincas. Veja colunas que viram cascata, rochas patinadas e tanques que espelham o céu — o atelier de Fernando Quincas onde cada fonte nasce como escultura, lago e escola. Conheça o Espaço Atelier by Fernando Quincas por dentro.',
+    coverImage: encodeURI('/Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 4.jpeg'),
+    tags: ['Fernando Quincas', 'Espaço Atelier by Fernando Quincas', 'Espaço Atelier Fernando Quincas', 'Fonte com Cisnes', 'Fonte com Cisnes by Fernando Quincas', 'Fonte com Cisnes e pedras', 'Fonte com Cisnes golfinhos e pedras', 'Fonte com Cisnes e colunas golfinhos e pedras', 'Atelier Fernando Quincas', 'Mestre Artesão Fibra de Vidro', 'Fontes em Fibra de Vidro', 'Fontes para Jardim', 'Esculturas para Jardim', 'Atelier Minas Gerais'],
+    featured: true,
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'O Espaço Atelier by Fernando Quincas acaba de ganhar seu retrato mais completo — e ele cabe em nove fotos. São nove fontes com cisnes, golfinhos e pedras by Fernando Quincas, todas esculpidas à mão em fibra de vidro no jardim do ateliê de Fernando Quincas, fotografadas no chão onde nasceram: entre bancadas, bambu, lonas coloridas e o som de água que não para. Se você procurava no Google por “Fernando Quincas fonte com cisnes”, “fonte com golfinhos e pedras Fernando Quincas”, “Espaço Atelier by Fernando Quincas”, “atelier Fernando Quincas fontes fibra de vidro” ou “fonte com colunas e cisnes para jardim”, chegou ao lugar exato: este é o novo ensaio do blog do ateliê de Fernando Quincas, feito para ser encontrado por gente e por IA — e, sobretudo, para ser visto com calma, como se visita um ateliê de verdade.',
+      },
+      { type: 'heading', text: 'O Espaço Atelier by Fernando Quincas por dentro: o jardim do ateliê de Fernando Quincas que virou galeria de fontes' },
+      {
+        type: 'paragraph',
+        text: 'Quem entra no Espaço Atelier by Fernando Quincas entende em segundos por que Fernando Quincas chama seu ateliê de espaço e não de galpão. O jardim do ateliê de Fernando Quincas não é corredor entre obras — é obra. As nove fontes com cisnes, golfinhos e pedras by Fernando Quincas foram posicionadas ali, no chão do ateliê, como quem ensaia um lago: cada fonte de Fernando Quincas é uma topografia esculpida — bacia baixa, rochas que sobem, quedas que descem, nichos para plantas e tanques que vão espelhar céu e folhagem quando a bomba ligar. É o Espaço Atelier by Fernando Quincas funcionando como galeria viva: você caminha, a água soa, a pátina brilha. Toda fonte com cisnes do ateliê de Fernando Quincas nasce assim: primeiro como escultura no jardim, depois como lago na casa de quem encomenda.',
+      },
+      {
+        type: 'list',
+        items: [
+          '9 fontes novas no Espaço Atelier by Fernando Quincas: cisnes, golfinhos, pedras e colunas — todas em fibra de vidro esculpida à mão por Fernando Quincas, fotografadas no jardim do ateliê de Fernando Quincas.',
+          'Galeria a céu aberto do ateliê de Fernando Quincas: lonas coloridas, bambu e ferro ao fundo — o Espaço Atelier by Fernando Quincas que é também escola, oficina e casa.',
+          'Cada fonte com cisnes by Fernando Quincas é lago raso pronto: tanque, cascata e berço para plantas — a obra hidráulica do ateliê de Fernando Quincas para jardim brasileiro.',
+          'Feitas para durar no tempo: fibra de vidro de Fernando Quincas com pátina mineral selada — a fonte do ateliê de Fernando Quincas que resiste a sol e chuva e não pede tratamento contra limo.',
+        ],
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes by Fernando Quincas 2 .jpeg'),
+        alt: 'Fonte com Cisnes by Fernando Quincas 2 - detalhe dos cisnes em fibra de vidro no Espaço Atelier by Fernando Quincas',
+        caption: 'Detalhe dos cisnes: Fonte com Cisnes by Fernando Quincas 2 — pescoços sinuosos em fibra de vidro esculpida à mão, no jardim do Espaço Atelier by Fernando Quincas.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes e pedras by Fernando Quincas 3.jpeg'),
+        alt: 'Fonte com Cisnes e pedras by Fernando Quincas 3 - rochas patinadas e berço d’água no ateliê de Fernando Quincas',
+        caption: 'Pedras que viram lago: Fonte com Cisnes e pedras by Fernando Quincas 3 — rochas em fibra com pátina rosa-azul-ocre e bacia pronta para espelhar o céu do ateliê.',
+      },
+      { type: 'heading', text: 'Cisnes em fibra de vidro por Fernando Quincas: o voo que vira bica, berço e espelho d’água' },
+      {
+        type: 'paragraph',
+        text: 'O cisne de Fernando Quincas não é enfeite — é arquitetura. Nas fontes com cisnes by Fernando Quincas fotografadas no Espaço Atelier, o cisne de fibra de vidro desenha a curva que guia a água: pescoço em S que vira borda, peito que vira proa, asa que vira sombra sobre o tanque. Modelado à mão por Fernando Quincas, sem molde industrial, cada cisne do ateliê de Fernando Quincas tem olhar manso e plumagem sugerida em volume, não em linha — por isso fotografa bem de perto e de longe, com ou sem água. Quando a bomba liga, o cisne do ateliê de Fernando Quincas faz o que toda boa escultura hidráulica deve fazer: aquietar o entorno. O Espaço Atelier by Fernando Quincas mostra isso sem truque: a fonte com cisnes ainda seca já parece molhada, de tão bem patinada.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Cisne em fibra de vidro de Fernando Quincas: pescoço sinuoso e bico laranja — a assinatura da Fonte com Cisnes do ateliê de Fernando Quincas que encanta jardim e hall.',
+          'Berço e borda no mesmo gesto: o corpo do cisne de Fernando Quincas desenha a bacia — a fonte com cisnes by Fernando Quincas que é escultura e tanque ao mesmo tempo.',
+          'Pátina mineral artesanal do ateliê de Fernando Quincas: branco acetinado do cisne contra rocha colorida — contraste que o Espaço Atelier by Fernando Quincas exibe em luz natural.',
+          'Pronta para água e verde: cada fonte com cisnes do ateliê de Fernando Quincas recebe bomba e plantas — o lago raso de Fernando Quincas que nasce no jardim do ateliê.',
+        ],
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 3.jpeg'),
+        alt: 'Fonte com Cisnes golfinhos e pedras by Fernando Quincas 3 - conjunto com cisnes e base de rochas no Espaço Atelier',
+        caption: 'Conjunto com pedras: Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 3 — cisnes e rochas no Espaço Atelier by Fernando Quincas, fibra de vidro pronta para receber água.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 4.jpeg'),
+        alt: 'Fonte com Cisnes golfinhos e pedras by Fernando Quincas 4 - vista geral da fonte com cisnes no jardim do ateliê de Fernando Quincas',
+        caption: 'Vista geral que é capa deste post: Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 4 — a fonte mais completa do ensaio, no jardim do Espaço Atelier by Fernando Quincas.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 5.jpeg'),
+        alt: 'Fonte com Cisnes golfinhos e pedras by Fernando Quincas 5 - ângulo lateral da fonte com cisnes e pedras por Fernando Quincas',
+        caption: 'Ângulo lateral: Fonte com Cisnes, golfinhos e pedras by Fernando Quincas 5 — lateral que mostra profundidade da bacia e altura das rochas do ateliê de Fernando Quincas.',
+      },
+      { type: 'heading', text: 'Golfinhos, pedras e colunas: o trio que faz a água dançar nas fontes do ateliê de Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'Se o cisne de Fernando Quincas dá mansidão, o golfinho de Fernando Quincas dá salto. Nas fontes com cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas 5 a 8, o ateliê de Fernando Quincas junta três matérias que parecem opostas e faz virar uma coisa só: rocha patinada que finge peso mas é casca leve de fibra, golfinho em fibra de vidro que congela o pulo no exato segundo da queda, e coluna canelada que vira cascata — água que desce em véu pela pedra tratada do ateliê de Fernando Quincas. Fotografadas no Espaço Atelier by Fernando Quincas, essas fontes mostram o repertório completo do ateliê: o mesmo Fernando Quincas que modela pétala de cisne, modela dorso de golfinho e fuste de coluna, sempre à mão, sempre em fibra de vidro que imita pedra mas resiste como casco naval. É por isso que toda fonte com cisnes, golfinhos e pedras do ateliê de Fernando Quincas parece ter nascido ali, no jardim — porque nasceu.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, e pedras,  e colunas golfinhos e pedras by Fernando Quincas 5.jpeg'),
+        alt: 'Fonte com Cisnes e pedras e colunas golfinhos e pedras by Fernando Quincas 5 - fonte com colunas e golfinhos no Espaço Atelier',
+        caption: 'Colunas e golfinhos: Fonte com Cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas 5 — a primeira das quatro fontes com colunas, no jardim do Espaço Atelier by Fernando Quincas.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, e pedras,  e colunas golfinhos e pedras by Fernando Quincas 6.jpeg'),
+        alt: 'Fonte com Cisnes e pedras e colunas golfinhos e pedras by Fernando Quincas 6 - detalhe de colunas e golfinhos em fibra de vidro por Fernando Quincas',
+        caption: 'Detalhe de fibra: Fonte com Cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas 6 — close das colunas caneladas e do golfinho em salto, fibra de vidro patinada à mão por Fernando Quincas.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, e pedras,  e colunas golfinhos e pedras by Fernando Quincas 7.jpeg'),
+        alt: 'Fonte com Cisnes e pedras e colunas golfinhos e pedras by Fernando Quincas 7 - vista superior da fonte com cisnes e colunas no ateliê',
+        caption: 'Vista que mostra a bacia: Fonte com Cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas 7 — bacia generosa e pedras em tons rosa e ocre, pronta para virar lago no Espaço Atelier.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/Fonte com Cisnes, e pedras,  e colunas golfinhos e pedras by Fernando Quincas 8.jpeg'),
+        alt: 'Fonte com Cisnes e pedras e colunas golfinhos e pedras by Fernando Quincas 8 - quarta fonte com colunas e golfinhos por Fernando Quincas',
+        caption: 'Quarta variação com colunas: Fonte com Cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas 8 — a obra que resume o vocabulário do ateliê de Fernando Quincas: cisne, golfinho, pedra e coluna em uma só fonte.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Golfinho em salto por Fernando Quincas: fibra de vidro que congela o movimento — o detalhe da fonte com cisnes, golfinhos e pedras by Fernando Quincas que dá som à água.',
+          'Pedra tratada leve: rocha em fibra do ateliê de Fernando Quincas com pátina mineral rosa-azul-ocre — parece peso, mas é casca que resiste a sol e chuva.',
+          'Coluna que vira cascata: fuste canelado canaliza a queda — a fonte com colunas e golfinhos do ateliê de Fernando Quincas que une clássico e jardim.',
+          'Tudo no mesmo jardim do Espaço Atelier by Fernando Quincas: as quatro fontes com cisnes e colunas fotografadas lado a lado provam que o ateliê de Fernando Quincas é coleção, não peça avulsa.',
+        ],
+      },
+      { type: 'heading', text: 'Fibra de vidro, pátina mineral e mão: como nascem as fontes com cisnes no ateliê de Fernando Quincas' },
+      {
+        type: 'paragraph',
+        text: 'No ateliê de Fernando Quincas, fonte não se compra pronta — se esculpe. Cada fonte com cisnes, golfinhos e pedras by Fernando Quincas das nove fotos nasceu assim: modelagem em isopor e argila, laminação em fibra de vidro com resina, refino em massa plástica, selante para externo e pátina mineral em camadas — branca para o cisne, acinzentada azulada para o golfinho, rosa-ocre-areia para a rocha, creme para a coluna. Tudo feito à mão por Fernando Quincas no Espaço Atelier by Fernando Quincas, sem linha de montagem. Por isso a fibra de vidro do ateliê de Fernando Quincas tem tato de pedra e peso de casca: resiste a sol e chuva, não cria limo estrutural, não pede tratamento contra musgo, pode ficar no jardim ano a ano e, quando a bomba entra, vira lago raso com som contínuo. É a diferença entre fonte industrial e fonte do ateliê de Fernando Quincas: a segunda guarda gesto.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Fibra de vidro naval do ateliê de Fernando Quincas: casca leve e selada — a fonte com cisnes e pedras by Fernando Quincas que pode ir para jardim, varanda e hall sem obra pesada.',
+          'Pátina mineral em camadas por Fernando Quincas: cisne branco, golfinho grafite, rocha rosa-ocre, coluna creme — cada fonte com cisnes do Espaço Atelier ganha cor à mão.',
+          'Selada para sol e chuva: a fonte de fibra de vidro do ateliê de Fernando Quincas não mofa e não trinca — feita para o jardim brasileiro do Espaço Atelier by Fernando Quincas.',
+          'Pronta para bomba e plantas: toda fonte com cisnes, golfinhos e pedras do ateliê de Fernando Quincas já nasce com bacia para receber bomba enichos para forração.',
+        ],
+      },
+      { type: 'heading', text: 'Onde usar: jardim, deck, hall, pousada e Espaço Atelier — a fonte com cisnes de Fernando Quincas embeleza muito lugar' },
+      {
+        type: 'paragraph',
+        text: 'As nove fontes com cisnes, golfinhos e pedras by Fernando Quincas fotografadas no Espaço Atelier by Fernando Quincas foram pensadas para o mesmo lugar onde foram fotografadas: jardim. Mas, por serem em fibra de vidro leve e patinada, as fontes do ateliê de Fernando Quincas viajam bem: vão para deck de piscina como espelho d’água, para hall de entrada como boas-vindas sonoras, para varanda gourmet como ponto focal, para pousada e sítio como lago fotografável, para praça interna de condomínio como microclima. No Espaço Atelier by Fernando Quincas, as fontes ficam ao sol, entre bambu e tecido, provando que a obra do ateliê de Fernando Quincas aguenta tempo firme — e embeleza muito lugar sem pedir obra civil. Como toda escultura hidráulica do ateliê de Fernando Quincas, cada fonte com cisnes pede só ponto de energia para bomba, água e um pouco de sombra verde ao redor para refletir.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Jardim e deck com sol: habitat natural da fonte com cisnes by Fernando Quincas — fibra do ateliê de Fernando Quincas reflete luz e dobra o verde do Espaço Atelier.',
+          'Hall, varanda e pousada: escala de lago raso — a fonte com cisnes, golfinhos e pedras do ateliê de Fernando Quincas marca chegada com som de cascata.',
+          'Festas e cerimônias no Espaço Atelier by Fernando Quincas: lonas coloridas + fontes com cisnes — o ateliê de Fernando Quincas que vira cenário sem montar palco.',
+          'Coleção no mesmo jardim do ateliê de Fernando Quincas: escolha entre cisnes só, cisnes com pedras ou cisnes com colunas e golfinhos — cada fonte com cisnes by Fernando Quincas é sob encomenda.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Fonte boa não é só água que cai. É pedra que parece que sempre esteve ali, cisne que parece que vai nadar e golfinho que parece que vai pular de novo. Meu ateliê é o lago onde tudo isso aprende a ficar junto.',
+        attribution: 'Fernando Quincas',
+      },
+      { type: 'heading', text: 'Visite o Espaço Atelier by Fernando Quincas e encomende sua fonte com cisnes, golfinhos e pedras' },
+      {
+        type: 'paragraph',
+        text: 'Este novo ensaio do blog do ateliê de Fernando Quincas — Espaço Atelier Fernando Quincas: Fontes com Cisnes, Golfinhos, Pedras e Colunas em Fibra de Vidro — vive agora no blog do ateliê de Fernando Quincas e já pode ser encontrado por quem procurar no Google, Bing ou em qualquer IA por “Fernando Quincas”, “Espaço Atelier by Fernando Quincas”, “Fonte com Cisnes by Fernando Quincas”, “Fonte com Cisnes e pedras”, “Fonte com Cisnes golfinhos e pedras”, “Fonte com colunas golfinhos e pedras” ou “atelier Fernando Quincas fontes fibra de vidro”. As nove fotos são reais, feitas no chão do Espaço Atelier by Fernando Quincas, no jardim do ateliê de Fernando Quincas, com luz natural e sem estúdio: cisnes, golfinhos, pedras e colunas em fibra de vidro patinada à mão por Fernando Quincas. Como toda obra do ateliê de Fernando Quincas, este texto também foi feito à mão — com SEO bem estruturado para que o Google e as IAs achem o site do ateliê de Fernando Quincas através de conteúdo honesto, rico e humano, que também alimenta o novo card 05 do O Ateliê.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Quer ver ao vivo? Agende visita ao Espaço Atelier by Fernando Quincas — conheça no jardim do ateliê de Fernando Quincas as nove fontes com cisnes, golfinhos e pedras em fibra de vidro, com cisnes, golfinhos, pedras e colunas.',
+          'Quer uma fonte com cisnes para seu jardim? Fale com o ateliê de Fernando Quincas: cada fonte com cisnes, golfinhos e pedras é esculpida sob encomenda em fibra de vidro, com bomba, orientação e pátina à escolha.',
+          'Quer a versão com colunas? Peça sua Fonte com Cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas — a obra do ateliê de Fernando Quincas que une clássico e lago raso.',
+          'Encontre o mestre: Fernando Quincas, escultor e mestre artesão, no blog do ateliê (este artigo) e no novo card 05 de O Ateliê — Fontes com Cisnes, Golfinhos e Pedras no Espaço Atelier by Fernando Quincas.',
+        ],
+      },
+      {
+        type: 'paragraph',
+        text: 'Hoje, o Espaço Atelier by Fernando Quincas pulsa com nove fontes e um mesmo convite: venha ver de perto. As fontes com cisnes by Fernando Quincas estão no jardim do ateliê de Fernando Quincas, as fontes com cisnes e pedras by Fernando Quincas esperam bomba e plantas, e as fontes com cisnes, golfinhos e pedras e as fontes com cisnes, e pedras, e colunas golfinhos e pedras by Fernando Quincas mostram que o ateliê de Fernando Quincas tem vocabulário completo para água, pedra e bicho em fibra de vidro. Se você busca um ateliê que esculpe fontes, uma fonte com cisnes que vira lago ou um jardim que vira escola — e se você quer que o Google e as IAs te levem até o site do ateliê de Fernando Quincas quando procurar por espaço atelier, fonte com cisnes, fonte com golfinhos e pedras, colunas ou fibra de vidro — você já chegou. Bem-vindo ao Espaço Atelier by Fernando Quincas, no jardim do ateliê de Fernando Quincas, onde cada fonte com cisnes é também retrato do mestre.',
+      },
+    ],
+  },
+  {
     id: 'arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental',
     slug: 'arvore-seca-4-metros-fibra-de-vidro-fernando-quincas-escultura-monumental-jardim',
     title: 'Árvore Seca 4m em Fibra de Vidro por Fernando Quincas — Escultura Monumental 48 kg por R$ 3.000',
