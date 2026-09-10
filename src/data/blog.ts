@@ -20,6 +20,124 @@ export const BLOG_CATEGORY_LABELS: Record<BlogCategory, string> = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'renas-natal-conjunto-fibra-vidro-pintadas-mao-natal-2026',
+    slug: 'renas-natal-fibra-vidro-pintadas-mao-conjunto-6700-natal-2026-decoracao',
+    title: 'Renas de Natal em Fibra de Vidro — Conjunto 3 Peças Pintadas à Mão por R$ 6.700 | Natal 2026',
+    subtitle: 'Conjunto com 3 renas em fibra de vidro pintadas à mão — leves, resistentes a sol e chuva, perfeitas para o Natal 2026 e para decorar casa, jardim, varanda e hall o ano todo por R$ 6.700 o conjunto completo.',
+    category: 'JARDIM',
+    date: '2026-09-10',
+    author: 'Fernando Quincas',
+    authorRole: 'Escultor & Mestre Artesão',
+    readingTimeMinutes: 7,
+    excerpt: 'Renas de Natal em fibra de vidro para o Natal 2026: conjunto com 3 renas pintadas à mão por R$ 6.700. Fibra leve que resiste a sol e chuva, pronta para jardim, varanda, hall e vitrine — decoração natalina que dura muitos natais. Veja fotos e garanta na loja: /loja/renas-natal-conjunto-fibra-vidro-pintadas-mao-6700.',
+    coverImage: '/products/renas-natal-conjunto-fibra-vidro-studio-verde.webp',
+    tags: ['Renas de Natal', 'Renas de Natal 2026', 'Natal 2026', 'Decoração de Natal', 'Decoração Natalina', 'Renas em Fibra de Vidro', 'Renas Pintadas à Mão', 'Conjunto de Renas', 'Renas para Jardim', 'Renas para Vitrine', 'Escultura de Natal', 'Fibra de Vidro', 'Decoração Natalina Externa', 'R$ 6.700'],
+    featured: true,
+    blocks: [
+      {
+        type: 'paragraph',
+        text: 'O Natal 2026 já tem endereço: a porta da sua casa. O novo Conjunto de Renas de Natal em Fibra de Vidro — 3 peças pintadas à mão por R$ 6.700 o conjunto completo — foi criado para quem quer decoração natalina que emociona na primeira foto e conquista ao vivo. São duas renas adultas + um filhote, com pelagem caramelo, focinhos marcados, chifres expressivos e pintura feita à mão que dá personalidade a cada peça. Leves, estáveis e prontas para sol e chuva, elas transformam hall, jardim, varanda, vitrine, fachada de loja, restaurante e condomínio em cenário de Natal instantâneo — e continuam lindas depois de dezembro como esculturas afetivas para decorar a casa o ano todo.',
+      },
+      { type: 'heading', text: 'Por que este conjunto de 3 renas faz diferença no seu Natal 2026' },
+      {
+        type: 'paragraph',
+        text: 'Rena de Natal boa não é enfeite descartável — é presença. Este conjunto entrega escala familiar: a maior (~95 cm) marca a cena, a média (~80 cm) cria ritmo e o filhote (~55 cm) traz doçura. Juntas, as três renas fotografam como família, contam história e preenchem o espaço sem precisar de base, árvore gigante ou estrutura. É só posicionar nas pedras, na grama, no deck ou no hall e ligar o pisca-pisca: o conjunto já é o Natal.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Conjunto completo 3 peças por R$ 6.700: casal adulto + filhote em fibra de vidro — decoração de Natal pronta, sem montar e sem quebrar.',
+          'Pintadas à mão: pelagem caramelo com degradê, focinho branco/preto e chifres bem desenhados — cada rena com acabamento artesanal único.',
+          'Fibra de vidro leve (~9 kg o conjunto): fácil de mover, não racha como gesso e não apodrece como madeira — pode ficar no externo.',
+          'Natal 2026 e o ano todo: perfeitas para o Natal, mas pensadas para decorar casa, jardim, varanda e hall também fora de dezembro.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/renas-natal-conjunto-fibra-vidro-studio-verde.webp',
+        alt: 'Conjunto Renas de Natal em fibra de vidro pintadas à mão - 3 peças em fundo verde estúdio, vista lateral completa por R$ 6.700',
+        caption: 'Vista lateral completa em estúdio verde: as 3 renas de Natal em fibra de vidro pintadas à mão — conjunto por R$ 6.700, pronto para jardim, hall e vitrine no Natal 2026.',
+      },
+      { type: 'heading', text: 'Pintadas à mão: o detalhe que faz o cliente parar, fotografar e querer levar' },
+      {
+        type: 'paragraph',
+        text: 'Na foto de detalhe você vê o que a fibra industrial não entrega: pinceladas que criam volume na pelagem, sombreado no dorso, brilho acetinado da tinta PU automotiva e olhos que parecem acompanhar quem passa. Cada rena recebe pintura manual em camadas — base caramelo, luzes mais claras no peito e ventre, focinho marcado e chifres em tom contrastante. O resultado é hiper-realista na medida certa: encanta criança, emociona adulto e rende foto bonita com ou sem neve artificial, com ou sem pisca.',
+      },
+      {
+        type: 'image',
+        src: '/products/renas-natal-conjunto-pintadas-mao-detalhe.webp',
+        alt: 'Detalhe das Renas de Natal pintadas à mão em fibra de vidro - close da pelagem caramelo e chifres para Natal 2026',
+        caption: 'Close da pintura à mão: pelagem caramelo com sombreado artesanal e chifres expressivos — cada rena do conjunto ganha acabamento manual exclusivo.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Tinta PU + verniz acetinado: brilho suave que reflete luz de pisca-pisca e resiste a sol e chuva sem desbotar.',
+          'Acabamento liso e selado: não infiltra, não mofa, limpa com pano úmido — pronta para ficar na área externa no Natal e depois.',
+          'Conjunto fotografável: as 3 renas juntas contam história de família — ideal para entrada de casa, loja, pousada e condomínio no Natal 2026.',
+          'Pronta para personalizar: aceita laço vermelho, guirlanda no pescoço, luz quente e até plaquinha com nome da família ou da marca.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/products/renas-natal-conjunto-vista-frontal-pintadas-mao.webp',
+        alt: 'Conjunto Renas de Natal em fibra de vidro vista frontal - 3 renas pintadas à mão enfileiradas para decoração de Natal 2026',
+        caption: 'Vista frontal enfileirada: as 3 renas lado a lado mostram proporção familiar — a composição que mais encanta em hall e jardim no Natal.',
+      },
+      { type: 'heading', text: 'Onde usar: do jardim à sala, da vitrine ao hall — decoração que não pede reforma' },
+      {
+        type: 'paragraph',
+        text: 'Estas renas foram pensadas para embelezar muito lugar sem obra. Por serem em fibra de vidro leve e estável, vão do jardim para a sala em minutos: marque a entrada da casa com o trio na grama, receba na varanda gourmet com o filhote à frente, crie ponto focal no hall com as duas maiores ladeando a porta, ou transforme vitrine de loja, recepção de clínica e fachada de restaurante em cenário natalino que faz cliente parar para fotografar. Como resistem a sol e chuva, podem ficar no deck, na área da piscina ou no corredor externo durante todo o ciclo natalino — e depois migram para o canto de leitura, para o jardim seco ou para o quarto infantil como esculturas afetivas o ano inteiro.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Entrada e jardim: trio na grama ou nas pedras com luz quente — boas-vindas natalinas que se vê da rua.',
+          'Hall, sala e varanda: casal ladeando porta ou lareira + filhote ao centro — composição equilibrada que não ocupa corredor.',
+          'Vitrine, loja e restaurante: conjunto fotografável que atrai cliente no Natal 2026 — é só posicionar e ligar o pisca.',
+          'Condomínio, pousada e sítio: decoração externa que aguenta tempo firme e continua bonita após dezembro como escultura de jardim.',
+        ],
+      },
+      { type: 'heading', text: 'Fibra de vidro: leve, resistente e feita para o Natal brasileiro' },
+      {
+        type: 'paragraph',
+        text: 'Diferente de resina frágil ou gesso que esfarela, a fibra de vidro naval deste conjunto é casca leve e selada: pesa cerca de 9 kg o conjunto completo, pode ser carregada por uma pessoa e não exige base especial. A laminação com resina, o refino em massa plástica e a pintura PU com verniz criam pele que não infiltra, não cria limo estrutural e não desbota com sol forte ou chuva de verão — o Natal brasileiro pede isso. É só limpar com pano úmido e guardar coberta após a temporada, ou deixar como decoração permanente na casa.',
+      },
+      {
+        type: 'list',
+        items: [
+          'Núcleo leve + fibra estrutural: 9 kg o trio — leve para o porte, estável para ficar em pé sem chumbar.',
+          'Selada para externo: tinta PU + verniz acetinado anti-UV — resiste a sol e chuva sem pedir verniz anual.',
+          'Não racha, não apodrece: fibra não atrai cupim e não esfarela — dura muitos natais com apenas limpeza simples.',
+          'Produção artesanal no ateliê: modelagem manual, laminação e pintura à mão — cada conjunto com gesto único.',
+        ],
+      },
+      { type: 'heading', text: 'Quanto custa e como garantir seu conjunto para o Natal 2026' },
+      {
+        type: 'paragraph',
+        text: 'O Conjunto Renas de Natal em Fibra de Vidro — 3 peças pintadas à mão — custa R$ 6.700 o conjunto completo. É produção do ateliê, não é obra única 1/1: cada trio é pintado à mão sob encomenda, acompanha orientação do ateliê e pode ser feito na paleta caramelo clássica das fotos ou sob consulta em outra pátina. Para quem busca decoração de Natal 2026 que impressiona na foto, emociona ao vivo e ainda decora a casa o ano todo, é o melhor custo entre impacto e durabilidade em fibra de vidro.',
+      },
+      {
+        type: 'list',
+        items: [
+          'R$ 6.700 o conjunto com 3 renas em fibra de vidro pintadas à mão — pronta entrega sob encomenda para o Natal 2026.',
+          '3 tamanhos familiares: maior ~95 cm, média ~80 cm, filhote ~55 cm — conjunto fotografável que preenche hall e jardim.',
+          'Fibra naval + PU acetinado: leve (~9 kg o trio), resiste a sol e chuva, pode ficar no externo e no interno.',
+          'Garanta na Loja: Conjunto Renas de Natal em Fibra de Vidro — 3 Peças Pintadas à Mão em /loja/renas-natal-conjunto-fibra-vidro-pintadas-mao-6700 — ou fale com o ateliê para encomenda com laço e luz.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'O Natal não precisa de muita coisa — precisa de uma cena que faça a gente parar, sorrir e fotografar. Três renas bem pintadas já são essa cena.',
+        attribution: 'Ateliê',
+      },
+      {
+        type: 'paragraph',
+        text: 'Se você quer um Natal 2026 que se destaca na rua, na vitrine e no feed — e uma decoração que continua linda em janeiro como escultura afetiva para a casa — este conjunto é a escolha. Veja as 3 fotos em estúdio verde e detalhe, imagine o trio na sua entrada com pisca quente e guirlanda vermelha e garanta o seu por R$ 6.700 na loja: /loja/renas-natal-conjunto-fibra-vidro-pintadas-mao-6700. Entrega orientada pelo ateliê, produção artesanal e fibra pronta para sol e chuva. Quando a foto faz querer comprar, é porque a escultura já fez seu trabalho — agora é só levar o Natal para casa.',
+      },
+    ],
+  },
+  {
     id: 'espaco-atelier-fontes-cisnes-golfinhos-pedras-colunas-fernando-quincas',
     slug: 'espaco-atelier-fernando-quincas-fontes-cisnes-golfinhos-pedras-colunas-fibra-de-vidro',
     title: 'Espaço Atelier Fernando Quincas — Fontes com Cisnes, Golfinhos, Pedras e Colunas em Fibra de Vidro',
