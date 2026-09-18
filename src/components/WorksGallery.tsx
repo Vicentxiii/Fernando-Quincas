@@ -43,8 +43,8 @@ export const WorksGallery: React.FC<WorksGalleryProps> = ({
     : ARTWORKS.filter((art) => art.category === activeCategory || (activeCategory === 'MONUMENTAL' && art.isMonumental));
 
   return (
-    <section id="works" className="py-24 sm:py-32 px-6 sm:px-8 md:px-12 bg-[#FAF8F5] text-[#1E1D1A] relative">
-      <div className="max-w-7xl mx-auto">
+    <section id="works" className="py-24 sm:py-32 px-4 sm:px-6 md:px-8 lg:px-12 bg-[#FAF8F5] text-[#1E1D1A] relative w-full overflow-visible">
+      <div className="max-w-7xl mx-auto w-full min-w-0">
         {/* Section Title & Curatorial Statement */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#C8A86B]/25 pb-8 mb-12">
           <div>
@@ -66,15 +66,16 @@ export const WorksGallery: React.FC<WorksGalleryProps> = ({
           </div>
         </div>
 
-        {/* Category Filter Bar — flex-wrap evita corte do "MONUMENTAL" no final; scroll horizontal só em telas médias+ com snap e padding para revelar borda */}
-        <div className="flex flex-wrap sm:flex-nowrap sm:overflow-x-auto gap-2 sm:gap-3 pb-4 mb-14 sm:scrollbar-none sm:snap-x sm:snap-mandatory sm:-mx-6 sm:px-6 md:mx-0 md:px-0">
+        {/* Category Filter Bar — flex-wrap em todas as resoluções garante que MONUMENTAL nunca seja cortado; MONUMENTAL com fonte menor e negrito */}
+        <div className="flex flex-wrap gap-2 sm:gap-3 pb-4 mb-8 sm:mb-14">
           {categories.map((cat) => {
             const isSelected = activeCategory === cat;
+            const isMonumental = cat === 'MONUMENTAL';
             return (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`shrink-0 snap-start px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs tracking-[0.14em] sm:tracking-[0.18em] font-medium transition-all duration-300 uppercase whitespace-nowrap border ${
+                className={`shrink-0 ${isMonumental ? 'px-3 sm:px-4' : 'px-4 sm:px-5'} py-2 sm:py-2.5 rounded-full ${isMonumental ? 'text-[10px] sm:text-[11px] tracking-[0.10em] sm:tracking-[0.12em] font-bold' : 'text-[11px] sm:text-xs tracking-[0.14em] sm:tracking-[0.18em] font-medium'} transition-all duration-300 uppercase whitespace-nowrap border ${
                   isSelected
                     ? 'bg-[#1E1D1A] text-[#FAF8F5] border-[#1E1D1A] shadow-md scale-[1.02]'
                     : 'bg-[#FAF8F5] text-[#2C2A26]/70 border-[#C8A86B]/25 hover:border-[#C8A86B] hover:text-[#1E1D1A]'
@@ -86,18 +87,18 @@ export const WorksGallery: React.FC<WorksGalleryProps> = ({
           })}
         </div>
 
-        {/* Editorial Asymmetric Masonry Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10">
+        {/* Editorial Asymmetric Masonry Grid — gap e altura reduzidos no celular para cards aparecerem por inteiro */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 w-full">
           {filteredArtworks.map((artwork, index) => {
             const isSaved = savedArtworkIds.includes(artwork.id);
             const isDominant = index % 3 === 0;
             const colSpan = isDominant ? 'md:col-span-7' : 'md:col-span-5';
-            const imageHeight = isDominant ? 'h-[440px] sm:h-[540px]' : 'h-[360px] sm:h-[440px]';
+            const imageHeight = isDominant ? 'h-[340px] sm:h-[480px] md:h-[540px]' : 'h-[300px] sm:h-[400px] md:h-[440px]';
 
             return (
               <div
                 key={artwork.id}
-                className={`${colSpan} group flex flex-col justify-between`}
+                className={`${colSpan} group flex flex-col justify-between min-w-0 w-full`}
               >
                 {/* Artwork Image Container */}
                 <div className="relative rounded-2xl overflow-hidden border border-[#C8A86B]/25 bg-[#EAE5D8] shadow-lg transition-all duration-700 group-hover:border-[#C8A86B] group-hover:shadow-2xl">

@@ -157,6 +157,12 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     controls.target.set(0, 0, 0);
     controls.update();
 
+    // Fix mobile scroll: OrbitControls sets touch-action:none which blocks page scroll.
+    // Override to pan-y so vertical swipe scrolls the page; horizontal drag rotates.
+    canvas.style.touchAction = 'pan-y';
+    container.style.touchAction = 'pan-y';
+    (controls as unknown as { domElement: HTMLElement }).domElement.style.touchAction = 'pan-y';
+
     const sphere = new THREE.Group();
     scene.add(sphere);
 
@@ -225,6 +231,9 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     let tween: CameraTween | null = null;
     let downX = 0;
     let downY = 0;
+    let gesture: 'undecided' | 'scroll' | 'drag' = 'undecided';
+    const SCROLL_THRESHOLD = 10;
+    let scrollCleanupTimer: number | null = null;
 
     const updateNdc = (clientX: number, clientY: number) => {
       const rect = canvas.getBoundingClientRect();
@@ -233,6 +242,35 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     };
 
     const handlePointerMove = (event: PointerEvent) => {
+      // Mobile scroll fix: discriminate vertical scroll vs horizontal drag on touch
+      if (event.pointerType === 'touch' && !selected && !tween) {
+        if (gesture === 'undecided') {
+          const dx = Math.abs(event.clientX - downX);
+          const dy = Math.abs(event.clientY - downY);
+          if (dx < SCROLL_THRESHOLD && dy < SCROLL_THRESHOLD) {
+            return;
+          }
+          if (dy > dx) {
+            gesture = 'scroll';
+            // Disable orbit controls for this gesture so page can scroll
+            controls.enabled = false;
+            try {
+              if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+            } catch {}
+            (controls as unknown as { state: number }).state = 0;
+            if (hovered) hovered = null;
+            canvas.style.cursor = 'grab';
+            if (labelRef.current) labelRef.current.style.opacity = '0';
+            return;
+          } else {
+            gesture = 'drag';
+            controls.enabled = true;
+          }
+        } else if (gesture === 'scroll') {
+          return;
+        }
+      }
+
       updateNdc(event.clientX, event.clientY);
       if (selected || tween) {
         if (hovered) hovered = null;
@@ -252,9 +290,26 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     const handlePointerDown = (event: PointerEvent) => {
       downX = event.clientX;
       downY = event.clientY;
+      if (event.pointerType === 'touch') {
+        gesture = 'undecided';
+        if (scrollCleanupTimer !== null) {
+          window.clearTimeout(scrollCleanupTimer);
+          scrollCleanupTimer = null;
+        }
+        if (!selected && !tween) controls.enabled = true;
+      }
     };
 
     const handlePointerUp = (event: PointerEvent) => {
+      if (event.pointerType === 'touch' && gesture === 'scroll') {
+        gesture = 'undecided';
+        scrollCleanupTimer = window.setTimeout(() => {
+          controls.enabled = true;
+          scrollCleanupTimer = null;
+        }, 80);
+        return;
+      }
+      gesture = 'undecided';
       const distance = Math.hypot(event.clientX - downX, event.clientY - downY);
       if (distance > 6) return;
       if (selected || tween || !hovered) return;
@@ -302,6 +357,7 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       canvas.style.cursor = hovered && !selected ? 'pointer' : 'grab';
     };
     const handlePointerLeave = () => {
+      if (gesture === 'scroll') gesture = 'undecided';
       if (!selected) {
         hovered = null;
         canvas.style.cursor = 'grab';
@@ -309,10 +365,20 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
       }
     };
 
+    const handlePointerCancel = () => {
+      gesture = 'undecided';
+      controls.enabled = true;
+      if (scrollCleanupTimer !== null) {
+        window.clearTimeout(scrollCleanupTimer);
+        scrollCleanupTimer = null;
+      }
+    };
+
     canvas.addEventListener('pointermove', handlePointerMove);
     canvas.addEventListener('pointerdown', handlePointerDown);
     canvas.addEventListener('pointerup', handlePointerUp);
     canvas.addEventListener('pointerleave', handlePointerLeave);
+    canvas.addEventListener('pointercancel', handlePointerCancel);
     controls.addEventListener('start', handleControlsStart);
     controls.addEventListener('end', handleControlsEnd);
 
@@ -377,10 +443,12 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     return () => {
       cancelAnimationFrame(rafId);
       resizeObserver.disconnect();
+      if (scrollCleanupTimer !== null) window.clearTimeout(scrollCleanupTimer);
       canvas.removeEventListener('pointermove', handlePointerMove);
       canvas.removeEventListener('pointerdown', handlePointerDown);
       canvas.removeEventListener('pointerup', handlePointerUp);
       canvas.removeEventListener('pointerleave', handlePointerLeave);
+      canvas.removeEventListener('pointercancel', handlePointerCancel);
       controls.removeEventListener('start', handleControlsStart);
       controls.removeEventListener('end', handleControlsEnd);
       controls.dispose();
@@ -415,7 +483,8 @@ export const GlobeFolio: React.FC<GlobeFolioProps> = ({
     <div className="relative pb-10 md:pb-12">
       <div
         ref={containerRef}
-        className="w-full h-[60vh] min-h-[360px] max-h-[520px] md:h-[90vh] md:max-h-[1000px] lg:max-h-[1050px] cursor-grab select-none touch-none"
+        className="w-full h-[60vh] min-h-[360px] max-h-[520px] md:h-[90vh] md:max-h-[1000px] lg:max-h-[1050px] cursor-grab select-none touch-pan-y"
+        style={{ touchAction: 'pan-y' }}
       />
 
       {/* Hover micro-label */}

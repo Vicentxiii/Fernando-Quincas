@@ -499,6 +499,9 @@ export const PRODUCTS: Product[] = [
       '/products/iglu-concreto-peca-real.webp',
       '/products/iglu-concreto-games-room-medidas.webp',
       '/products/iglu-concreto-library-medidas.webp',
+      encodeURI('/products/Iglu 4x4m by fernando quincas fundo verde.png'),
+      encodeURI('/products/Iglu 4x4m by fernando quincas.jpg'),
+      encodeURI('/products/Iglu 4x4m by fernando quincas Multiplos.png'),
     ],
     dimensions: '4,00 × 4,00 m (base) × Alt. 2,85 m — 16 m² (medidas conforme imagem de medidas)',
     materials: [
@@ -562,6 +565,8 @@ export const PRODUCTS: Product[] = [
     ],
     price: 3000,
     images: [
+      encodeURI('/products/Arvore em fibra de vidro para ambientes.jpg'),
+      encodeURI('/products/Arvore de fibra de vidro by Fernando Quincas.jpeg'),
       '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-studio-verde-capa-00.webp',
       '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-com-artista-01.webp',
       '/arvore-seca-4m-fibra-de-vidro-fernando-quincas-escultura-monumental-calcada-frente-02.webp',

@@ -421,6 +421,18 @@ export const BLOG_POSTS: BlogPost[] = [
         caption: 'Ângulo lateral com casal: base 60×60 cm e galhos retorcidos — segundo ângulo da Árvore Seca 4m × 48 kg de Fernando Quincas na calçada.',
       },
       {
+        type: 'image',
+        src: encodeURI('/products/Arvore de fibra de vidro by Fernando Quincas.jpeg'),
+        alt: 'Árvore de fibra de vidro by Fernando Quincas - escultura 4m hiper-realista, tronco retorcido, foto nova do ateliê',
+        caption: 'Foto nova do ateliê: Árvore de fibra de vidro by Fernando Quincas — tronco hiper-realista 4m em fibra de vidro naval, 48 kg, modelada à mão por Fernando Quincas, pronta para sol e chuva.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/products/Arvore em fibra de vidro para ambientes.jpg'),
+        alt: 'Árvore em fibra de vidro para ambientes - escultura 4m de Fernando Quincas em ambiente interno decorado',
+        caption: 'Foto nova — para ambientes: Árvore em fibra de vidro para ambientes — a mesma escultura 4m de Fernando Quincas ambientada em interior, mostra versatilidade para hall, varanda coberta e cenografia.',
+      },
+      {
         type: 'quote',
         text: 'Árvore seca não é árvore morta. É desenho da natureza quando ela decide ser escultura. Minha árvore de fibra tem que fazer sombra sem pedir água.',
         attribution: 'Fernando Quincas',
@@ -450,7 +462,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'R$ 3.000 — árvore seca monumental 4,00 m × 48 kg em fibra de vidro por Fernando Quincas, base 60×60 cm autoportante (versão seca).',
           '48 kg para 4m: leve para monumental — a obra de Fernando Quincas que 2 pessoas instalam sem guindaste.',
           'Fibra naval + pátina tronco seco: hiper-realismo que resiste a sol e chuva — a escultura de Fernando Quincas sem manutenção heroica.',
-          'Encontre na Loja: Árvore Seca 4m em Fibra de Vidro por Fernando Quincas em ESCULTURAS e GARDEN (/loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas) — capa em fundo verde + 6 fotos de calçada, ateliê e escala humana.',
+          'Encontre na Loja: Árvore Seca 4m em Fibra de Vidro por Fernando Quincas em ESCULTURAS e GARDEN (/loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas) — capa em fundo verde + 8 fotos de calçada, ateliê, escala humana e ambientes (2 fotos novas).',
         ],
       },
       { type: 'heading', text: 'História real: folhagem de goiaba em seda para a Gift Fair — 18 mil completa via Treesco para Salvador e Olinda' },
@@ -474,7 +486,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Hoje, a Árvore Seca 4m vive na Loja do ateliê de Fernando Quincas nas categorias ESCULTURAS e GARDEN — encontre em /loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas por R$ 3.000 (seca) e consulte o ateliê para a versão completa com folhagem de goiaba em seda por R$ 18 mil, mesma exposição de 7 fotos: a primeira é a capa em fundo verde de estúdio (foto studio-verde-capa-00) e as demais são a árvore na calçada com Fernando Quincas, a vista frontal, o detalhe dos galhos retorcidos, a árvore ainda bruta no ateliê e as duas escalas humanas com casal. Como toda obra do ateliê, cada árvore 4m é acabada à mão por Fernando Quincas e feita em fibra de vidro naval. Se você busca uma árvore seca monumental, uma árvore artificial 4 metros, uma árvore com folhagem de goiaba em seda, uma escultura em fibra de vidro que pareça madeira seca para Gift Fair, pousada ou fachada em Salvador/Olinda, ou simplesmente uma obra de Fernando Quincas que dê sombra escultural sem quebrar calçada, esta obra é a escolha. A árvore seca 4m em fibra de vidro de 48 kg por Fernando Quincas está pronta para transformar seu jardim — seca por R$ 3.000 ou completa com goiabeira em seda por R$ 18 mil.',
+        text: 'Hoje, a Árvore Seca 4m vive na Loja do ateliê de Fernando Quincas nas categorias ESCULTURAS e GARDEN — encontre em /loja/arvore-seca-4-metros-48kg-fibra-de-vidro-fernando-quincas por R$ 3.000 (seca) e consulte o ateliê para a versão completa com folhagem de goiaba em seda por R$ 18 mil, mesma exposição de 9 fotos: a primeira é a capa em fundo verde de estúdio (foto studio-verde-capa-00), as demais são a árvore na calçada com Fernando Quincas, a vista frontal, o detalhe dos galhos retorcidos, a árvore ainda bruta no ateliê, as duas escalas humanas com casal e as 2 fotos novas — Árvore de fibra de vidro by Fernando Quincas e Árvore em fibra de vidro para ambientes. Como toda obra do ateliê, cada árvore 4m é acabada à mão por Fernando Quincas e feita em fibra de vidro naval. Se você busca uma árvore seca monumental, uma árvore artificial 4 metros, uma árvore com folhagem de goiaba em seda, uma escultura em fibra de vidro que pareça madeira seca para Gift Fair, pousada ou fachada em Salvador/Olinda, ou simplesmente uma obra de Fernando Quincas que dê sombra escultural sem quebrar calçada, esta obra é a escolha. A árvore seca 4m em fibra de vidro de 48 kg por Fernando Quincas está pronta para transformar seu jardim — seca por R$ 3.000 ou completa com goiabeira em seda por R$ 18 mil.',
       },
     ],
   },
@@ -864,6 +876,24 @@ export const BLOG_POSTS: BlogPost[] = [
         src: '/products/iglu-concreto-library-medidas.webp',
         alt: 'Iglu Library 4×4m planta - obra de Fernando Quincas como biblioteca',
         caption: 'Library 4×4m: planta do ateliê — o iglu como biblioteca, obra de Fernando Quincas que vira casa no jardim.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/products/Iglu 4x4m by fernando quincas fundo verde.png'),
+        alt: 'Iglu 4x4m by Fernando Quincas em fundo verde - casca em fibra textura neve e concreto, 4x4m, foto nova do ateliê',
+        caption: 'Foto nova — fundo verde estúdio: Iglu 4×4m by Fernando Quincas — casca escultural em fibra textura neve / concreto, base 4×4m, pronto para jardim, sítio e Airbnb. Mesma matriz Columbia / Campos do Jordão.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/products/Iglu 4x4m by fernando quincas.jpg'),
+        alt: 'Iglu 4x4m by Fernando Quincas - escultura habitável 4x4m com porta em arco, foto nova',
+        caption: 'Foto nova: Iglu 4×4m by Fernando Quincas — vista externa da escultura habitável 4×4m com porta em arco e clarabóia opcional, acabamento do ateliê para sol e chuva.',
+      },
+      {
+        type: 'image',
+        src: encodeURI('/products/Iglu 4x4m by fernando quincas Multiplos.png'),
+        alt: 'Múltiplos Iglus 4x4m by Fernando Quincas - conjunto de iglus para sítio e Airbnb a partir do mesmo molde-mãe',
+        caption: 'Foto nova — múltiplos: Conjunto de Iglus 4×4m by Fernando Quincas — mesma forma do molde-mãe Columbia / Campos do Jordão replicada em concreto, fibra, gesso ou bio-construção. Ideal para montar vila de iglus com Wi-Fi e alugar para dormir — R$ 28.000 cada em quantidade na versão concreto.',
       },
       {
         type: 'quote',
