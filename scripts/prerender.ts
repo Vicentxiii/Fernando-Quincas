@@ -340,13 +340,15 @@ async function generate() {
     },
   });
 
-  // ── BLOG POSTS ──
+  // ── BLOG POSTS ── (inclui carousel para GEO/SEO)
   for (const post of BLOG_POSTS) {
     const url = `${SITE_URL}/blog/${post.slug}`;
     const fullTitle = post.title.includes('Fernando Quincas') ? post.title : `${post.title} | Fernando Quincas`;
     const absCover = post.coverImage.startsWith('http') ? post.coverImage : `${SITE_URL}${post.coverImage}`;
     const imageBlocks = post.blocks.filter((b) => (b as any).type === 'image') as any[];
-    const images = [absCover, ...imageBlocks.map((b) => (b.src.startsWith('http') ? b.src : `${SITE_URL}${b.src}`))];
+    const carouselBlocks = post.blocks.filter((b) => (b as any).type === 'carousel') as any[];
+    const carouselImages: string[] = carouselBlocks.flatMap((b: any) => (b.images || []).map((img: any) => (img.src.startsWith('http') ? img.src : `${SITE_URL}${img.src}`)));
+    const images = [absCover, ...imageBlocks.map((b) => (b.src.startsWith('http') ? b.src : `${SITE_URL}${b.src}`)), ...carouselImages];
 
     const blogPostingLd = {
       '@context': 'https://schema.org',

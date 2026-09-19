@@ -58,14 +58,16 @@ async function generate() {
   // Blog
   xml += `  <url>\n    <loc>${SITE_URL}/blog</loc>\n    <lastmod>${formatLastMod(BLOG_POSTS[0]?.date)}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n${imageEntries(BLOG_POSTS.slice(0, 3).map((p) => p.coverImage))}\n  </url>\n`;
 
-  // Blog posts - ordena por date desc para priority
+  // Blog posts - ordena por date desc para priority (inclui carousel para indexação)
   const sortedBlog = [...BLOG_POSTS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   for (const post of sortedBlog) {
     const lastmod = formatLastMod(post.date);
     const priority = post.featured ? '0.9' : '0.7';
     const changefreq = 'monthly';
     const imageBlock = post.blocks.filter((b: any) => b.type === 'image').slice(0, 2) as any[];
-    const images = [post.coverImage, ...imageBlock.map((b) => b.src)];
+    const carouselBlocks = post.blocks.filter((b: any) => b.type === 'carousel') as any[];
+    const carouselImgs: string[] = carouselBlocks.flatMap((b: any) => (b.images || []).slice(0, 1).map((img: any) => img.src));
+    const images = [post.coverImage, ...imageBlock.map((b) => b.src), ...carouselImgs].slice(0, 3);
     xml += `  <url>\n    <loc>${SITE_URL}/blog/${esc(post.slug)}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n${imageEntries(images, post.title)}\n  </url>\n`;
   }
 

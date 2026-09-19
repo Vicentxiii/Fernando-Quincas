@@ -131,6 +131,7 @@ export type BlogBlock =
   | { type: 'subheading'; text: string }
   | { type: 'quote'; text: string; attribution?: string }
   | { type: 'image'; src: string; alt: string; caption?: string }
+  | { type: 'carousel'; images: { src: string; alt: string; caption?: string }[] }
   | { type: 'list'; items: string[] };
 
 export interface BlogPost {

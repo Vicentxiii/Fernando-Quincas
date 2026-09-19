@@ -1,9 +1,117 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Clock, CalendarDays, User, Quote, Sparkles, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, CalendarDays, User, Quote, Sparkles, ArrowUpRight, ChevronLeft, ChevronRight, Images } from 'lucide-react';
 import { BLOG_CATEGORY_LABELS, BLOG_POSTS } from '../data/blog';
 import { BlogBlock } from '../types';
 import { BlogCard } from '../components/blog/BlogCard';
+
+const BlogCarousel: React.FC<{ images: { src: string; alt: string; caption?: string }[] }> = ({ images }) => {
+  const [index, setIndex] = useState(0);
+  const total = images.length;
+  const goPrev = useCallback(() => setIndex((i) => (i - 1 + total) % total), [total]);
+  const goNext = useCallback(() => setIndex((i) => (i + 1) % total), [total]);
+
+  // touch swipe
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => setTouchStart(e.touches[0].clientX);
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart === null) return;
+    const diff = e.changedTouches[0].clientX - touchStart;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) goPrev(); else goNext();
+    }
+    setTouchStart(null);
+  };
+
+  if (total === 0) return null;
+  const current = images[index];
+  return (
+    <div className="space-y-3">
+      <div
+        className="relative rounded-2xl overflow-hidden border border-[#C8A86B]/30 bg-[#EAE5D8] group"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
+        {/* image */}
+        <div className="relative aspect-[4/3] sm:aspect-[16/10] bg-[#EAE5D8] overflow-hidden">
+          <img
+            key={current.src}
+            src={current.src}
+            alt={current.alt}
+            loading={index === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            className="w-full h-full object-cover select-none"
+            draggable={false}
+          />
+          {/* gradient caption bar */}
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent pt-12 pb-4 px-4 sm:px-6 pointer-events-none">
+            {current.caption && (
+              <p className="text-[11px] sm:text-xs font-serif italic text-white/95 leading-snug max-w-3xl line-clamp-2">
+                {current.caption}
+              </p>
+            )}
+          </div>
+          {/* nav buttons */}
+          <button
+            onClick={goPrev}
+            aria-label="Imagem anterior"
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-[#C8A86B]/20 flex items-center justify-center text-[#1E1D1A] hover:bg-[#1E1D1A] hover:text-white transition-colors shadow-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={goNext}
+            aria-label="Próxima imagem"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-[#C8A86B]/20 flex items-center justify-center text-[#1E1D1A] hover:bg-[#1E1D1A] hover:text-white transition-colors shadow-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+          {/* counter */}
+          <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#1E1D1A]/80 backdrop-blur-md text-white text-[10px] font-mono tracking-widest border border-[#C8A86B]/20">
+            {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
+          </div>
+          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#E0C995] text-[#1E1D1A] text-[9px] font-mono font-bold tracking-[0.2em] uppercase flex items-center gap-1.5">
+            <Images className="w-3 h-3" /> Galeria
+          </div>
+        </div>
+      </div>
+      {/* dots */}
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex flex-wrap gap-1.5 justify-center flex-1">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Ir para imagem ${i + 1}`}
+              className={`h-1.5 rounded-full transition-all duration-300 ${i === index ? 'w-6 bg-[#C8A86B]' : 'w-1.5 bg-[#C8A86B]/30 hover:bg-[#C8A86B]/60'}`}
+            />
+          ))}
+        </div>
+        <span className="text-[10px] font-mono text-[#8A82A5] shrink-0 hidden sm:block">
+          Toque ou use as setas • {total} fotos
+        </span>
+      </div>
+      {/* thumbnails strip - desktop */}
+      <div className="hidden sm:grid grid-cols-6 lg:grid-cols-8 gap-2 pt-1">
+        {images.slice(0, 16).map((img, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`relative aspect-[4/3] rounded-lg overflow-hidden border-2 transition-all ${i === index ? 'border-[#C8A86B] shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
+            aria-label={`Miniatura ${i + 1}`}
+          >
+            <img src={img.src} alt="" loading="lazy" className="w-full h-full object-cover" />
+          </button>
+        ))}
+        {total > 16 && (
+          <div className="aspect-[4/3] rounded-lg bg-[#F0ECE1] border border-[#C8A86B]/20 flex items-center justify-center text-[11px] font-mono text-[#8A82A5]">
+            +{total - 16}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const SITE_URL = 'https://fernandoquincas.com.br';
 
@@ -52,6 +160,8 @@ const BlockRenderer: React.FC<{ block: BlogBlock }> = ({ block }) => {
             <img
               src={block.src}
               alt={block.alt}
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-cover"
             />
           </div>
@@ -62,6 +172,8 @@ const BlockRenderer: React.FC<{ block: BlogBlock }> = ({ block }) => {
           )}
         </figure>
       );
+    case 'carousel':
+      return <BlogCarousel images={block.images} />;
     case 'list':
       return (
         <ul className="space-y-2 pl-1">
@@ -121,7 +233,9 @@ export const BlogPostPage: React.FC = () => {
     canonical.setAttribute('href', url);
 
     const imageBlocks = post.blocks.filter((b) => b.type === 'image') as Extract<BlogBlock, { type: 'image' }>[];
-    const images = [post.coverImage, ...imageBlocks.map((b) => b.src)].map((src) => (src.startsWith('http') ? src : `${SITE_URL}${src}`));
+    const carouselBlocks = post.blocks.filter((b) => b.type === 'carousel') as Extract<BlogBlock, { type: 'carousel' }>[];
+    const carouselSrcs = carouselBlocks.flatMap((b) => b.images.map((img) => img.src));
+    const images = [post.coverImage, ...imageBlocks.map((b) => b.src), ...carouselSrcs].map((src) => (src.startsWith('http') ? src : `${SITE_URL}${src}`));
 
     const jsonLd = {
       '@context': 'https://schema.org',
