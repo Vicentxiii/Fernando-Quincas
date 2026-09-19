@@ -1,113 +1,32 @@
-import React, { useEffect, useMemo, useState, useCallback } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Clock, CalendarDays, User, Quote, Sparkles, ArrowUpRight, ChevronLeft, ChevronRight, Images } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, CalendarDays, User, Quote, Sparkles, ArrowUpRight } from 'lucide-react';
 import { BLOG_CATEGORY_LABELS, BLOG_POSTS } from '../data/blog';
 import { BlogBlock } from '../types';
 import { BlogCard } from '../components/blog/BlogCard';
+import { HoverExpand_001 } from '../components/ui/skiper-ui/skiper52';
 
+// Skiper52 — ExpandOnHover para o post da Alemanha: mesmas fotos, somente o efeito — expandido horizontalmente e destacado
 const BlogCarousel: React.FC<{ images: { src: string; alt: string; caption?: string }[] }> = ({ images }) => {
-  const [index, setIndex] = useState(0);
-  const total = images.length;
-  const goPrev = useCallback(() => setIndex((i) => (i - 1 + total) % total), [total]);
-  const goNext = useCallback(() => setIndex((i) => (i + 1) % total), [total]);
-
-  // touch swipe
-  const [touchStart, setTouchStart] = useState<number | null>(null);
-  const onTouchStart = (e: React.TouchEvent) => setTouchStart(e.touches[0].clientX);
-  const onTouchEnd = (e: React.TouchEvent) => {
-    if (touchStart === null) return;
-    const diff = e.changedTouches[0].clientX - touchStart;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) goPrev(); else goNext();
-    }
-    setTouchStart(null);
-  };
-
-  if (total === 0) return null;
-  const current = images[index];
+  if (!images.length) return null;
+  const mapped = images.map((img, i) => ({
+    src: img.src,
+    alt: img.alt,
+    code: `#${String(i + 1).padStart(2, '0')}`,
+    caption: img.caption || img.alt,
+  }));
   return (
-    <div className="space-y-3">
-      <div
-        className="relative rounded-2xl overflow-hidden border border-[#C8A86B]/30 bg-[#EAE5D8] group"
-        onTouchStart={onTouchStart}
-        onTouchEnd={onTouchEnd}
-      >
-        {/* image */}
-        <div className="relative aspect-[4/3] sm:aspect-[16/10] bg-[#EAE5D8] overflow-hidden">
-          <img
-            key={current.src}
-            src={current.src}
-            alt={current.alt}
-            loading={index === 0 ? 'eager' : 'lazy'}
-            decoding="async"
-            className="w-full h-full object-cover select-none"
-            draggable={false}
-          />
-          {/* gradient caption bar */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent pt-12 pb-4 px-4 sm:px-6 pointer-events-none">
-            {current.caption && (
-              <p className="text-[11px] sm:text-xs font-serif italic text-white/95 leading-snug max-w-3xl line-clamp-2">
-                {current.caption}
-              </p>
-            )}
-          </div>
-          {/* nav buttons */}
-          <button
-            onClick={goPrev}
-            aria-label="Imagem anterior"
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-[#C8A86B]/20 flex items-center justify-center text-[#1E1D1A] hover:bg-[#1E1D1A] hover:text-white transition-colors shadow-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={goNext}
-            aria-label="Próxima imagem"
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-[#C8A86B]/20 flex items-center justify-center text-[#1E1D1A] hover:bg-[#1E1D1A] hover:text-white transition-colors shadow-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-          {/* counter */}
-          <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#1E1D1A]/80 backdrop-blur-md text-white text-[10px] font-mono tracking-widest border border-[#C8A86B]/20">
-            {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
-          </div>
-          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#E0C995] text-[#1E1D1A] text-[9px] font-mono font-bold tracking-[0.2em] uppercase flex items-center gap-1.5">
-            <Images className="w-3 h-3" /> Galeria
-          </div>
+    <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen max-w-none bg-[#F5F2EB] border-y border-[#C8A86B]/25 py-6 sm:py-8 my-8 shadow-[inset_0_1px_0_rgba(200,168,107,0.15),inset_0_-1px_0_rgba(200,168,107,0.15)]">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8">
+        <div className="flex items-center justify-between mb-3 px-1">
+          <h3 className="text-[11px] font-mono tracking-[0.2em] uppercase text-[#1E1D1A]/60">
+            Galeria — 36 fotos em WEBP otimizadas
+          </h3>
+          <span className="hidden sm:inline text-[10px] font-mono text-[#8A82A5]">Use as setas ao lado para navegar • Passe o mouse para expandir</span>
         </div>
-      </div>
-      {/* dots */}
-      <div className="flex items-center justify-between gap-3">
-        <div className="flex flex-wrap gap-1.5 justify-center flex-1">
-          {images.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIndex(i)}
-              aria-label={`Ir para imagem ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-300 ${i === index ? 'w-6 bg-[#C8A86B]' : 'w-1.5 bg-[#C8A86B]/30 hover:bg-[#C8A86B]/60'}`}
-            />
-          ))}
+        <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#FAF8F5] p-2 sm:p-3 shadow-sm overflow-hidden">
+          <HoverExpand_001 images={mapped} className="w-full" />
         </div>
-        <span className="text-[10px] font-mono text-[#8A82A5] shrink-0 hidden sm:block">
-          Toque ou use as setas • {total} fotos
-        </span>
-      </div>
-      {/* thumbnails strip - desktop */}
-      <div className="hidden sm:grid grid-cols-6 lg:grid-cols-8 gap-2 pt-1">
-        {images.slice(0, 16).map((img, i) => (
-          <button
-            key={i}
-            onClick={() => setIndex(i)}
-            className={`relative aspect-[4/3] rounded-lg overflow-hidden border-2 transition-all ${i === index ? 'border-[#C8A86B] shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
-            aria-label={`Miniatura ${i + 1}`}
-          >
-            <img src={img.src} alt="" loading="lazy" className="w-full h-full object-cover" />
-          </button>
-        ))}
-        {total > 16 && (
-          <div className="aspect-[4/3] rounded-lg bg-[#F0ECE1] border border-[#C8A86B]/20 flex items-center justify-center text-[11px] font-mono text-[#8A82A5]">
-            +{total - 16}
-          </div>
-        )}
       </div>
     </div>
   );
