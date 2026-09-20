@@ -127,6 +127,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
         </div>
 
+        {/* Created by — artisan credit */}
+        <div className="pt-6 border-t border-[#FAF8F5]/5 text-center text-[10px] sm:text-[11px] font-mono tracking-wide text-[#FAF8F5]/35">
+          Created by{' '}
+          <a
+            href="https://www.instagram.com/vicenteczar.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FAF8F5]/60 hover:text-[#E0C995] transition-colors underline underline-offset-4 decoration-[#C8A86B]/40"
+          >
+            @vicenteczar.dev
+          </a>{' '}
+          an digital artisan from{' '}
+          <a
+            href="https://transcentacademy.com.br/transcentdigital"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FAF8F5]/60 hover:text-[#E0C995] transition-colors underline underline-offset-4 decoration-[#C8A86B]/40"
+          >
+            Transcent digital
+          </a>
+        </div>
+
         {/* Back to Top */}
         <div className="flex justify-center pt-12">
           <button
