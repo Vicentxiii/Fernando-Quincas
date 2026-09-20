@@ -1,5 +1,5 @@
 import pathlib, re, json
-p = pathlib.Path(r"D:\czar III\TRABALHO . CLIENTES\Fernand aprisco\Fernando-Quincas\dist\blog\aprisco-didatico-intercambio-alemanha-escola-waldorf-fazenda-adolfo-holf-bauru-ava\index.html")
+p = pathlib.Path(r"D:\czar III\TRABALHO . CLIENTES\Fernand aprisco\Fernando-Quincas\dist\blog\aprisco-didatico-intercambio-alemanha-escola-waldorf-fazenda-adolphshof-bauru-ava\index.html")
 html = p.read_text(encoding='utf-8')
 title = re.search(r'<title>(.*?)</title>', html, re.S).group(1)
 desc = re.search(r'<meta name="description" content="(.*?)"', html).group(1)

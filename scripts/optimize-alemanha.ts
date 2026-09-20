@@ -10,7 +10,7 @@ const INPUT_DIRS = [
   path.join(root, 'public/Alemanha'),
   path.join(root, 'public/Aprisco didatico'),
 ];
-const OUTPUT_DIR = path.join(root, 'public/blog/intercambio-alemanha-waldorf-adolfo-holf');
+const OUTPUT_DIR = path.join(root, 'public/blog/intercambio-alemanha-waldorf-adolphshof');
 
 function slugify(name: string): string {
   const base = name.replace(/\.[^.]+$/, '');
@@ -67,13 +67,13 @@ async function run() {
   }
   console.log(`[optimize] Concluído: ${outputs.length} webp`);
   console.log(`[optimize] Total: ${Math.round(totalIn/1024)}KB -> ${Math.round(totalOut/1024)}KB  saving ${Math.round(100*(1-totalOut/totalIn))}%`);
-  console.log(`[optimize] Pasta: public/blog/intercambio-alemanha-waldorf-adolfo-holf/`);
+  console.log(`[optimize] Pasta: public/blog/intercambio-alemanha-waldorf-adolphshof/`);
 
   // generate manifest json for blog.ts usage
   const manifestPath = path.join(OUTPUT_DIR, 'manifest.json');
   const manifest = outputs.map(o => ({
     original: path.basename(o.src),
-    webp: `/blog/intercambio-alemanha-waldorf-adolfo-holf/${path.basename(o.dest)}`,
+    webp: `/blog/intercambio-alemanha-waldorf-adolphshof/${path.basename(o.dest)}`,
     slug: o.slug
   }));
   await import('fs/promises').then(m => m.writeFile(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8'));

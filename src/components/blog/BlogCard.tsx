@@ -6,9 +6,56 @@ import { BLOG_CATEGORY_LABELS } from '../../data/blog';
 
 interface BlogCardProps {
   post: BlogPost;
+  variant?: 'default' | 'compact';
 }
 
-export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
+export const BlogCard: React.FC<BlogCardProps> = ({ post, variant = 'default' }) => {
+  if (variant === 'compact') {
+    return (
+      <Link
+        to={`/blog/${post.slug}`}
+        className="group flex flex-col rounded-xl border border-[#C8A86B]/25 bg-[#FAF8F5] overflow-hidden hover:shadow-md hover:border-[#C8A86B]/50 transition-all duration-300"
+      >
+        <div className="relative h-28 sm:h-32 overflow-hidden bg-[#EAE5D8]">
+          <img
+            src={post.coverImage}
+            alt={`${post.title} — ${BLOG_CATEGORY_LABELS[post.category]} por Fernando Quincas`}
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="210"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+          <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-[#1E1D1A]/85 backdrop-blur-md text-[#E0C995] text-[8px] font-mono uppercase tracking-widest border border-[#C8A86B]/30">
+            {BLOG_CATEGORY_LABELS[post.category]}
+          </div>
+        </div>
+
+        <div className="p-3.5 flex flex-col flex-1 space-y-2">
+          <div className="flex items-center gap-1.5 text-[9px] font-mono text-[#8A82A5] uppercase tracking-wider">
+            <span>{new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
+            <span>•</span>
+            <span className="inline-flex items-center gap-1">
+              <Clock className="w-3 h-3" />
+              {post.readingTimeMinutes} min
+            </span>
+          </div>
+
+          <h3 className="font-sans text-[13px] sm:text-[14px] font-semibold text-[#1E1D1A] group-hover:text-[#C8A86B] transition-colors leading-snug tracking-tight normal-case line-clamp-3">
+            {post.title}
+          </h3>
+
+          <div className="pt-2 flex items-center justify-end">
+            <span className="inline-flex items-center gap-1 text-[10px] font-mono tracking-widest uppercase text-[#C8A86B]">
+              <span>Ler</span>
+              <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </span>
+          </div>
+        </div>
+      </Link>
+    );
+  }
+
   return (
     <Link
       to={`/blog/${post.slug}`}

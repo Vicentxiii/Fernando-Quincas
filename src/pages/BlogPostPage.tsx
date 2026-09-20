@@ -381,17 +381,20 @@ export const BlogPostPage: React.FC = () => {
           )}
         </nav>
 
-        {/* Related Posts */}
+        {/* Related Posts — compact */}
         {relatedPosts.length > 0 && (
-          <section className="pt-16 space-y-6">
-            <div className="border-b border-[#C8A86B]/20 pb-4">
-              <h3 className="font-sans text-xl sm:text-2xl font-semibold text-[#1E1D1A] tracking-tight">
+          <section className="pt-10 sm:pt-12 space-y-4">
+            <div className="flex items-baseline justify-between border-b border-[#C8A86B]/15 pb-3">
+              <h3 className="font-sans text-base sm:text-lg font-semibold text-[#1E1D1A] tracking-tight">
                 Leituras Relacionadas
               </h3>
+              <span className="hidden sm:inline text-[10px] font-mono tracking-widest uppercase text-[#8A82A5]">
+                Continue explorando
+              </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5">
               {relatedPosts.map((p) => (
-                <BlogCard key={p.id} post={p} />
+                <BlogCard key={p.id} post={p} variant="compact" />
               ))}
             </div>
           </section>
