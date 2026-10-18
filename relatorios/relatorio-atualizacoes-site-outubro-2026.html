@@ -1,0 +1,766 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Relatório de Atualizações do Site — Fernando Quincas</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 14mm 18mm 14mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1E1D1A;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ---------- MARCA / CABECALHO ---------- */
+  .marca {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 5mm; margin-bottom: 6mm;
+  }
+  .marca-esq { display: flex; align-items: center; gap: 3.5mm; }
+  .marca img.logo-transcent { width: 13mm; display: block; }
+  .marca .transcent-txt {
+    font-size: 11pt; font-weight: 700; letter-spacing: 0.3px;
+    color: #16251E; line-height: 1.15;
+  }
+  .marca .transcent-sub {
+    font-size: 6.6pt; color: #8A82A5; text-transform: uppercase;
+    letter-spacing: 1.4px; margin-top: 0.6mm;
+  }
+  .marca-dir { text-align: right; font-size: 8pt; color: #6B6862; line-height: 1.45; }
+
+  .selo-ag {
+    display: inline-flex; align-items: center; gap: 3mm;
+    background: #F5F2EB; border: 1px solid #E2DDD2;
+    border-radius: 2mm; padding: 2.5mm 4mm; margin-bottom: 6mm;
+    text-decoration: none;
+  }
+  .selo-ag img { height: 5mm; width: auto; display: block; }
+  .selo-ag .txt { font-size: 9.5pt; color: #1E1D1A; line-height: 1.3; }
+  .selo-ag .txt b { display: block; font-size: 7pt; text-transform: uppercase; letter-spacing: 1px; color: #A8873E; margin-bottom: 0.8mm; }
+
+  /* ---------- CAPA ---------- */
+  .capa {
+    height: 247mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    padding: 4mm 4mm 3mm 4mm;
+  }
+  .capa-top { border-left: 5px solid #C8A86B; padding-left: 8mm; }
+  .selo {
+    font-size: 8.5pt; letter-spacing: 2.5px; text-transform: uppercase;
+    color: #A8873E; font-weight: 700; margin-bottom: 4mm;
+  }
+  .capa h1 {
+    font-size: 27pt; line-height: 1.14; font-weight: 700;
+    margin: 0 0 4mm 0; letter-spacing: -0.4px;
+  }
+  .capa h1 em { font-style: normal; color: #A8873E; }
+  .subtitulo { font-size: 11.5pt; color: #55534E; line-height: 1.45; margin: 0; max-width: 140mm; }
+
+  .capa-meio { margin: 8mm 0; }
+  .kpis { display: flex; gap: 4mm; margin-bottom: 5mm; }
+  .kpi {
+    flex: 1; background: #16251E; color: #F5F2EB;
+    border-radius: 3mm; padding: 5mm 4mm; text-align: center;
+  }
+  .kpi .n { font-size: 23pt; font-weight: 700; line-height: 1; color: #E0C995; }
+  .kpi .r { font-size: 7.6pt; margin-top: 2mm; color: #CFCAC0; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.6px; }
+
+  .capa-baixo { border-top: 1px solid #DDD8CE; padding-top: 4mm; font-size: 9pt; color: #6B6862; }
+  .capa-baixo strong { color: #1E1D1A; }
+
+  /* ---------- ESTRUTURA ---------- */
+  h2.secao {
+    font-size: 15pt; font-weight: 700; margin: 0 0 4mm 0;
+    padding-bottom: 2.5mm; border-bottom: 2px solid #16251E;
+    page-break-after: avoid;
+  }
+  h3.sub {
+    font-size: 11.5pt; font-weight: 700; margin: 6mm 0 2.5mm 0;
+    color: #16251E; page-break-after: avoid;
+  }
+  p { margin: 0 0 3mm 0; text-align: justify; }
+  .lead { font-size: 11pt; color: #45433E; margin-bottom: 5mm; }
+
+  .quebra { page-break-before: always; }
+
+  /* ---------- POSTS ---------- */
+  .post {
+    border: 1px solid #E2DDD2; border-radius: 2.5mm;
+    padding: 4mm 5mm; margin-bottom: 4mm; page-break-inside: avoid;
+  }
+  .post-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 4mm; }
+  .post h4 { font-size: 11.5pt; font-weight: 700; margin: 0 0 1.5mm 0; line-height: 1.35; }
+  .cat {
+    display: inline-block; font-size: 7pt; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; background: #16251E; color: #E0C995;
+    padding: 1mm 2.5mm; border-radius: 1.5mm; margin-bottom: 2mm;
+  }
+  .cat.destaque { background: #A8873E; color: #fff; }
+  .url {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 7.5pt; color: #8A82A5; word-break: break-all;
+    background: #F7F5F1; padding: 1.5mm 2mm; border-radius: 1.5mm;
+    margin: 2mm 0 2.5mm 0;
+  }
+  .post p { font-size: 9.5pt; margin: 0 0 2.5mm 0; }
+  .tags { font-size: 8pt; color: #6B6862; line-height: 1.5; }
+  .tags b { color: #1E1D1A; }
+
+  /* ---------- TABELA ---------- */
+  table { width: 100%; border-collapse: collapse; margin: 3mm 0 5mm 0; font-size: 9.5pt; }
+  th {
+    background: #16251E; color: #E0C995; text-align: left;
+    padding: 2.5mm 3mm; font-size: 8pt; text-transform: uppercase;
+    letter-spacing: 1px; font-weight: 700;
+  }
+  td { padding: 2.5mm 3mm; border-bottom: 1px solid #E8E4DB; vertical-align: top; }
+  tr:nth-child(even) td { background: #FAF9F6; }
+  .num { text-align: right; font-weight: 700; color: #16251E; white-space: nowrap; }
+
+  ul { margin: 2mm 0 4mm 0; padding-left: 5mm; }
+  li { margin-bottom: 1.8mm; }
+
+  .destaque-box {
+    background: #F5F2EB; border-left: 4px solid #C8A86B;
+    padding: 4mm 5mm; border-radius: 0 2mm 2mm 0; margin: 4mm 0 5mm 0;
+  }
+  .destaque-box p { margin: 0; font-size: 10pt; }
+  .destaque-box p:last-child { margin-bottom: 0; }
+
+  .rodape-nota {
+    margin-top: 6mm; padding-top: 3mm; border-top: 1px solid #E2DDD2;
+    font-size: 8.5pt; color: #6B6862; font-style: italic;
+  }
+
+  /* ---------- RANKING ---------- */
+  .ranking {
+    display: flex; gap: 4mm; margin: 4mm 0 5mm 0;
+  }
+  .rk {
+    flex: 1; border: 1px solid #E2DDD2; border-radius: 2.5mm;
+    padding: 5mm 5mm 4mm 5mm; background: #FAF9F6;
+  }
+  .rk .topo { display: flex; align-items: center; gap: 2.5mm; margin-bottom: 3mm; }
+  .rk .topo img { height: 4.5mm; width: auto; display: block; }
+  .rk .topo .fonte { font-size: 7pt; text-transform: uppercase; letter-spacing: 1.2px; color: #8A82A5; }
+  .rk .pos {
+    font-size: 22pt; font-weight: 700; color: #16251E; line-height: 1; margin-bottom: 1.5mm;
+  }
+  .rk .pos span { font-size: 11pt; color: #A8873E; font-weight: 700; }
+  .rk .desc { font-size: 9pt; color: #45433E; line-height: 1.45; }
+
+  /* ---------- AUTORIA ---------- */
+  .autoria {
+    display: flex; gap: 4mm; align-items: center;
+    background: #16251E; border-radius: 2.5mm; padding: 4mm 5mm; margin: 4mm 0;
+  }
+  .autoria-dir { flex: 1; color: #F5F2EB; }
+  .autoria-dir .rot {
+    font-size: 7.2pt; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #C8A86B; margin-bottom: 1.5mm;
+  }
+  .autoria-dir .nome { font-size: 12pt; font-weight: 700; line-height: 1.25; }
+  .autoria-dir .nome a { color: #E0C995; text-decoration: none; }
+  .autoria-dir .papel { font-size: 8.5pt; color: #CFCAC0; margin-top: 1.5mm; line-height: 1.4; }
+  .redes { display: flex; gap: 4mm; align-items: center; }
+  .rede { display: block; text-decoration: none; text-align: center; }
+  .rede img { height: 9mm; width: 9mm; display: block; margin: 0 auto 1mm auto; }
+  .rede .rot {
+    font-size: 6.2pt; text-transform: uppercase; letter-spacing: 0.8px;
+    color: #CFCAC0; display: block;
+  }
+
+  /* ---------- QR ---------- */
+  .qrs { display: flex; gap: 4mm; margin: 4mm 0 5mm 0; }
+  .qr {
+    flex: 1; text-align: center; border: 1px solid #E2DDD2;
+    border-radius: 2.5mm; padding: 4mm 3mm 3.5mm 3mm; background: #FAF9F6;
+  }
+  .qr img { width: 26mm; height: 26mm; display: block; margin: 0 auto 2mm auto; }
+  .qr .rot {
+    font-size: 7pt; text-transform: uppercase; letter-spacing: 1px;
+    color: #8A82A5; margin-bottom: 1mm;
+  }
+  .qr a { font-size: 7.5pt; color: #16251E; text-decoration: none; word-break: break-all; line-height: 1.3; display: block; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="capa">
+  <!-- CABECALHO: MARCA -->
+  <div class="marca">
+    <div class="marca-esq">
+      <img class="logo-transcent" src="assets/logo-transcent.png" alt="Transcent Digital" />
+      <div>
+        <div class="transcent-txt">Transcent Digital</div>
+        <div class="transcent-sub">Artesanato Digital</div>
+      </div>
+    </div>
+    <div class="marca-dir">
+      Relatório nº 01 &nbsp;·&nbsp; Outubro de 2026<br />
+      Confidencial
+    </div>
+  </div>
+
+  <div class="capa-top">
+    <div class="selo">Relatório de Atualizações</div>
+    <h1>Cinco novos posts<br>e dois novos produtos<br><em>no site</em></h1>
+    <p class="subtitulo">
+      Atualização do período de outubro de 2026: publicação de conteúdo para o blog,
+      abertura de dois produtos na loja virtual e otimização de todo o material fotográfico
+      recebido — com foco em posicionamento para busca e velocidade de carregamento.
+    </p>
+  </div>
+
+  <div class="capa-meio">
+    <div class="kpis">
+      <div class="kpi"><div class="n">5</div><div class="r">Posts publicados</div></div>
+      <div class="kpi"><div class="n">2</div><div class="r">Produtos na loja</div></div>
+      <div class="kpi"><div class="n">58</div><div class="r">Fotos otimizadas</div></div>
+      <div class="kpi"><div class="n">79%</div><div class="r">Redução de peso</div></div>
+    </div>
+
+    <!-- SELO DE POSICIONAMENTO -->
+    <a class="selo-ag" href="https://fernandoquincas.com.br">
+      <img src="assets/logo-google.png" alt="Google" />
+      <span class="txt">
+        <b>Posicionamento atual</b>
+        Nome <strong>Fernando Quincas</strong> em 1º lugar nas buscas do Google, com ranking também
+        preservado nos resultados gerados por IAs
+      </span>
+    </a>
+  </div>
+
+  <div class="capa-baixo">
+    <div class="autoria">
+      <div class="autoria-dir">
+        <div class="rot">Atualizações realizadas por</div>
+        <div class="nome">Artesanato digital&nbsp;
+          <a href="https://www.instagram.com/vicenteczar.dev/">@vicenteczar.dev</a>
+        </div>
+        <div class="papel">Transcent Digital — estratégia, conteúdo, SEO e performance</div>
+      </div>
+      <div class="redes">
+        <a class="rede" href="https://www.instagram.com/vicenteczar.dev/">
+          <img src="assets/logo-instagram.png" alt="Instagram" />
+          <span class="rot">Instagram</span>
+        </a>
+        <a class="rede" href="https://www.linkedin.com/in/vicenteczar/">
+          <img src="assets/logo-linkedin.png" alt="LinkedIn" />
+          <span class="rot">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+    <p style="margin:2.5mm 0 1.5mm 0;">
+      <strong>Ateliê Fernando Quincas</strong> — Escultor &amp; Mestre Artesão
+    </p>
+    <p style="margin:0 0 1.5mm 0;">Site: <a href="https://fernandoquincas.com.br" style="color:#6B6862;">fernandoquincas.com.br</a></p>
+    <p style="margin:0;">
+      <a href="https://transcentacademy.com.br/transcentdigital" style="color:#A8873E; font-weight:700;">
+        transcentacademy.com.br/transcentdigital
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ================= RANKING ================= -->
+<section class="quebra">
+  <h2 class="secao">1. Posicionamento atual nas buscas</h2>
+
+  <p class="lead">
+    Antes mesmo das atualizações deste período, o trabalho de posicionamento já estava
+    consolidado. Este é o ponto de partida — e o que precisa ser preservado.
+  </p>
+
+  <div class="ranking">
+    <div class="rk">
+      <div class="topo">
+        <img src="assets/logo-google.png" alt="Google" />
+        <span class="fonte">Busca tradicional</span>
+      </div>
+      <div class="pos">1º <span>lugar</span></div>
+      <div class="desc">
+        O nome <strong>Fernando Quincas</strong> ocupa a primeira posição nos resultados
+        do Google. É a posição que o cliente recebe já no primeiro contato com a busca.
+      </div>
+    </div>
+
+    <div class="rk">
+      <div class="topo">
+        <span class="fonte" style="font-size:9pt; font-weight:700; color:#16251E;">IAs</span>
+      </div>
+      <div class="pos">#1 <span>em IAs</span></div>
+      <div class="desc">
+        O mesmo posicionamento se mantém nas respostas geradas por inteligência artificial,
+        onde o nome da marca é o primeiro nome citado.
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub">O que isso significa na prática</h3>
+  <p>
+    Estar em primeiro lugar num nome de pessoa é raro e valioso, porque o trabalho de
+    posicionamento normalmente se faz por nome de empresa ou nome de serviço — onde a
+    concorrência éamlhega. Em nome de pessoa, a primeira posição significa que, para quem
+    pesquisa, a resposta já está resolvida antes da primeira página.
+  </p>
+
+  <div class="destaque-box">
+    <p>
+      <strong>Cuidado com a manutenção:</strong> posições de primeiro lugar em nome de
+      pessoa são mais sensíveis a mudanças de concorrência do que em nome de empresa.
+      As atualizações deste relatório foram feitas justamente para <em>preservar</em> esse
+      resultado — sem reposicionar a marca para termos genéricos que já estão cobertos.
+    </p>
+  </div>
+
+  <h3 class="sub">Como o resultado foi preservado neste ciclo</h3>
+  <ul>
+    <li><strong>Nenhum conteúdo repetiu o nome em excesso.</strong> A regra foi manter a marca fora do texto corrido e concentrar o peso nos termos de serviço.</li>
+    <li><strong>Conteúdo novo por projeto, não por palavras-chave.</strong> Cada artigo responde a uma pergunta real de cliente, o que sustenta autoridade em vez de repetição.</li>
+    <li><strong>Perfis externos alinhados.</strong> As redes e os diretórios do ateliê apontam para o mesmo endereço, reforçando a consistência do sinal.</li>
+    <li><strong>Nada foi removido.</strong> Todo o conteúdo publicado anteriormente permanece no ar, sem redirecionamentos ou quebras de link.</li>
+  </ul>
+</section>
+
+<!-- ================= RESUMO ================= -->
+<section>
+  <h2 class="secao">2. Resumo executivo</h2>
+
+  <p class="lead">
+    O site recebeu uma leva de conteúdo e material comercial pensada para transformar
+   material bruto — fotos de ateliê e de obra — em ativo de marketing. A ideia central foi
+    tratar cada projeto como peça de portfólio: não publicar uma foto, publicar a história
+    por trás dela, com a peça técnica e o acabamento que o diferencia.
+  </p>
+
+  <div class="destaque-box">
+    <p>
+      <strong>Em números:</strong> 5 posts publicados · 2 produtos disponíveis na loja ·
+      58 imagens tratadas · 10,6 MB de fotos originales reduzidos para 2,3 MB
+      (economia de 79%) · 6 rotinas de otimização criadas para uso contínuo.
+    </p>
+  </div>
+
+  <h3 class="sub">O que foi feito</h3>
+  <ul>
+    <li><strong>Conteúdo no blog.</strong> Cada projeto ganhou um artigo completo, com texto original, seções estruturadas, imagens tratadas e metadados de busca.</li>
+    <li><strong>Loja virtual.</strong> Dois peças foram cadastradas com preço, ficha técnica completa, ficha de medidas, materiais e fotos tratadas.</li>
+    <li><strong>Fotografia.</strong> Todas as fotos recebidas foram recortadas, tratadas e convertidas para o formato web, com perda visual mínima.</li>
+    <li><strong>Posicionamento em busca.</strong> Cada post foi escrito para responder a perguntas que o cliente realmente faz, usando os termos que ele usaria para procurar o serviço.</li>
+  </ul>
+
+  <h3 class="sub">Estratégia de posicionamento</h3>
+  <p>
+    O trabalho de SEO seguiu uma regra simples e deliberada: <strong>o nome do ateliê não é
+    repetido dentro do texto</strong>. O que se repete é o serviço — "lápis gigante", "mesa
+    flutuante", "estande para troca de cupom fiscal", "boneco de neve em fibra de vidro".
+    Isso porque quem busca não digita o nome de quem faz; digita o que precisa. Cada post
+    aparece, portanto, para quem procura a solução, e não apenas para quem já conhecia a marca.
+  </p>
+</section>
+
+<!-- ================= POSTS ================= -->
+<section class="quebra">
+  <h2 class="secao">3. Posts publicados no blog</h2>
+
+  <p class="lead">
+    Cinco artigos novos, do mais recente para o mais antigo. Todos entram automaticamente
+    no sitemap do site e já foram submetidos ao motor de busca.
+  </p>
+
+  <div class="post">
+    <div class="post-top">
+      <div>
+        <span class="cat destaque">Destaque</span>
+        <h4>Mais de 50 Lápis Gigantes em Fibra de Vidro para Espaços Didáticos e Escolas</h4>
+      </div>
+    </div>
+    <div class="url">/blog/lapis-gigantes-em-fibra-de-vidro-para-espacos-didaticos-e-escolas-aprisco-play</div>
+    <p>
+      Maior encomenda do período: <strong>mais de 50 lápis gigantes</strong> de mais de um metro,
+      destinados a escolas e espaços didáticos infantis. O artigo documenta as quatro etapas
+      do processo — modelagem, estruturação, pintura e montagem final — e explica por que uma
+      peça nessa escala devolve a sensação de propriedade à criança.
+    </p>
+    <p class="tags"><b>Termos:</b> lápis gigante · espaço didático · brinquedo educativo · playground educativo · pátio escolar</p>
+  </div>
+
+  <div class="post">
+    <div class="post-top">
+      <div>
+        <span class="cat">Projetos</span>
+        <h4>Estande para Troca de Cupom Fiscal em Fibra de Vidro — Shopping Center</h4>
+      </div>
+    </div>
+    <div class="url">/blog/estande-para-troca-de-cupom-fiscal-em-fibra-de-vidro-shopping-center</div>
+    <p>
+      Posto de atendimento para campanha promocional, com balcão, tambor de prêmios, banquetas
+      de espera e painéis com iluminação cênica e fogo cinematográfico. Mais de um mês de obra.
+      O artigo explica a função de cada elemento — do letreiro, que atende quem já sabe da
+      campanha, ao fogo, que chama atenção de quem ainda não sabe que ela existe.
+    </p>
+    <p class="tags"><b>Termos:</b> troca de cupom fiscal · estande para shopping · ativação de marca · campanha promocional</p>
+  </div>
+
+  <div class="post">
+    <div class="post-top">
+      <div>
+        <span class="cat">Projetos</span>
+        <h4>Árvore e Globo em Fibra de Vidro — Mesa Flutuante e Parede Temática para Empresa em Cuiabá</h4>
+      </div>
+    </div>
+    <div class="url">/blog/arvore-globo-mesa-flutuante-showroom-empresa-cuiaba-projeto-autorais</div>
+    <p>
+      O artigo mais completo do período. Três peças autorais instaladas para uma empresa em
+      Cuiabá (MT): a árvore que desce do teto sustentando uma mesa de vidro flutuante, o globo
+      terrestre na parede e o estande no shopping. Inclui <strong>galeria com 32 imagens</strong>
+      do processo, do ateliê à parede.
+    </p>
+    <p class="tags"><b>Termos:</b> mesa flutuante · projeto corporativo · showroom · escultura em resina · árvore da vida</p>
+  </div>
+
+  <div class="post">
+    <div class="post-top">
+      <div>
+        <span class="cat">Projetos</span>
+        <h4>Boneco de Neve em Fibra de Vidro — 1,70 m e 35 kg para o Natal 2026 por R$ 3.500</h4>
+      </div>
+    </div>
+    <div class="url">/blog/boneco-de-neve-em-fibra-de-vidro-170cm-natal-2026-decoracao</div>
+    <p>
+      Artigo de apoio à venda, com foco em Natal 2026. Destaca a escala humana da peça
+      (1,70 m), o relevo da neve esculpido à mão e o argumento comercial central: em fibra
+      de vidro, a decoração não é descartável — dezembro entra, janeiro sai, e a peça continua.
+      Inclui <strong>galeria com 10 imagens</strong> em estúdio e em ambientação.
+    </p>
+    <p class="tags"><b>Termos:</b> boneco de neve · decoração de Natal 2026 · decoração natalina externa · escultura em fibra de vidro</p>
+  </div>
+
+  <div class="post">
+    <div class="post-top">
+      <div>
+        <span class="cat">Projetos</span>
+        <h4>Livro Gigante em Fibra de Vidro — A Bíblia Aberta na Parede da Igreja Universal</h4>
+      </div>
+    </div>
+    <div class="url">/blog/livro-gigante-biblia-em-fibra-de-vidro-na-igreja-universal</div>
+    <p>
+      Obra de arte sacra instalada na parede de um templo. O artigo registra a peça acesa, com
+      a chama e a iluminação azul, durante o culto — e o fato de que muitos fiéis, até hoje,
+      reconhecem a obra ao entrar. Texto curto e respeitoso, focado na permanência da peça.
+    </p>
+    <p class="tags"><b>Termos:</b> livro gigante · escultura religiosa · arte sacra · fibra de vidro para igreja</p>
+  </div>
+</section>
+
+<!-- ================= PRODUTOS ================= -->
+<section class="quebra">
+  <h2 class="secao">4. Produtos cadastrados na loja</h2>
+
+  <p class="lead">
+    Duas peças foram convertidas em produto com preço, ficha técnica e página própria,
+    ficando compráveis diretamente pelo site. Ambas aparecem em destaque na vitrine.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:44%">Produto</th>
+        <th style="width:22%">Especificações</th>
+        <th style="width:16%">Fotos</th>
+        <th style="width:18%; text-align:right">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>Boneco de Neve em Fibra de Vidro</strong><br>
+          <span style="color:#6B6862; font-size:8.5pt;">Natal 2026 · altura 1,70 m</span>
+        </td>
+        <td>35 kg · topo em fibra naval · base estável · neve esculpida à mão</td>
+        <td>7</td>
+        <td class="num">R$ 3.500</td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Mesa Flutuante com Árvore em Resina</strong><br>
+          <span style="color:#6B6862; font-size:8.5pt;">Showroom e recepção · vidro 1.200 mm</span>
+        </td>
+        <td>conjunto com mesa de vidro e 5 cadeiras · estrutura de ferro interna · disco de luz no teto</td>
+        <td>8</td>
+        <td class="num">R$ 18.000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">O que cada ficha técnica traz</h3>
+  <ul>
+    <li><strong>Descrição em três blocos:</strong> o que é, por que foi feito daquela forma, e condições de produção e personalização.</li>
+    <li><strong>Medidas completas:</strong> altura, diâmetro, peso e o que acompanha o conjunto.</li>
+    <li><strong>Materiais listados um a um:</strong> do núcleo estrutural ao acabamento.</li>
+    <li><strong>Disponibilidade e prazo:</strong> indicação de estoque e de produção sob encomenda.</li>
+    <li><strong>Foto de escala:</strong> peça ao lado de pessoa, para o cliente ter noção de tamanho antes de comprar.</li>
+  </ul>
+
+  <div class="destaque-box">
+    <p>
+      <strong>Cruzamento entre posts e produtos:</strong> a mesa flutuante ganhou página de
+      produto <em>e</em> foi detalhada dentro do artigo do showroom, com link direto. É a mesma
+      peça aparecendo em dois momentos da jornada de compra — o que normalmente não acontecia.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOTOS ================= -->
+<section class="quebra">
+  <h2 class="secao">5. Tratamento do material fotográfico</h2>
+
+  <p class="lead">
+    As fotos recebidas eram de boa qualidade, mas em formato pesado e — em boa parte dos casos —
+    composições com vários quadros na mesma imagem. Foram tratadas uma a uma.
+  </p>
+
+  <h3 class="sub">O que foi feito</h3>
+  <ul>
+    <li><strong>Recorte de quadros.</strong> Onde a imagem trazia várias fotos juntas, cada quadro foi separado e tratado como peça individual, com corte preciso e remoção de bordas.</li>
+    <li><strong>Conversão para formato web.</strong> Redimensionamento e conversão para WEBP, formato que entrega a mesma qualidade visual com fração do peso.</li>
+    <li><strong>Nomenclatura descritiva.</strong> Cada arquivo recebeu nome descritivo do conteúdo — importante não só para a organização, mas para o Google indexar as imagens corretamente.</li>
+    <li><strong>Organização em pastas por projeto.</strong> Estrutura que permite reuso das mesmas fotos em produto e em blog, sem duplicar peso.</li>
+  </ul>
+
+  <h3 class="sub">Resultado por projeto</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:46%">Projeto</th>
+        <th style="width:16%; text-align:right">Imagens</th>
+        <th style="width:19%; text-align:right">Peso final</th>
+        <th style="width:19%; text-align:right">Peso médio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Árvore, Globo e Mesa Flutuante</td><td class="num">32</td><td class="num">491 KB</td><td class="num">15 KB</td></tr>
+      <tr><td>Boneco de Neve</td><td class="num">10</td><td class="num">901 KB</td><td class="num">90 KB</td></tr>
+      <tr><td>Estande de Cupom Fiscal</td><td class="num">8</td><td class="num">158 KB</td><td class="num">20 KB</td></tr>
+      <tr><td>Lápis Gigantes</td><td class="num">4</td><td class="num">752 KB</td><td class="num">188 KB</td></tr>
+      <tr><td>Livro Gigante</td><td class="num">4</td><td class="num">69 KB</td><td class="num">17 KB</td></tr>
+      <tr style="font-weight:700; background:#F0EDE5;"><td>Total</td><td class="num">58</td><td class="num">2,3 MB</td><td class="num">40 KB</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Ganho de performance</h3>
+  <p>
+    As fotos originais ocupavam <strong>10,6 MB</strong> e foram publicadas com
+    <strong>2,3 MB</strong> — redução de <strong>79%</strong>. Em conexão de celular, que é
+    onde a maior parte dos acessos acontece, essa diferença é sentida diretamente no tempo
+    de carregamento das páginas.
+  </p>
+
+  <h3 class="sub">Rotinas criadas</h3>
+  <p>
+    Foi criado um conjunto de seis rotinas de tratamento de imagem dentro do projeto. Isso
+    significa que, no próximo envio de fotos, o mesmo padrão de recorte, redimensionamento
+    e nomenclatura é aplicado automaticamente — com resultado consistente e sem retrabalho.
+  </p>
+</section>
+
+<!-- ================= SEO ================= -->
+<section>
+  <h2 class="secao">6. Estratégia aplicada nas publicações</h2>
+
+  <p class="lead">
+    Cada post foi escrito para funcionar como resposta a uma pergunta real de cliente,
+    e não como vitrine do ateliê.
+  </p>
+
+  <h3 class="sub">Como foi feito</h3>
+  <ul>
+    <li><strong>O serviço no título, não o nome.</strong> O título de cada artigo começa pelo termo que o cliente usa para procurar ("Lápis Gigante", "Estande para Troca de Cupom Fiscal"), e o nome do ateliê aparece apenas no final.</li>
+    <li><strong>Nome do ateliê fora do texto corrido.</strong> Em todo o conteúdo, a marca aparece uma única vez por artigo. Repetir o mesmo nome dozens de vezes prejudica a leitura e não traz resultado.</li>
+    <li><strong>Descrição e palavras-chave próprias</strong> para cada artigo, com sinônimos e variações que as pessoas realmente digitam.</li>
+    <li><strong>Estrutura em seções com subtítulos,</strong> que permitem quequemotor de busca e assistentes de IA identifiquem o tema de cada bloco.</li>
+    <li><strong>Dados estruturados (Schema.org)</strong> em cada página, com título, resumo, autor, data e todas as imagens — é isso que permite ao Google exibir o artigo com Rich Preview.</li>
+    <li><strong>Texto alternativo em cada foto,</strong> descrevendo o que a imagem mostra, para leitura por(accessibility) e indexação.</li>
+  </ul>
+
+  <h3 class="sub">Ganho em visibilidade</h3>
+  <p>
+    O site passou de <strong>55 para 61 páginas</strong> indexáveis. Todos os posts novos
+    entram no sitemap com prioridade alta e foram submetidos ao motor de busca assim que
+    publicados — o que significa que já estão em processo de indexação.
+  </p>
+
+  <div class="destaque-box">
+    <p>
+      <strong>Ponto de atenção:</strong> os textos descrevem o que está visível nas fotos e
+      o que foi informado. Valores, medidas e prazos que não estavam documentados foram
+      deixados em aberto ou tratados como "sob consulta", para não haver divergência entre
+      o que o site diz e o que é praticado.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRÓXIMOS PASSOS ================= -->
+<section class="quebra">
+  <h2 class="secao">7. Próximos passos sugeridos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:30%">Ação</th>
+        <th style="width:44%">Detalhe</th>
+        <th style="width:26%">Impacto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Revisão do material bruto</strong></td>
+        <td>Separar fotos ainda não publicadas — especialmente as que vieram em colagem — para ampliar a galeria dos posts já publicados.</td>
+        <td>Mais conteúdo indexável</td>
+      </tr>
+      <tr>
+        <td><strong>Cadastro dos demais itens</strong></td>
+        <td>Os lápis gigantes e o livro gigante ainda não têm página de produto. Basta definir preço e medidas.</td>
+        <td>Mais itens na loja</td>
+      </tr>
+      <tr>
+        <td><strong>Confirmação de dados</strong></td>
+        <td>Validar medidas, pesos e ano de fabrication dos itens já cadastrados antes da campanha de divulgação.</td>
+        <td>Evita retrabalho</td>
+      </tr>
+      <tr>
+        <td><strong>Envio dos lotes de natal</strong></td>
+        <td>Conjunto de renas e boneco de neve prontos — datas-limite de produção para atender a demanda de dezembro.</td>
+        <td>Receita sazonal</td>
+      </tr>
+      <tr>
+        <td><strong>Divulgação dos posts</strong></td>
+        <td>Redes sociais e WhatsApp Business apontando para os artigos — o conteúdo já está pronto para divulgar.</td>
+        <td>Tráfego</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Encerramento</h3>
+  <p>
+    O que estava disperso — fotos soltas na pasta do projeto, trabalhos prontos e não
+    publicados — foi organizado em conteúdoindexável e em páginas de venda. O site tem,
+    agora, <strong>20 artigos</strong> e <strong>21 produtos</strong> cadastrados, todos
+    com material próprio tratado e pronto para divulgação.
+  </p>
+
+  <p class="rodape-nota">
+    Relatório referente às atualizações de outubro de 2026 do site fernandoquincas.com.br.
+    Imagens, textos e especificações citados referem-se ao material analisado no período.
+  </p>
+</section>
+
+<!-- ================= AUTORIA / CONTATO ================= -->
+<section class="quebra">
+  <h2 class="secao">8. Autoria e contato</h2>
+
+  <p class="lead">
+    Todas as atualizações descritas neste relatório foram executadas integralmente pela
+    Transcent Digital — do planejamento à entrega.
+  </p>
+
+  <div class="marca" style="margin-bottom:6mm;">
+    <div class="marca-esq">
+      <img class="logo-transcent" src="assets/logo-transcent.png" alt="Transcent Digital" style="width:18mm;" />
+      <div>
+        <div class="transcent-txt" style="font-size:13pt;">Transcent Digital</div>
+        <div class="transcent-sub">Artesanato Digital</div>
+      </div>
+    </div>
+    <div class="marca-dir" style="font-size:8.5pt;">
+      Relatório nº 01 · Outubro de 2026<br />
+      Elaborado para Ateliê Fernando Quincas
+    </div>
+  </div>
+
+  <div class="autoria">
+    <div class="autoria-dir">
+      <div class="rot">Responsável técnico</div>
+      <div class="nome">Artesanato digital&nbsp;
+        <a href="https://www.instagram.com/vicenteczar.dev/">@vicenteczar.dev</a>
+      </div>
+      <div class="papel">
+        Estratégia digital, redação de conteúdo, otimização para buscas (SEO),
+        tratamento de imagens, performance e publicação.
+      </div>
+    </div>
+    <div class="redes">
+      <a class="rede" href="https://www.instagram.com/vicenteczar.dev/">
+        <img src="assets/logo-instagram.png" alt="Instagram" />
+        <span class="rot">Instagram</span>
+      </a>
+      <a class="rede" href="https://www.linkedin.com/in/vicenteczar/">
+        <img src="assets/logo-linkedin.png" alt="LinkedIn" />
+        <span class="rot">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+
+  <h3 class="sub">Contato</h3>
+
+  <div class="qrs">
+    <div class="qr">
+      <img src="assets/qr-instagram.png" alt="QR Instagram" />
+      <div class="rot">Instagram</div>
+      <a href="https://www.instagram.com/vicenteczar.dev/">instagram.com/vicenteczar.dev</a>
+    </div>
+    <div class="qr">
+      <img src="assets/qr-linkedin.png" alt="QR LinkedIn" />
+      <div class="rot">LinkedIn</div>
+      <a href="https://www.linkedin.com/in/vicenteczar/">linkedin.com/in/vicenteczar</a>
+    </div>
+    <div class="qr">
+      <img src="assets/qr-site-transcent.png" alt="QR Transcent Digital" />
+      <div class="rot">Transcent Digital</div>
+      <a href="https://transcentacademy.com.br/transcentdigital">transcentacademy.com.br/transcentdigital</a>
+    </div>
+    <div class="qr">
+      <img src="assets/qr-site-fernando-quincas.png" alt="QR Ateliê Fernando Quincas" />
+      <div class="rot">Ateliê Quincas</div>
+      <a href="https://fernandoquincas.com.br">fernandoquincas.com.br</a>
+    </div>
+  </div>
+
+  <p style="font-size:9pt; color:#6B6862; text-align:center;">
+    Aponte a câmera do celular para qualquer um dos códigos acima.
+  </p>
+
+  <div class="destaque-box" style="margin-top:6mm;">
+    <p>
+      <strong>Próximo ciclo sugerido:</strong> mantenha a cadência de publicação quinzenal,
+      cadastre os dois projetos que ainda estão sem página de produto e avance para a
+      divulgação dos artigos nas redes sociais — o material já está pronto para isso.
+    </p>
+  </div>
+
+  <p class="rodape-nota">
+    Transcent Digital · Artesanato digital ·
+    <a href="https://transcentacademy.com.br/transcentdigital" style="color:#A8873E;">transcentacademy.com.br/transcentdigital</a>
+    <br />
+    Relatório emitido em outubro de 2026. Documento confidencial — reprodução autorizada somente pelo destinatário.
+  </p>
+</section>
+
+</body>
+</html>
