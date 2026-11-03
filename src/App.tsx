@@ -31,6 +31,7 @@ const OrderStatusPage = lazy(() => import('./pages/OrderStatusPage').then(m => (
 const InstrumentsPage = lazy(() => import('./pages/InstrumentsPage').then(m => ({ default: m.InstrumentsPage })));
 const InstrumentPhotoPage = lazy(() => import('./pages/InstrumentPhotoPage').then(m => ({ default: m.InstrumentPhotoPage })));
 const StoryBookPage = lazy(() => import('./pages/StoryBookPage').then(m => ({ default: m.StoryBookPage })));
+import { MaintenancePage } from './pages/MaintenancePage';
 
 // Fallback leve para rotas lazy (não bloqueia LCP da Home)
 const PageFallback: React.FC = () => (
@@ -237,6 +238,30 @@ const AppContent: React.FC = () => {
 };
 
 export default function App() {
+  const isMaintenanceMode = (import.meta as any).env?.VITE_MAINTENANCE_MODE === 'true';
+
+  // Permite que você acesse normalmente passando ?bypass=transcent na URL
+  const isBypassed = typeof window !== 'undefined' && (() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('bypass') === 'transcent') {
+        sessionStorage.setItem('bypass_maintenance', 'true');
+        return true;
+      }
+      if (params.get('bypass') === 'off') {
+        sessionStorage.removeItem('bypass_maintenance');
+        return false;
+      }
+      return sessionStorage.getItem('bypass_maintenance') === 'true';
+    } catch {
+      return false;
+    }
+  })();
+
+  if (isMaintenanceMode && !isBypassed) {
+    return <MaintenancePage />;
+  }
+
   return (
     <BrowserRouter>
       <CartProvider>
